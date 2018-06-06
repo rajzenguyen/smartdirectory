@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=vietnamese');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+	font-family: 'Montserrat', sans-serif;
+}
+h1{
+	font-size:64px;
+	line-height:80px;
+	font-weight:700;
+}
+h2{
+	font-size:48px;
+	line-height:60px;
+	font-weight:700;
+}
+h3{
+	font-size:40px;
+	line-height:50px;
+	font-weight:700;
+}
+h4{
+	font-size:36px;
+	line-height:45px;
+	font-weight:700;
+}
+h5{
+	font-size:32px;
+	line-height:40px;
+	font-weight:700;
+}
+h6{
+	font-size:24px;
+	line-height:36px;
+	font-weight:700;
+}
+h7{
+	font-size:18px;
+	line-height:27px;
+}
+a{
+	text-decoration:none !important;
+}
+p{
+	font-size:16px;
+	line-height:24px;
+}
+ul{
+	list-style:none;
+	padding:5px;
+}
+p.small{
+	font-size:14px;
+	line-height:21px;
+}
+ul > li{
+	padding:10px 25px;
+	font-size:15px;
+	vertical-align:middle;
+}
+input, button {
+	padding:10px 16px;
+	border-radius:35px;
+}
+.goTop > a{
+	padding:16px 20px;
+	font-size:20px;
+	bottom:15px;
+	right:15px;
+	position:fixed;
+	background:#06C;
+	color:#fff;
+	border-radius:40px;
+}
+.tempBtn1{
+	padding:8px 8px;
+	font-size:14px;
+	bottom:80px;
+	right:15px;
+	position:fixed;
+	background:#06C;
+	color:#fff;
+	border-radius:40px;
+}
+.tempBtn2{
+	padding:8px 8px;
+	font-size:14px;
+	bottom:130px;
+	right:15px;
+	position:fixed;
+	background:#06C;
+	color:#fff;
+	border-radius:40px;
+}
+.tempBtn3{
+	padding:8px 8px;
+	font-size:14px;
+	bottom:180px;
+	right:15px;
+	position:fixed;
+	background:#06C;
+	color:#fff;
+	border-radius:40px;
+}
+.tempBtn4{
+	padding:8px 8px;
+	font-size:14px;
+	bottom:230px;
+	right:15px;
+	position:fixed;
+	background:#06C;
+	color:#fff;
+	border-radius:40px;
+}
+.tempBtn5{
+	padding:8px 8px;
+	font-size:14px;
+	bottom:330px;
+	right:15px;
+	position:fixed;
+	background:#06C;
+	color:#fff;
+	border-radius:40px;
+}
+.tempBtn6{
+	padding:8px 8px;
+	font-size:14px;
+	bottom:400px;
+	right:15px;
+	position:fixed;
+	background:#06C;
+	color:#fff;
+	border-radius:40px;
+}
+.modal-dialog{
+	margin-top:20%;
+}
+.modal-body > img{
+}
+.modal-footer > .btn{
+	border-radius:40px;
+}
+.notification{
+	width:200px;
+	padding:20px;
+	right:20px;
+	bottom:280px;
+	background:#fff;
+	position:fixed;
+	display:block;
+	z-index:999;
+	text-align:center;
+	border-radius:14px;
+	box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
+}
+.notification > a{
+	color:#fff;
+	background:#06c;
+	padding:5px 10px;
+	border-radius:40px;
+	margin:8px auto;
+	cursor:pointer;
+	float:left;
+	width:100%;
+}
+.iconSVG {
+	vertical-align:middle;
+}
+.whiteSVG{
+	filter: invert(1) sepia(1) saturate(0);
+}
+.blackSVG{
+	filter:none;
+}
+
+.feedbackIcon > li{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.feedbackIcon > li:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+.feedbackIcon > .active{
+    -webkit-filter: grayscale(0%) !important; /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%) !important;
+}
+.fbCategory > .active{
+	background:#06c;
+	color:#fff;
+	box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
+}
+.fbCategory > .active > a{
+	color:#fff;
+}
+.fbCategory > li{
+	width:31%;
+	float:left;
+	margin:5px 6px;
+	text-align:center;
+	border-radius:15px;
+	font-size:16px;
+	line-height:24px;
+	height:88px;
+	position: relative;
+	background:#e8eaef;
+	vertical-align:middle;
+}
+.fbCategory > li > a{
+	color:#333;
+	vertical-align:middle;
+	margin:auto 0;
+}
+.fbCategory > li > a:hover{
+	color:#fff;
+}
+.fbCategory > li:hover{
+	background:#06c;
+	color:#fff !important;
+	box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
+}
+.fbCategory > li:hover > a{
+	color:#fff !important;
+}
+.fbContent, .fbCat, .fbSelect{
+	padding:20px;
+}
+.fbContent > textarea{
+	width:100%;
+	height:100px;
+	resize:none;
+	border:1px solid #999;
+	padding:5px;
+}
+.customCard{
+	background: #fafbfc;
+	width: 100%;
+	height: 54px;
+	color: #000;
+	border-radius:35px;
+	text-decoration:none;
+	vertical-align:middle;
+	text-align:left;
+	padding-left:26px;
+}
+.customCard:hover{
+	background: #06c;
+	color: #fff;
+	text-decoration:none;
+}
+.customCard:hover > .blackSVG{
+	filter: invert(1) sepia(1) saturate(0);
+}
+.customCard:focus{
+	background: #06c;
+	color: #fff;
+	text-decoration:none;
+}
+.customCard:focus > .blackSVG{
+	filter: invert(1) sepia(1) saturate(0);
+}
+.customCard > .blackSVG,h7{
+	float:left;
+	vertical-align:middle;
+}
+.customCard > svg{
+	float:right;
+	height:24px;
+	font-size:16px;
+	font-weight:300;
+	vertical-align:middle;
+	margin-right:10px;
+}
+#content{
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.card-body{
+	padding:6px 14px;
+}
+.form-group input{
+	border-radius:35px;
+}
+.btn-secondary:focus{
+	color:#000;
+}
