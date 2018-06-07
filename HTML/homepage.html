@@ -15,8 +15,8 @@
 
 <body>
 
-
-<div class="topNav topNavHome">
+<div class="topNavHome">
+<div class="topNav">
 	<div class="container">
         <div class="navLogo">
             <img src="images/logo.png" width="150px" />
@@ -41,6 +41,15 @@
                         </ul>
                       </div>
                       </div>
+                      
+                    <div id="menuLang" class="dropdown-menu">
+                                      <div class="smenu">
+                                        <ul>
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Tiếng Việt</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
                 </li>
                 <li>
                 	<a  class="btn btn-secondary dropdown-toggle" href="#" role="button" id="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,41 +58,32 @@
                     <div class="dropdown-menu" aria-labelledby="menu">
                       <div class="smenu">
                         <ul>
+                        	<li id="lang">
+                                <a href="#">English</a>
+                  			</li>
                         	<li><a href="#">Fail</a></li>
                         	<li><a href="#">Success</a></li>
                         	<li><a href="FAQ.html">F.A.Q</a></li>
                         	<li><a href="#" data-toggle="modal" data-target="#feedback">Feedback</a></li>
                         	<li><a href="#">Contact Us</a></li>
                         </ul>
+                        
+                                  
                       </div>
                     </div>
                 </li>
                 <li>
-                  <a href="#" class="btn btn-secondary dropdown-toggle" role="button" id="lang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  	ENG
-                    <img src="assets/dropdown.svg" width="16px" class="iconSVG whiteSVG imgSVG" />
-                  </a>     
-                    <div class="dropdown-menu" aria-labelledby="lang">
-                      <div class="smenu">
-                        <ul>
-                        	<li><a href="#">English</a></li>
-                        	<li><a href="#">Tiếng Việt</a></li>
-                        </ul>
-                      </div>
-                    </div>
+                    
                 </li>
             </ul>
             
             
         </div>
-        
-        
-            
-            
+         
         <div class="clearfix"></div>
     </div>
 </div>
-
+</div>
 
 <div id="banner" style="">
 	<div class="container">
@@ -102,26 +102,26 @@
 <div id="category" class="text-center">
 	<div class="container">
     	<h2>Industrial Category</h2>
-        <div class="catContainer">
-        	<div class="catItem">
+        <div id="catContainer" class="catContainer">
+        	<div class="catItem" style="width:18%;">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Business Types</h6>
                 </a>
             </div>
-        	<div class="catItem">
+        	<div class="catItem" style="width:31%;">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Provinces/Cities</h6>
                 </a>
             </div>
-        	<div class="catItem">
+        	<div class="catItem" style="width:27%;">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Categories</h6>
                 </a>
             </div>
-        	<div class="catItem">
+        	<div class="catItem" style="width:12%;">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
@@ -133,16 +133,58 @@
                     <h6>Vestibul</h6>
                 </a>
             </div>
-        	<div class="catItem">
+        	<div class="catItem" style="width:12%;">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
-                    <h6>Cras qui</h6>
+                    <h6>Radio</h6>
                 </a>
             </div>
-        	<div class="catItem">
+        	<div class="catItem" style="width:12%;">
             	<a href="#">
-                	<img src="assets/fill-5_2.svg" />
-                    <h6>Show More</h6>
+                	<img src="assets/legal-struture.svg" />
+                    <h6>Radio</h6>
+                </a>
+            </div>
+        	<div class="catItem" style="width:12%;">
+            	<a href="#">
+                	<img src="assets/legal-struture.svg" />
+                    <h6>Radio</h6>
+                </a>
+            </div>
+        	<div class="catItem" style="width:12%;">
+            	<a href="#">
+                	<img src="assets/legal-struture.svg" />
+                    <h6>Radio</h6>
+                </a>
+            </div>
+        	<div class="catItem" style="width:12%;">
+            	<a href="#">
+                	<img src="assets/legal-struture.svg" />
+                    <h6>Radio</h6>
+                </a>
+            </div>
+        	<div class="catItem" style="width:12%;">
+            	<a href="#">
+                	<img src="assets/legal-struture.svg" />
+                    <h6>Radio</h6>
+                </a>
+            </div>
+        	<div class="catItem" style="width:12%;">
+            	<a href="#">
+                	<img src="assets/legal-struture.svg" />
+                    <h6>Radio</h6>
+                </a>
+            </div>
+        	<div class="catItem" style="width:12%;">
+            	<a href="#">
+                	<img src="assets/legal-struture.svg" />
+                    <h6>Radio</h6>
+                </a>
+            </div>
+        	<div class="catItem" style="width:12%;">
+            	<a href="#">
+                	<img src="assets/legal-struture.svg" />
+                    <h6>Radio</h6>
                 </a>
             </div>
         </div>
@@ -258,56 +300,37 @@
     </div>
     
 </div>
+</div>
 
 <div id="footer">
-	<div class="container">
     	<div class="footerItem">
-        	<div class="footerLeftContent">
-        		<img src="images/logo.png" style="width:100%;" />
+        	<div class="container">
+                <div class="footerLeftContent">
+                    <img src="images/logo.png" style="width:100%;" />
+                </div>
+                <div class="footerRightContent">
+                    <ul class="listSubMenu">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policies</a></li>
+                        <li><a href="#">F.A.Q</a></li>
+                        <li><a data-toggle="modal" data-target="#feedback">Feedback</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="footerRightContent">
-                <ul class="listSubMenu">
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policies</a></li>
-                    <li><a href="#">F.A.Q</a></li>
-                    <li><a data-toggle="modal" data-target="#feedback">Feedback</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
 		</div>
-        <div class="footerItem">
-            <div class="footerCol">
-                <div class="footerColContent">
-                    <h4>Contact Info</h4>
-                    <p>NATIONAL ONE-STOP SERVICES AND INVESTMENTS ORGANIZATION<br /><br />
-                    NSO Operational Office: 372 – D33 Road, Viet-Sing Town, North VSIP I, Thuan An, Binh Duong.<br />
-                    Tel: <a href="tel:+02743802048"> (0274) 380 2048</a> - Fax: (0274) 363 0048<br />
-                    <a href="mailto:contact@nso.vn">contact@nso.vn</a><br />
-                    <a href="http://www.nso.com.vn" target="blank">www.nso.com.vn</a></p>
-                </div>
-            </div>
-            <div class="footerCol">
-                <div class="footerColContent">
-                    <h4>Subscribe</h4>
-                    <input type="text" name="txtSubscribe" placeholder="Enter your email..." />
-                    <button type="button" name="btnSubscribe"><img src="assets/arrow-right.svg" /></button>
-                </div>
-            </div>
-            <div class="footerCol">
-                <div class="footerColContent">
-                    <h4>Link with</h4>
-                    <a href="#"><img src="images/logo.png" style="width:32%;" /></a>
-                    <a href="#"><img src="images/logo.png" style="width:32%;" /></a>
-                    <a href="#"><img src="images/logo.png" style="width:32%;" /></a>
-                </div>
+        <div class="footerItem text-center">
+        	<div class="container">
+                <h6>Subscribe Now</h6>
+                <input type="text" name="txtSubscribe" placeholder="Enter your email..." />
+                <button type="button" class="btn-primary" name="btnSubscribe">Subscribe</button>
             </div>
         </div>
         <div class="clearfix"></div>
         <div class="text-center">
-        	<p style="color:#06C;">Copyright by NSO - 2018</p>
+        	<p style="color:#06C; font-size:12px;">Copyright by NSO - 2018</p>
         </div>
-    </div>
 </div>
 
 
@@ -485,7 +508,7 @@
     <div class="modal-content" style="padding:20px 40px;">
       <div class="modal-header">
         <h6 class="modal-title" id="forgotLabel" style="display: contents;">Forgot Password</h6>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="top: 15px; right: 15px; position: absolute; opacity:0.8; font-size:28px;">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -493,7 +516,7 @@
         <form>
           <div class="form-group">
             <label for="username" class="col-form-label">Phone Number</label>
-            <input type="text" class="form-control" id="username" />
+            <input type="text" class="form-control" id="username" placeholder="Phone Number" />
           </div>
         </form>
       </div>
@@ -512,24 +535,21 @@
 
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="margin-top:20px; width:70%;">
-    <div class="modal-content" style="height:500px;">
-    	<div style="width:40%; float:left;background:#fff; padding:40px 50px; border-bottom-left-radius:6px; border-top-left-radius:6px;">
+    <div class="modal-content" style="">
+    	<div class="modalLeft" style="">
         	
-          <div class="modal-header">
-            <h6 class="modal-title" id="loginLabel" style="display: contents;">Login</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div class="modal-header" style="border:none;">
+            <h3 class="modal-title" id="loginLabel" style="display: contents;">Login</h3>            
           </div>
           <div class="modal-body">
             <form>
                 <div class="form-group">
                     <label for="username" class="col-form-label">Username</label>
-                    <input type="text" class="form-control" id="username" />
+                    <input type="text" class="form-control" id="username" placeholder="Username" />
                 </div>
                 <div class="form-group">
                     <label for="userPass" class="col-form-label">Password</label>
-                    <input type="password" class="form-control" id="userPass" />
+                    <input type="password" class="form-control" id="userPass" placeholder="Password" />
                 </div>
                 <div class="form-group">
                     <p><a href="#" data-toggle="modal" data-dismiss="modal" data-target="#forgot" style="float:right; color:#333; margin-bottom:15px;">Forgot password?</a></p>
@@ -544,12 +564,15 @@
                 </div>
             </form>
           </div>
-          <div class="modal-footer">
-          	Don't have an account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#signup"><b>SIGN UP</b></a>
+          <div class="modal-footer" style="text-align:left;">
+          	Don't have an account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#signup"><b> SIGN UP</b></a>
           </div>
         </div>
-        <div style="width:60%; float:right; background:#ccc; text-align:center; height:100%; padding:40px; border-bottom-right-radius:6px; border-top-right-radius:6px;">
-        	<img src="images/6.jpg" style="width:70%;" />
+        <div class="modalRight" style="">
+        	<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        	<img src="assets/mockup-01.png" style="width:100%;" />
             <h5>Smart Business Directory</h5>
             <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
@@ -563,18 +586,15 @@
 
 <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signupLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="margin-top:20px; width:70%;">
-    <div class="modal-content" style="height:600; overflow-y:auto;">
-    	<div style="width:40%; float:left;background:#fff; padding:40px 50px; border-bottom-left-radius:6px; border-top-left-radius:6px;">
+    <div class="modal-content" style="">
+    	<div class="modalLeft" style="">
         	
-          <div class="modal-header">
-            <h6 class="modal-title" id="signupLabel" style="display: contents;">Sign Up</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <div class="modal-header" style="border:none;">
+            <h3 class="modal-title" id="signupLabel" style="display: contents;">Sign Up</h3>
           </div>
+          
           <div class="modal-body">
-          	
-            <div class="nav nav-tabs">
+            <div class="nav nav-tabs" style="border:none;">
             	<div style="float:left; width:50%;">
                 	<div class="">
                 	<input type="radio" name="accType" value="personal" data-toggle="tab" href="#personalPanel" /> <label class="col-form-label">Personal</label>
@@ -586,16 +606,16 @@
                     </div>
                 </div>
             </div>
-          	<div class="tab-content" style="margin-top:10px;">
+          	<div class="tab-content" style="margin-top:30px;">
             	<div id="personalPanel" class="tab-pane active">
                     <form>
                         <div class="form-group">
                             <label for="personalPhone" class="col-form-label">Phone Number</label>
-                            <input type="text" class="form-control" id="personalPhone" />
+                            <input type="text" class="form-control" id="personalPhone" placeholder="Phone Number" />
                         </div>
                         <div class="form-group">
                             <label for="personalPass" class="col-form-label">Password</label>
-                            <input type="password" class="form-control" id="personalPass" />
+                            <input type="password" class="form-control wrongInfo" id="personalPass" placeholder="Password" />
                         </div>
                         <div class="form-group">
                             <input type="checkbox" name="agree" value="agree" /> By signing up here, I agree with <a href="#"><b>Terms of Use</b></a>
@@ -610,15 +630,15 @@
                     <form>
                         <div class="form-group">
                             <label for="companyName" class="col-form-label">Your Company</label>
-                            <input type="text" class="form-control" id="companyName" />
+                            <input type="text" class="form-control" id="companyName" placeholder="Company Name" />
                         </div>
                         <div class="form-group">
                             <label for="phone" class="col-form-label">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" />
+                            <input type="text" class="form-control" id="phone" placeholder="Phone Number" />
                         </div>
                         <div class="form-group">
                             <label for="companyPass" class="col-form-label">Password</label>
-                            <input type="password" class="form-control" id="companyPass" />
+                            <input type="password" class="form-control" id="companyPass" placeholder="Password" />
                         </div>
                         <div class="form-group">
                             <input type="checkbox" name="agree" value="agree" /> By signing up here, I agree with <a href="#">Terms of Use</a>
@@ -631,12 +651,16 @@
                 </div>
             </div>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer" style="text-align:left;">
           	Already had account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#login"><b>LOG IN</b></a>
           </div>
         </div>
-        <div style="width:60%; float:right; background:#ccc; text-align:center; height:600px; padding:40px; border-bottom-right-radius:6px; border-top-right-radius:6px;">
-        	<img src="images/6.jpg" style="width:70%;" />
+        <div class="modalRight">
+        	
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        	<img src="assets/mockup-01.png" style="width:100%;" />
             <h5>Smart Business Directory</h5>
             <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>

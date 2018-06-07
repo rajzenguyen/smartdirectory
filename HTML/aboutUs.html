@@ -17,7 +17,7 @@
 
 <body style="background:#f8f9fb;">
 
-
+<div class="aboutus">
 <div class="topNav">
 	<div class="container">
         <div class="navLogo">
@@ -26,23 +26,32 @@
         <div class="navContent">
             <ul>
                 <li class="searchBox">
-                      <input type="text" name="txtSearchNavTxt" />
+                      <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." />
                       <button type="button" name="btnSearchNavBtn" ><i class="fa fa-search"></i></button>
                 </li>
                 <li>
                 	<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       <i class="fa fa-user"></i>
+                       <img src="assets/profile.svg" width="18px" class="iconSVG whiteSVG" />
                     </a>
 
                       <div class="dropdown-menu" aria-labelledby="user">
                       <div class="smenu">
                         <ul>
-                        	<li><a href="#"><i class="fa fa-cog"></i> Account Setting</a></li>
-                        	<li><a href="#"><i class="fa fa-store"></i> Privileges</a></li>
-                        	<li><a href="#" style="color:#F90;"><i class="fa fa-sign-out-alt"></i> Logout</a></li>
+                        	<li><a href="#" data-toggle="modal" data-target="#login">Sign In</a></li>
+                        	<li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
+                        	<li><a href="#" style="color:#F90;">Logout</a></li>
                         </ul>
                       </div>
                       </div>
+                      
+                    <div id="menuLang" class="dropdown-menu">
+                                      <div class="smenu">
+                                        <ul>
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Tiếng Việt</a></li>
+                                        </ul>
+                                      </div>
+                                  </div>
                 </li>
                 <li>
                 	<a  class="btn btn-secondary dropdown-toggle" href="#" role="button" id="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -51,22 +60,31 @@
                     <div class="dropdown-menu" aria-labelledby="menu">
                       <div class="smenu">
                         <ul>
-                        	<li><a href="#">About Us</a></li>
-                        	<li><a href="#">Privileges</a></li>
-                        	<li><a href="#">F.A.Q</a></li>
-                        	<li><a href="#">Feedback</a></li>
+                        	<li id="lang">
+                                <a href="#">English</a>
+                  			</li>
+                        	<li><a href="#">Fail</a></li>
+                        	<li><a href="#">Success</a></li>
+                        	<li><a href="FAQ.html">F.A.Q</a></li>
+                        	<li><a href="#" data-toggle="modal" data-target="#feedback">Feedback</a></li>
                         	<li><a href="#">Contact Us</a></li>
                         </ul>
+                        
+                                  
                       </div>
                     </div>
                 </li>
                 <li>
-                  <a href="#" class="btn btn-secondary dropdown-toggle" >ENG</a>
+                    
                 </li>
             </ul>
+            
+            
         </div>
+         
         <div class="clearfix"></div>
     </div>
+</div>
 </div>
 
 
