@@ -7,6 +7,7 @@ $(document).ready(function(){
 	
 	
 });
+
 $(document).ready(function(){
 	
 	$("#companyPanel").hide();
@@ -16,7 +17,7 @@ $(document).ready(function(){
 		$("button[name='btnSearchNavBtn']").show("SlideLeft");
 	});
 	
-	});
+});
 
 $(document).ready(function(){
   $('.dropdown-submenu a.test').on("click", function(e){
@@ -65,6 +66,48 @@ $(document).ready(function(){
 				element.getElementsByClassName("catItem")[i].style.width="22%";
 			}
 		}
+		else if(odd == 1){
+			for(i = 0; i<numberOfElement;i++){
+				element.getElementsByClassName("catItem")[i].style.width="22%";
+			}
+			element.getElementsByClassName("catItem")[numberOfElement-5].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-4].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="17%";
+			
+		}
+		else if(odd == 2){
+			for(i = 0; i<numberOfElement;i++){
+				element.getElementsByClassName("catItem")[i].style.width="22%";
+			}
+			element.getElementsByClassName("catItem")[numberOfElement-10].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-9].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-8].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-7].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-6].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-5].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-4].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="17%";
+			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="17%";
+			
+		}
+		else if(odd == 3){
+			for(i = 0; i<numberOfElement;i++){
+				element.getElementsByClassName("catItem")[i].style.width="22%";
+			}
+			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="37%";
+			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="37%";
+			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="17%";
+			
+		}
+		/*if(odd == 0)
+		{
+			for(i = 0; i<numberOfElement;i++){
+				element.getElementsByClassName("catItem")[i].style.width="22%";
+			}
+		}
 		else if(numberOfElement%5==0)
 		{
 			for(i = 0; i<numberOfElement;i++){
@@ -108,7 +151,7 @@ $(document).ready(function(){
 			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="33%";
 			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="20%";
 			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="38%";
-		}
+		}*/
 	}
 	/*change width base on number of elements*/
 	
@@ -117,13 +160,24 @@ $(document).ready(function(){
 	function lastClick(){
 		
 		var element = document.getElementById("catContainer");
-		var numberOfElement = element.getElementsByClassName("catItem").length;		
+		var numberOfElement = element.getElementsByClassName("catItem").length;	
+		
+		/*script for demo add item*/	
 		var lastChildItem="<div class=\"catItem\"><a href=\"#\"><img src=\"assets/legal-struture.svg\" /><h6>Show More</h6></a></div>";
 		$("#catContainer").append(lastChildItem);
+		$("#catContainer").append(lastChildItem);
+		$("#catContainer").append(lastChildItem);
+		$("#catContainer").append(lastChildItem);
+		$("#catContainer").append(lastChildItem);
+		$("#catContainer").append(lastChildItem);
+		/*script for demo add item*/
+		
 		$(".lastChildCatItem").hide();
 		var showmore = $(".lastChildCatItem");
 		showmore.show();
 		$("#catContainer").append(showmore);
+		
+		/*resize block when add more block*/
 		changeWidthItem();
 	}
 	
@@ -147,6 +201,22 @@ $(document).ready(function(){
 	var display4 = document.getElementById("totalUser");
 	var number4 = {param:0};
 	var value4= document.getElementById("totalUser").getAttribute("value-to");
+	
+	var display5 = document.getElementById("id2");
+	var number5 = {param:0};
+	var value5= document.getElementById("id2").getAttribute("value-to");
+	
+	var display6 = document.getElementById("id3");
+	var number6 = {param:0};
+	var value6= document.getElementById("id3").getAttribute("value-to");
+	
+	var display7 = document.getElementById("id4");
+	var number7 = {param:0};
+	var value7= document.getElementById("id4").getAttribute("value-to");
+	
+	var display8 = document.getElementById("id5");
+	var number8 = {param:0};
+	var value8 = document.getElementById("id5").getAttribute("value-to");
 	/*
 	var duration = 8;
 	
@@ -194,6 +264,14 @@ $(document).ready(function(){
 	searched.start();
 	var totalUser = new CountUp('totalUser',0, value4, 0, 5, options);
 	totalUser.start();
+	var id2 = new CountUp('id2',0, value5, 0, 5, options);
+	id2.start();
+	var id3 = new CountUp('id3',0, value6, 0, 5, options);
+	id3.start();
+	var id4 = new CountUp('id4',0, value7, 0, 5, options);
+	id4.start();
+	var id5 = new CountUp('id5',0, value8, 0, 5, options);
+	id5.start();
 	
 });
 
