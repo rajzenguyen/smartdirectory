@@ -10,8 +10,22 @@ $(document).ready(function(){
 $(document).ready(function(){
 	
 	$("#companyPanel").hide();
+	$(".buttonTrigger").click(function(){
+		$(".buttonTrigger").hide();
+		$("input[name='txtSearchNavTxt']").show("SlideLeft");
+		$("button[name='btnSearchNavBtn']").show("SlideLeft");
+	});
 	
 	});
+
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
 $(document).ready(function(){
 	
 	$('.hideNoti').click(function(){
@@ -105,7 +119,7 @@ $(document).ready(function(){
 		var element = document.getElementById("catContainer");
 		var numberOfElement = element.getElementsByClassName("catItem").length;		
 		var lastChildItem="<div class=\"catItem\"><a href=\"#\"><img src=\"assets/legal-struture.svg\" /><h6>Show More</h6></a></div>";
-		$("#catContainer").append(lastChildItem);$("#catContainer").append(lastChildItem);$("#catContainer").append(lastChildItem);
+		$("#catContainer").append(lastChildItem);
 		$(".lastChildCatItem").hide();
 		var showmore = $(".lastChildCatItem");
 		showmore.show();

@@ -51,22 +51,22 @@
 	border:1px solid #fff;
 	background:none;
 	color:#fff;
-	border-right:none;
 	border-bottom-left-radius:40px;
 	border-top-left-radius:40px;
-	border-bottom-right-radius:1px;
-	border-top-right-radius:1px;
+	border-bottom-right-radius:40px;
+	border-top-right-radius:40px;
 	height:40px;
 }
 .navContent > ul > li > button{
 	border:1px solid #fff;
+	border:none;
 	border-left:none;
 	border-bottom-right-radius:40px;
 	border-top-right-radius:40px;
 	border-bottom-left-radius:1px;
 	border-top-left-radius:1px;
 	background:none;
-	margin-left:-25px;
+	margin-left:-50px;
 	color:#fff;
 	height:40px;
 }
@@ -176,6 +176,9 @@
 	border: solid #CCC thin;
 	color:#fff;
 	font-weight:200;
+}
+.navdown:hover{
+	color:#fff;
 }
 
 #about, #subMenu, #companyInfo
@@ -390,6 +393,7 @@
 }
 .footerItem:nth-child(2) button{
 	vertical-align:middle;
+	padding:10px 16px;
 }
 .footerItem:nth-child(2) h6{
 	color:#fff;
@@ -614,11 +618,10 @@
 	border:1px solid #000;
 	background:none;
 	color:#000;
-	border-right:none;
 	border-bottom-left-radius:40px !important;
 	border-top-left-radius:40px !important;
-	border-bottom-right-radius:1px;
-	border-top-right-radius:1px;
+	border-bottom-right-radius:40px;
+	border-top-right-radius:40px;
 	height:40px;
 	box-shadow:none !important;
      outline:none !important; 
@@ -635,12 +638,13 @@
 .topNavWhite .navContent > ul > li > button{
 	border:1px solid #000;
 	border-left:none;
+	border:none;
 	border-bottom-right-radius:40px !important;
 	border-top-right-radius:40px !important;
 	border-bottom-left-radius:1px;
 	border-top-left-radius:1px;
 	background:none;
-	margin-left:-25px;
+	margin-left:-50px;
 	color:#000;
 	height:40px;
 	box-shadow:none !important;
@@ -743,4 +747,26 @@
 }
 .botLine p{
 	color:#fff; font-size:12px; margin-bottom:0;
+}
+.buttonTrigger{
+	border:none !important;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    right: 100%;
+    margin-top: -1px;
+}
+.submenu{
+	border-radius:5px;
+}
+.submenu > li > a{
+	color:#06c;
+}
+.submenu > li > a:hover{
+	color:#fff;
+	background:#06c;
 }

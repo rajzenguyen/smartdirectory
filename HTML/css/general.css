@@ -5,8 +5,11 @@
 
 body{
 	font-family: 'Montserrat', sans-serif;
+	outline:none;
 }
-
+:focus{
+	outline:none;
+}
 h1,h2,h3,h4,h5,h6,h7{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -65,7 +68,7 @@ ul > li{
 	vertical-align:middle;
 }
 input, button {
-	padding:10px 16px;
+	padding:10px 35px 10px 16px;
 	border-radius:35px;
 	border:none;
 	background:#f8f9fb;
@@ -158,7 +161,7 @@ label{
 	width:200px;
 	padding:20px;
 	right:20px;
-	bottom:280px;
+	bottom:20px;
 	background:#fff;
 	position:fixed;
 	display:block;
