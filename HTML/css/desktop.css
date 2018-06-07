@@ -215,6 +215,18 @@
 	font-weight:400;
 	font-size:21px;
 }
+.lastChildCatItem{
+	border:2px dashed #ccc;
+	color:#ccc !important;
+}
+.lastChildCatItem h6{
+	color:#ccc !important;
+}
+.lastChildCatItem svg{
+	color:#ccc !important;
+	width:46px;
+	font-size:41px;
+}
 .aboutVision{
 	margin:50px;
 }
@@ -366,7 +378,7 @@
 .footerItem:nth-child(1){
 	background:#333;
 	padding-bottom:20px;
-	padding-top:80px;
+	padding-top:40px;
 }
 .footerItem:nth-child(2){
 	background:#666;
@@ -608,6 +620,14 @@
 	border-bottom-right-radius:1px;
 	border-top-right-radius:1px;
 	height:40px;
+	box-shadow:none !important;
+     outline:none !important; 
+     -webkit-box-shadow:none !important;
+}
+.topNavWhite .navContent > ul > li > input:focus:hover{
+	box-shadow:none !important;
+     outline:none !important; 
+     -webkit-box-shadow:none !important;
 }
 .topNavWhite img{
 	filter: none;
@@ -623,6 +643,9 @@
 	margin-left:-25px;
 	color:#000;
 	height:40px;
+	box-shadow:none !important;
+     outline:none !important; 
+     -webkit-box-shadow:none !important;
 }
 .aboutBlock1{
 	background:#f8f9fb; 
@@ -714,4 +737,10 @@
 }
 #menuLang{
 	display:none;
+}
+.botLine{
+	background:#666;
+}
+.botLine p{
+	color:#fff; font-size:12px; margin-bottom:0;
 }

@@ -103,25 +103,25 @@
 	<div class="container">
     	<h2>Industrial Category</h2>
         <div id="catContainer" class="catContainer">
-        	<div class="catItem" style="width:18%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Business Types</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:31%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Provinces/Cities</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:27%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Categories</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
@@ -133,59 +133,53 @@
                     <h6>Vestibul</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
+        	<div class="catItem">
             	<a href="#">
                 	<img src="assets/legal-struture.svg" />
                     <h6>Radio</h6>
                 </a>
             </div>
-        	<div class="catItem" style="width:12%;">
-            	<a href="#">
-                	<img src="assets/legal-struture.svg" />
-                    <h6>Radio</h6>
-                </a>
-            </div>
-        	<div class="catItem" style="width:12%;">
-            	<a href="#">
-                	<img src="assets/legal-struture.svg" />
-                    <h6>Radio</h6>
-                </a>
+        	<div class="catItem lastChildCatItem" onclick="lastClick()">
+            	
+                	<i class="fa fa-plus"></i>
+                    <h6>Show More</h6>
+                
             </div>
         </div>
     </div>
@@ -328,8 +322,8 @@
             </div>
         </div>
         <div class="clearfix"></div>
-        <div class="text-center">
-        	<p style="color:#06C; font-size:12px;">Copyright by NSO - 2018</p>
+        <div class="text-center botLine">
+        	<p>&copy; 2018 by smartdirectory.com - All rights reserved</p>
         </div>
 </div>
 
@@ -536,7 +530,7 @@
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="margin-top:20px; width:70%;">
     <div class="modal-content" style="">
-    	<div class="modalLeft" style="">
+    	<div class="modalLeft" style="height:530px;">
         	
           <div class="modal-header" style="border:none;">
             <h3 class="modal-title" id="loginLabel" style="display: contents;">Login</h3>            
@@ -560,7 +554,10 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="form-group">
-                    <input type="checkbox" name="rememberMe" value="remember" style="border-radius:5px;" /> Remember me
+                    <label class="customCheck">Remember me
+                      <input type="checkbox" checked="checked">
+                      <span class="checkmark"></span>
+                    </label> 
                 </div>
             </form>
           </div>
@@ -568,7 +565,7 @@
           	Don't have an account? <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#signup"><b> SIGN UP</b></a>
           </div>
         </div>
-        <div class="modalRight" style="">
+        <div class="modalRight" style="height:530px;">
         	<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -596,18 +593,24 @@
           <div class="modal-body">
             <div class="nav nav-tabs" style="border:none;">
             	<div style="float:left; width:50%;">
-                	<div class="">
-                	<input type="radio" name="accType" value="personal" data-toggle="tab" href="#personalPanel" /> <label class="col-form-label">Personal</label>
+                	<div id="personalToggle">
+                        <label class="customRadio">Personal
+                          <input type="radio" checked="checked" name="accType" value="personal">
+                          <span class="checkmarkRadio"></span>
+                        </label>
                     </div>
                 </div>
             	<div style="float:left; width:50%;">
-                	<div class="">
-                		<input type="radio" name="accType" value="company" data-toggle="tab" href="#companyPanel"/> <label class="col-form-label">Company</label>
+                	<div id="companyToggle">
+                        <label class="customRadio">Company
+                          <input type="radio" name="accType" value="company">
+                          <span class="checkmarkRadio"></span>
+                        </label>
                     </div>
                 </div>
             </div>
           	<div class="tab-content" style="margin-top:30px;">
-            	<div id="personalPanel" class="tab-pane active">
+            	<div id="personalPanel" >
                     <form>
                         <div class="form-group">
                             <label for="personalPhone" class="col-form-label">Phone Number</label>
@@ -618,7 +621,10 @@
                             <input type="password" class="form-control wrongInfo" id="personalPass" placeholder="Password" />
                         </div>
                         <div class="form-group">
-                            <input type="checkbox" name="agree" value="agree" /> By signing up here, I agree with <a href="#"><b>Terms of Use</b></a>
+                            <label class="customCheck"> By signing up here, I agree with <a href="#"><b>Terms of Use</b></a>
+                              <input type="checkbox" checked="checked">
+                              <span class="checkmark"></span>
+                            </label> 
                         </div>
                         <div class="form-group">
                             <button type="button" class="btn btn-primary form-control" id="btnPersonalSignIn" data-toggle="modal" data-dismiss="modal" data-target="#login" style="width:100%">Sign Up</button>
@@ -626,7 +632,7 @@
                         <div class="clearfix"></div>
                     </form>
                 </div>
-            	<div id="companyPanel" class="tab-pane">
+            	<div id="companyPanel">
                     <form>
                         <div class="form-group">
                             <label for="companyName" class="col-form-label">Your Company</label>
@@ -641,7 +647,11 @@
                             <input type="password" class="form-control" id="companyPass" placeholder="Password" />
                         </div>
                         <div class="form-group">
-                            <input type="checkbox" name="agree" value="agree" /> By signing up here, I agree with <a href="#">Terms of Use</a>
+                            
+                        <label class="customCheck">By signing up here, I agree with <a href="#">Terms of Use</a>
+                          <input type="checkbox" checked="checked">
+                          <span class="checkmark"></span>
+                        </label> 
                         </div>
                         <div class="form-group">
                             <button type="button" class="btn btn-primary form-control" style="width:100%">Sign Up</button>

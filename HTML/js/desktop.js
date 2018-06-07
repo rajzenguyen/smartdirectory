@@ -9,6 +9,11 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
 	
+	$("#companyPanel").hide();
+	
+	});
+$(document).ready(function(){
+	
 	$('.hideNoti').click(function(){
 		$('.hideNoti').parent(this).toggle("slow");
 	});
@@ -24,55 +29,93 @@ $(document).ready(function(){
 		
 	});
 	
+	$("#companyToggle").click(function(){
+		$("#companyPanel").show();
+		$("#personalPanel").hide();
+	});
+	
+	$("#personalToggle").click(function(){
+		
+		$("#companyPanel").hide();
+		$("#personalPanel").show();
+	});
 	
 	/*change width base on number of elements*/
-	var element = document.getElementById("catContainer");
-	var numberOfElement = element.getElementsByClassName("catItem").length;
-	var odd=numberOfElement%4;
-	if(odd == 0)
-	{
-		for(i = 0; i<numberOfElement;i++){
-			element.getElementsByClassName("catItem")[i].style.width="22%";
+	function changeWidthItem(){
+		var element = document.getElementById("catContainer");
+		var numberOfElement = element.getElementsByClassName("catItem").length;
+		var odd=numberOfElement%4;
+		if(odd == 0)
+		{
+			for(i = 0; i<numberOfElement;i++){
+				element.getElementsByClassName("catItem")[i].style.width="22%";
+			}
 		}
-	}
-	else if(numberOfElement%5==0)
-	{
-		for(i = 0; i<numberOfElement;i++){
-			element.getElementsByClassName("catItem")[i].style.width="17%";
+		else if(numberOfElement%5==0)
+		{
+			for(i = 0; i<numberOfElement;i++){
+				element.getElementsByClassName("catItem")[i].style.width="17%";
+			}
 		}
-	}
-	else if(odd == 1 && numberOfElement < 9){
-		for(i = 0; i<numberOfElement;i++){
-			element.getElementsByClassName("catItem")[i].style.width="17%";
+		else if(odd == 1 && numberOfElement < 9){
+			for(i = 0; i<numberOfElement;i++){
+				element.getElementsByClassName("catItem")[i].style.width="17%";
+			}
 		}
-	}
-	else if(odd == 1 && numberOfElement >=9)
-	{
-		for(i = 0; i<numberOfElement-4;i++){
-			element.getElementsByClassName("catItem")[i].style.width="22%";
+		else if(odd == 1 && numberOfElement >=9)
+		{
+			for(i = 0; i<numberOfElement-4;i++){
+				element.getElementsByClassName("catItem")[i].style.width="22%";
+			}
+			element.getElementsByClassName("catItem")[numberOfElement-5].style.width="18%";
+			element.getElementsByClassName("catItem")[numberOfElement-4].style.width="24%";
+			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="14%";
+			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="14%";
+			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="15%";
 		}
-		element.getElementsByClassName("catItem")[numberOfElement-5].style.width="18%";
-		element.getElementsByClassName("catItem")[numberOfElement-4].style.width="24%";
-		element.getElementsByClassName("catItem")[numberOfElement-3].style.width="14%";
-		element.getElementsByClassName("catItem")[numberOfElement-2].style.width="14%";
-		element.getElementsByClassName("catItem")[numberOfElement-1].style.width="15%";
-	}
-	else if(odd == 2)
-	{
-		for(i = 0; i<numberOfElement;i++){
-			element.getElementsByClassName("catItem")[i].style.width="17%";
+		else if(odd == 2)
+		{
+			for(i = 0; i<numberOfElement;i++){
+				element.getElementsByClassName("catItem")[i].style.width="17%";
+			}
+			element.getElementsByClassName("catItem")[numberOfElement-7].style.width="33%";
+			element.getElementsByClassName("catItem")[numberOfElement-6].style.width="20%";
+			element.getElementsByClassName("catItem")[numberOfElement-5].style.width="38%";
+			element.getElementsByClassName("catItem")[numberOfElement-4].style.width="18%";
+			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="30%";
+			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="24%";
+			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="15%";
 		}
-	}
-	else if(odd == 3)
-	{
-		for(i = 0; i<numberOfElement-3;i++){
-			element.getElementsByClassName("catItem")[i].style.width="22%";
+		else if(odd == 3)
+		{
+			for(i = 0; i<numberOfElement-3;i++){
+				element.getElementsByClassName("catItem")[i].style.width="22%";
+			}
+			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="33%";
+			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="20%";
+			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="38%";
 		}
-		element.getElementsByClassName("catItem")[numberOfElement-3].style.width="33%";
-		element.getElementsByClassName("catItem")[numberOfElement-2].style.width="20%";
-		element.getElementsByClassName("catItem")[numberOfElement-1].style.width="38%";
 	}
 	/*change width base on number of elements*/
+	
+	changeWidthItem();
+	
+	function lastClick(){
+		
+		var element = document.getElementById("catContainer");
+		var numberOfElement = element.getElementsByClassName("catItem").length;		
+		var lastChildItem="<div class=\"catItem\"><a href=\"#\"><img src=\"assets/legal-struture.svg\" /><h6>Show More</h6></a></div>";
+		$("#catContainer").append(lastChildItem);$("#catContainer").append(lastChildItem);$("#catContainer").append(lastChildItem);
+		$(".lastChildCatItem").hide();
+		var showmore = $(".lastChildCatItem");
+		showmore.show();
+		$("#catContainer").append(showmore);
+		changeWidthItem();
+	}
+	
+	$(".lastChildCatItem").click(function(){
+		lastClick();
+	});
 	
 	
 	var display1 = document.getElementById("companies");
