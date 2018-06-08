@@ -5,10 +5,10 @@
 
 body{
 	font-family: 'Montserrat', sans-serif;
-	outline:none;
+	outline:none !important;
 }
 :focus{
-	outline:none;
+	outline:none !important;
 }
 h1,h2,h3,h4,h5,h6,h7{
 	font-family: 'Montserrat', sans-serif;
@@ -75,8 +75,17 @@ input, button {
 	box-shadow:none;
      outline:none; 
      -webkit-box-shadow:none;
+	 height:50px;
 }
-.goTop > a{
+textarea{
+	border:1px solid #CCC;
+	border-radius:8px;
+	background:#f8f9fb;
+}
+.bold{
+	font-weight:600;
+}
+.gottopping > a{
 	padding:16px 20px;
 	font-size:20px;
 	bottom:15px;
@@ -85,6 +94,9 @@ input, button {
 	background:#06C;
 	color:#fff;
 	border-radius:40px;
+}
+.gottopping:hover{
+	cursor:pointer;
 }
 label{
 	margin-left:15px;
@@ -161,7 +173,7 @@ label{
 	width:200px;
 	padding:20px;
 	right:20px;
-	bottom:20px;
+	bottom:100px;
 	background:#fff;
 	position:fixed;
 	display:block;

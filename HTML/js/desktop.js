@@ -13,10 +13,13 @@ $(document).ready(function(){
 	$("#companyPanel").hide();
 	$(".buttonTrigger").click(function(){
 		$(".buttonTrigger").hide();
-		$("input[name='txtSearchNavTxt']").show("SlideLeft");
-		$("button[name='btnSearchNavBtn']").show("SlideLeft");
+		$("input[name='txtSearchNavTxt']").show();
+		$("button[name='btnSearchNavBtn']").show();
 	});
 	
+	$(".submenu").click(function(){
+	$('.dropdown-submenu a.test').next('ul').toggle();
+	});
 });
 
 $(document).ready(function(){
@@ -29,8 +32,25 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	
+	
+	/*show scroll to top when scroll*/
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+			$('.gottopping').show();
+		} else {
+			$('.gottopping').hide();
+		}
+	}
+	/*show scroll to top when scroll*/
+	
+	$('.gottopping').click(function(){
+		jQuery('html,body').animate({scrollTop:0},800);
+	});
+	
 	$('.hideNoti').click(function(){
-		$('.hideNoti').parent(this).toggle("slow");
+		$('.hideNoti').parent(this).toggle();
 	});
 	
 	
@@ -41,7 +61,6 @@ $(document).ready(function(){
 	
 	$('#menuLang').click(function(){
 		$('#menuLang').toggle();
-		
 	});
 	
 	$("#companyToggle").click(function(){
@@ -55,6 +74,32 @@ $(document).ready(function(){
 		$("#personalPanel").show();
 	});
 	
+	/*cut down the content of notification to match 85 characters*/
+	/*cut down the content of notification to match 85 characters*/
+	/*cut down the content of notification to match 85 characters*/
+	function cutDownLengthOfNoti(){
+		var n = $(".notiItemContent h7").length;
+		for(i = 0; i<n ;i++)
+		{
+			var n = $(".notiItemContent h7").eq(i).text().length;
+			if(n > 85)
+			{
+				var subs = $(".notiItemContent h7").eq(i).text().substr(0,82) + ".....";
+				$(".notiItemContent h7").eq(i).text(subs);
+			}
+		}
+	}
+	cutDownLengthOfNoti();
+	
+	/*cut down the content of notification to match 85 characters*/
+	/*cut down the content of notification to match 85 characters*/
+	/*cut down the content of notification to match 85 characters*/
+	/*cut down the content of notification to match 85 characters*/
+	
+	
+	/*change width base on number of elements*/
+	/*change width base on number of elements*/
+	/*change width base on number of elements*/
 	/*change width base on number of elements*/
 	function changeWidthItem(){
 		var element = document.getElementById("catContainer");
@@ -153,10 +198,21 @@ $(document).ready(function(){
 			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="38%";
 		}*/
 	}
-	/*change width base on number of elements*/
 	
 	changeWidthItem();
+	/*change width base on number of elements*/
+	/*change width base on number of elements*/
+	/*change width base on number of elements*/
+	/*change width base on number of elements*/
+	/*change width base on number of elements*/
+	/*change width base on number of elements*/
 	
+	
+	/*add more filter to homepage*/
+	/*add more filter to homepage*/
+	/*add more filter to homepage*/
+	/*add more filter to homepage*/
+	/*add more filter to homepage*/
 	function lastClick(){
 		
 		var element = document.getElementById("catContainer");
@@ -164,11 +220,6 @@ $(document).ready(function(){
 		
 		/*script for demo add item*/	
 		var lastChildItem="<div class=\"catItem\"><a href=\"#\"><img src=\"assets/legal-struture.svg\" /><h6>Show More</h6></a></div>";
-		$("#catContainer").append(lastChildItem);
-		$("#catContainer").append(lastChildItem);
-		$("#catContainer").append(lastChildItem);
-		$("#catContainer").append(lastChildItem);
-		$("#catContainer").append(lastChildItem);
 		$("#catContainer").append(lastChildItem);
 		/*script for demo add item*/
 		
@@ -184,8 +235,20 @@ $(document).ready(function(){
 	$(".lastChildCatItem").click(function(){
 		lastClick();
 	});
+	/*add more filter to homepage*/
+	/*add more filter to homepage*/
+	/*add more filter to homepage*/
+	/*add more filter to homepage*/
+	/*add more filter to homepage*/
 	
 	
+	
+	
+	/*running number for homepage*/
+	/*running number for homepage*/
+	/*running number for homepage*/
+	/*running number for homepage*/
+	/*running number for homepage*/
 	var display1 = document.getElementById("companies");
 	var number1 = {param:0};
 	var value1= document.getElementById("companies").getAttribute("value-to");
@@ -272,6 +335,13 @@ $(document).ready(function(){
 	id4.start();
 	var id5 = new CountUp('id5',0, value8, 0, 5, options);
 	id5.start();
+	
+	
+	/*running number for homepage*/
+	/*running number for homepage*/
+	/*running number for homepage*/
+	/*running number for homepage*/
+	/*running number for homepage*/
 	
 });
 

@@ -15,7 +15,7 @@
 	float:left;
 	margin:auto 0;
 	height:100%;
-	margin-left:40px;
+	margin-left:0px;
 }
 .navContent{
 	float:right;
@@ -485,6 +485,36 @@
 .guideNav > a{
 	color:#fff;
 }
+.closeButton{
+	top: 15px; 
+	right: 15px; 
+	position: absolute; 
+	opacity:0.8; 
+	font-size:28px;
+}
+#forgot .modal-footer a{
+	font-weight:600;
+	float:right; 
+	margin-bottom:10px;
+	
+}
+#forgot .modal-footer button{
+	width:46%;
+	
+}
+#forgot .returnButton{
+	margin-right:10px;
+	float:left;
+}
+
+#forgot .returnButton:hover{
+	color:#000 !important;
+	border:1px solid #666;
+}
+#forgot .nextButton{
+	margin-left:10px;
+	float:right;
+}
 .companyIntro{
 	padding:10px 10px 20px 20px;
 	float:left;
@@ -706,10 +736,12 @@
 }
 .rightColAbout p{
 	font-size:14px; line-height:21px; color:#999;
+	margin-bottom:55px;
 }
 .rightColAbout img{
 	width:100%;
 	border-radius:16px;
+	margin-bottom:16px;
 }
 .contactForm{
 	box-shadow: 0px 3px 18px -10px rgba(0,0,0,1); float:left; height:797px;
@@ -794,4 +826,53 @@
 .submenu > li > a:hover{
 	color:#fff;
 	background:#06c;
+}
+.notiList{
+	width:70%;
+	margin:40px auto;
+}
+.notiItem{
+	height:60px;
+	padding:10px 20px;
+	float:left;
+	width:100%;
+}
+.notiItemImg{
+	float:left;
+	margin-right:20px;
+	width:6%;
+	min-width:40px;
+	max-width:40px;
+}
+.notiItemImg > img{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+}
+.notiItemContent{
+	float:left;
+	width:85%;
+}
+.notiItemContent h7{
+	font-size:14px;
+	line-height:21px;
+	font-weight:500;
+	color:#333;
+	width:100%;
+	float:left;
+}
+.notiItemContent p{
+	font-size:12px;
+	font-weight:400;
+	line-height:20px;
+	margin:0;
+	color:#ccc;
+	float:left;
+}
+.highlight{
+	background:#efecec;;
+}
+
+.highlight p{
+	color:#333;
 }
