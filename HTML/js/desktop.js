@@ -4,8 +4,34 @@ $(document).ready(function(){
 	  centerPadding: '60px',
 	  slidesToShow: 3
 	});
+		
+});
+
+$(document).ready(function(){   
+	$('.reviewSlick').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  centerMode: true,
+	  variableWidth: true,
+	  arrows: false
+	});   
+		
+});
+
+$(document).ready(function(){
 	
-	
+	$('.reviewSlick2').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 2,
+	  centerMode: false,
+	  variableWidth: true,
+	  arrows: false
+	});
+		
 });
 
 $(document).ready(function(){
@@ -264,7 +290,7 @@ $(document).ready(function(){
 	var display4 = document.getElementById("totalUser");
 	var number4 = {param:0};
 	var value4= document.getElementById("totalUser").getAttribute("value-to");
-	
+	/*
 	var display5 = document.getElementById("id2");
 	var number5 = {param:0};
 	var value5= document.getElementById("id2").getAttribute("value-to");
@@ -280,7 +306,7 @@ $(document).ready(function(){
 	var display8 = document.getElementById("id5");
 	var number8 = {param:0};
 	var value8 = document.getElementById("id5").getAttribute("value-to");
-	/*
+	
 	var duration = 8;
 	
 	function count() {
@@ -327,6 +353,7 @@ $(document).ready(function(){
 	searched.start();
 	var totalUser = new CountUp('totalUser',0, value4, 0, 5, options);
 	totalUser.start();
+	/*
 	var id2 = new CountUp('id2',0, value5, 0, 5, options);
 	id2.start();
 	var id3 = new CountUp('id3',0, value6, 0, 5, options);
@@ -337,7 +364,7 @@ $(document).ready(function(){
 	id5.start();
 	
 	
-	/*running number for homepage*/
+	running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/

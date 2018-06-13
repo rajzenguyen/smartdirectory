@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
 <link rel="stylesheet" href="css/general.css" type="text/css" />
 <link rel="stylesheet" href="css/desktop.css" type="text/css" />
-
+<link rel="stylesheet" href="slick/slick.css" type="text/css" />
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 <div class="topNav">
 	<div class="container">
         <div class="navLogo">
-            <a href="/"><img src="images/logo.png" width="150px" /></a> 
+            <a href="/"><img src="images/logo.png" height="60px" /></a> 
         </div>
         <div class="navContent">
             <ul>
@@ -34,13 +34,13 @@
                     </a>
 
                       <div class="dropdown-menu" aria-labelledby="user">
-                      <div class="smenu">
-                        <ul>
-                        	<li><a href="#" data-toggle="modal" data-target="#login">Sign In</a></li>
-                        	<li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
-                        	<li><a href="#" style="color:#F90;">Logout</a></li>
-                        </ul>
-                      </div>
+                          <div class="smenu">
+                            <ul>
+                                <li><a href="#" data-toggle="modal" data-target="#login">Sign In</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
+                                <li><a href="#" style="color:#F90;">Logout</a></li>
+                            </ul>
+                          </div>
                       </div>
                       
                 </li>
@@ -87,10 +87,10 @@
     	<div class="searchInfo">
     		<h1>Welcome to Smart Business Directory</h1>
             <input type="text" name="txtSearch" placeholder="Enter company name, industry, product, etc..." />
-            <button type="submit" name="btnSearch"><i class="fa fa-search"></i></button>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p><br /><br /><br />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><br />
-            <a class="navdown"><i class="fa fa-angle-down"></i></a>
+            <button type="submit" name="btnSearch"><img src="assets/search.svg" /></button>
+            <p class="bold500">* Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi con</p><br /><br /><br />
+            <p class="bold300 small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p><br />
+            <a class="navdown" href="#"><i class="fa fa-angle-down"></i></a>
         </div>
     </div>
 </div>
@@ -108,13 +108,13 @@
             </div>
         	<div class="catItem">
             	<a href="#">
-                	<img src="assets/legal-struture.svg" />
+                	<img src="assets/target.svg" />
                     <h6>Provinces/Cities</h6>
                 </a>
             </div>
         	<div class="catItem">
             	<a href="#">
-                	<img src="assets/legal-struture.svg" />
+                	<img src="assets/city.svg" />
                     <h6>Categories</h6>
                 </a>
             </div>
@@ -196,7 +196,7 @@
         <div class="aboutSmartContainer">
         	<div class="aboutSmartItem">
                 <div class="aboutSmartContent">
-                    <img src="images/icon1.svg" />
+                    <img src="assets/group-7.svg" />
                     <h2>What</h2>
                     <h5>is Smart Directory?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -204,7 +204,7 @@
             </div>
         	<div class="aboutSmartItem">
                 <div class="aboutSmartContent">
-                    <img src="images/icon2.svg" />
+                    <img src="assets/group-8.svg" />
                     <h2>Who</h2>
                     <h5>is it for?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -212,7 +212,7 @@
             </div>
             <div class="aboutSmartItem">
                 <div class="aboutSmartContent">
-                    <img src="images/icon3.svg" />
+                    <img src="assets/group-9.svg" />
                     <h2>How</h2>
                     <h5>can your business get benefits from it?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -221,87 +221,258 @@
             <div class="clearfix"></div>
         </div>
     </div>
-        
-    <div class="container aboutStatistic">
+</div>
+</div>
+
+<div id="statictis" class="aboutStatistic">
+    <div class="container ">
     	<h2>Donec facilisis tortor ut augue lacinia, at.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div class="aboutSmartContainer">
-        	<div class="aboutStatisticItem">
-                <div class="aboutStatisticContent">
-                	<div style="float:left; border-top:3px solid #06F; width:30%; margin-top:5px;"></div>
-                	<h5>Companies</h5>
-                    <h2 class="counter" id="companies" value-to="1234">1234</h2>
-                    <img src="assets/legal-struture.svg" />
+        	<div class="staContent" style="">
+            	<div class="staItem" style="width:426px;">
+                	<div class="titleSta" style="">
+                    	<img src="assets/home.svg" style="float:left;filter: invert(1) sepia(1) saturate(141) hue-rotate(191deg);" /> <h7 style="float:left;">&nbsp;Provinces/ Cities</h7>
+                    </div>
+                    <div class="numberSta"><h4>10968</h4></div>
+                    <p class="small" style="top: 70px;left: 40px;position: relative;color:#1046f1;display: inline-block;">10968</p>
+                    <div class="smallStaNumber" style="background: #06c;top: 65px;left: 310px;"></div>
+                    <img class="staImgBG" src="assets/bg1.svg" width="100%" height="157"  />
                 </div>
-            </div>
-        	<div class="aboutStatisticItem">
-                <div class="aboutStatisticContent">
-                	<div style="float:left; border-top:3px solid #6C0; width:40%; margin-top:5px;"></div>
-                	<h5>Companies</h5>
-                    <h2 class="counter" id="cities" value-to="3234">3234</h2>
-                    <img src="assets/legal-struture.svg" />
+                
+            	<div class="staItem" style=" width:190px;">
+                	<div class="titleSta" style="">
+                    	<img src="assets/city.svg" style="float:left;filter: invert(1) sepia(1) saturate(40) grayscale(0);" /> <h7 style="float:left;">&nbsp;Companies</h7>
+                    </div>
+                    <div class="numberSta"><h4>10968</h4></div>
+                    <p class="small" style="top: 103px;left: -50px;position: relative;color:#EE6F11;display: inline-block;">10968</p>
+                    <div class="smallStaNumber" style="background: #EE6F11;top: 92px;left: 108px;"></div>
+                    <img class="staImgBG" src="assets/bg2.svg" width="100%" height="157" />
                 </div>
-            </div>
-        	<div class="aboutStatisticItem">
-                <div class="aboutStatisticContent">
-                	<div style="float:left; border-top:3px solid #C3C; width:60%; margin-top:5px;"></div>
-                	<h5>Companies</h5>
-                    <h2 class="counter" id="searched" value-to="4234">4234</h2>
-                    <img src="assets/legal-struture.svg" />
+                
+                
+            	<div class="staItem" style="width:190px;">
+                	<div class="titleSta">
+                    	<img src="assets/0-icon-holder.svg" style="float:left;" /> <h7 style="float:left;">&nbsp;Total ABC</h7>
+                    </div>
+                    <div class="numberSta"><h4>10968</h4></div>
+                    <p class="small" style="top: 83px;left: -50px;position: relative;color:#34DAA8;display: inline-block;">10968</p>
+                    <div class="smallStaNumber" style="background: #34DAA8;top: 72px;left: 108px;"></div>
+                    <img class="staImgBG" src="assets/bg3.svg" width="100%" height="157" />
                 </div>
-            </div>
-        	<div class="aboutStatisticItem">
-                <div class="aboutStatisticContent">
-                	<div style="float:left; border-top:3px solid #F90; width:80%; margin-top:5px;"></div>
-                	<h5>Companies</h5>
-                    <h2 class="counter" id="totalUser" value-to="5234">5234</h2>
-                    <img src="assets/legal-struture.svg" />
+                
+            	<div class="staItem" style="width:270px;">
+                	<div class="titleSta">
+                    	<img src="assets/rectangle.svg" style="float:left;" /> <h7 style="float:left;">&nbsp;Total ABC</h7>
+                    </div>
+                    <div class="numberSta"><h4>10968</h4></div>
+                    <p class="small" style="top: 102px;left: -94px;position: relative;color:#CC0066;display: inline-block;">10968</p>
+                    <div class="smallStaNumber" style="background: #CC0066;top: 92px;left: 108px;"></div>
+                    <img class="staImgBG" src="assets/bg4.svg" width="100%" height="157"/>
                 </div>
+            	<div class="clearfix"></div>
             </div>
-        	<div class="aboutStatisticItem">
-                <div class="aboutStatisticContent">
-                	<div style="float:left; border-top:3px solid #F90; width:80%; margin-top:5px;"></div>
-                	<h5>Companies</h5>
-                    <h2 class="counter" id="id2" value-to="5234">5234</h2>
-                    <img src="assets/legal-struture.svg" />
+            
+            
+            <div class="divider" style=""></div>
+            
+            
+        	<div class="staContent2">
+                <div class="aboutStatisticItem">
+                    <div class="aboutStatisticContent">
+                        <div style="float:left; border-top:3px solid #06F; width:30%; margin-top:5px;"></div>
+                        <h5>Companies</h5>
+                        <h2 class="counter" id="companies" value-to="1234">1234</h2>
+                        <img src="assets/search.svg" />
+                    </div>
                 </div>
-            </div>
-        	<div class="aboutStatisticItem">
-                <div class="aboutStatisticContent">
-                	<div style="float:left; border-top:3px solid #F90; width:80%; margin-top:5px;"></div>
-                	<h5>Companies</h5>
-                    <h2 class="counter" id="id3" value-to="5234">5234</h2>
-                    <img src="assets/legal-struture.svg" />
+                <div class="aboutStatisticItem">
+                    <div class="aboutStatisticContent">
+                        <div style="float:left; border-top:3px solid #6C0; width:40%; margin-top:5px;"></div>
+                        <h5>Companies</h5>
+                        <h2 class="counter" id="cities" value-to="3234">3234</h2>
+                        <img src="assets/profile.svg" />
+                    </div>
                 </div>
-            </div>
-        	<div class="aboutStatisticItem">
-                <div class="aboutStatisticContent">
-                	<div style="float:left; border-top:3px solid #F90; width:80%; margin-top:5px;"></div>
-                	<h5>Companies</h5>
-                    <h2 class="counter" id="id4" value-to="5234">5234</h2>
-                    <img src="assets/legal-struture.svg" />
+                <div class="aboutStatisticItem">
+                    <div class="aboutStatisticContent">
+                        <div style="float:left; border-top:3px solid #C3C; width:60%; margin-top:5px;"></div>
+                        <h5>Companies</h5>
+                        <h2 class="counter" id="searched" value-to="4234">4234</h2>
+                        <img src="assets/eye.svg" />
+                    </div>
                 </div>
-            </div>
-        	<div class="aboutStatisticItem">
-                <div class="aboutStatisticContent">
-                	<div style="float:left; border-top:3px solid #F90; width:80%; margin-top:5px;"></div>
-                	<h5>Companies</h5>
-                    <h2 class="counter" id="id5" value-to="5234">5234</h2>
-                    <img src="assets/legal-struture.svg" />
+                <div class="aboutStatisticItem">
+                    <div class="aboutStatisticContent">
+                        <div style="float:left; border-top:3px solid #F90; width:80%; margin-top:5px;"></div>
+                        <h5>Companies</h5>
+                        <h2 class="counter" id="totalUser" value-to="5234">5234</h2>
+                        <img src="assets/0-icon-holder.svg" />
+                    </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
         </div>
     </div>
-    
 </div>
+
+<div class="customer">
+	<div class="container">
+    	<h2>Customer Review</h2>
+        
+        <div class="customerNav nav nav-tabs">
+            	<h7 data-toggle="tab" href="#ourPartner">Our Partners</h7>
+                <h7 data-toggle="tab" href="#ourCustomer">Our Customers</h7>
+                <h7 data-toggle="tab" href="#ourReview">Customer Review</h7>
+        </div>
+        <div class="tab-content">
+            <div id="ourPartner" class="customerPanel tab-pane active">
+                <img src="assets/logo-1@2x.png" />
+                <img src="assets/logo-2@2x.png" />
+                <img src="assets/logo-1@2x.png" />
+                <img src="assets/logo-2@2x.png" />
+                <img src="assets/logo-1@2x.png" />
+                <img src="assets/logo-2@2x.png" />
+                <img src="assets/logo-1@2x.png" />
+                <img src="assets/logo-2@2x.png" />
+            </div>
+            
+            <div id="ourCustomer" class="customerPanel tab-pane">
+                <img src="assets/logo-1@2x.png" />
+                <img src="assets/logo-1@2x.png" />
+                <img src="assets/logo-2@2x.png" />
+                <img src="assets/logo-1@2x.png" />
+                <img src="assets/logo-2@2x.png" />
+                <img src="assets/logo-2@2x.png" />
+                <img src="assets/logo-1@2x.png" />
+                <img src="assets/logo-2@2x.png" />
+            </div>
+            
+            <div id="ourReview" class="customerPanel tab-pane">
+            	
+            	<div class="reviewSlick">
+                    <div class="reviewDiv">
+                        <div class="reviewAva">
+                            <img src="assets/rectangle-31-copy.jpg" />
+                        </div>
+                        <div class="reviewContent">
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                        </div>
+                    </div>
+                    
+                    <div class="reviewDiv">
+                        <div class="reviewAva">
+                            <img src="assets/rectangle-31-copy.jpg" />
+                        </div>
+                        <div class="reviewContent">
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                        </div>
+                    </div>
+                    
+                    <div class="reviewDiv">
+                        <div class="reviewAva">
+                            <img src="assets/rectangle-31-copy.jpg" />
+                        </div>
+                        <div class="reviewContent">
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reviewSlick2">
+                    <div class="reviewDiv">
+                        <div class="reviewAva">
+                            <img src="assets/rectangle-31-copy.jpg" />
+                        </div>
+                        <div class="reviewContent">
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                        </div>
+                    </div>
+                    
+                    <div class="reviewDiv">
+                        <div class="reviewAva">
+                            <img src="assets/rectangle-31-copy.jpg" />
+                        </div>
+                        <div class="reviewContent">
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                        </div>
+                    </div>
+                    
+                    <div class="reviewDiv">
+                        <div class="reviewAva">
+                            <img src="assets/rectangle-31-copy.jpg" />
+                        </div>
+                        <div class="reviewContent">
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <img src="assets/star-copy-2.svg" />&nbsp;
+                            <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+            </div>
+            
+        </div>
+        
+    </div>
 </div>
 
 <div id="footer">
     	<div class="footerItem">
         	<div class="container">
-                <div class="footerLeftContent">
+                <div class="col-md-3 col-sm-3">
                     <img src="images/logo.png" style="width:100%;" />
+                </div>
+                <div class="col-md-3 col-sm-3">
+                	<p class="bold">CONTACT INFO</p>
+                    <p class="small">
+                    096-295-1665<br />165-718-7089<br />yvette_dare@yahoo.com<br />62 Kautzer Rest Apt. 429
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <p class="bold">SUBSCRIBE NOW</p>
+                    <input type="text" name="txtSubscribe" placeholder="Enter your email..." />
+                    <button type="button" class="btn-primary" name="btnSubscribe"> <img src="assets/arrow-right.svg" style="transform:rotate(180deg);filter: invert(1) sepia(1) saturate(141) hue-rotate(191deg);" /> </button>
+                </div>
+                <div class="col-md-3 col-sm-3 linkWith">
+                    <p class="bold">LINK WITH</p>
+                    <img src="assets/dribbble.svg" />
+                    <img src="assets/booking.svg" />
+                    <img src="assets/envato.svg" />
+                    <img src="assets/envato.svg" />
+                </div>
+                <div class="clearfix"></div>
+            </div>
+		</div>
+        <div class="footerItem text-center">
+        	<div class="container">
+            	<div class="footerLeftContent">
+                	<p class="small" style="vertical-align:middle;">&copy; 2018 by smartdirectory.com. All rights reserved</p>
                 </div>
                 <div class="footerRightContent">
                     <ul class="listSubMenu">
@@ -312,19 +483,11 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="clearfix"></div>
-            </div>
-		</div>
-        <div class="footerItem text-center">
-        	<div class="container">
-                <h6>Subscribe Now</h6>
-                <input type="text" name="txtSubscribe" placeholder="Enter your email..." />
-                <button type="button" class="btn-primary" name="btnSubscribe">Subscribe</button>
             </div>
         </div>
         <div class="clearfix"></div>
         <div class="text-center botLine">
-        	<p>&copy; 2018 by smartdirectory.com - All rights reserved</p>
+        	
         </div>
 </div>
 
@@ -545,7 +708,7 @@
                 </div>
                 <div class="clearfix"></div>
                 <div class="form-group">
-                    <button type="button" class="btn btn-primary form-control" style="width:100%">Login</button>
+                    <button type="button" class="btn btn-primary form-control" style="width:75%">Login</button>
                 </div>
                 <div class="clearfix"></div>
                 <div class="form-group">
@@ -578,7 +741,7 @@
 
 <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signupLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="margin-top:20px; width:70%;">
-    <div class="modal-content" style="">
+    <div class="modal-content">
     	<div class="modalLeft" style="">
         	
           <div class="modal-header" style="border:none;">
@@ -622,7 +785,7 @@
                             </label> 
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary form-control" id="btnPersonalSignIn" data-toggle="modal" data-dismiss="modal" data-target="#login" style="width:100%">Sign Up</button>
+                            <button type="button" class="btn btn-primary form-control" id="btnPersonalSignIn" data-toggle="modal" data-dismiss="modal" data-target="#login" style="width:75%">Sign Up</button>
                         </div>
                         <div class="clearfix"></div>
                     </form>
@@ -649,7 +812,7 @@
                         </label> 
                         </div>
                         <div class="form-group">
-                            <button type="button" class="btn btn-primary form-control" style="width:100%">Sign Up</button>
+                            <button type="button" class="btn btn-primary form-control" style="width:75%">Sign Up</button>
                         </div>
                         <div class="clearfix"></div>
                     </form>
@@ -696,6 +859,7 @@
 <script src="js/jquery.counterup.min.js"></script>
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/fontawesome-all.js"></script>
+<script src="slick/slick.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/countUp.js"></script>
 <script src="js/desktop.js"></script>
