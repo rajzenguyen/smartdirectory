@@ -19,50 +19,47 @@
 <div class="topNav">
 	<div class="container">
         <div class="navLogo">
-            <img src="images/logo.png" width="150px" />
+            <a href="/"><img src="images/logo.png" height="100%" /></a> 
         </div>
         <div class="navContent">
             <ul>
                 <li class="searchBox">
-                      <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." />
-                      <button type="button" name="btnSearchNavBtn" ><i class="fa fa-search"></i></button>
+                      <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
+                      <button type="button" name="btnSearchNavBtn" style="display:none;" ><img src="assets/search.svg" /></button>
+                      <button type="button" name="buttonTrigger" class="buttonTrigger" ><img src="assets/search.svg" /></button>
                 </li>
                 <li>
-                	<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       <img src="assets/profile.svg" width="18px" class="iconSVG whiteSVG" />
+                	<a class="dropdown-toggle" href="#" role="button" id="user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <img src="assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
                     </a>
 
                       <div class="dropdown-menu" aria-labelledby="user">
-                      <div class="smenu">
-                        <ul>
-                        	<li><a href="#" data-toggle="modal" data-target="#login">Sign In</a></li>
-                        	<li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
-                        	<li><a href="#" style="color:#F90;">Logout</a></li>
-                        </ul>
-                      </div>
+                          <div class="smenu">
+                            <ul>
+                                <li><a href="#" data-toggle="modal" data-target="#login">Sign In</a></li>
+                                <li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
+                                <li><a href="#" style="color:#F90;">Logout</a></li>
+                            </ul>
+                          </div>
                       </div>
                       
-                    <div id="menuLang" class="dropdown-menu">
-                                      <div class="smenu">
-                                        <ul>
-                                            <li><a href="#">English</a></li>
-                                            <li><a href="#">Tiếng Việt</a></li>
-                                        </ul>
-                                      </div>
-                                  </div>
                 </li>
                 <li>
-                	<a  class="btn btn-secondary dropdown-toggle" href="#" role="button" id="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    	<i class="fa fa-bars"></i>
+                	<a  class="dropdown-toggle" href="#" role="button" id="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    	<img src="assets/burger.svg" width="24px" height="24px" />
                     </a>     
                     <div class="dropdown-menu" aria-labelledby="menu">
                       <div class="smenu">
                         <ul>
-                        	<li id="lang">
-                                <a href="#">English</a>
-                  			</li>
-                        	<li><a href="#">Fail</a></li>
-                        	<li><a href="#">Success</a></li>
+                        	<li class="dropdown-submenu">
+                                <a class="test" tabindex="-1" href="#">Language: English <span class="caret"></span></a>
+                                <ul class="dropdown-menu submenu">
+                                  <li><a tabindex="-1" href="#">English</a></li>
+                                  <li><a tabindex="-1" href="#">Vietnamese</a></li>
+                                </ul>
+                              </li>
+                        	<li><a href="#" data-toggle="modal" data-target="#fail">Fail</a></li>
+                        	<li><a href="#" data-toggle="modal" data-target="#success">Success</a></li>
                         	<li><a href="FAQ.html">F.A.Q</a></li>
                         	<li><a href="#" data-toggle="modal" data-target="#feedback">Feedback</a></li>
                         	<li><a href="#">Contact Us</a></li>
@@ -71,9 +68,6 @@
                                   
                       </div>
                     </div>
-                </li>
-                <li>
-                    
                 </li>
             </ul>
             

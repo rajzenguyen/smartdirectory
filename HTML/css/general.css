@@ -10,6 +10,25 @@ body{
 :focus{
 	outline:none !important;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #CCC; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #999; 
+}
 h1,h2,h3,h4,h5,h6,h7{
 	font-family: 'Montserrat', sans-serif;
 }
@@ -61,6 +80,14 @@ ul{
 p.small{
 	font-size:14px;
 	line-height:21px;
+}
+p.ssmall{
+	font-size:12px;
+	line-height:18px;
+}
+p.usmall{
+	font-size:10px;
+	line-height:16px;
 }
 ul > li{
 	padding:10px 25px;
@@ -221,6 +248,9 @@ label{
 .blackSVG{
 	filter:none;
 }
+#feedback .modal-header{
+	padding:30px 20px 20px 20px;
+}
 
 .feedbackIcon > li{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -280,6 +310,9 @@ label{
 	resize:none;
 	border:1px solid #999;
 	padding:5px;
+}
+.fbSelect .nav-tabs{
+	border:none;
 }
 .customCard{
 	background: #fafbfc;
@@ -462,21 +495,27 @@ label{
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   background-color: #eee;
   border-radius: 50%;
+  border:1px solid #999;
 }
 
-/* On mouse-over, add a grey background color */
+/* On mouse-over, add a background color */
 .customRadio:hover input ~ .checkmarkRadio {
-  background-color: #ccc;
+  background-color: #1046f1;
+  border:5px solid #EEE;
 }
+
 
 /* When the radio button is checked, add a blue background */
 .customRadio input:checked ~ .checkmarkRadio {
   background-color: #1046f1;
+  border:5px solid #EEE;
+  color: #1046f1;
 }
+
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
@@ -494,12 +533,19 @@ label{
 .customRadio .checkmarkRadio:after {
   top: 9px;
   left: 9px;
-  width: 8px;
-  height: 8px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background: white;
+  background: #fff;
+  border:6px solid #EEE;
 }
 
 .divider{
 	border-bottom:1px solid #999999; height:5px; float:left; width:100%;
+}
+.E8EAEF{
+	color:#E8EAEF !important;
+}
+.CCCCCC{
+	color:#CCCCCC !important;
 }

@@ -10,6 +10,7 @@ $(document).ready(function(){
 $(document).ready(function(){   
 	$('.reviewSlick').slick({
 	  dots: false,
+	  autoplay: true,
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 1,
@@ -25,7 +26,8 @@ $(document).ready(function(){
 	$('.reviewSlick2').slick({
 	  dots: false,
 	  infinite: true,
-	  speed: 300,
+	  autoplay: true,
+	  speed: 800,
 	  slidesToShow: 2,
 	  centerMode: false,
 	  variableWidth: true,
@@ -56,7 +58,123 @@ $(document).ready(function(){
   });
 });
 
+
+
 $(document).ready(function(){
+	/*Change height fit screen*/
+	/*Change height fit screen*/
+	/*Change height fit screen*/
+	$(".searchResult").height($('.topNav').height() + 12);
+	$(".map").height($(document).height()-$('.searchResult').height());
+	$(".result").height($(document).height()-$('.searchResult').height());
+	$(".resultListing").height($(document).height() - ($('.searchResult').height() + $('.resultTop').height() + 30));
+	$(".filterPanel").height($(".resultListing").height());
+	
+	$(window).resize(function(){
+		$(".searchResult").height($('.topNav').height() + 12)
+        $(".map").height($(document).height()-$('.searchResult').height());
+		$(".result").height($(document).height()-$('.searchResult').height());
+		$(".resultListing").height($(document).height() - ($('.searchResult').height() + $('.resultTop').height() + 30));
+		$(".filterPanel").height($(".resultListing").height());
+    });
+	/*Change height fit screen*/
+	/*Change height fit screen*/
+	/*Change height fit screen*/
+	
+	/*set position of expand button*/
+	$('.expandBtn').css('top',$('.searchBar').offset().top);
+	$('.expandBtn').css('left',$('.searchBar').offset().left-84);
+	/*set position of expand button*/
+	
+	/*Expand Result*/
+	/*Expand Result*/
+	/*Expand Result*/
+	$('.expandBtn').click(function(){
+		var i = $('.map').hasClass('exp');
+		var j = $('.resultPanel').hasClass('exp');
+		if(i==true && j==true)
+		{
+			$('.map').removeClass('exp');
+			$('.resultPanel').removeClass('exp');
+			$('.expandBtn').removeAttr('style');
+			var n = $(".resultItemView div").length;
+			for(i = 0; i<n ;i++)
+			{
+				$(".resultItemView div").eq(i).removeAttr('style');
+				$(".resultItemView img").eq(i).removeAttr('style');
+			}
+		}
+		else{
+			$('.map').addClass('exp ');
+			$('.resultPanel').addClass('exp');
+			$('.expandBtn').css('transform','rotate(180deg)');
+			var n = $(".resultItemContent h7").length;
+			for(i = 0; i<n ;i++)
+			{
+				$(".resultItemContent").eq(i).css('padding-top','10px');
+				$(".resultItemContent h7").eq(i).css('font-size',24);
+				$(".resultItemContent h7").eq(i).css('line-height','30px');
+				$(".resultItemContent p").eq(i).css('font-size',14);
+			}
+			
+			var n = $(".resultItemView div").length;
+			for(i = 0; i<n ;i++)
+			{
+				$(".resultItemView div").eq(i).css('width',80);
+				$(".resultItemView div").eq(i).css('height',80);
+				$(".resultItemView img").eq(i).css('right',12);
+				$(".resultItemView img").eq(i).css('top',16);
+			}
+		}
+		$('.expandBtn').css('top',$('.searchBar').offset().top);
+		$('.expandBtn').css('left',$('.searchBar').offset().left-84);
+		
+	});
+	/*Expand Result*/
+	/*Expand Result*/
+	/*Expand Result*/
+	
+	/*Show filter for maps*/
+	$('html').click(function() {
+   		$('.filterPanel').hide(); 
+   		$('.sortPanel').hide(); 
+		$('.submenu').hide(); 
+	});
+	
+	$('#filterBtn').click(function(event){
+		 event.stopPropagation();
+	});
+	
+	
+	$('.test').click(function(event){
+		 event.stopPropagation();
+	});
+	
+	$('.filterPanel').click(function(event){
+		 event.stopPropagation();
+	});
+	
+	$('#filterBtn').click(function(){
+		$('.filterPanel').css('top',$('#filterBtn').offset().top+30);
+		$('.filterPanel').css('left',$('#filterBtn').offset().left-70);
+		$('.filterPanel').toggle();
+		$('.sortPanel').hide();
+	});
+	
+	$('#sortBtn').click(function(event){
+		 event.stopPropagation();
+	});
+	
+	
+	$('#sortBtn').click(function(){
+		$('.sortPanel').css('top',$('#sortBtn').offset().top+30);
+		$('.sortPanel').css('left',$('#sortBtn').offset().left-70);
+		$('.filterPanel').hide();
+		$('.sortPanel').toggle();
+	});
+	
+	
+	/*Show filter for maps*/
 	
 	
 	/*show scroll to top when scroll*/
@@ -275,7 +393,7 @@ $(document).ready(function(){
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
-	var display1 = document.getElementById("companies");
+	/*var display1 = document.getElementById("companies");
 	var number1 = {param:0};
 	var value1= document.getElementById("companies").getAttribute("value-to");
 	
@@ -290,7 +408,7 @@ $(document).ready(function(){
 	var display4 = document.getElementById("totalUser");
 	var number4 = {param:0};
 	var value4= document.getElementById("totalUser").getAttribute("value-to");
-	/*
+	
 	var display5 = document.getElementById("id2");
 	var number5 = {param:0};
 	var value5= document.getElementById("id2").getAttribute("value-to");
@@ -339,6 +457,7 @@ $(document).ready(function(){
 	
 	count();*/
 	
+	/*
 	var options = {
 		useEasing: true,
 		useGrouping: true,
@@ -353,7 +472,7 @@ $(document).ready(function(){
 	searched.start();
 	var totalUser = new CountUp('totalUser',0, value4, 0, 5, options);
 	totalUser.start();
-	/*
+	
 	var id2 = new CountUp('id2',0, value5, 0, 5, options);
 	id2.start();
 	var id3 = new CountUp('id3',0, value6, 0, 5, options);
