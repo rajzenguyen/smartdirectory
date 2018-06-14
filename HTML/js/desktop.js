@@ -21,6 +21,10 @@ $(document).ready(function(){
 		
 });
 
+$(document).ready(function(){		
+	$('#select-company').selectize();
+});
+
 $(document).ready(function(){
 	
 	$('.reviewSlick2').slick({

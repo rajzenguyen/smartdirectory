@@ -8,9 +8,11 @@
 
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
+<link rel="stylesheet" href="slick/slick.css" type="text/css" />
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/selectize.css" type="text/css" />
 <link rel="stylesheet" href="css/general.css" type="text/css" />
 <link rel="stylesheet" href="css/desktop.css" type="text/css" />
-<link rel="stylesheet" href="slick/slick.css" type="text/css" />
 </head>
 
 <body>
@@ -746,8 +748,14 @@
             	<div id="companyPanel">
                     <form>
                         <div class="form-group">
-                            <label for="companyName" class="col-form-label">Your Company</label>
-                            <input type="text" class="form-control" id="companyName" placeholder="Company Name" />
+                            <label for="select-company">Company:</label>
+                            <select id="select-company" class="demo-default" placeholder="Select a company...">
+                                <option value="0">Select a company...</option>
+                                <option value="4">NSO</option>
+                                <option value="1">Amazon</option>
+                                <option value="3">Microsoft</option>
+                                <option value="5">Cisco</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="phone" class="col-form-label">Phone Number</label>
@@ -814,6 +822,7 @@
 <script src="js/fontawesome-all.js"></script>
 <script src="slick/slick.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/selectize.js"></script>
 <script src="js/countUp.js"></script>
 <script src="js/desktop.js"></script>
 
