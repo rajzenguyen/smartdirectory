@@ -58,8 +58,6 @@ $(document).ready(function(){
   });
 });
 
-
-
 $(document).ready(function(){
 	/*Change height fit screen*/
 	/*Change height fit screen*/
@@ -76,6 +74,12 @@ $(document).ready(function(){
 		$(".result").height($(document).height()-$('.searchResult').height());
 		$(".resultListing").height($(document).height() - ($('.searchResult').height() + $('.resultTop').height() + 30));
 		$(".filterPanel").height($(".resultListing").height());
+		$('.expandBtn').css('top',$('.searchBar').offset().top);
+		$('.expandBtn').css('left',$('.searchBar').offset().left-84);
+		$('#menu').next().css('top',$('#menu').offset().top+24);
+		$('#menu').next().css('left',$('#menu').offset().left-64);
+		$('#user').next().css('top',$('#menu').offset().top+24);
+		$('#user').next().css('left',$('#menu').offset().left-64);
     });
 	/*Change height fit screen*/
 	/*Change height fit screen*/
@@ -103,6 +107,14 @@ $(document).ready(function(){
 				$(".resultItemView div").eq(i).removeAttr('style');
 				$(".resultItemView img").eq(i).removeAttr('style');
 			}
+			
+			var m = $(".resultItemContent h7").length;
+			for(i = 0; i<m ;i++)
+			{
+				$(".resultItemContent").eq(i).removeAttr('style');
+				$(".resultItemContent h7").eq(i).removeAttr('style');
+				$(".resultItemContent p").eq(i).removeAttr('style');
+			}
 		}
 		else{
 			$('.map').addClass('exp ');
@@ -117,8 +129,8 @@ $(document).ready(function(){
 				$(".resultItemContent p").eq(i).css('font-size',14);
 			}
 			
-			var n = $(".resultItemView div").length;
-			for(i = 0; i<n ;i++)
+			var m = $(".resultItemView div").length;
+			for(i = 0; i<m ;i++)
 			{
 				$(".resultItemView div").eq(i).css('width',80);
 				$(".resultItemView div").eq(i).css('height',80);
@@ -173,10 +185,11 @@ $(document).ready(function(){
 		$('.sortPanel').toggle();
 	});
 	
-	
 	/*Show filter for maps*/
-	
-	
+});
+
+$(document).ready(function(){
+		
 	/*show scroll to top when scroll*/
 	window.onscroll = function() {scrollFunction()};
 
@@ -218,6 +231,38 @@ $(document).ready(function(){
 		$("#personalPanel").show();
 	});
 	
+	
+	$('html').click(function() {
+   		$('#user').next().hide();
+   		$('#menu').next().hide();
+	});
+	
+	$('#user').click(function(event){
+		 event.stopPropagation();
+   		$('#menu').next().hide();
+	});
+	
+	$('#user').click(function(){
+		var a = $('#user').next();
+		a.css('top',$('#user').offset().top+24);
+		a.css('left',$('#user').offset().left-64);
+		a.toggle();
+	});
+	
+	
+	$('#menu').click(function(event){
+		 event.stopPropagation();
+   		$('#user').next().hide();
+	});
+	
+	$('#menu').click(function(){
+		var a = $('#menu').next();
+		a.css('top',$('#menu').offset().top+24);
+		a.css('left',$('#menu').offset().left-64);
+		a.toggle();
+	});
+	
+	
 	/*cut down the content of notification to match 85 characters*/
 	/*cut down the content of notification to match 85 characters*/
 	/*cut down the content of notification to match 85 characters*/
@@ -233,6 +278,7 @@ $(document).ready(function(){
 			}
 		}
 	}
+	
 	cutDownLengthOfNoti();
 	
 	/*cut down the content of notification to match 85 characters*/
@@ -373,11 +419,11 @@ $(document).ready(function(){
 		$("#catContainer").append(showmore);
 		
 		/*resize block when add more block*/
-		changeWidthItem();
 	}
 	
 	$(".lastChildCatItem").click(function(){
 		lastClick();
+		changeWidthItem();
 	});
 	/*add more filter to homepage*/
 	/*add more filter to homepage*/
@@ -393,7 +439,7 @@ $(document).ready(function(){
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
-	/*var display1 = document.getElementById("companies");
+	var display1 = document.getElementById("companies");
 	var number1 = {param:0};
 	var value1= document.getElementById("companies").getAttribute("value-to");
 	
@@ -408,7 +454,7 @@ $(document).ready(function(){
 	var display4 = document.getElementById("totalUser");
 	var number4 = {param:0};
 	var value4= document.getElementById("totalUser").getAttribute("value-to");
-	
+	/*
 	var display5 = document.getElementById("id2");
 	var number5 = {param:0};
 	var value5= document.getElementById("id2").getAttribute("value-to");
@@ -457,7 +503,7 @@ $(document).ready(function(){
 	
 	count();*/
 	
-	/*
+	
 	var options = {
 		useEasing: true,
 		useGrouping: true,
@@ -472,7 +518,7 @@ $(document).ready(function(){
 	searched.start();
 	var totalUser = new CountUp('totalUser',0, value4, 0, 5, options);
 	totalUser.start();
-	
+	/*
 	var id2 = new CountUp('id2',0, value5, 0, 5, options);
 	id2.start();
 	var id3 = new CountUp('id3',0, value6, 0, 5, options);
