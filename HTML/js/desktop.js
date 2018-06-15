@@ -63,6 +63,17 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+	$('.staContent').slick({
+	  dots: false,
+	  infinite: false,
+	  slidesToShow: 1,
+	  centerMode: false,
+	  variableWidth: true,
+	  arrows: false
+	});
+});
+
+$(document).ready(function(){
 	/*Change height fit screen*/
 	/*Change height fit screen*/
 	/*Change height fit screen*/
@@ -70,9 +81,6 @@ $(document).ready(function(){
 	$(".result").height($(document).height()-$('.searchResult').height());
 	$(".resultListing").height($(document).height() - ($('.searchResult').height() + $('.resultTop').height() + 30));
 	$(".filterPanel").height($(".resultListing").height());
-	$('.btnDropdown').css('top',$('.textDropdown').offset().top);
-	$('.btnDropdown').css('right',$('.textDropdown').offset().right);
-	$('.btnDropdown').css('left','auto');
 	
 	
 	$(window).resize(function(){
