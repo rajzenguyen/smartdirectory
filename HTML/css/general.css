@@ -1,11 +1,42 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=vietnamese');
-
+@font-face {
+font-family: 'Montserrat Regular';
+font-style: normal;
+src: local('Montserrat-Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.otf) format('otf');
+}
+@font-face {
+font-family: 'Montserrat Bold';
+font-style: normal;
+src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.otf) format('otf');
+}
+@font-face {
+font-family: 'Montserrat Light';
+font-style: normal;
+src: local('Montserrat Light'), local('Montserrat-Light'), url(../fonts/Montserrat-Light.otf) format('otf');
+}
 body{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat Regular', sans-serif;
 	outline:none !important;
+	font-stretch:normal;
+	font-style:normal;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Montserrat Light', sans-serif;
+  line-height:24px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Montserrat Light', sans-serif;
+  line-height:24px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Montserrat Light', sans-serif;
+  line-height:24px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Montserrat Light', sans-serif;
+  line-height:24px;
 }
 :focus{
 	outline:none !important;
@@ -30,37 +61,31 @@ body{
     background: #999; 
 }
 h1,h2,h3,h4,h5,h6,h7{
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat Bold', sans-serif;
 }
 h1{
 	font-size:64px;
 	line-height:80px;
-	font-weight:700;
 }
 h2{
 	font-size:48px;
 	line-height:60px;
-	font-weight:700;
 }
 h3{
 	font-size:40px;
 	line-height:50px;
-	font-weight:700;
 }
 h4{
 	font-size:36px;
 	line-height:45px;
-	font-weight:700;
 }
 h5{
 	font-size:32px;
 	line-height:40px;
-	font-weight:700;
 }
 h6{
 	font-size:24px;
 	line-height:36px;
-	font-weight:700;
 }
 h7{
 	font-size:18px;
@@ -76,6 +101,10 @@ p{
 ul{
 	list-style:none;
 	padding:5px;
+}
+p.large{
+	font-size:18px;
+	line-height:27px;
 }
 p.small{
 	font-size:14px;
@@ -95,7 +124,7 @@ ul > li{
 	vertical-align:middle;
 }
 input, button {
-	padding:10px 35px 10px 16px;
+	padding:15px 35px 15px 16px;
 	border-radius:35px;
 	border:none;
 	background:#f8f9fb;
@@ -103,6 +132,7 @@ input, button {
      outline:none; 
      -webkit-box-shadow:none;
 	 height:54px;
+	 line-height:24px;
 }
 textarea{
 	border:1px solid #CCC;
@@ -562,11 +592,20 @@ label{
 }
 
 .divider{
-	border-bottom:1px solid #999999; height:5px; float:left; width:100%;
+	border-bottom:1px solid #e8eaef; height:5px; float:left; width:100%;
 }
 .E8EAEF{
 	color:#E8EAEF !important;
 }
 .CCCCCC{
 	color:#CCCCCC !important;
+}
+.font-light{
+	font-family: 'Montserrat Light', sans-serif !important;
+}
+.font-regular{
+	font-family: 'Montserrat Regular', sans-serif !important;
+}
+.font-bold{
+	font-family: 'Montserrat Bold', sans-serif !important;
 }

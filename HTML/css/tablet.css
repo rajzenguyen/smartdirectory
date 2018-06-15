@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 1024px) {
+.catItem{
+	margin:10px 13px;
+}
+.customerNav{
+	width:70%;
+}
+.listSubMenu a {
+	font-size: 13px;
+	line-height: 21px;
+}
+.footerLeftContent p{
+	font-size: 12px;
+	line-height: 22px;
+}
+
+}
+
+
+
+@media only screen and (max-width: 769px) {
+	.catItem{
+		margin:10px 10px;
+	}
+	.customerNav{
+		width:86%;
+	}
+	.listSubMenu a {
+		font-size: 13px;
+		line-height: 6px;
+	}
+	.footerLeftContent p{
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
