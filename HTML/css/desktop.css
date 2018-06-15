@@ -1380,7 +1380,8 @@
 	vertical-align:middle;
 }
 .resultItemContent h7{
-	display:contents;
+}
+.resultItemContent p{
 }
 .resultItemView{
     width: 5%;

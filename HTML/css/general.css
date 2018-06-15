@@ -650,12 +650,6 @@ label{
 .divider{
 	border-bottom:1px solid #e8eaef; height:5px; float:left; width:100%;
 }
-.E8EAEF{
-	color:#E8EAEF !important;
-}
-.CCCCCC{
-	color:#CCCCCC !important;
-}
 .font-light{
 	font-family: 'Montserrat-Light', sans-serif;
 }
@@ -703,4 +697,18 @@ label{
 }
 .colorF90{
 	color:#F90;
+}
+
+.colorE8EAEF{
+	color:#E8EAEF;
+}
+.colorCCCCCC{
+	color:#CCCCCC !important;
+}
+
+.E8EAEF{
+	color:#E8EAEF !important;
+}
+.CCCCCC{
+	color:#CCCCCC !important;
 }
