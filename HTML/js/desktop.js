@@ -70,6 +70,10 @@ $(document).ready(function(){
 	$(".result").height($(document).height()-$('.searchResult').height());
 	$(".resultListing").height($(document).height() - ($('.searchResult').height() + $('.resultTop').height() + 30));
 	$(".filterPanel").height($(".resultListing").height());
+	$('.btnDropdown').css('top',$('.textDropdown').offset().top);
+	$('.btnDropdown').css('right',$('.textDropdown').offset().right);
+	$('.btnDropdown').css('left','auto');
+	
 	
 	$(window).resize(function(){
         $(".map").height($(document).height()-$('.searchResult').height());

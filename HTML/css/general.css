@@ -139,27 +139,6 @@ textarea{
 	border-radius:8px;
 	background:#f8f9fb;
 }
-.selectize-input, .selectize-input.full{
-	padding:10px 35px 10px 16px;
-	border:1px solid #CCC;
-	border-radius:35px;
-	background:#f8f9fb;
-	box-shadow:none;
-     outline:none; 
-     -webkit-box-shadow:none;
-	 height:54px;
-	font-size: 14px;
-	line-height:28px;
-	line-height: 1.42857143;
-}
-.selectize-input .item{
-	padding:10px 35px 10px 16px;
-	border:1px solid #CCC;
-	border:none;
-	 height:54px;
-	font-size: 14px;
-	line-height:28px;
-}
 .bold{
 	font-weight:800;
 }
@@ -395,7 +374,7 @@ label{
 .customCard:focus > .blackSVG{
 	filter: invert(1) sepia(1) saturate(0);
 }
-.customCard > .blackSVG,h7{
+.customCard > .blackSVG, .customCard > h7{
 	float:left;
 	vertical-align:middle;
 }
@@ -416,17 +395,22 @@ label{
 }
 .form-group input[type='text']{
 	border-radius:35px;
-	height:50px;
+	height:54px;
 	background:#f8f9fb;
+	padding:10px 35px 10px 16px;
 }
 .form-group input[type='password']{
 	border-radius:35px;
-	height:50px;
+	height:54px;
 	background:#f8f9fb;
+	padding:10px 35px 10px 16px;
 }
 .form-group button{
 	border-radius:35px;
-	height:50px;
+	height:54px;
+}
+.form-control::-moz-placeholder {
+    line-height: 31px;
 }
 .btn-secondary:focus{
 	color:#000;
@@ -608,4 +592,15 @@ label{
 }
 .font-bold{
 	font-family: 'Montserrat Bold', sans-serif !important;
+}
+.svg-class svg{
+	fill:#03F;
+}
+.textDropdown{
+	
+}
+.btnDropdown{
+	max-height: 54px;
+    font-size: 14px;
+    padding: 18px;
 }
