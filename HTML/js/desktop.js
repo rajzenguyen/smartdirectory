@@ -1,10 +1,9 @@
 $(document).ready(function(){   
 	$('.slick-for').slick({
-	  centerMode: true,
-	  centerPadding: '60px',
+	  autoplay: true,
+	  centerMode: false,
 	  slidesToShow: 3
-	});
-		
+	});		
 });
 
 $(document).ready(function(){   
@@ -468,7 +467,7 @@ $(document).ready(function(){
 	}
 	
 	$(".lastChildCatItem").click(function(){
-		lastClick();
+		/*lastClick();*/
 		changeWidthItem();
 	});
 	/*add more filter to homepage*/

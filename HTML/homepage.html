@@ -606,7 +606,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="finishButton">Send</button>
           </div>
     </div>
   </div>
@@ -617,7 +617,7 @@
 <!-- Forgot Password -->
 
 <div class="modal fade" id="forgot" tabindex="-1" role="dialog" aria-labelledby="forgotLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document" style="margin-top:20px; width:440px;">
+  <div class="modal-dialog" role="document" style="margin-top:20px; width:570px;">
     <div class="modal-content" style="padding:20px 40px;">
       <div class="modal-header">
         <h6 class="modal-title" id="forgotLabel" style="display: contents;">Forgot Password</h6>
@@ -634,16 +634,54 @@
         </form>
       </div>
       <div class="modal-footer">
-      	<div><a style="" href="#">Need more help?</a></div>
+      	<div class="help"><a class="font-regular" href="#">Need more help?</a></div>
         <div class="clearfix"></div>
-        	<button type="button" class="btn btn-secondary returnButton" data-toggle="modal" data-dismiss="modal" data-target="#login">Return to Login</button>
-        	<button type="button" class="btn btn-primary nextButton">Next</button>
+        	<button type="button" class="returnButton" data-toggle="modal" data-dismiss="modal" data-target="#login">Return to Login</button>
+        	<button type="button" class="nextButton">Next</button>
         
       </div>
     </div>
   </div>
 </div>
 <!-- End Forgot Password -->
+
+
+<!-- Reset Password -->
+
+<div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="forgotLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="margin-top:20px; width:570px;">
+    <div class="modal-content" style="padding:20px 40px;">
+      <div class="modal-header">
+        <h6 class="modal-title" id="forgotLabel" style="display: contents;">Reset Password</h6>
+        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close" style="">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="otp" class="col-form-label">OTP</label>
+            <input type="text" class="form-control" id="otp" placeholder="OTP has been sent to your mobile" />
+          </div>
+          <div class="form-group">
+            <label for="newPass" class="col-form-label">New Password</label>
+            <input type="password" class="form-control" id="newPass" />
+          </div>
+          <div class="form-group">
+            <label for="renewPass" class="col-form-label">Retype New Password</label>
+            <input type="password" class="form-control" id="renewPass" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="clearfix"></div>
+        	<button type="button" class="nextButton">Reset Password</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Reset Password -->
 
 
 <!-- Login -->

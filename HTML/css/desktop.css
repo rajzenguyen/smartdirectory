@@ -39,6 +39,13 @@
 .topNavHome .navContent{
 	padding 20px 0px;
 }
+.contactuss, .companydetail{
+	height: 115px;
+    background: none;
+    padding: 31px 0 30px 0;
+    position: absolute;
+    width: 100%;
+}
 .companydetail .topNav, .contactuss .topNav{
 	padding-top:0px;
 	margin-top:0px;
@@ -124,7 +131,7 @@
 	color:#fff;
 }
 #companyBanner{
-	height:400px;
+	height:480px;
 	text-align:center;
 	background-image:url(../images/banner.jpg);
 	background-size:cover;
@@ -248,6 +255,7 @@
 }
 #companyInfo
 {
+  	background-color: #f8f9fb;
 	padding-top:10px;
 	padding-bottom:80px;
 }
@@ -700,36 +708,52 @@
 	color:#fff;
 }
 .closeButton{
-	top: 10px; 
-	right: 10px; 
+	top: 24px; 
+	right: 30px; 
 	position: absolute; 
 	opacity:0.8; 
 	font-size:28px;
 	height:auto;
 }
+
+#forgot{
+	
+}
 #forgot .modal-footer a{
-	font-weight:600;
 	float:right; 
-	margin-bottom:10px;
+	margin-bottom:20px;
 	
 }
-#forgot .modal-footer button{
+#forgot .modal-footer button, #reset .modal-footer button{
 	width:46%;
+	font-size:18px;
+	line-height:27px;
 	
 }
-#forgot .returnButton{
+#forgot .returnButton, #reset .returnButton{
 	margin-right:10px;
 	float:left;
+	background: #e8eaef;
+	padding: 15px 0;
+	font-family: 'Montserrat-Light', sans-serif;
 }
 
 #forgot .returnButton:hover{
 	color:#000 !important;
-	border:1px solid #666;
+	background:#cccccc;
 }
-#forgot .nextButton{
+#forgot .nextButton, #reset .nextButton{
 	margin-left:10px;
 	float:right;
+	background: #6f93f9;
+	color: #fff;
+	padding: 15px 0;
+	font-family: 'Montserrat-Regular', sans-serif;
 }
+#forgot .nextButton:hover, #reset .nextButton:hover{
+	background: #1046f1;
+}
+
 .companyIntro{
 	padding:10px 10px 20px 20px;
 	float:left;
@@ -737,71 +761,102 @@
 	position:absolute;*/
 }
 .companyIntroduce{
-	padding:10px 10px 20px 20px;
+	padding:0;
 	float:left;
-	top: 17em;
-	position:absolute;
+	top: 280px;
+	position:relative;
 }
 .companyIntroAvatar
 {
+	width:170px;
+	height:170px;
 	float:left;
 	padding-right:1rem;
 }
 .companyIntroAvatar > img
 {
+	width:100%;
+	height:100%;
 	border-radius:16px;
 }
 .companyName{
-	float:left;
-	padding-left:1rem;
-	text-align:left;
-	color:#fff;
-	line-height:16px;
-	vertical-align:middle;
+	float: left;
+    text-align: left;
+    color: #fff;
+    height: auto;
+    padding: 35px 0px 34px 30px;
+    vertical-align: middle;
+    margin: 0 auto;
 }
-.companyName > h3{
-	margin-top:8px;
+.companyName > h6{
+	margin:0;
+}
+.companyName > h6 > svg{
+	color:#0C3;
 }
 .companyName > p{
 	color:#fff;
-	line-height:16px;
-	padding-bottom:6px;
-	padding-top:6px;
-	font-weight:200;
 }
 
 .companyName > a{
 	color:#fff;
 	text-align:center;
-	height:60px;
 }
 .companyName > .messenger{
-	padding:7px 25px;
-	background:#1046f1;
+	padding:3px 25px;
+	background:#6f93f9;
 	color:#fff;
 	text-align:center;
 	border:none;
 	border-radius:40px;
+	float:left;
+	height:30px;
 }
+.companyName > .report{
+	height:30px;
+	width:30px;
+	background:#f8f9fb;
+	float:left;
+	padding:14px;
+	border-radius:50%;
+	margin-left:10px;
+	cursor:pointer;
+}
+.report img{
+	height:16px;
+	width:16px;
+	top: -7px;
+	left: -7px;
+	position: relative;
+}
+
 .companySlideNav > ul > li{
     padding: 8px 20px;
-    border-top: 3px solid #fff;
+    border: 1px solid #e8eaef;
+    border-top: 2px solid #fff;
 	color:#1046f1;
+	margin-left: -4px;
+	background:#fff;
 }
 .companySlideNav > ul > li > a{
 	color:#1046f1;
 	font-size:16px;
+	line-height:24px;
+	font-family: 'Montserrat-Regular', sans-serif;
 }
 .companySlideNav > ul > li:hover{
-    border-top: 3px solid #1046f1;
+    border-top: 2px solid #1046f1;
 }
 
 .companySlideNav > .list-inline > .active{
-    border-top: 3px solid #1046f1 !important;
+    border-top: 2px solid #1046f1 !important;
+}
+
+#companyInfo .nav-tabs{
+	border:none;
 }
 .companyInfoContent{
-	padding:20px 40px;
-	color:#515151;
+	padding:20px 5px;
 }
 .companyInfoContent > .description{
 	text-align:justify;
@@ -868,6 +923,14 @@
 }
 #subTitle .pageTitle{
 	margin-top:115px;
+}
+
+#subTitle .guideNav{
+	float:right;
+	margin-top:30px;
+}
+#subTitle .pageTitle{
+	margin-top:30px;
 }
 .mainContent{
 	margin:0 auto;
@@ -1008,6 +1071,10 @@
 .numberSta{
 	float:left; margin-left:35px;
 }
+.slick-list{
+	margin-left:0px;
+	margin-right:0px;
+}
 .staItem01{
 	width:426px;
 }
@@ -1108,15 +1175,17 @@
 	width:10%;
 }
 
+#contactForm .companyName h3{
+	margin-left:10px;
+}
+
 .contactLeft{
 	background:#1046f1; width:50%; float:left; padding:40px; color:#fff; border-bottom-left-radius:16px; border-top-left-radius:16px; height:900px;
 }
 .contactLeft a{
 	color:#fff;
-	font-weight:600;
 }
 .contactLeft p{
-	font-weight:600;
 }
 .contactLeft a:hover{
 	color:#fff;
@@ -1149,14 +1218,19 @@
 	border-radius:16px;
 	padding:15px;
 }
-.contactRight button{
+.contactRight .btnSubmit{
 	width:45%;
-	padding:12px 0px;
-	background:#1046f1;
-	color:#fff;
-	text-align:center;
+	font-size:18px;
+	line-height:27px;
+	float:left;
+	background: #6f93f9;
+	color: #fff;
+	padding: 15px 0;
 	margin:20px 0px;
-	border-radius: 24px;
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+.contactRight .btnSubmit:hover{
+	background: #1046f1
 }
 #menuLang{
 	display:none;
@@ -1197,7 +1271,6 @@
 	margin:40px auto;
 }
 .notiItem{
-	height:60px;
 	padding:10px 20px;
 	float:left;
 	width:100%;
@@ -1506,4 +1579,232 @@
 	float:left;
 	margin:0 10px;
 	padding:0 10px;
+}
+.modal-footer > div.help a{
+  object-fit: contain;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: right;
+}
+.whoImg{
+	margin-top:30px;
+}
+.coverImg{
+	background-image:url(../assets/bernard-hermant-616385-unsplash-copy@2x.jpg);
+	background-size:cover;
+	height:800px;
+}
+
+.customCard{
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-weight:bold;
+}
+.customCard.collapsed{
+	font-family: 'Montserrat-Regular', sans-serif;
+	font-weight:normal;
+}
+#content .mainContent .card-body > p{
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.basicContent{
+	margin:0 auto;
+	width:70%;
+	padding:00px 0px;
+}
+.basicContent .customCard{
+	background: #6f93f9;
+	width: 100%;
+	color: #fff;
+	border-radius:35px;
+	text-decoration:none;
+	vertical-align:middle;
+	text-align:left;
+	padding-left:26px;
+	box-shadow:none !important;
+     outline:none !important; 
+     -webkit-box-shadow:none !important;
+}
+.basicContent .customCard:hover{
+	background: #6f93f9;
+	color: #fff;
+	text-decoration:none;
+}
+.basicContent .customCard:hover > .blackSVG{
+	filter: invert(1) sepia(1) saturate(0);
+}
+.basicContent .customCard:focus{
+	background: #6f93f9;
+	color: #fff;
+	text-decoration:none;
+}
+.basicContent .customCard:focus > .blackSVG{
+	filter: invert(1) sepia(1) saturate(0);
+}
+.basicContent .customCard > .whiteSVG, .customCard > h7{
+	float:left;
+	vertical-align:middle;
+	margin-left:5px;
+}
+.basicContent .customCard > svg{
+	float:right;
+	height:24px;
+	font-size:16px;
+	font-weight:300;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.tableContent{
+	width:80%;
+	margin:0 auto;
+}
+.tableContent td{
+	padding-bottom:10px;
+	padding-top:10px;
+	width:50%;
+}
+.tableContent img{
+	height:20px;
+	vertical-align: sub;
+}
+.connectContent{
+	width:100%;
+	margin-bottom:60px;
+}
+.connectHeader{
+	width:50%;
+	float:left;
+}
+.connectBody{
+	width:100%;
+	float:left;
+	margin-top:20px;
+}
+.connectBodyContent{
+	width:50%;
+	padding-right:44px;
+	float:left;
+}
+.connectBodyContent:last-child{
+	padding-right:0;
+}
+.connectBodyContent::before{
+	border:1px solid #999;
+}
+.connectBodyContentItem{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.connectBodyContentItem:first-child{
+	margin-top:20px;
+}
+.connectBodyContentItemIMG{
+	width:15%;
+	float:left;
+}
+.connectBodyContentItemIMG img{
+	width:70px; 
+	height:70px; 
+	padding:17px; 
+	border-radius: 16px;
+	z-index: 8;
+}
+.connectBodyContentItemIMG > div{
+	width:70px; 
+	height:70px; 
+	border-radius: 16px; 
+	background:#d8d8d84d;
+	position: relative;
+	top: -70px;
+	z-index: 2;
+}
+.connectBodyContentItemIMG:nth-child(2n) > div{
+	width:70px; 
+	height:70px; 
+	border-radius: 16px; 
+	background:#1046f1;
+	position: relative;
+	top: -70px;
+	z-index: 2;
+}
+.connectBodyContentItemContent{
+	width:85%; 
+	float:left;
+	padding-left:10px;
+}
+.connectBodyContentItemContent h6{
+	margin-top:0;
+}
+.barConnect{
+	border-left: 1px solid #CCCCCC;
+	width: 1px;
+	height: 80px;
+	position: relative;
+	top: 70px;
+	left: 35px;
+	z-index: 1;
+}
+.listSub{
+	margin-top:30px;
+}
+.listSubItem{
+	width:50%;
+	float:left;
+	margin-bottom:20px;
+}
+.blockSC{
+	margin-bottom: 10px;
+}
+.presentBlock{
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+.presentSupplier{
+	background: #333;
+}
+.presentCustomer{
+	background: #6f93f9;
+}
+.connectBody.bodySC{
+	background:url(../assets/map.png) no-repeat;
+	background-size:cover;
+}
+.connectBody.bodySC img{
+	width: 10%;
+	margin: 80px 70px;
+}
+.tagCode{
+	border-radius:35px;
+	padding:18px 60px;
+	margin-right:20px;
+	margin-bottom:30px;
+	background:#e8eaef;
+	display:table;
+	font-size: 18px;
+	line-height: 1.5;
+	float:left;
+}
+.item21{
+	margin:15px;
+	float:left;
+}
+.itemRelatedCompany{
+	margin-left:15px;
+	margin-right:15px;
+	width:300px;
+	height:170px;
+	float:left;
+	box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.7);
+}
+.itemRelatedCompany img{
+	width:100%;
+	height:100%;
 }

@@ -351,9 +351,10 @@ label{
 	filter:none;
 }
 #feedback .modal-header{
-	padding:30px 20px 20px 20px;
+	padding:30px 15px 20px 30px;
 }
-
+#feedback h6{
+}
 .feedbackIcon > li{
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
@@ -396,7 +397,8 @@ label{
 	color:#fff;
 }
 .fbCategory > li:hover{
-	background:#1046f1;
+	background:#6f93f9;
+	border:1px solid #1046f1;
 	color:#fff !important;
 	box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
 }
@@ -413,9 +415,25 @@ label{
 	border:1px solid #999;
 	padding:5px;
 }
-.fbSelect .nav-tabs{
+.fbSelect .nav-tabs, .fbCat .nav-tabs {
 	border:none;
 }
+
+#feedback .finishButton{
+	width:26%;
+	font-size:18px;
+	line-height:27px;
+	margin-right:20px;
+	float:right;
+	background: #6f93f9;
+	color: #fff;
+	padding: 15px 0;
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+#feedback .finishButton:hover{
+	background: #1046f1;
+}
+
 .customCard{
 	background: #fafbfc;
 	width: 100%;
@@ -429,9 +447,10 @@ label{
 	box-shadow:none !important;
      outline:none !important; 
      -webkit-box-shadow:none !important;
+	 height:66px;
 }
 .customCard:hover{
-	background: #1046f1;
+	background: #6f93f9;
 	color: #fff;
 	text-decoration:none;
 }
@@ -439,7 +458,7 @@ label{
 	filter: invert(1) sepia(1) saturate(0);
 }
 .customCard:focus{
-	background: #1046f1;
+	background: #6f93f9;
 	color: #fff;
 	text-decoration:none;
 }
@@ -533,19 +552,22 @@ label{
     position: absolute;
     top: 0;
     left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
+    height: 24px;
+    width: 24px;
+    border:2px solid #000;
+	border-radius: 5px;
 }
 
 /* On mouse-over, add a grey background color */
 .customCheck:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #1046f1;
+    border:2px solid #1046f1;
 }
 
 /* When the checkbox is checked, add a blue background */
 .customCheck input:checked ~ .checkmark {
     background-color: #1046f1;
+    border:2px solid #1046f1;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -562,11 +584,11 @@ label{
 
 /* Style the checkmark/indicator */
 .customCheck .checkmark:after {
-    left: 7px;
-	top: 1px;
-	width: 7px;
-	height: 15px;
-    border: solid white;
+    left: 6px;
+	top: 0px;
+	width: 9px;
+	height: 16px;
+    border: 2px solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -705,7 +727,12 @@ label{
 .colorCCCCCC{
 	color:#CCCCCC !important;
 }
-
+.color1046f1{
+	color:#1046f1 !important;
+}
+.colorBG1046f1{
+	background:#1046f1 !important;
+}
 .E8EAEF{
 	color:#E8EAEF !important;
 }
