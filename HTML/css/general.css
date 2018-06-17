@@ -670,7 +670,7 @@ label{
 }
 
 .divider{
-	border-bottom:1px solid #e8eaef; height:5px; float:left; width:100%;
+	border-bottom:1px solid #e8eaef; height:1px; float:left; width:100%;
 }
 .font-light{
 	font-family: 'Montserrat-Light', sans-serif;
