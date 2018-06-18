@@ -3,6 +3,13 @@ $(document).ready(function(){
 	  autoplay: true,
 	  centerMode: false,
 	  slidesToShow: 3
+	});	
+	
+	$('.slick-for-Gallery').slick({
+	  autoplay: true,
+	  centerMode: false,
+	  variableWidth: true,
+	  slidesToShow: 3
 	});		
 });
 

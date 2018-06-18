@@ -1686,6 +1686,9 @@ div.aboutSmart > h2{
 	z-index:100;
 	position:relative;
 }
+.resultItemContent a{
+	color:#000;
+}
 .resultPanel.exp .resultItemContent{
 	width:309px;
 	float:left;
@@ -1930,7 +1933,7 @@ div.aboutSmart > h2{
 	margin-bottom:20px;
 }
 .basicContent{
-	margin:0 auto;
+	margin: 40px auto 0px;
 	width:70%;
 	padding:00px 0px;
 }
@@ -1977,13 +1980,20 @@ div.aboutSmart > h2{
 	margin-right:10px;
 }
 .tableContent{
-	width:80%;
+	width:100%;
 	margin:0 auto;
+}
+.tableContent td:nth-child(1){
+	padding-bottom:10px;
+	padding-top:10px;
+	padding-left:55px;
+	width:40%;
 }
 .tableContent td{
 	padding-bottom:10px;
 	padding-top:10px;
-	width:50%;
+	padding-left:50px;
+	width:60%;
 }
 .tableContent img{
 	height:20px;
@@ -2147,6 +2157,7 @@ div.aboutSmart > h2{
 	margin-top:20px;
 	margin-right:20px;
 }
+
 .itemRelatedCompany .itemRelatedContent{
 	float:left;
 	margin-left:30px;
@@ -2166,6 +2177,34 @@ div.aboutSmart > h2{
 }
 .itemRelatedCompany a{
 	color:#000;
+}
+.basicIntro{
+	width:100%;
+}
+.basicIntroDesc{
+	width:970px;
+	margin-right:78px;
+	float:left;
+}
+.item22{
+	width:260px;
+	height:170px;
+	float:left;
+	margin-left:20px;
+}
+.item22 img{
+	width:300px;
+	height:170px;
+}
+.basicIntroSocial{
+	width:70px;
+	float:left;
+}
+.basicIntroSocial img{
+	width:100%;
+	float:left;
+	height:70px;
+	margin-bottom:30px;
 }
 #aboutBanner .guildNav{
 	margin-top:145px;
