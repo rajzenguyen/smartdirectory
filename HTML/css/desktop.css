@@ -72,20 +72,38 @@
 .navContent > ul > li > a{
 	color:#fff;	
 }
+.navContent > ul > li > .dropdown-menu{
+	padding:0;
+	border-radius:8px;
+	box-shadow: 0 3px 8px rgba(104, 162, 249, 0.32);
+	border:0;
+}
+.dropdown-submenu img{
+	width: 15px;
+	height: 15px;
+	filter: invert(0.9) grayscale(4);
+}
 .navContent > ul > li > input{
 	border:1px solid #fff;
+	border-right:none;
 	background:none;
 	color:#fff;
 	border-bottom-left-radius:40px;
 	border-top-left-radius:40px;
-	border-bottom-right-radius:40px;
-	border-top-right-radius:40px;
+	border-bottom-right-radius:1px;
+	border-top-right-radius:1px;
 	height:54px;
-	width:370px;
+	width:310px;
+    padding-right: 0px;
+}
+.companydetail .navContent > ul > li > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color:#fff;
+}
+.companydetail .navContent > ul > li > input::-moz-placeholder { /* Firefox 19+ */
+	color:#fff;
 }
 .navContent > ul > li > button{
 	border:1px solid #fff;
-	border:none;
 	border-left:none;
 	border-bottom-right-radius:40px;
 	border-top-right-radius:40px;
@@ -98,8 +116,11 @@
     padding-right: 10px;
 	margin: 0;
 	float: right;
-	padding-right: 21px;
-	margin-left: -60px;
+	padding-right: 20px;
+	margin-left: 0px;
+	width:60px;
+}
+.searchBox{
 }
 .smallmenu{
 	width:200px;
@@ -109,6 +130,7 @@
 .smenu{
 	padding:0px;
 	font-weight:500;
+	border-radius:8px;
 }
 .smenu a{
 	color:#ccc;
@@ -116,12 +138,26 @@
 .smenu > ul{
 	padding:0px !important;
 }
-.smenu ul > li:nth-child(2n+1){
-	background:#F0F0F0;
+
+.smenu ul > li{
+	background:#fff;
+	font-family: 'Montserrat-Light', sans-serif;
 }
 .smenu ul > li:hover{
 	background:#6f93f9 !important;
 	color:#fff !important;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+.smenu ul > li:hover img{
+	filter: brightness(0) invert(1);
+}
+.smenu ul > li:first-child{
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.smenu ul > li:last-child{
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
 }
 .smenu ul > li:hover > a{
 	color:#fff !important;
@@ -145,6 +181,8 @@
 .dropdown-menu{
 	left:84%;
 	top:80%;
+	padding:0;
+	border:0;
 }
 
 #aboutBanner{
@@ -170,11 +208,25 @@
 	float:left;
 }
 .listAboutItem{
-	width: 31%;
-    margin: 40px 13px 15px 13px;
-	padding:50px 20px;
+	width:370px;
+    margin-right:30px;
+	padding:50px 20px 40px 20px;
 	float:left;
 	border-radius:16px;
+	height:400px;
+}
+.listAboutItem:nth-child(1){
+	background:#00b79d;
+}
+.listAboutItem:nth-child(2){
+	background:#1046f1;
+}
+.listAboutItem:nth-child(3){
+	background:#ff6300;
+    margin-right:0;
+}
+.listAboutItem h4{
+	margin-top:30px; 
 }
 .listAboutItem img{
 	filter: brightness(0) invert(1); 
@@ -198,7 +250,11 @@
 	height:63px;
 	margin:0 auto 49px auto;
 }
-.searchInfo > input{
+.controlS{
+	width:770px;
+	margin:0 auto;
+}
+.searchInfo .controlS > input{
 	border-bottom-right-radius:unset !important;
 	border-top-right-radius:unset !important;
 	border:hidden;
@@ -208,46 +264,65 @@
 	color: #000;
 	height:64px;
 }
-.searchInfo > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+.searchInfo .controlS > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
   line-height:36px;
 	font-size:16px;
 }
-.searchInfo > input::-moz-placeholder { /* Firefox 19+ */
+.searchInfo .controlS > input::-moz-placeholder { /* Firefox 19+ */
   font-family: 'Montserrat-Light', sans-serif;
   line-height:36px;
 	font-size:16px;
 }
-.searchInfo > input:-ms-input-placeholder { /* IE 10+ */
+.searchInfo .controlS > input:-ms-input-placeholder { /* IE 10+ */
   font-family: 'Montserrat-Light', sans-serif;
   line-height:36px;
 	font-size:16px;
 }
-.searchInfo > input:-moz-placeholder { /* Firefox 18- */
+.searchInfo .controlS > input:-moz-placeholder { /* Firefox 18- */
   font-family: 'Montserrat-Light', sans-serif;
   line-height:36px;
 	font-size:16px;
 }
-.searchInfo > button{
+.searchInfo .controlS > button{
 	border-bottom-left-radius:unset !important;
 	border-top-left-radius:unset !important;
 	background:#1046f1;
 	margin-left:-7px;
-	border:hidden;
+	border:none;
 	color:#fff;
-	padding:23px 38px;
+	padding:20px 38px;
 	width:100px;
-	height:65px;
+	height:64px;
+	float:right;
 }
 .searchInfo img{
 	color:#fff;
-	filter: invert(1) sepia(1) saturate(1);
+	filter: brightness(0) invert(1);
 }
 .searchInfo > p{
 	color:#fff;
 	width:60%;
 	margin:auto;
 }
+
+.contactuss input::-webkit-input-placeholder, .aboutus input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#fff;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+.contactuss input::-moz-placeholder, .aboutus input::-webkit-input-placeholder { /* Firefox 19+ */
+  color:#fff;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+.contactuss input:-ms-input-placeholder, .aboutus input::-webkit-input-placeholder { /* IE 10+ */
+  color:#fff;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+.contactuss input:-moz-placeholder, .aboutus input::-webkit-input-placeholder { /* Firefox 18- */
+  color:#fff;
+  font-family: 'Montserrat-Light', sans-serif;
+}
+
 .navdown{
 	padding: 12px 14px;
 	font-size: 24px;
@@ -683,12 +758,12 @@ div.aboutSmart > h2{
 .listSubMenu{
 	display:inline-flex;
 	list-style:none;
-	margin-left:30px;
+	margin:0;
 	vertical-align:middle;
-	margin-bottom:0px;
+	padding:0;
 }
 .listSubMenu li{
-	padding:6px 16px;
+	padding:0px 16px;
 }
 .listSubMenu a{
 	color:#333333;
@@ -772,21 +847,21 @@ div.aboutSmart > h2{
 	color:#666666;
 }
 .footerLeftContent{
-	width:30%;
+	width:341;
 	float:left;
 	vertical-align:middle;
 }
 .footerLeftContent > p{
-	line-height:45px;
 	vertical-align:middle;
+	margin:19px 92px 20px 0;
 }
 .footerLeftContent img{
 	filter: invert(.5) sepia(.5) saturate(1) grayscale(1);
 }
 .footerRightContent{
-	width:70%;
 	float:left;
 	vertical-align:middle;
+	margin:18px 0 18px 0;
 }
 .linkWith img{
 	filter: grayscale(0);
@@ -1046,9 +1121,10 @@ div.aboutSmart > h2{
 	padding:0 0 0 30px;
 }
 .topNavWhite .navContent > ul > li > input{
-	border:1px solid #e8eaef;
-	background:none;
+	border:1px solid #000;
+	border-right:none;
 	color:#000;
+	/*background:none;	
 	border-bottom-left-radius:40px !important;
 	border-top-left-radius:40px !important;
 	border-bottom-right-radius:40px;
@@ -1058,6 +1134,7 @@ div.aboutSmart > h2{
      outline:none !important; 
      -webkit-box-shadow:none !important;
 	width:370px;
+	padding-right:16px;*/
 }
 .topNavWhite .navContent > ul > li > input:focus:hover{
 	box-shadow:none !important;
@@ -1067,9 +1144,11 @@ div.aboutSmart > h2{
 .topNavWhite img{
 	filter: none;
 }
+
 .topNavWhite .navContent > ul > li > button{
 	border:1px solid #000;
 	border-left:none;
+	/*border-left:none;
 	border:none;
 	border-bottom-right-radius:40px !important;
 	border-top-right-radius:40px !important;
@@ -1085,7 +1164,7 @@ div.aboutSmart > h2{
 	margin: 0;
 	float: right;
 	padding-right: 21px;
-	margin-left: -51px;
+	margin-left: -51px;*/
 }
 .aboutBlock1{
 	background:#f8f9fb; 
@@ -1117,12 +1196,12 @@ div.aboutSmart > h2{
 }
 .rightColAbout p{
 	font-size:14px; line-height:21px; color:#999;
-	margin-bottom:55px;
+	margin-bottom:60px;
 }
 .rightColAbout img{
 	width:100%;
 	border-radius:16px;
-	margin-bottom:16px;
+	margin-bottom:20px;
 }
 .contactForm{
 	box-shadow: 0px 3px 18px -10px rgba(0,0,0,1); float:left; height:900px;
@@ -1353,7 +1432,7 @@ div.aboutSmart > h2{
     margin-top: -1px;
 }
 .dropdown-submenu .submenu{
-	border-radius:5px;
+	border-radius:10px;
 	left:-100%;
 }
 .submenu > li > a{
@@ -1365,13 +1444,15 @@ div.aboutSmart > h2{
 	background:none;
 }
 .notiList{
-	width:70%;
+	width:770px;
 	margin:40px auto;
+	height:auto;
 }
 .notiItem{
-	padding:10px 20px;
+	padding:10px 0px 10px 20px;
 	float:left;
 	width:100%;
+	height:60px;
 }
 .notiItemImg{
 	float:left;
@@ -1431,7 +1512,6 @@ div.aboutSmart > h2{
 
 #result{
 	float:left;
-	width:1440px;
 	height:909px;
 }
 .map{
@@ -1439,32 +1519,31 @@ div.aboutSmart > h2{
 	float:left;
 }
 .map.exp{
-	width:50%;
 	float:left;
 }
 .resultPanel{
 	width:435px;
 	float:left;
-	padding:30px 30px 0px 30px;
 	right:0;
 	background:#fff;
 }
 .resultPanel.exp{
-	width:50%;
+	width:705px;
 	float:left;
-	padding:30px 30px 0px 30px;
 	right:0;
 }
 .resultTop{
 	float:left;
 	width:100%;
+	margin: 30px auto 0 auto;
+	padding: 0 30px;
 }
 .searchBar{
 	float:left;
 	width:100%;
 }
 .searchBar input{
-	border: 1px solid #CCC;
+	border: 1px solid #E6E6E6;
 	border-right:none;
 	background: none;
 	color: #000;
@@ -1478,10 +1557,17 @@ div.aboutSmart > h2{
 	-webkit-box-shadow: none !important;
 	width:325px;
 	padding-right: 0;
+	background:#f8f9fb;
+}
+.resultPanel.exp .searchBar input{
+	width:595px;
+	float:left;
+	right:0;
+	background:#f8f9fb;
 }
 .searchBar button{
 	width:50px;
-	border: 1px solid #ccc;
+	border: 1px solid #E6E6E6;
 	border-left: none;
 	border-bottom-right-radius: 40px !important;
 	border-top-right-radius: 40px !important;
@@ -1496,6 +1582,11 @@ div.aboutSmart > h2{
 	-webkit-box-shadow: none !important;
 	padding-right:0;
 	padding: 18px 16px 18px 16px;
+	background:#f8f9fb;
+}
+.resultPanel.exp .searchBar button{
+	
+	background:#f8f9fb;
 }
 .searchBar button > img{
 	width: 20px;
@@ -1531,27 +1622,56 @@ div.aboutSmart > h2{
 .pageNav a.number{
 	color:#ccc;
 }
+.resultIngo{
+	margin:18px auto 15px auto;
+	width:100%;
+	float:left;
+	padding-top:15px;
+	border-top:1px solid #e8eaef;
+}
 .pageNav a.act{
 	background:#6F93F9;
 	border-radius:50%;
 	color:#fff;
 }
 .resultListing{
-	width:100%;
 	float:left;
-	overflow-y:auto;
-	overflow-x:hidden;
+	margin:0 30px;
 }
 .resultItem{
-	padding:10px;
 	border:1px solid #ccc;
 	background:linear-gradient(#eee, #fff);
+	height:100px;
+	border-bottom:none;
+	float:left;
+}
+.resultPanel.exp .resultItem{
+	width:645px;
+	border:1px solid #ccc;
+	background:linear-gradient(#eee, #fff);
+	height:200px;
+	border-bottom:none;
+	float:left;
+}
+.resultItem:last-child{
+	border-bottom:1px solid #ccc;
 }
 .resultItem:hover{
 	background:#fff;
 }
+
+.resultPanel.exp .resultItem:hover{
+	background:#fff;
+}
 .resultItemAva{
-	width:20%;
+	width:80px;
+	margin:10px 0px 10px 15px;
+	float:left;
+	vertical-align:middle;
+}
+.resultPanel.exp .resultItemAva{
+	width:160px;
+	margin:20px 0px 20px 20px;
 	float:left;
 	vertical-align:middle;
 }
@@ -1559,28 +1679,57 @@ div.aboutSmart > h2{
 	width:100%;
 }
 .resultItemContent{
-	width:75%;
+	width:232px;
 	float:left;
-	padding-left:10px;
+	margin:10px auto 0px 20px;
 	vertical-align:middle;
+	z-index:100;
+	position:relative;
+}
+.resultPanel.exp .resultItemContent{
+	width:309px;
+	float:left;
+	margin:39px auto 40px 50px;
+	vertical-align:middle;
+	z-index:100;
+	position:relative;
 }
 .resultItemContent h7{
+	margin-bottom:2px;
 }
-.resultItemContent p{
+
+.resultItemContent p.pAdd{
+	margin:0px;
+}
+.resultItemContent p.pFull{
+	margin:0px !important;
 }
 .resultItemView{
-    width: 5%;
+    width: 50px;
     float: right;
-    right: -10px;
+    right: 0px;
     position: relative;
-    top: -10px;
+    top: -87px;
+	z-index:50;
+}
+.resultPanel.exp .resultItemView{
+    width: 50px;
+    float: right;
+    right: 0px;
+    position: relative;
+    top: 0px;
+	z-index:50;
+}
+.resultItemView a{
+	width:100%;
+	height:100%;
 }
 .resultItemView div{ 
 	background:url(../assets/combined-shape.svg) no-repeat;
     background-size: auto auto;
 	background-size: cover;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	right: 0;
 	top:0;
 	position: absolute;
@@ -1589,69 +1738,116 @@ div.aboutSmart > h2{
 	filter: invert(1) sepia(1) saturate(141) hue-rotate(191deg);
 }
 .resultItemView img{    
-	width: 28px;
-    height: 28px;
+	width: 24px;
+    height: 24px;
     position: relative;
-    right: 24px;
-    top: 8px;
+    left: 18px;
+    top: 5px;
 	filter: invert(1) sepia(1) saturate(141) hue-rotate(191deg);
 	
 }
+
 .resultItemView:hover img{
-	filter: invert(1) sepia(1) saturate(0) hue-rotate(191deg);
+	filter: invert(1) sepia(1) saturate(0);
+}
+.resultPanel.exp .resultItemView img{    
+	width: 48px;
+    height: 48px;
+    position: relative;
+    left: 18px;
+    top: 5px;
+	filter: invert(1) sepia(1) saturate(141) hue-rotate(191deg);
+	
+}
+
+.resultPanel.exp .resultItemView:hover img{
+	filter: invert(1) sepia(1) saturate(0);
 }
 .filterPanel{
-	position:fixed;
+	position:absolute;
 	display:none;
 	background:#fff;
-	width:320px;
+	width:370px;
 	box-shadow: 0px 3px 18px -10px rgba(0,0,0,0.5);
-	overflow-y:auto;
+	z-index:600;
+	border-radius:10px;
 }
 
 .sortPanel{
-	position:fixed;
+	position:absolute;
 	display:none;
 	background:#fff;
 	box-shadow: 0px 3px 18px -10px rgba(0,0,0,0.5);
-	overflow-y:auto;
+	border:1px solid #fff;
+	text-align:center;
+}
+.sortPanel img{
+	width:15px;
+	height:15px;
+	filter:invert(0.9) grayscale(4);
+}
+.sortPanel li:hover img{
+	filter:invert(1) sepia(1) saturate(0);
 }
 .filterPanel h7{
-	display:contents;
 }
 .item01{
-	padding:20px;
+	padding:37px 0px 21px 30px;
 	border-bottom:1px solid #CCC;
+	float:left;
+	width:100%;
+}
+.item01 h7{
+	margin:0 0 25px 0;
+	float:left;
+	width:100%;
+}
+.item01 ul{
+	padding:0;
+	float:left;
 }
 .item01 ul li{
-	padding:10px 0px;
+	padding:11px 0px;
+}
+.item01 ul li:first-child{
+	padding-top:0px;
 }
 .item01 ul li:last-child{
 	padding-bottom:0px;
 }
 .item01 ul li .customRadio{
 	padding-left:25px;
+	margin-left:0;
 	font-size:16px;
 	line-height:24px;
 	font-weight:500;
 }
 .endItem{
-	padding:20px 20px;
+	padding:20px 30px;
+	float:left;
+	width:100%;
 }
 
+.endItem a{
+	padding-bottom:20px;
+	float:left;
+	width:100%;
+}
 .endItem p{
 	color:#1046f1;
 }
 .endItem button{
 	padding:15px;
-	width:48%;
+	width:140px;
 	background:#eee;
 	color:#000;
-	height:50px;
+	height:54px;
+	float:left;
 }
 .endItem button:last-child{
 	background:#6f93f9;
 	color:#fff;
+	float:right;
 }
 .expandBtn{
 	padding:15px;
@@ -1705,6 +1901,15 @@ div.aboutSmart > h2{
 }
 .whoImg{
 	margin-top:30px;
+}
+.whoImg img{
+	margin:0 30px 0 0;
+	width:170px;
+	height:170px;
+	float:left;
+}
+.whoImg img:last-child{
+	margin:0;
 }
 .coverImg{
 	background-image:url(../assets/bernard-hermant-616385-unsplash-copy@2x.jpg);
@@ -1789,9 +1994,21 @@ div.aboutSmart > h2{
 	margin-bottom:60px;
 }
 .connectHeader{
-	width:50%;
+	width:100%;
 	float:left;
 }
+.connectHeader h4{
+	float:left;
+}
+.connectHeader select{
+	width:270px;
+	float:right;
+}
+.connectHeader > h7{
+	width:100%;
+	float:left;
+}
+
 .connectBody{
 	width:100%;
 	float:left;
@@ -1872,6 +2089,8 @@ div.aboutSmart > h2{
 }
 .blockSC{
 	margin-bottom: 10px;
+	width:100%;
+	float:left;
 }
 .presentBlock{
 	width: 24px;
@@ -1905,6 +2124,9 @@ div.aboutSmart > h2{
 	line-height: 1.5;
 	float:left;
 }
+.tagCode a{
+	color:#000;
+}
 .item21{
 	margin:15px;
 	float:left;
@@ -1918,6 +2140,57 @@ div.aboutSmart > h2{
 	box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.7);
 }
 .itemRelatedCompany img{
-	width:100%;
-	height:100%;
+	height:75px;
+	width:auto;
+	max-width:160px;
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+}
+.itemRelatedCompany .itemRelatedContent{
+	float:left;
+	margin-left:30px;
+	margin-bottom:27px;
+}
+.itemRelatedCompany .itemRelatedContent > p{
+	margin:0;
+	padding:0;
+}
+.itemRelatedCompany .itemRelatedContent > div{
+	border:none;
+	border-top:2px solid #1046f1;
+	width:63px;
+	margin:0;
+	padding:0;
+	margin-top:10px;
+}
+.itemRelatedCompany a{
+	color:#000;
+}
+#aboutBanner .guildNav{
+	margin-top:145px;
+}
+#aboutBanner .companyIntro{
+	margin-top:145px;
+	margin-bottom:60px;
+	padding:0;
+}
+#aboutBanner .companyIntro .companyName{
+	padding:0;
+}
+
+#contactForm .guildNav{
+	margin-top:145px;
+}
+#contactForm .companyIntro{
+	margin-top:185px;
+	margin-bottom:10px;
+	padding:0;
+}
+#contactForm .companyIntro .companyName{
+	padding:0;
+}
+
+#contactForm .companyIntro .companyName h3{
+	margin:0;
 }

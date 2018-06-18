@@ -76,6 +76,7 @@ $(document).ready(function(){
 	/*Change height fit screen*/
 	/*Change height fit screen*/
 	/*Change height fit screen*/
+	$(".map").width($(document).width()-440);
 	/*$(".map").height($(document).height()-115);
 	$(".result").height($(document).height()-115);
 	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
@@ -87,6 +88,7 @@ $(document).ready(function(){
 		$(".result").height($(document).height()-115);
 		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
 		$(".filterPanel").height($(".resultListing").height());*/
+		$(".map").width($(document).width()-435);
 		$('.expandBtn').css('top',$('.searchBar').offset().top);
 		$('.expandBtn').css('left',$('.searchBar').offset().left-84);
 		$('#menu').next().css('top',$('#menu').offset().top+24);
@@ -113,6 +115,7 @@ $(document).ready(function(){
 		var b = $('.resultPanel').hasClass('exp');
 		if(a==true && b==true)
 		{
+			$(".map").width($(document).width()-435);
 			$('.map').removeClass('exp');
 			$('.resultPanel').removeClass('exp');
 			$('.expandBtn').removeAttr('style');
@@ -134,30 +137,27 @@ $(document).ready(function(){
 		}
 		else
 		{
+			$(".map").width($(document).width()-705);
 			$('.map').addClass('exp');
 			$('.resultPanel').addClass('exp');
 			$('.expandBtn').css('transform','rotate(180deg)');
 			var n = $(".resultItemContent h7").length;
 			for(i = 0; i<n ;i++)
 			{
-				$(".resultItemContent").eq(i).css('padding-top','15px');
 				$(".resultItemContent h7").eq(i).css('font-size',32);
-				$(".resultItemContent h7").eq(i).css('margin','15px 30px');
 				$(".resultItemContent h7").eq(i).css('line-height','40px');
 				$(".resultItemContent p.pFull").eq(i).css('font-size',16);
 				$(".resultItemContent p.pFull").eq(i).css('line-height','24px');
-				$(".resultItemContent p.pFull").eq(i).css('margin','6px 30px');
 				$(".resultItemContent p.pAdd").eq(i).css('font-size',14);
 				$(".resultItemContent p.pAdd").eq(i).css('line-height','21px');
-				$(".resultItemContent p.pAdd").eq(i).css('margin','6px 30px');
 			}
 			
 			var m = $(".resultItemView div").length;
 			for(i = 0; i<m ;i++)
 			{
-				$(".resultItemView div").eq(i).css('width',80);
-				$(".resultItemView div").eq(i).css('height',80);
-				$(".resultItemView img").eq(i).css('right',12);
+				$(".resultItemView div").eq(i).css('width',104);
+				$(".resultItemView div").eq(i).css('height',104);
+				$(".resultItemView img").eq(i).css('left',-16);
 				$(".resultItemView img").eq(i).css('top',16);
 			}
 		}
