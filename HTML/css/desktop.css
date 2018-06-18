@@ -41,7 +41,7 @@
 	display:none;
 }
 .topNavHome .navContent{
-	padding 20px 0px;
+	padding: 20px 0px;
 }
 .contactuss, .companydetail{
 	height: 115px;
@@ -119,8 +119,6 @@
 	padding-right: 20px;
 	margin-left: 0px;
 	width:60px;
-}
-.searchBox{
 }
 .smallmenu{
 	width:200px;
@@ -353,7 +351,7 @@
 }
 #companyInfo
 {
-  	background-color: #f8f9fb;
+  	background-color: #ffffff;
 	padding-top:10px;
 	padding-bottom:80px;
 }
@@ -728,7 +726,6 @@ div.aboutSmart > h2{
 	float: left;
 	display: block;
 	margin: auto 0;
-	vertical-align:middle;
 }
 .reviewAva img{
 	width:100px;
@@ -807,9 +804,9 @@ div.aboutSmart > h2{
 	vertical-align:middle;
 	text-transform:uppercase;
 }
-.footerItem img{
-	/*width:20%;*/
-}
+/*.footerItem img{
+	width:20%;
+}*/
 
 .footerCol{
 	width:33.33333%;
@@ -887,9 +884,6 @@ div.aboutSmart > h2{
 	height:auto;
 }
 
-#forgot{
-	
-}
 #forgot .modal-footer a{
 	float:right; 
 	margin-bottom:20px;
@@ -1362,8 +1356,6 @@ div.aboutSmart > h2{
 .contactLeft a{
 	color:#fff;
 }
-.contactLeft p{
-}
 .contactLeft a:hover{
 	color:#fff;
 	font-weight:600;
@@ -1792,8 +1784,6 @@ div.aboutSmart > h2{
 .sortPanel li:hover img{
 	filter:invert(1) sepia(1) saturate(0);
 }
-.filterPanel h7{
-}
 .item01{
 	padding:37px 0px 21px 30px;
 	border-bottom:1px solid #CCC;
@@ -1938,9 +1928,9 @@ div.aboutSmart > h2{
 	padding:00px 0px;
 }
 .basicContent .customCard{
-	background: #6f93f9;
+	background: #fafbfc;
 	width: 100%;
-	color: #fff;
+	color: #333;
 	border-radius:35px;
 	text-decoration:none;
 	vertical-align:middle;
@@ -1948,7 +1938,8 @@ div.aboutSmart > h2{
 	padding-left:26px;
 	box-shadow:none !important;
      outline:none !important; 
-     -webkit-box-shadow:none !important;
+	 -webkit-box-shadow:none !important;
+	 margin-bottom: 14px;
 }
 .basicContent .customCard:hover{
 	background: #6f93f9;
@@ -2014,7 +2005,7 @@ div.aboutSmart > h2{
 	width:270px;
 	float:right;
 }
-.connectHeader > h7{
+.connectHeader h7{
 	width:100%;
 	float:left;
 }
@@ -2022,7 +2013,7 @@ div.aboutSmart > h2{
 .connectBody{
 	width:100%;
 	float:left;
-	margin-top:20px;
+	margin-top:30px;
 }
 .connectBodyContent{
 	width:50%;
@@ -2109,13 +2100,16 @@ div.aboutSmart > h2{
 	margin-right: 30px;
 	margin-bottom: 10px;
 }
+.blockSC h7{
+	width: auto;
+}
 .presentSupplier{
 	background: #333;
 }
 .presentCustomer{
 	background: #6f93f9;
 }
-.connectBody.bodySC{
+.connectBody.bodySC .container{
 	background:url(../assets/map.png) no-repeat;
 	background-size:cover;
 }
@@ -2232,4 +2226,150 @@ div.aboutSmart > h2{
 
 #contactForm .companyIntro .companyName h3{
 	margin:0;
+}
+.featureCategory, .featureCategory2{
+	width: 48%;
+	float: left;
+}
+.tableCategory td{
+	vertical-align: top;
+	padding-bottom: 10px;
+}
+.tableCategory td:nth-child(1){
+	width: 30%;
+}
+.tableCategory td:nth-child(2){
+	width: 70%;
+	padding-left: 60px;
+}
+.featureCategory2 .connectHeader{
+	margin-left: 118px;
+}
+.featureCategory2 .connectHeader:nth-child(2){
+	margin-top: 84px;
+}
+.featureVerticalDivider{
+	height: 230px;
+	border-left: 1px solid #999999;
+	width: 1px;
+	position: relative;
+	float: left;
+	margin-top: 60px;
+}
+.codeSelection .connectBody{
+	padding-left: 100px;
+	margin-top: 10px;
+}
+.codeSelectItem{
+	width: 370px;
+	margin-right: 130px;
+	float: left;
+	margin-bottom: 20px;
+}
+.codeSelectItem p{
+	margin: auto auto 10px 20px;
+}
+.codeSelectItem div{
+	width: 100%;
+	height: 53px;
+	padding: 12px 0 16px 18px;
+	background: #f8f9fb;
+	border: 1px solid #e8eaef;
+	border-radius: 26px;
+	color: #333;
+	font-size: 16px;
+	line-height: 24px;
+}
+.codeSelection .connectBody h6{
+	padding-top: 51px;
+}
+.codeSelection .connectBody h6 a{
+	padding-left: 33px;
+}
+.featureServicesItem{
+	width: 50%;
+	float: left;
+	margin-bottom: 30px;
+}
+.featureServicesItem img{
+	width: 80px;
+	padding: 23px 48px 0 0;
+	float: left;
+}
+.featureServicesItem .featureServicesItemContent{
+	width: calc(100% - 80px);
+	position: relative;
+	float: left;
+	padding-right: 103px;
+}
+.featureServicesItem .featureServicesItemContent h7{
+	float: left;
+}
+.featureCertItem{
+	width: 270px;
+	float: left;
+	margin-right: 30px;
+	text-align: center;
+}
+.featureCertItem img{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	float: left;
+}
+.featureCertItem .featureCertItemContent{
+	float: left;
+	width: 100%;
+}
+.featureCertItem .featureCertItemContent p{
+	margin: 0;
+	padding: 0;
+}
+.featureCertItemYear{
+	width: 53px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 21px;
+    background: #1046f1;
+    color: #fff;
+    border-radius: 24px;
+    padding: 0 7.5px;
+    position: absolute;
+    display: block;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+.featureProductItem{
+	width: 270px;
+	height: 449px;
+	float: left;
+	margin-right: 30px;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0px 0px 20px -1px #cccccc;
+	margin-bottom: 30px;
+}
+.featureProductItem:nth-child(4n+4){
+	margin-right: 0px;
+}
+.featureProductItem img{
+	width: 270px;
+	height: 240px;
+	float: left;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+}
+.featureProductItem .featureProductItemContent{
+	float: left;
+	width: 100%;
+	padding: 20px 20px 0 20px;
+}
+.featureProductItem .featureProductItemContent p{
+	margin-top: 10px;
+}
+.featureProductItemContent img{
+	width: 24px;
+	height: 1px;
+	margin-top:10px;
+	margin-right: 5px;
 }

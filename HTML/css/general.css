@@ -313,8 +313,6 @@ label{
 .modal-dialog{
 	margin-top:20%;
 }
-.modal-body > img{
-}
 .modal-footer > .btn{
 	border-radius:40px;
 }
@@ -356,8 +354,6 @@ label{
 }
 #feedback .modal-header{
 	padding:30px 15px 20px 30px;
-}
-#feedback h6{
 }
 .feedbackIcon{
 	padding:0 !important;
@@ -411,8 +407,6 @@ label{
 }
 .fbCategory > li:nth-child(2){
 	margin-right:19.5px;
-}
-.fbCategory > li:nth-child(3){
 }
 .fbCategory > li > a{
 	color:#333;
@@ -616,7 +610,6 @@ label{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-	vertical-align:middle
 }
 
 /* Hide the browser's default checkbox */
@@ -808,6 +801,9 @@ label{
 }
 .color1046f1{
 	color:#1046f1 !important;
+}
+.color6F93F9{
+	color: #6F93F9 !important;
 }
 .colorBG1046f1{
 	background:#1046f1 !important;
