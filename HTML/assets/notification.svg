@@ -1,15 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>FEFD217C-B8E9-4691-B004-0C58F9CB8667</title>
+    <desc>Created with sketchtool.</desc>
     <defs>
-        <path id="a" d="M18 14V9A6 6 0 0 0 6 9v5c0 .729-.195 1.412-.535 2h13.07A3.982 3.982 0 0 1 18 14zm4 4H2c-1.333 0-1.333-2 0-2a2 2 0 0 0 2-2V9a8 8 0 0 1 16 0v5a2 2 0 0 0 2 2c1.333 0 1.333 2 0 2zm-7.405 3.502a3 3 0 0 1-5.19 0A1 1 0 0 1 10.27 20h3.46a1 1 0 0 1 .865 1.502z"/>
+        <path d="M18,14 L18,9.00000001 C18,5.68629155 15.3137085,3.0000001 12,3.0000001 C8.68629154,3.0000001 6.00000005,5.68629155 6,9 L6,14 C6,14.7285743 5.80521143,15.4116533 5.46487122,16 L18.5351288,16 C18.1947886,15.4116533 18,14.7285743 18,14 Z M22,18 L2,18 C0.666666667,18 0.666666667,16 2,16 C3.1045695,16 4,15.1045695 4,14 L4,8.99999999 C4.00000007,4.58172203 7.58172205,1.0000001 12,1.0000001 C16.418278,1.0000001 19.9999999,4.58172203 20,9 L20,14 C20,15.1045695 20.8954305,16 22,16 C23.3333333,16 23.3333333,18 22,18 Z M14.595,21.5017719 C14.0583034,22.4269784 13.0696029,22.9964563 12,22.9964563 C10.9303971,22.9964563 9.94169664,22.4269784 9.405,21.5017719 C9.01827917,20.8351073 9.49928951,20 10.27,20 L13.73,20 C14.5007105,20 14.9817208,20.8351073 14.595,21.5017719 Z" id="path-1"></path>
     </defs>
-    <g fill="none" fill-rule="evenodd">
-        <path d="M0 0h24v24H0z"/>
-        <mask id="b" fill="#fff">
-            <use xlink:href="#a"/>
-        </mask>
-        <use fill="#000" fill-rule="nonzero" xlink:href="#a"/>
-        <g fill="#333" mask="url(#b)">
-            <path d="M0 0h24v24H0z"/>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-24px-/-notification">
+            <rect id="Base" x="0" y="0" width="24" height="24"></rect>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <g id="UI/Color/Flat/Dark-1" mask="url(#mask-2)" fill="#333333">
+                <rect id="Base" x="0" y="0" width="24" height="24"></rect>
+            </g>
         </g>
     </g>
 </svg>

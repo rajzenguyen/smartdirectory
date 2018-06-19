@@ -1,15 +1,19 @@
 $(document).ready(function(){   
 	$('.slick-for').slick({
-	  autoplay: true,
-	  centerMode: false,
-	  slidesToShow: 3
+		prevArrow:$('.navLeftSlick2'),
+		nextArrow:$('.navRightSlick2'),
+		autoplay: true,
+		centerMode: false,
+		slidesToShow: 3
 	});	
 	
 	$('.slick-for-Gallery').slick({
-	  autoplay: true,
-	  centerMode: false,
-	  variableWidth: true,
-	  slidesToShow: 3
+		prevArrow:$('.navLeftSlick'),
+		nextArrow:$('.navRightSlick'),
+		autoplay: true,
+		centerMode: false,
+		variableWidth: true,
+		slidesToShow: 3
 	});		
 });
 
@@ -26,11 +30,11 @@ $(document).ready(function(){
 	});   
 		
 });
-
+/*
 $(document).ready(function(){		
 	$('#select-company').selectize();
 });
-
+*/
 $(document).ready(function(){
 	
 	$('.reviewSlick2').slick({
@@ -668,4 +672,38 @@ $(document).ready(function(){
 		$("#c3").removeAttr('checked');
 		$("#c3").attr('checked','checked');
 	});
+
+	/* function copy to clipboard */
+	function copyToClipboard(element) {
+		var $temp = $("<input>");
+		$("body").append($temp);
+		$temp.val($(element).html()).select();
+		document.execCommand("copy");
+		$temp.remove();
+	  }
+
+	$('.copyToClipboard').click(function(){
+		copyToClipboard('#emailSign');
+		alert('Copied to clicpboard!');
+	});
+
+});
+
+$(document).ready(function(){   
+	$('.topImgGalleryProduct').slick({
+		autoplay: false,
+		centerMode: false,
+		arrows:false,
+		slidesToShow: 1,
+		asNavFor: '.botImgGalleryProduct'
+	});	
+	
+	$('.botImgGalleryProduct').slick({
+		autoplay: true,
+		centerMode: false,
+		arrows:false,
+		variableWidth:true,
+		focusOnSelect: true,
+		asNavFor: '.topImgGalleryProduct'
+	});		
 });

@@ -1,20 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>C77C0D40-C4B0-4A33-B397-8F37B9C694FA</title>
-    <desc>Created with sketchtool.</desc>
-    <defs>
-        <path d="M4,9.48908381 L4,20 C4,20.5522847 4.44771525,21 5,21 L19,21 C19.5522847,21 20,20.5522847 20,20 L20,9.48908381 L12,3.26686158 L4,9.48908381 Z M2.38605939,8.21064778 L11.3860594,1.21064778 C11.7471699,0.929784072 12.2528301,0.929784072 12.6139406,1.21064778 L21.6139406,8.21064778 C21.8575272,8.40010398 22,8.69140957 22,9 L22,20 C22,21.6568542 20.6568542,23 19,23 L5,23 C3.34314575,23 2,21.6568542 2,20 L2,9 C2,8.69140957 2.14247284,8.40010398 2.38605939,8.21064778 Z M10,13 L14,13 L14,22 C14,22.5522847 14.4477153,23 15,23 C15.5522847,23 16,22.5522847 16,22 L16,12 C16,11.4477153 15.5522847,11 15,11 L9,11 C8.44771525,11 8,11.4477153 8,12 L8,22 C8,22.5522847 8.44771525,23 9,23 C9.55228475,23 10,22.5522847 10,22 L10,13 Z" id="path-1"></path>
-    </defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icons-/-24px-/-home">
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
-            <g id="UI/Color/Flat/Black" mask="url(#mask-2)" fill="#000000">
-                <rect id="Base" x="0" y="0" width="24" height="24"></rect>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<title>C77C0D40-C4B0-4A33-B397-8F37B9C694FA</title>
+<desc>Created with sketchtool.</desc>
+<g id="Symbols">
+	<g id="Icons-_x2F_-24px-_x2F_-home">
+		<g id="Combined-Shape">
+			<path id="path-1_1_" fill="#1046F1" d="M4,9.489V20c0,0.553,0.448,1,1,1h14c0.553,0,1-0.447,1-1V9.489l-8-6.222L4,9.489z
+				 M2.386,8.21l9-7c0.361-0.281,0.867-0.281,1.227,0l9,7C21.857,8.4,22,8.691,22,9v11c0,1.656-1.344,3-3,3H5c-1.657,0-3-1.344-3-3
+				V9C2,8.691,2.143,8.4,2.386,8.21z M10,13h4v9c0,0.553,0.447,1,1,1s1-0.447,1-1V12c0-0.552-0.447-1-1-1H9c-0.552,0-1,0.448-1,1v10
+				c0,0.553,0.448,1,1,1s1-0.447,1-1V13z"/>
+		</g>
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24" id="mask-2">
+			<g filter="url(#Adobe_OpacityMaskFilter)">
+				<path id="path-1" fill="#FFFFFF" d="M4,9.489V20c0,0.553,0.448,1,1,1h14c0.553,0,1-0.447,1-1V9.489l-8-6.222L4,9.489z
+					 M2.386,8.21l9-7c0.361-0.281,0.867-0.281,1.227,0l9,7C21.857,8.4,22,8.691,22,9v11c0,1.656-1.344,3-3,3H5c-1.657,0-3-1.344-3-3
+					V9C2,8.691,2.143,8.4,2.386,8.21z M10,13h4v9c0,0.553,0.447,1,1,1s1-0.447,1-1V12c0-0.552-0.447-1-1-1H9c-0.552,0-1,0.448-1,1
+					v10c0,0.553,0.448,1,1,1s1-0.447,1-1V13z"/>
+			</g>
+		</mask>
+		<g id="UI_x2F_Color_x2F_Flat_x2F_Black" mask="url(#mask-2)">
+			<rect id="Base" fill="#1046F1" width="24" height="24"/>
+		</g>
+	</g>
+</g>
 </svg>

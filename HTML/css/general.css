@@ -229,6 +229,10 @@ select:-moz-focusring {
 }
 .btn-primary{
 	background:#6F93F9;
+	border: none;
+}
+.btn-primary:focus{
+	background:#6F93F9;
 }
 .btn-primary:hover{
 	background:#1046f1;
@@ -343,10 +347,10 @@ label{
 	vertical-align:middle;
 }
 .whiteSVG{
-	filter: invert(1) sepia(1) saturate(0);
+	filter: brightness(0) invert(1);
 }
 .blackSVG{
-	filter:none;
+	filter:grayscale(1) invert(0) brightness(0);
 }
 #feedback .modal-dialog{
 	width:576px;
