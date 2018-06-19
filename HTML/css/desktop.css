@@ -2068,7 +2068,7 @@ div.aboutSmart > h2{
 	position: relative;
 	top: -70px;
 }
-.connectBodyContentItem:nth-child(2n+1) .connectBodyContentItemIMG img{
+.connectBodyContentItem .connectBodyContentItemIMG img{
 	opacity: 0.4;
 }
 .connectBodyContentItemIMG > div{
@@ -2078,13 +2078,14 @@ div.aboutSmart > h2{
 	background:#d8d8d84d;
 	z-index: 2;
 }
+/*
 .connectBodyContentItemIMG:nth-child(2n) > div{
 	width:70px; 
 	height:70px; 
 	border-radius: 16px; 
 	background:#1046f1;
 	z-index: 2;
-}
+}*/
 .connectBodyContentItemContent{
 	width:85%; 
 	float:left;
@@ -2092,6 +2093,20 @@ div.aboutSmart > h2{
 }
 .connectBodyContentItemContent h6{
 	margin-top:0;
+}
+.connectBodyContentItemContent a{
+	color: #000;
+}
+.connectBodyContentItem:hover .connectBodyContentItemIMG > div{
+	background:#1046f1;
+}
+
+.connectBodyContentItemContent:hover a{
+	color: #1046f1;
+}
+.connectBodyContentItem:hover .connectBodyContentItemIMG > img{
+	filter: brightness(0) invert(1);
+	opacity: 1;
 }
 .barConnect{
 	border-left: 1px solid #CCCCCC;
