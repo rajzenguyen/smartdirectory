@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <link rel="stylesheet" href="css/general.css" type="text/css" />
 <link rel="stylesheet" href="css/desktop.css" type="text/css" />
+<link rel="stylesheet" href="css/tablet.css" type="text/css" />
 
 </head>
 
@@ -85,6 +86,7 @@
 
 <div id="profileBanner">
 	<div class="container">
+        <img class="profileTopBanner" src="assets/bernard-hermant-616385-unsplash.jpg">
     	<div class="guideNav">
         	<a href="#">Home</a> > 
             <a href="#">Company Detail</a>
@@ -135,7 +137,7 @@
                     <div id="profile" class="tab-pane active">
                         <div class="container">
                             <div class="profileLeft">
-                                <a href="#" class="font-regular"><img src="assets/group-3.svg"> Edit Profile</a>
+                                <a href="editprofile.html" class="font-regular"><img src="assets/group-3.svg"> Edit Profile</a>
                                 <div class="profileLeftContent">
                                     <h7>Your profile is <a href="#">Level 1</a></h7>
                                     
@@ -151,27 +153,32 @@
                                     </p>
 
                                     <h7>Phone</h7>
-                                    <p>0123 456 789</p>
+                                    <p><a class="color000" href="tel:+84123456789">0123 456 789</a></p>
 
                                     <h7>Email</h7>
-                                    <p><a href="mailto:contact@nso.com.vn">contact@nso.com.vn</a></p>
+                                    <p><a class="color000" href="mailto:contact@nso.com.vn">contact@nso.com.vn</a></p>
 
                                 </div>
                             </div>
                             <div class="profileRight">
                                 <div class="top">
                                     <h7>NameCard</h7> 
-                                    <a href="#" class="font-regular"><img src="assets/download.svg" width="24" height="24"> <p>Download</p></a>
+                                    <a class="downloadNameCard" href="#" class="font-regular"><img src="assets/download.svg" width="24" height="24"> <p>Download</p></a>
+                                    <a class="testupdatenamecard">just for test</a>
                                 </div>
-                                <img src="images/fulls/02.jpg">
-                                <img src="images/fulls/03.jpg">
-                                
+                                <img class="imgNameCard" src="images/fulls/02.jpg">
+                                <img class="imgNameCard" src="images/fulls/03.jpg">
+                                <div class="uploadNameCard text-center">
+                                    <button name="btnCreateNameCard" class="btn btn-primary">Create Namecard</button>
+                                </div>
+
                                 <div class="top">
                                     <h7>Email signature</h7> 
-                                    <a class="font-regular"><p class="copyToClipboard">Click to Copy</p></a>
+                                    <a class="font-regular copyToClipboard"><p>Click to Copy</p></a>
                                 </div>
 
                                 <!--Dùng inline CSS ở đây để khi copy thì copy luôn cả style-->
+                                <!--Link image ở đây phải dùng địa chỉ tuyệt đối: http://abc.jpg -->
                                 <div class="emailSign" id="emailSign">
                                     <div style="width: 450px; height: 160px; background: #fff; padding: 10px;">
                                         <div style="width: 120px; height: 140px; float: left; border-right: 4px solid #F90;">
@@ -194,6 +201,10 @@
                                     </div>
                                 </div>
                                 <!--Dùng inline CSS ở đây để khi copy thì copy luôn cả style-->
+                                
+                                <div class="uploadEmailSign text-center">
+                                        <button name="btnCreateEmailSign" class="btn btn-primary">Create Email Signature</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -219,17 +230,17 @@
                                             <div class="formControl">
                                                 <div class="form-group">
                                                     <label for="currentPassword" class="col-form-label">Current Password</label>
-                                                    <input class="form-control" id="currentPassword" placeholder="Current Password" type="text">
+                                                    <input class="form-control" id="currentPassword" placeholder="Current Password" type="password">
                                                     <img src="assets/lock.svg" class="input_img">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="newPass" class="col-form-label">New Password</label>
-                                                    <input class="form-control" id="newPass" placeholder="New Password" type="text">
+                                                    <input class="form-control" id="newPass" placeholder="New Password" type="password">
                                                     <img src="assets/lock.svg" class="input_img">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="confirmNewPass" class="col-form-label">Confirm New Password</label>
-                                                    <input class="form-control" id="confirmNewPass" placeholder="Confirm New Password" type="text">
+                                                    <input class="form-control" id="confirmNewPass" placeholder="Confirm New Password" type="password">
                                                     <img src="assets/lock.svg" class="input_img">
                                                 </div>
                                                 <div class="form-group">
@@ -306,6 +317,13 @@
             <div class="clearfix"></div>
         </div>
     
+</div>
+
+<!--Modal copied-->
+<div class="notification" style="display: none;">
+	<p class="font-light">
+    	Copied to clipboard!
+    </p>
 </div>
 
 

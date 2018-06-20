@@ -2,31 +2,204 @@
 /* CSS Document */
 
 @media only screen and (max-width: 1024px) {
+.topNavHome .navContent {
+	padding: 0;
+}
 .catItem{
-	margin:10px 13px;
+	margin:10px 13px !important;
+	width: 22% !important;
 }
-.customerNav{
-	width:70%;
+.aboutSmartItem {
+    width: 33% !important;
+    float: left;
+    height: 400px;
+    margin-bottom: 60px;
 }
+
+.aboutStatisticItem{
+	padding:0;
+	float:left;
+	width: auto;
+	height: auto;
+	margin-right: 0;
+}
+.aboutStatisticItem:nth-child(4){
+	margin-right: 0px;
+}
+.aboutStatisticContent{
+	float:left;
+	background:#fff;
+	border-radius:8px;
+	box-shadow: 0px 7px 72px -8px rgba(0,0,0,0.0);
+	width: 270px;
+	height: 210px;
+	margin-right: 30px;
+	
+}
+.aboutStatisticContent > img {
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
+    width: 48px;
+    filter: invert(0.5) sepia(57.5) saturate(31) grayscale(4);
+    opacity: 0.5;
+    position: relative;
+}
+
+
+.col01{
+	width:24%;
+	height:60px;
+	float:left;
+	margin:0 20px 0 0;
+	padding:0;
+}
+.col02{
+	width:19%;
+	float:left;
+	margin:0 20px 0 0;
+	padding:0;
+}
+.col03{
+	width:30%;
+	float:left;
+	margin:0 20px 0 0;
+	padding:0;
+}
+.col04{
+	width:19%;
+	float:left;
+	margin:0 0;
+	padding:0 0;
+}
+
 .listSubMenu a {
 	font-size: 13px;
 	line-height: 21px;
 }
+.listSubMenu li {
+    padding: 0px 14px;
+}
 .footerLeftContent p{
 	font-size: 12px;
 	line-height: 22px;
+    margin: 19px 0px 20px 0;
 }
-
+.footerLeftContent {
+    width: 31%;
+}
+.footerRightContent {
+    width: 69%;
+}
+.basicIntroDesc {
+    width: calc(100% - 110px);
+    margin-right: 40px;
+}
+.connectBody.bodySC img {
+    margin: 80px 68px;
+}
+.featureCategory2 .connectHeader {
+    margin-left: 50px;
+}
+.codeSelectItem {
+    margin-right: 40px;
+}
+.featureCertItem {
+    width: 30%;
+}
+.featureProductItem{
+	width: 30%;
+	margin-right: 30px;
+}
+.featureProductItem:nth-child(3n+3){
+	margin-right: 0;
+}
+.featureProductItem:nth-child(4n+4){
+	margin-right: 30px;
+}
+.featureProductItem img {
+    width: 100%;
+}
+.productDetailPanel .modal-dialog {
+	width: 90%;
+	height: 575px;
+}
+.productDetailPanel .modal-content {
+	width: 100%;
+	height: 575px;
+}
+.topImgGalleryProduct {
+    height: 470px;
+}
+.itemGal01 {
+    width: 100%;
+    height: 470px;
+}
 }
 
 
 
 @media only screen and (max-width: 769px) {
-	.catItem{
-		margin:10px 10px;
+
+	.controlS{
+		width:90%;
+		margin:0 auto;
 	}
-	.customerNav{
-		width:86%;
+	.searchInfo .controlS > input{
+		border-bottom-right-radius:unset !important;
+		border-top-right-radius:unset !important;
+		border:hidden;
+		width: calc(100% - 80px);
+		font-size:16px;
+		line-height: 24px;
+		color: #000;
+		height:64px;
+	}
+	.searchInfo .controlS > button{
+		border-bottom-left-radius:unset !important;
+		border-top-left-radius:unset !important;
+		background:#1046f1;
+		margin-left:-7px;
+		border:none;
+		color:#fff;
+		padding:20px 29px;
+		width:80px;
+		height:64px;
+		float:right;
+	}
+	
+	.searchInfo > .para01{
+		width:90%;
+		height:54px;
+		margin:20px auto 115px auto;
+	}
+	.searchInfo > .para02{
+		width:90%;
+		height:63px;
+		margin:0 auto 49px auto;
+	}
+
+
+	.topNavHome .navContent {
+		padding: 0;
+	}
+	.catItem{
+		margin:10px !important;
+		width: 30% !important;
+	}
+	div.aboutSmart > h2 {
+		width: 90%;
+		margin: 60px auto 30px auto;
+	}
+	.aboutSmartItem {
+		height: 455px;
+	}
+	
+	.aboutStatistic > div.container > h2{
+		width:auto;
+	}
+	.aboutStatistic > div.container > p{
+		width:auto;
 	}
 	.listSubMenu a {
 		font-size: 13px;
@@ -35,5 +208,74 @@
 	.footerLeftContent p{
 		font-size: 12px;
 		line-height: 18px;
+		margin: 12px 0px 12px 0;
+	}
+	.col01{
+		width:45%;
+		height:60px;
+		float:left;
+		margin:0 20px 30px 0;
+		padding:0;
+	}
+	.col02{
+		width:45%;
+		float:left;
+		margin:0 20px 30px 0;
+		padding:0;
+	}
+	.col03{
+		width:45%;
+		float:left;
+		margin:0 20px 0 0;
+		padding:0;
+	}
+	.col04{
+		width:45%;
+		float:left;
+		margin:0 0;
+		padding:0 0;
+	}
+
+	.connectBodyContent {
+		width: 100%;
+	}
+	
+	.featureCategory2 .connectHeader {
+		margin-left: 30px;
+	}
+	.featureVerticalDivider {
+		height: 312px;
+	}
+	.codeSelectItem {
+		width: 45%;
+		margin-right: 20px;
+	}
+	.codeSelection .connectBody {
+		padding-left: 60px;
+		margin-top: 10px;
+	}
+	.featureCertItem {
+		width: 30%;
+		margin-right: 15px;
+	}
+	.featureCertItemYear {
+		margin-left: 132px;
+	}
+	.featureProductItem{
+		width: 30%;
+		height: 500px;
+		margin-right: 30px;
+	}
+	.featureProductItem:nth-child(3n+3){
+		margin-right: 0;
+	}
+	.featureProductItem:nth-child(4n+4){
+		margin-right: 30px;
+	}
+	.featureProductItem img {
+		width: 100%;
+	}
+	.featureProductItemContent img {
+		width: 24px;
 	}
 }

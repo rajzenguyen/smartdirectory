@@ -1,11 +1,36 @@
-$(document).ready(function(){   
-	$('.slick-for').slick({
-		prevArrow:$('.navLeftSlick2'),
-		nextArrow:$('.navRightSlick2'),
-		autoplay: true,
-		centerMode: false,
-		slidesToShow: 3
-	});	
+$(document).ready(function(){  
+	
+	$('.companySlideNavItem').click(function(){
+		var a = $(this).children("a").attr("href");
+		if(a=='#connection')
+		{
+			$('.slick-for').slick({
+				prevArrow:$('.navLeftSlick2'),
+				nextArrow:$('.navRightSlick2'),
+				autoplay: true,
+				centerMode: false,
+				slidesToShow: 3,
+				variableWidth:true,
+				responsive: [
+				  {
+					breakpoint: 1024,
+					settings: {
+					  slidesToShow: 2,
+					  infinite: true,
+					  variableWidth:true
+					}
+				  },
+				  {
+					breakpoint: 600,
+					settings: {
+					  slidesToShow: 1,
+					  variableWidth:true
+					}
+				  }
+				]
+			});	
+		}
+	});
 	
 	$('.slick-for-Gallery').slick({
 		prevArrow:$('.navLeftSlick'),
@@ -73,20 +98,34 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	/*$('.staContent').slick({
-	  dots: false,
-	  infinite: false,
-	  slidesToShow: 1,
-	  centerMode: false,
-	  variableWidth: true,
-	  arrows: false
-	});*/
+	if($(document).width() <= 1025)
+	{
+		$('.staContent').slick({
+		dots: false,
+		infinite: false,
+		slidesToShow: 1,
+		centerMode: false,
+		variableWidth: true,
+		arrows: false
+		});
+
+		$('.staContent2').slick({
+			dots: false,
+			infinite: false,
+			slidesToShow: 1,
+			centerMode: false,
+			variableWidth: true,
+			arrows: false
+		});
+
+	}
 });
 
 $(document).ready(function(){
 	/*Change height fit screen*/
 	/*Change height fit screen*/
 	/*Change height fit screen*/
+		var a =$(document).width();
 	$(".map").width($(document).width()-440);
 	/*$(".map").height($(document).height()-115);
 	$(".result").height($(document).height()-115);
@@ -99,7 +138,7 @@ $(document).ready(function(){
 		$(".result").height($(document).height()-115);
 		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
 		$(".filterPanel").height($(".resultListing").height());*/
-		$(".map").width($(document).width()-435);
+		$(".map").width($(document).width()-440);
 		$('.expandBtn').css('top',$('.searchBar').offset().top);
 		$('.expandBtn').css('left',$('.searchBar').offset().left-84);
 		$('#menu').next().css('top',$('#menu').offset().top+24);
@@ -682,28 +721,70 @@ $(document).ready(function(){
 		$temp.remove();
 	  }
 
+	function showNoti(element){
+		$('.notification').css('position','absolute');
+		$('.notification').css('height','60px');
+		$('.notification').css('top',element.offset().top+30);
+		$('.notification').css('left',element.offset().left);
+		$('.notification').toggle();
+		setTimeout(function() {
+			$(".notification").fadeOut();
+		  }, 1500);
+	}
+
 	$('.copyToClipboard').click(function(){
 		copyToClipboard('#emailSign');
-		alert('Copied to clicpboard!');
+		showNoti($('.copyToClipboard'));
+	});
+
+	$('.testupdatenamecard').click(function(){
+		if($('.downloadNameCard').hasClass('isDisabled'))
+		{
+			$('.downloadNameCard').removeClass('isDisabled');
+		}
+		else
+		{
+			$('.downloadNameCard').addClass('isDisabled');
+		}
+		if($('.copyToClipboard').hasClass('isDisabled'))
+		{
+			$('.copyToClipboard').removeClass('isDisabled');
+		}
+		else
+		{
+			$('.copyToClipboard').addClass('isDisabled');
+		}
+		
+		$('.imgNameCard').toggle();
+		$('.emailSign').toggle();
+		$('.uploadNameCard').toggle();
+		$('.uploadEmailSign').toggle();
 	});
 
 });
 
 $(document).ready(function(){   
-	$('.topImgGalleryProduct').slick({
-		autoplay: false,
-		centerMode: false,
-		arrows:false,
-		slidesToShow: 1,
-		asNavFor: '.botImgGalleryProduct'
-	});	
+	$('.featureProductItem').click(function(){
+		var a = $(this).children("a").attr("data-target");
+
+		$(a + ' .topImgGalleryProduct').slick({
+			autoplay: false,
+			centerMode: false,
+			arrows:false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			asNavFor: '.botImgGalleryProduct'
+		});	
+		
+		$(a + ' .botImgGalleryProduct').slick({
+			autoplay: true,
+			centerMode: false,
+			arrows:false,
+			variableWidth:true,
+			focusOnSelect: true,
+			asNavFor: '.topImgGalleryProduct'
+		});	
+
+	});
 	
-	$('.botImgGalleryProduct').slick({
-		autoplay: true,
-		centerMode: false,
-		arrows:false,
-		variableWidth:true,
-		focusOnSelect: true,
-		asNavFor: '.topImgGalleryProduct'
-	});		
 });
