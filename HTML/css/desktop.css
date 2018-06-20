@@ -270,6 +270,7 @@
 	line-height: 24px;
 	color: #000;
 	height:64px;
+	float: left;
 }
 .searchInfo .controlS > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
@@ -295,13 +296,13 @@
 	border-bottom-left-radius:unset !important;
 	border-top-left-radius:unset !important;
 	background:#1046f1;
-	margin-left:-7px;
+	margin-left:0px;
 	border:none;
 	color:#fff;
 	padding:20px 38px;
 	width:100px;
 	height:64px;
-	float:right;
+	float:left;
 }
 .searchInfo img{
 	color:#fff;
@@ -680,7 +681,7 @@ div.aboutSmart > h2{
 }
 .customerNav h7:nth-child(3){
 	width:187px;
-	padding:8px 0 9px 0;
+	padding:9px 0;
 }
 .customerNav h7:hover{
 	border-top:2px solid #1046f1;
@@ -789,7 +790,7 @@ div.aboutSmart > h2{
 .footerItem:nth-child(2){
 	background:#e8eaef;
 	vertical-align:middle;
-	padding:5px 0px;
+	padding:0;
 }
 .footerItem:nth-child(1) input{
 	vertical-align:middle;
@@ -853,7 +854,7 @@ div.aboutSmart > h2{
 	color:#666666;
 }
 .footerLeftContent{
-	width:341px;
+	width:auto;
 	float:left;
 	vertical-align:middle;
 }
@@ -865,16 +866,16 @@ div.aboutSmart > h2{
 	filter: invert(.5) sepia(.5) saturate(1) grayscale(1);
 }
 .footerRightContent{
-	float:left;
+	float:right;
 	vertical-align:middle;
 	margin:18px 0 18px 0;
 }
-.linkWith img{
+.linkWith a img{
 	filter: grayscale(0);
 	margin-right: 20px;
 	width: 40px;
 }
-.linkWith img:last-child{
+.linkWith a:last-child img{
 	margin-right: 0;
 }
 .guideNav{
@@ -1522,10 +1523,12 @@ div.aboutSmart > h2{
 }
 
 #result{
+	width: 100%;
 	float:left;
 	height:909px;
 }
 .map{
+	width: calc(100% - 435px);
 	float:left;
 }
 .map.exp{
@@ -1552,51 +1555,19 @@ div.aboutSmart > h2{
 	float:left;
 	width:100%;
 }
-.searchBar input{
-	border: 1px solid #E6E6E6;
-	border-right:none !important;
-	background: none;
-	color: #000;
-	border-bottom-left-radius: 40px !important;
-	border-top-left-radius: 40px !important;
-	border-bottom-right-radius: 1px;
-	border-top-right-radius: 1px;
+.searchBar input{	
 	height: 54px;
-	box-shadow: none !important;
-	outline: none !important;
-	-webkit-box-shadow: none !important;
-	width:325px;
 	padding-right: 0;
-	background:#f8f9fb;
-}
-.resultPanel.exp .searchBar input{
-	width:595px;
-	float:left;
-	right:0;
-	background:#f8f9fb;
+	background: #f8f9fb;
+	float: left;
 }
 .searchBar button{
-	width:50px;
-	border: 1px solid #E6E6E6;
-	border-left: none !important;
-	border-bottom-right-radius: 40px !important;
-	border-top-right-radius: 40px !important;
-	border-bottom-left-radius: 1px;
-	border-top-left-radius: 1px;
-	background: none;
-	margin-left: -4px;
-	color: #000;
-	height: 54px;
-	box-shadow: none !important;
-	outline: none !important;
-	-webkit-box-shadow: none !important;
-	padding-right:0;
-	padding: 18px 16px 18px 16px;
-	background:#f8f9fb;
-}
-.resultPanel.exp .searchBar button{
-	
-	background:#f8f9fb;
+	margin-left: -30px;
+    height: 54px;
+    background: none;
+    float: left;
+    width: 24px;
+    padding: 0;
 }
 .searchBar button > img{
 	width: 20px;
@@ -2247,8 +2218,12 @@ div.aboutSmart > h2{
 	margin-top:145px;
 }
 #aboutBanner .companyIntro{
-	margin-top:145px;
+	margin-top:-20px;
 	margin-bottom:60px;
+	padding:0;
+}
+#aboutBanner .companyIntro h3{
+	margin:0;
 	padding:0;
 }
 #aboutBanner .companyIntro .companyName{

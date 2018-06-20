@@ -124,9 +124,8 @@ $(document).ready(function(){
 $(document).ready(function(){
 	/*Change height fit screen*/
 	/*Change height fit screen*/
-	/*Change height fit screen*/
-		var a =$(document).width();
-	$(".map").width($(document).width()-440);
+	/*Change height fit screen
+	$(".map").width($(document).width()-440);*/
 	/*$(".map").height($(document).height()-115);
 	$(".result").height($(document).height()-115);
 	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
@@ -137,8 +136,8 @@ $(document).ready(function(){
         /*$(".map").height($(document).height()-115);
 		$(".result").height($(document).height()-115);
 		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
-		$(".filterPanel").height($(".resultListing").height());*/
-		$(".map").width($(document).width()-440);
+		$(".filterPanel").height($(".resultListing").height());
+		$(".map").width($(document).width()-440);*/
 		$('.expandBtn').css('top',$('.searchBar').offset().top);
 		$('.expandBtn').css('left',$('.searchBar').offset().left-84);
 		$('#menu').next().css('top',$('#menu').offset().top+24);
@@ -321,7 +320,7 @@ $(document).ready(function(){
 	
 	$('#user').click(function(){
 		var a = $('#user').next();
-		if($(document).width()== 768 || $(document).width() == 1024)
+		if($('.topNavHome').width()== 768 || $('.topNavHome').width() == 1024)
 		{
 			a.css('top',$('#user').offset().top+24);
 			a.css('right',10);
@@ -343,7 +342,7 @@ $(document).ready(function(){
 	
 	$('#menu').click(function(){
 		var a = $('#menu').next();
-		if($(document).width()== 768 || $(document).width() == 1024)
+		if($('.topNavHome').width() == 768 || $('.topNavHome').width() == 1024)
 		{
 			a.css('top',$('#menu').offset().top+24);
 			a.css('right',10);
