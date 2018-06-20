@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+.container{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .topNav{
 	z-index: 999;
 	position: absolute;
