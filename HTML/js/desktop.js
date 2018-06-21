@@ -124,8 +124,8 @@ $(document).ready(function(){
 $(document).ready(function(){
 	/*Change height fit screen*/
 	/*Change height fit screen*/
-	/*Change height fit screen
-	$(".map").width($(document).width()-440);*/
+	/*Change height fit screen*/
+	$(".map").width($(document).width()-435);
 	/*$(".map").height($(document).height()-115);
 	$(".result").height($(document).height()-115);
 	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
@@ -136,8 +136,8 @@ $(document).ready(function(){
         /*$(".map").height($(document).height()-115);
 		$(".result").height($(document).height()-115);
 		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
-		$(".filterPanel").height($(".resultListing").height());
-		$(".map").width($(document).width()-440);*/
+		$(".filterPanel").height($(".resultListing").height());*/
+		$(".map").width($(document).width()-435);
 		$('.expandBtn').css('top',$('.searchBar').offset().top);
 		$('.expandBtn').css('left',$('.searchBar').offset().left-84);
 		$('#menu').next().css('top',$('#menu').offset().top+24);

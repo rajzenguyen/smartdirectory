@@ -2,6 +2,10 @@
 /* CSS Document */
 
 @media only screen and (max-width: 1024px) {
+.container{
+	padding-left: 5px;
+	padding-right: 5px;
+}
 .topNavHome .navContent {
 	padding: 0;
 }
@@ -122,18 +126,49 @@
 }
 .productDetailPanel .modal-dialog {
 	width: 90%;
-	height: 575px;
+	height: auto;
 }
-.productDetailPanel .modal-content {
+.productDetailPanel .modal-content {   
 	width: 100%;
-	height: 575px;
+    height: auto;
+    float: left;
+    padding-bottom: 30px;
 }
 .topImgGalleryProduct {
-    height: 470px;
+	height: auto;
+	max-height: 470px;
 }
 .itemGal01 {
     width: 100%;
-    height: 470px;
+    height: auto;
+}
+#signup .modal-dialog {
+    width: 95%;
+    height: 728px;
+    margin-top: 20px;
+}
+.modalLeft {
+	width: 50%;
+	padding: 50px 30px;
+}
+.modalRight {
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.modalRight img {
+    margin: 130px 0px 0px 00px;
+    width: 100%;
+	height: auto;
+}
+#login .modal-dialog {
+    width: 95%;
+    height: 600px;
+    margin-top: 20px;
+}
+.provinceDetailPanel .modal-dialog {
+    width: 90%;
+    margin-top: 10px;
 }
 }
 
@@ -277,5 +312,10 @@
 	}
 	.featureProductItemContent img {
 		width: 24px;
+	}
+	.modalRight img {
+		margin: 130px 0px 0px 00px;
+		width: 100%;
+		height: auto;
 	}
 }
