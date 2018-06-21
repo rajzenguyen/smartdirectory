@@ -514,7 +514,7 @@ $(document).ready(function(){
 		var numberOfElement = element.getElementsByClassName("catItem").length;	
 		
 		/*script for demo add item*/	
-		var lastChildItem="<div class=\"catItem\"><a href=\"#\"><img src=\"assets/legal-struture.svg\" /><h6>Show More</h6></a></div>";
+		var lastChildItem="<div class=\"catItem\"><a href=\"#\"><img src=\"public/assets/legal-struture.svg\" /><h6>Show More</h6></a></div>";
 		$("#catContainer").append(lastChildItem);
 		/*script for demo add item*/
 		
