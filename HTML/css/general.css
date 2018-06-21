@@ -24,6 +24,9 @@ body{
 	outline:none !important;
 	font-stretch:normal;
 	font-style:normal;
+	-webkit-transition: ease-in 0.2s !important;
+	-o-transition: ease-in 0.2s !important;
+	transition: ease-in 0.2s !important;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
@@ -131,7 +134,7 @@ input {
 	width: 100%;
 	float: left;
 	font-size: 16px;
-	color: #555;
+	color: #222;
 	background-image: none;
 	padding:15px 35px 15px 16px;
 	border-radius:35px;
@@ -144,29 +147,37 @@ input {
 	 line-height:24px;
 	 -webkit-box-shadow: none !important;
 	 box-shadow: none !important;
-	 -webkit-transition: none !important;
-	 -o-transition: none !important;
-	 transition: none !important;
+	 -webkit-transition: ease-in 0.2s !important;
+	 -o-transition: ease-in 0.2s !important;
+	 transition: ease-in 0.2s !important;
 }
 button {
-	padding:15px 35px 15px 16px;
+	padding:15px 35px 15px 35px;
 	border-radius:35px;
 	border:none;
 	background:#f8f9fb;
 	box-shadow:none;
-     outline:none; 
-     -webkit-box-shadow:none;
-	 height:54px;
-	 font-size: 18px;
-	 line-height:27px;
+    outline:none; 
+    -webkit-box-shadow:none;
+	height:54px;
+	font-size: 18px;
+	line-height:27px;
+	transition:ease-in 0.2s;
+}
+
+button:hover {
+	background:#6f93f9;
+	color: #fff;
 }
 button.iconNextInput{
-	margin-left: -30px;
+	margin-left: -40px !important;
     height: 54px;
-    background: none;
-    float: left;
+    background: none !important;
+    float: left !important;
     width: 24px;
-    padding: 0;
+	padding: 0 !important;
+	border: none !important;
+	border-radius: 0% !important;
 }
 button.form-control {
 	 font-size: 18px;
@@ -258,22 +269,9 @@ select:-moz-focusring {
   -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
   box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 }
-
-.bold{
-	font-weight:800;
-}
-
-.bold500{
-	font-weight:500;
-}
-.bold600{
-	font-weight:600;
-}
-.bold300{
-	font-weight:300;
-}
-.bold200{
-	font-weight:200;
+.form-group {
+    float: left;
+    width: 100%;
 }
 .btn-primary{
 	background:#6F93F9;
@@ -552,12 +550,28 @@ label{
 	filter: invert(1) sepia(1) saturate(0);
 }
 .customCard:focus{
-	background: #6f93f9;
-	color: #fff;
-	text-decoration:none;
+	background: #6f93f9 !important;
+	color: #fff !important;
+	text-decoration:none !important;
+}
+.expandCustomCard{
+	background: #6f93f9 !important;
+	color: #fff !important;
+	text-decoration:none !important;
+}
+.expandCustomCard > img{
+	filter: brightness(0) invert(1) !important;
+}
+.expandCustomCard > svg{
+	filter: brightness(0) invert(1) !important;
+	transform: rotate(180deg) !important;
+}
+.expandCustomCard > .blackSVG{
+	filter: brightness(0) invert(1) !important;
+	transform: rotate(180deg) !important;
 }
 .customCard:focus > .blackSVG{
-	filter: invert(1) sepia(1) saturate(0);
+	filter: brightness(0) invert(1);
 }
 .customCard > .blackSVG, .customCard > h7{
 	float:left;
@@ -668,7 +682,9 @@ label{
 .customCheck input {
     position: absolute;
     opacity: 0;
-    cursor: pointer;
+	cursor: pointer;
+	width: auto;
+	height: auto;
 }
 
 /* Create a custom checkbox */
@@ -746,7 +762,7 @@ label{
 /* Create a custom radio button */
 .checkmarkRadio {
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 0;
   height: 20px;
   width: 20px;
@@ -959,3 +975,11 @@ label{
 	font-size: 16px;
 	line-height: 1.5;
   }
+button.close {
+	width: auto;
+	height: auto;
+}
+
+button.close:hover {
+	background: transparent;
+}

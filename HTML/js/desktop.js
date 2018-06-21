@@ -243,7 +243,7 @@ $(document).ready(function(){
 	});
 	
 	$('#filterBtn').click(function(){
-		$('.filterPanel').css('top',$('#filterBtn').offset().top+30);
+		$('.filterPanel').css('top',$('#filterBtn').offset().top + $('#filterBtn').height() + 5);
 		$('.filterPanel').css('left',$('#filterBtn').offset().left-70);
 		$('.filterPanel').toggle();
 		$('.sortPanel').hide();
@@ -255,7 +255,7 @@ $(document).ready(function(){
 	
 	
 	$('#sortBtn').click(function(){
-		$('.sortPanel').css('top',$('#sortBtn').offset().top+30);
+		$('.sortPanel').css('top',$('#sortBtn').offset().top + $('#sortBtn').height() + 5);
 		$('.sortPanel').css('left',$('#sortBtn').offset().left-70);
 		$('.filterPanel').hide();
 		$('.sortPanel').toggle();
@@ -320,15 +320,15 @@ $(document).ready(function(){
 	
 	$('#user').click(function(){
 		var a = $('#user').next();
-		if($('.topNavHome').width()== 768 || $('.topNavHome').width() == 1024)
+		if($('.topNav').width() <= 1366)
 		{
-			a.css('top',$('#user').offset().top+24);
+			a.css('top',$('#user').offset().top + $('#user').height() + 5);
 			a.css('right',10);
 			a.css('left','auto');
 		}
 		else
 		{	
-			a.css('top',$('#user').offset().top+24);
+			a.css('top',$('#user').offset().top + $('#user').height() + 5);
 			a.css('left',$('#user').offset().left-64);
 		}
 		a.toggle();
@@ -342,18 +342,29 @@ $(document).ready(function(){
 	
 	$('#menu').click(function(){
 		var a = $('#menu').next();
-		if($('.topNavHome').width() == 768 || $('.topNavHome').width() == 1024)
+		if($('.topNav').width() <= 1366)
 		{
-			a.css('top',$('#menu').offset().top+24);
+			a.css('top',$('#menu').offset().top + $('#menu').height() + 5);
 			a.css('right',10);
 			a.css('left','auto');
 		}
 		else
 		{	
-			a.css('top',$('#menu').offset().top+24);
+			a.css('top',$('#menu').offset().top + $('#menu').height() + 5);
 			a.css('left',$('#menu').offset().left-64);
 		}
 		a.toggle();
+	});
+
+	$('.customCard').click(function(){
+		if($(this).hasClass('expandCustomCard'))
+		{
+			$(this).removeClass('expandCustomCard');
+		}
+		else
+		{
+			$(this).addClass('expandCustomCard');
+		}
 	});
 	
 	
