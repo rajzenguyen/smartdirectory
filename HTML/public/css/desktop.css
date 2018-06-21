@@ -41,7 +41,6 @@
 	display:none;
 }
 .topNavHome .navContent{
-	padding: 20px 0px;
 }
 .contactuss, .companydetail{
 	height: 115px;
@@ -1174,6 +1173,9 @@ div.aboutSmart > h2{
 	float:left;
 	margin-top:-160px; 
 	padding:20px;
+}
+.leftColAbout h2{
+	margin-left: 30px;
 }
 .rightColAbout{
 	width:30%; 
@@ -2604,6 +2606,8 @@ div.uploadNameCard button{
 }
 .emailSign{
 	float: left;
+	width: 100%;
+	overflow: scroll;
 }
 .copyToClipboard{
 	cursor: pointer;

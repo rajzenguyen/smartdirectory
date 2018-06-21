@@ -170,6 +170,33 @@
     width: 90%;
     margin-top: 10px;
 }
+.levelInfoItem {
+    width: 45%;
+    height: 564px;
+    border-top: 4px solid #fff;
+    background: #fff;
+    border-radius: 7px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 40px;
+
+}
+.listAboutItem {
+    width: 31%;
+    margin-right: 33px;
+}
+.whoImg img {
+    margin: 0 30px 0 0;
+    width: 135px;
+    height: 135px;
+}
+.leftColAbout {
+    margin-top: -360px;
+
+}
+.leftColAbout h2{
+	margin-left: 5px;
+}
 }
 
 
@@ -317,5 +344,85 @@
 		margin: 130px 0px 0px 00px;
 		width: 100%;
 		height: auto;
+	}
+	#profileBanner .companyIntroAvatar {
+		width: 100px;
+		height: 100px;
+		float: left;
+		padding-right: 1rem;
+	}
+	#profileBanner .companyName {
+
+		padding: 20px 0 13px 30px;
+		display: table;
+		vertical-align: middle;
+		margin: 0 auto;
+
+	}
+	#profileBanner .myCompany {
+		margin-top: 0;
+	}
+	#profileEdit .myCompany {
+		margin-top: 276px;
+	}
+	.profileRight > img.imgNameCard {
+		width: 100%;
+		height: auto;
+	}
+	#setting .formControl{
+		width: 100%;
+	}
+	.companyIntroduce {
+
+		padding: 0;
+		float: left;
+		margin-top: 176px;
+		position: relative;
+	
+	}
+	
+	.levelInfoItem {
+		width: 45%;
+		height: 564px;
+		border-top: 4px solid #fff;
+		background: #fff;
+		border-radius: 7px;
+		margin-right: 18px;
+		margin-left: 18px;
+		margin-bottom: 40px;
+
+	}
+	.myCompany.changeCover{
+		margin-top: 12px;
+	}
+	.listAboutItem {
+		width: 32%;
+		margin-right: 14px;
+		height: 450px;	
+	}
+	.whoImg img {
+		margin: 0 38px 30px 38px;
+		width: 170px;
+		height: 170px;
+	}
+	.whoImg img:last-child {
+		margin: 0 38px 30px 38px;
+	}
+	.leftColAbout {
+		margin-top: -360px;
+	
+	}
+	.leftColAbout h2{
+		margin-left: 5px;
+	}
+	.aboutBlock2 {
+		-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 27%);
+		clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 27%);
+	
+	}
+	.contactRight {
+		padding: 40px 30px;
+		height: 900px;
+	
 	}
 }
