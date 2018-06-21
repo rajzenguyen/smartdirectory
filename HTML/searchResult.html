@@ -1,358 +1,433 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Smart Directory</title>
-<meta charset="utf-8" name="description" content="Smart Directory" />
-<meta charset="utf-8" name="keywords" content="Smart Directory" />
 
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
-<link rel="stylesheet" href="css/general.css" type="text/css" />
-<link rel="stylesheet" href="css/desktop.css" type="text/css" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Smart Directory</title>
+    <meta charset="utf-8" name="description" content="Smart Directory" />
+    <meta charset="utf-8" name="keywords" content="Smart Directory" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
+    <link rel="stylesheet" href="css/general.css" type="text/css" />
+    <link rel="stylesheet" href="css/desktop.css" type="text/css" />
 </head>
 
 <body>
 
 
-<div class="topNavWhite searchResult">
-<div class="topNav">
-	<div class="container">
-        <div class="navLogo">
-            <a href="/"><img src="images/logo.png" height="100%" /></a> 
-        </div>
-        <div class="navContent">
-            <ul>
-                <li class="searchBox">
-                      <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
-                      <button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;" ><img src="assets/search.svg" /></button>
-                      <button type="button" name="buttonTrigger" class="buttonTrigger" ><img src="assets/search.svg" /></button>
-                </li>
-                <li>
-                	<a class="dropdown-toggle" href="#" role="button" id="user">
-                       <img src="assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+    <div class="topNavWhite searchResult">
+        <div class="topNav">
+            <div class="container">
+                <div class="navLogo">
+                    <a href="/">
+                        <img src="images/logo.png" height="100%" />
                     </a>
+                </div>
+                <div class="navContent">
+                    <ul>
+                        <li class="searchBox">
+                            <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
+                            <button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;">
+                                <img src="assets/search.svg" />
+                            </button>
+                            <button type="button" name="buttonTrigger" class="buttonTrigger">
+                                <img src="assets/search.svg" />
+                            </button>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#" role="button" id="user">
+                                <img src="assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+                            </a>
 
-                      <div class="dropdown-menu" aria-labelledby="user">
-                          <div class="smenu">
-                            <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#login">Sign In</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
-                                <li><a href="#" class="colorF90">Logout</a></li>
-                            </ul>
-                          </div>
-                      </div>
-                      
+                            <div class="dropdown-menu" aria-labelledby="user">
+                                <div class="smenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#login">Sign In</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="colorF90">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#" role="button" id="menu">
+                                <img src="assets/burger.svg" width="24px" height="24px" />
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menu">
+                                <div class="smenu">
+                                    <ul>
+                                        <li class="dropdown-submenu">
+                                            <a class="test" tabindex="-1" href="#">English
+                                                <img src="assets/dropdown.svg" />
+                                            </a>
+                                            <ul class="dropdown-menu submenu">
+                                                <li>
+                                                    <a tabindex="-1" href="#">English </a>
+                                                </li>
+                                                <li>
+                                                    <a tabindex="-1" href="#">Vietnamese</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#fail">Fail</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#success">Success</a>
+                                        </li>
+                                        <li>
+                                            <a href="FAQ.html">F.A.Q</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#feedback">Feedback</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="result">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.7590491093943!2d106.71677838345339!3d10.924181399027672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d762036ffedd%3A0x3771a8ff3909ee89!2sParkview+Office+Building!5e0!3m2!1sen!2s!4v1528883528862"
+                frameborder="0" style="border:0; width:100%; height:909px;" allowfullscreen></iframe>
+        </div>
+
+        <div class="resultPanel">
+            <div class="resultTop">
+                <div class="searchBar">
+                    <input type="text" name="txtSearchBar" placeholder="enter anything to search...." />
+                    <button type="button" name="btnSearchBar" class="iconNextInput">
+                        <img src="assets/search.svg" />
+                    </button>
+                </div>
+
+                <div class="filterBar">
+                    <img src="assets/filter.svg" id="filterBtn" />
+                    <img src="assets/sliders.svg" id="sortBtn" />
+                    <div class="pageNav">
+                        <a href="#">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a href="#" class="number act">1</a>
+                        <a href="#" class="number">2</a>
+                        <a href="#" class="number">3</a>
+                        ...
+                        <a href="#" class="number">10</a>
+                        <a href="#">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="resultIngo text-center">
+                <p class="font-regular">43 Results</p>
+            </div>
+
+            <div class="resultListing demo">
+                <div class="resultItem">
+                    <div class="resultItemAva">
+                        <a href="#">
+                            <img src="assets/rectangle-3.jpg" />
+                        </a>
+                    </div>
+                    <div class="resultItemContent resultItemContentExpand">
+                        <a href="#">
+                            <h7>Amazon</h7>
+                        </a>
+                        <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
+                        <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
+                    </div>
+                    <div class="resultItemView">
+                        <a href="#">
+                            <div></div>
+                            <img src="assets/contact.svg" width="24px" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="resultItem">
+                    <div class="resultItemAva">
+                        <a href="#">
+                            <img src="assets/rectangle-3.jpg" />
+                        </a>
+                    </div>
+                    <div class="resultItemContent resultItemContentExpand">
+                        <a href="#">
+                            <h7>Amazon</h7>
+                        </a>
+                        <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
+                        <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
+                    </div>
+                    <div class="resultItemView">
+                        <a href="#">
+                            <div></div>
+                            <img src="assets/contact.svg" width="24px" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="resultItem">
+                    <div class="resultItemAva">
+                        <a href="#">
+                            <img src="assets/rectangle-3.jpg" />
+                        </a>
+                    </div>
+                    <div class="resultItemContent resultItemContentExpand">
+                        <a href="#">
+                            <h7>Amazon</h7>
+                        </a>
+                        <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
+                        <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
+                    </div>
+                    <div class="resultItemView">
+                        <a href="#">
+                            <div></div>
+                            <img src="assets/contact.svg" width="24px" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="resultItem">
+                    <div class="resultItemAva">
+                        <a href="#">
+                            <img src="assets/rectangle-3.jpg" />
+                        </a>
+                    </div>
+                    <div class="resultItemContent resultItemContentExpand">
+                        <a href="#">
+                            <h7>Amazon</h7>
+                        </a>
+                        <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
+                        <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
+                    </div>
+                    <div class="resultItemView">
+                        <a href="#">
+                            <div></div>
+                            <img src="assets/contact.svg" width="24px" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="resultItem">
+                    <div class="resultItemAva">
+                        <a href="#">
+                            <img src="assets/rectangle-3.jpg" />
+                        </a>
+                    </div>
+                    <div class="resultItemContent resultItemContentExpand">
+                        <a href="#">
+                            <h7>Amazon</h7>
+                        </a>
+                        <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
+                        <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
+                    </div>
+                    <div class="resultItemView">
+                        <a href="#">
+                            <div></div>
+                            <img src="assets/contact.svg" width="24px" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="resultItem">
+                    <div class="resultItemAva">
+                        <a href="#">
+                            <img src="assets/rectangle-3.jpg" />
+                        </a>
+                    </div>
+                    <div class="resultItemContent resultItemContentExpand">
+                        <a href="#">
+                            <h7>Amazon</h7>
+                        </a>
+                        <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
+                        <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
+                    </div>
+                    <div class="resultItemView">
+                        <a href="#">
+                            <div></div>
+                            <img src="assets/contact.svg" width="24px" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="resultItem">
+                    <div class="resultItemAva">
+                        <a href="#">
+                            <img src="assets/rectangle-3.jpg" />
+                        </a>
+                    </div>
+                    <div class="resultItemContent resultItemContentExpand">
+                        <a href="#">
+                            <h7>Amazon</h7>
+                        </a>
+                        <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
+                        <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
+                    </div>
+                    <div class="resultItemView">
+                        <a href="#">
+                            <div></div>
+                            <img src="assets/contact.svg" width="24px" />
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="expandBtn">
+        <img src="assets/arrow-down.svg" />
+    </div>
+
+    <div class="filterPanel">
+        <div class="item01">
+            <h7 class="bold600">Location</h7>
+            <ul>
+                <li>
+                    <label class="customRadio">Ho Chi Minh
+                        <input type="radio" checked="checked" name="location" value="HCM" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
                 </li>
                 <li>
-                	<a  class="dropdown-toggle" href="#" role="button" id="menu">
-                    	<img src="assets/burger.svg" width="24px" height="24px" />
-                    </a>     
-                    <div class="dropdown-menu" aria-labelledby="menu">
-                      <div class="smenu">
-                        <ul>
-                        	<li class="dropdown-submenu">
-                                <a class="test" tabindex="-1" href="#">English <img src="assets/dropdown.svg" /></a>
-                                <ul class="dropdown-menu submenu">
-                                  <li><a tabindex="-1" href="#">English </a></li>
-                                  <li><a tabindex="-1" href="#">Vietnamese</a></li>
-                                </ul>
-                              </li>
-                        	<li><a href="#" data-toggle="modal" data-target="#fail">Fail</a></li>
-                        	<li><a href="#" data-toggle="modal" data-target="#success">Success</a></li>
-                        	<li><a href="FAQ.html">F.A.Q</a></li>
-                        	<li><a href="#" data-toggle="modal" data-target="#feedback">Feedback</a></li>
-                        	<li><a href="#">Contact Us</a></li>
-                        </ul>
-                        
-                                  
-                      </div>
-                    </div>
+                    <label class="customRadio">Binh Duong
+                        <input type="radio" name="location" value="binhduong" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="customRadio">Ha Noi
+                        <input type="radio" name="location" value="hanoi" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="customRadio">Vung Tau
+                        <input type="radio" name="location" value="vungtau" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
                 </li>
             </ul>
-            
-            
         </div>
-         
-        <div class="clearfix"></div>
-    </div>
-</div>
-</div>
-
-<div id="result">
-	<div class="map">
-    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.7590491093943!2d106.71677838345339!3d10.924181399027672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d762036ffedd%3A0x3771a8ff3909ee89!2sParkview+Office+Building!5e0!3m2!1sen!2s!4v1528883528862"  frameborder="0" style="border:0; width:100%; height:909px;" allowfullscreen></iframe>
-    </div>
-    
-    <div class="resultPanel">
-    	<div class="resultTop">
-        	<div class="searchBar">
-                  <input type="text" name="txtSearchBar" placeholder="enter anything to search...." />
-                  <button type="button" name="btnSearchBar" class="iconNextInput" ><img src="assets/search.svg" /></button>
-            </div>
-            
-            <div class="filterBar">
-            	<img src="assets/filter.svg" id="filterBtn"/>
-                <img src="assets/sliders.svg" id="sortBtn" />
-                <div class="pageNav">
-                	<a href="#"><i class="fa fa-angle-left"></i></a>
-                    	<a href="#" class="number act">1</a>
-                    	<a href="#" class="number">2</a>
-                    	<a href="#" class="number">3</a>
-                    	...
-                    	<a href="#" class="number">10</a>
-                    <a href="#"><i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-            
-            
+        <div class="item01">
+            <h7 class="bold600">Zone</h7>
+            <ul>
+                <li>
+                    <label class="customRadio">Ho Chi Minh
+                        <input type="radio" checked="checked" name="zone" value="HCM" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="customRadio">Binh Duong
+                        <input type="radio" name="zone" value="binhduong" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="customRadio">Ha Noi
+                        <input type="radio" name="zone" value="hanoi" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="customRadio">Vung Tau
+                        <input type="radio" name="zone" value="vungtau" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+            </ul>
         </div>
-        
-            <div class="resultIngo text-center">
-            	<p class="font-regular">43 Results</p>
-            </div>
-        
-        <div class="resultListing demo">
-            <div class="resultItem">
-            	<div class="resultItemAva">
-                	<a href="#"><img src="assets/rectangle-3.jpg" /></a>
-                </div>
-                <div class="resultItemContent resultItemContentExpand">
-                	<a href="#"><h7>Amazon</h7></a>
-                    <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
-                    <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
-                </div>
-                <div class="resultItemView">
-                	<a href="#"> 
-                    	<div></div>
-                		<img src="assets/contact.svg" width="24px" />
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="resultItem">
-            	<div class="resultItemAva">
-                	<a href="#"><img src="assets/rectangle-3.jpg" /></a>
-                </div>
-                <div class="resultItemContent resultItemContentExpand">
-                	<a href="#"><h7>Amazon</h7></a>
-                    <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
-                    <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
-                </div>
-                <div class="resultItemView">
-                	<a href="#"> 
-                    	<div></div>
-                		<img src="assets/contact.svg" width="24px" />
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="resultItem">
-            	<div class="resultItemAva">
-                	<a href="#"><img src="assets/rectangle-3.jpg" /></a>
-                </div>
-                <div class="resultItemContent resultItemContentExpand">
-                	<a href="#"><h7>Amazon</h7></a>
-                    <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
-                    <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
-                </div>
-                <div class="resultItemView">
-                	<a href="#"> 
-                    	<div></div>
-                		<img src="assets/contact.svg" width="24px" />
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="resultItem">
-            	<div class="resultItemAva">
-                	<a href="#"><img src="assets/rectangle-3.jpg" /></a>
-                </div>
-                <div class="resultItemContent resultItemContentExpand">
-                	<a href="#"><h7>Amazon</h7></a>
-                    <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
-                    <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
-                </div>
-                <div class="resultItemView">
-                	<a href="#"> 
-                    	<div></div>
-                		<img src="assets/contact.svg" width="24px" />
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="resultItem">
-            	<div class="resultItemAva">
-                	<a href="#"><img src="assets/rectangle-3.jpg" /></a>
-                </div>
-                <div class="resultItemContent resultItemContentExpand">
-                	<a href="#"><h7>Amazon</h7></a>
-                    <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
-                    <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
-                </div>
-                <div class="resultItemView">
-                	<a href="#"> 
-                    	<div></div>
-                		<img src="assets/contact.svg" width="24px" />
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="resultItem">
-            	<div class="resultItemAva">
-                	<a href="#"><img src="assets/rectangle-3.jpg" /></a>
-                </div>
-                <div class="resultItemContent resultItemContentExpand">
-                	<a href="#"><h7>Amazon</h7></a>
-                    <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
-                    <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
-                </div>
-                <div class="resultItemView">
-                	<a href="#"> 
-                    	<div></div>
-                		<img src="assets/contact.svg" width="24px" />
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="resultItem">
-            	<div class="resultItemAva">
-                	<a href="#"><img src="assets/rectangle-3.jpg" /></a>
-                </div>
-                <div class="resultItemContent resultItemContentExpand">
-                	<a href="#"><h7>Amazon</h7></a>
-                    <p class="pFull ssmall font-bold">LTD - Electronic commerce company</p>
-                    <p class="pAdd usmall font-light colorCCCCCC">369 Wanda Path Apt. 803 - Zones, Provinces / Cities</p>
-                </div>
-                <div class="resultItemView">
-                	<a href="#"> 
-                    	<div></div>
-                		<img src="assets/contact.svg" width="24px" />
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
+        <div class="item01">
+            <h7 class="bold600">Provinces/Cities</h7>
+            <ul>
+                <li>
+                    <label class="customRadio">Ho Chi Minh
+                        <input type="radio" checked="checked" name="provinces" value="HCM" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="customRadio">Binh Duong
+                        <input type="radio" name="provinces" value="binhduong" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="customRadio">Ha Noi
+                        <input type="radio" name="provinces" value="hanoi" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+                <li>
+                    <label class="customRadio">Vung Tau
+                        <input type="radio" name="provinces" value="vungtau" />
+                        <span class="checkmarkRadio"></span>
+                    </label>
+                </li>
+            </ul>
         </div>
-        
+        <div class="endItem text-center">
+            <a href="#">
+                <p class="bold600 small">Show more</p>
+            </a>
+            <button type="button" name="btnCancel" class="bold500">Reset</button>
+            <button type="button" name="btnSaveFilter" class="bold500">Apply Filter</button>
+        </div>
     </div>
-</div>
 
-<div class="expandBtn">
-	<img src="assets/arrow-down.svg" />
-</div>
-
-<div class="filterPanel">
-    <div class="item01">
-        <h7 class="bold600">Location</h7>
-        <ul>
-            <li>
-                <label class="customRadio">Ho Chi Minh
-                  <input type="radio" checked="checked" name="location" value="HCM" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Binh Duong
-                  <input type="radio" name="location" value="binhduong" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Ha Noi
-                  <input type="radio" name="location" value="hanoi" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Vung Tau
-                  <input type="radio" name="location" value="vungtau" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-        </ul>
+    <div class="dropdown-menu sortPanel" aria-labelledby="user">
+        <div class="smenu">
+            <ul>
+                <li>
+                    <a href="#">A -> Z
+                        <img src="assets/dropdown.svg" /> </a>
+                </li>
+                <li>
+                    <a href="#">Z -> A
+                        <img src="assets/dropdown.svg" />
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="item01">
-        <h7 class="bold600">Zone</h7>
-        <ul>
-            <li>
-                <label class="customRadio">Ho Chi Minh
-                  <input type="radio" checked="checked" name="zone" value="HCM" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Binh Duong
-                  <input type="radio" name="zone" value="binhduong" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Ha Noi
-                  <input type="radio" name="zone" value="hanoi" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Vung Tau
-                  <input type="radio" name="zone" value="vungtau" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-        </ul>
+
+
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/fontawesome-all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/desktop.js"></script>
+
     </div>
-    <div class="item01">
-        <h7 class="bold600">Provinces/Cities</h7>
-        <ul>
-            <li>
-                <label class="customRadio">Ho Chi Minh
-                  <input type="radio" checked="checked" name="provinces" value="HCM" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Binh Duong
-                  <input type="radio" name="provinces" value="binhduong" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Ha Noi
-                  <input type="radio" name="provinces" value="hanoi" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-            <li>
-                <label class="customRadio">Vung Tau
-                  <input type="radio" name="provinces" value="vungtau" />
-                  <span class="checkmarkRadio"></span>
-                </label>
-            </li>
-        </ul>
-    </div>
-    <div class="endItem text-center">
-    	<a href="#"><p class="bold600 small">Show more</p></a>
-        <button type="button" name="btnCancel" class="bold500">Reset</button>
-        <button type="button" name="btnSaveFilter" class="bold500">Apply Filter</button>
-    </div>
-</div>
+</body>
 
-<div class="dropdown-menu sortPanel" aria-labelledby="user">
-  <div class="smenu">
-    <ul>
-        <li><a href="#" >A -> Z <img src="assets/dropdown.svg" /> </a></li>
-        <li><a href="#" >Z -> A <img src="assets/dropdown.svg" /></a></li>
-    </ul>
-  </div>
-</div>
-
-
-<script src="js/TweenMax.min.js"></script>
-<script src="js/waypoints.min.js"></script>
-<script src="js/jquery.counterup.min.js"></script>
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/fontawesome-all.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/desktop.js"></script>
-
-</div></body>
 </html>

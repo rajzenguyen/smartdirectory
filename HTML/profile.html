@@ -1,134 +1,166 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Smart Directory</title>
-<meta charset="utf-8" name="description" content="Smart Directory" />
-<meta charset="utf-8" name="keywords" content="Smart Directory" />
 
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
-<link rel="stylesheet" href="slick/slick.css" type="text/css" />
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-<link rel="stylesheet" href="css/general.css" type="text/css" />
-<link rel="stylesheet" href="css/desktop.css" type="text/css" />
-<link rel="stylesheet" href="css/tablet.css" type="text/css" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Smart Directory</title>
+    <meta charset="utf-8" name="description" content="Smart Directory" />
+    <meta charset="utf-8" name="keywords" content="Smart Directory" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
+    <link rel="stylesheet" href="slick/slick.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/general.css" type="text/css" />
+    <link rel="stylesheet" href="css/desktop.css" type="text/css" />
+    <link rel="stylesheet" href="css/tablet.css" type="text/css" />
 
 </head>
 
 <body>
 
-<div class="companydetail">
-<div class="topNav">
-	<div class="container">
-        <div class="navLogo">
-            <a href="/"><img src="images/logo.png" height="100%" /></a> 
-        </div>
-        <div class="navContent">
-            <ul>
-                <li class="searchBox">
-                      <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
-                      <button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;" ><img src="assets/search.svg" /></button>
-                      <button type="button" name="buttonTrigger" class="buttonTrigger" ><img src="assets/search.svg" /></button>
-                </li>
-                <li>
-                	<a class="dropdown-toggle" href="#" role="button" id="user">
-                       <img src="assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+    <div class="companydetail">
+        <div class="topNav">
+            <div class="container">
+                <div class="navLogo">
+                    <a href="/">
+                        <img src="images/logo.png" height="100%" />
                     </a>
+                </div>
+                <div class="navContent">
+                    <ul>
+                        <li class="searchBox">
+                            <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
+                            <button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;">
+                                <img src="assets/search.svg" />
+                            </button>
+                            <button type="button" name="buttonTrigger" class="buttonTrigger">
+                                <img src="assets/search.svg" />
+                            </button>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#" role="button" id="user">
+                                <img src="assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+                            </a>
 
-                      <div class="dropdown-menu" aria-labelledby="user">
-                          <div class="smenu">
-                            <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#login">Sign In</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
-                                <li><a href="#" class="colorF90">Logout</a></li>
-                            </ul>
-                          </div>
-                      </div>
-                      
-                </li>
-                <li>
-                	<a  class="dropdown-toggle" href="#" role="button" id="menu">
-                    	<img src="assets/burger.svg" width="24px" height="24px" />
-                    </a>     
-                    <div class="dropdown-menu" aria-labelledby="menu">
-                      <div class="smenu">
-                        <ul>
-                        	<li class="dropdown-submenu">
-                                <a class="test" tabindex="-1" href="#">English <img src="assets/dropdown.svg" /></a>
-                                <ul class="dropdown-menu submenu">
-                                  <li><a tabindex="-1" href="#">English </a></li>
-                                  <li><a tabindex="-1" href="#">Vietnamese</a></li>
-                                </ul>
-                              </li>
-                        	<li><a href="#" data-toggle="modal" data-target="#fail">Fail</a></li>
-                        	<li><a href="#" data-toggle="modal" data-target="#success">Success</a></li>
-                        	<li><a href="FAQ.html">F.A.Q</a></li>
-                        	<li><a href="#" data-toggle="modal" data-target="#feedback">Feedback</a></li>
-                        	<li><a href="#">Contact Us</a></li>
-                        </ul>
-                        
-                                  
-                      </div>
-                    </div>
-                </li>
-            </ul>
-            
-            
-        </div>
-         
-        <div class="clearfix"></div>
-    </div>
-</div>
-</div>
+                            <div class="dropdown-menu" aria-labelledby="user">
+                                <div class="smenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#login">Sign In</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="colorF90">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#" role="button" id="menu">
+                                <img src="assets/burger.svg" width="24px" height="24px" />
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menu">
+                                <div class="smenu">
+                                    <ul>
+                                        <li class="dropdown-submenu">
+                                            <a class="test" tabindex="-1" href="#">English
+                                                <img src="assets/dropdown.svg" />
+                                            </a>
+                                            <ul class="dropdown-menu submenu">
+                                                <li>
+                                                    <a tabindex="-1" href="#">English </a>
+                                                </li>
+                                                <li>
+                                                    <a tabindex="-1" href="#">Vietnamese</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#fail">Fail</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#success">Success</a>
+                                        </li>
+                                        <li>
+                                            <a href="FAQ.html">F.A.Q</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#feedback">Feedback</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
 
 
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
 
-<div id="profileBanner">
-	<div class="container">
-        <img class="profileTopBanner" src="assets/bernard-hermant-616385-unsplash.jpg">
-    	<div class="guideNav">
-        	<a href="#">Home</a> > 
-            <a href="#">Company Detail</a>
-        </div>
-    	<div class="companyIntroduce">
-        	<div class="companyIntroAvatar">
-            	<img src="images/avatar.png" />
+
+                </div>
+
+                <div class="clearfix"></div>
             </div>
-            <div class="companyName">
-            	<h6>NSO - Connecting Services <img src="assets/award.svg" /></h6> 
-                <p class="font-regular small">Joined on January 2018</p>
+        </div>
+    </div>
+
+
+
+    <div id="profileBanner">
+        <div class="container">
+            <img class="profileTopBanner" src="assets/bernard-hermant-616385-unsplash.jpg">
+            <div class="guideNav">
+                <a href="#">Home</a> >
+                <a href="#">Company Detail</a>
+            </div>
+            <div class="companyIntroduce">
+                <div class="companyIntroAvatar">
+                    <img src="images/avatar.png" />
+                </div>
+                <div class="companyName">
+                    <h6>NSO - Connecting Services
+                        <img src="assets/award.svg" />
+                    </h6>
+                    <p class="font-regular small">Joined on January 2018</p>
+                </div>
+            </div>
+            <div class="myCompany">
+                <h6 class="font-regular">
+                    <img src="assets/home.svg"> My Company</h6>
             </div>
         </div>
-        <div class="myCompany">
-            <h6 class="font-regular"><img src="assets/home.svg"> My Company</h6>
-        </div>
-    </div>
-</div>
-
-
-
-<div id="companyInfo">
-	<div class="container">
-    	<div class="companySlideNav text-left nav nav-tabs">
-        	<ul class="list-inline">
-            	<li class="companySlideNavItem active">
-                	<a data-toggle="tab" href="#profile">Profile</a>
-                </li>
-            	<li class="companySlideNavItem">
-                	<a data-toggle="tab" href="#message">Message</a>
-                </li>
-            	<li class="companySlideNavItem">
-                	<a data-toggle="tab" href="#privileges">Privileges</a>
-                </li>
-            	<li class="companySlideNavItem">
-                	<a data-toggle="tab" href="#setting">Setting</a>
-                </li>
-            </ul>
-        </div>
     </div>
 
-    
+
+
+    <div id="companyInfo">
+        <div class="container">
+            <div class="companySlideNav text-left nav nav-tabs">
+                <ul class="list-inline">
+                    <li class="companySlideNavItem active">
+                        <a data-toggle="tab" href="#profile">Profile</a>
+                    </li>
+                    <li class="companySlideNavItem">
+                        <a data-toggle="tab" href="#message">Message</a>
+                    </li>
+                    <li class="companySlideNavItem">
+                        <a data-toggle="tab" href="#privileges">Privileges</a>
+                    </li>
+                    <li class="companySlideNavItem">
+                        <a data-toggle="tab" href="#setting">Setting</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
 
         <div class="companyInfoContent">
             <div class="mainInfo">
@@ -137,33 +169,46 @@
                     <div id="profile" class="tab-pane active">
                         <div class="container">
                             <div class="profileLeft">
-                                <a href="editprofile.html" class="font-regular"><img src="assets/group-3.svg"> Edit Profile</a>
+                                <a href="editprofile.html" class="font-regular">
+                                    <img src="assets/group-3.svg"> Edit Profile</a>
                                 <div class="profileLeftContent">
-                                    <h7>Your profile is <a href="#">Level 1</a></h7>
-                                    
+                                    <h7>Your profile is
+                                        <a href="#">Level 1</a>
+                                    </h7>
+
                                     <h7>About me</h7>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut
+                                        eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet.
+                                        Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum,
+                                        volutpat eget semper id, viverra eget nibh.</p>
 
                                     <h7>Address</h7>
-                                    <p>300 Beale Street Suite 100<br>
-                                        San Francisco, CA 94105
+                                    <p>300 Beale Street Suite 100
+                                        <br> San Francisco, CA 94105
                                     </p>
-                                    <p>300 Beale Street Suite 100<br>
-                                        San Francisco, CA 94105
+                                    <p>300 Beale Street Suite 100
+                                        <br> San Francisco, CA 94105
                                     </p>
 
                                     <h7>Phone</h7>
-                                    <p><a class="color000" href="tel:+84123456789">0123 456 789</a></p>
+                                    <p>
+                                        <a class="color000" href="tel:+84123456789">0123 456 789</a>
+                                    </p>
 
                                     <h7>Email</h7>
-                                    <p><a class="color000" href="mailto:contact@nso.com.vn">contact@nso.com.vn</a></p>
+                                    <p>
+                                        <a class="color000" href="mailto:contact@nso.com.vn">contact@nso.com.vn</a>
+                                    </p>
 
                                 </div>
                             </div>
                             <div class="profileRight">
                                 <div class="top">
-                                    <h7>NameCard</h7> 
-                                    <a class="downloadNameCard" href="#" class="font-regular"><img src="assets/download.svg" width="24" height="24"> <p>Download</p></a>
+                                    <h7>NameCard</h7>
+                                    <a class="downloadNameCard" href="#" class="font-regular">
+                                        <img src="assets/download.svg" width="24" height="24">
+                                        <p>Download</p>
+                                    </a>
                                     <a class="testupdatenamecard">just for test</a>
                                 </div>
                                 <img class="imgNameCard" src="images/fulls/02.jpg">
@@ -173,8 +218,10 @@
                                 </div>
 
                                 <div class="top">
-                                    <h7>Email signature</h7> 
-                                    <a class="font-regular copyToClipboard"><p>Click to Copy</p></a>
+                                    <h7>Email signature</h7>
+                                    <a class="font-regular copyToClipboard">
+                                        <p>Click to Copy</p>
+                                    </a>
                                 </div>
 
                                 <!--Dùng inline CSS ở đây để khi copy thì copy luôn cả style-->
@@ -201,101 +248,110 @@
                                     </div>
                                 </div>
                                 <!--Dùng inline CSS ở đây để khi copy thì copy luôn cả style-->
-                                
+
                                 <div class="uploadEmailSign text-center">
-                                        <button name="btnCreateEmailSign" class="btn btn-primary">Create Email Signature</button>
+                                    <button name="btnCreateEmailSign" class="btn btn-primary">Create Email Signature</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div id="setting" class="tab-pane">
                         <div class="container">
-                            <p class="large font-light">Behn Meyer Vietnam offers a broad range of products for the rubber industry. Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio. Behn Meyer is actively involved in the sales of curing agents e.g. accelerators as well as Nano CC filler. </p>
+                            <p class="large font-light">Behn Meyer Vietnam offers a broad range of products for the rubber industry. Synthetic rubber
+                                such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio.
+                                Behn Meyer is actively involved in the sales of curing agents e.g. accelerators as well as
+                                Nano CC filler. </p>
                             <div class="basicContent">
                                 <div id="accordion">
                                     <div class="card">
                                         <div class="card-header" id="heading1">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                                            <img src="assets/lock.svg" width="27px" /> <h7 class="font-regular">Change Password</h7>
-                                            <i class="fa fa-angle-down"></i>
-                                            </button>
-                                        </h5>
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                    <img src="assets/lock.svg" width="27px" />
+                                                    <h7 class="font-regular">Change Password</h7>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                            </h5>
                                         </div>
-                                    
+
                                         <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <div class="formControl">
-                                                <div class="form-group">
-                                                    <label for="currentPassword" class="col-form-label">Current Password</label>
-                                                    <input class="" id="currentPassword" placeholder="Current Password" type="password">
-                                                    <img src="assets/lock.svg" class="input_img">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="newPass" class="col-form-label">New Password</label>
-                                                    <input class="" id="newPass" placeholder="New Password" type="password">
-                                                    <img src="assets/lock.svg" class="input_img">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="confirmNewPass" class="col-form-label">Confirm New Password</label>
-                                                    <input class="" id="confirmNewPass" placeholder="Confirm New Password" type="password">
-                                                    <img src="assets/lock.svg" class="input_img">
-                                                </div>
-                                                <div class="form-group">
-                                                    <button type="button" class="btn-primary " id="btnSavePass">Change Password</button>
+                                            <div class="card-body">
+                                                <div class="formControl">
+                                                    <div class="form-group">
+                                                        <label for="currentPassword" class="col-form-label">Current Password</label>
+                                                        <input class="" id="currentPassword" placeholder="Current Password" type="password">
+                                                        <img src="assets/lock.svg" class="input_img">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="newPass" class="col-form-label">New Password</label>
+                                                        <input class="" id="newPass" placeholder="New Password" type="password">
+                                                        <img src="assets/lock.svg" class="input_img">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="confirmNewPass" class="col-form-label">Confirm New Password</label>
+                                                        <input class="" id="confirmNewPass" placeholder="Confirm New Password" type="password">
+                                                        <img src="assets/lock.svg" class="input_img">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <button type="button" class="btn-primary " id="btnSavePass">Change Password</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
 
-                                    
+
                                     <div class="card">
                                         <div class="card-header" id="heading2">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                            <img src="assets/notification.svg" width="27px" /> <h7 class="font-regular">Setting Notification</h7>
-                                            <i class="fa fa-angle-down"></i>
-                                            </button>
-                                        </h5>
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                    <img src="assets/notification.svg" width="27px" />
+                                                    <h7 class="font-regular">Setting Notification</h7>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                            </h5>
                                         </div>
-                                    
+
                                         <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <table class="tableContent tableSetting">
-                                                <tr>
-                                                    <td>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                                                    </td>
-                                                    <td>
-                                                        <label class="switch">
-                                                            <input type="checkbox" checked>
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                                                    </td>
-                                                    <td>
-                                                        <label class="switch">
-                                                            <input type="checkbox" checked>
-                                                            <span class="slider round"></span>
-                                                        </label>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
+                                            <div class="card-body">
+                                                <table class="tableContent tableSetting">
+                                                    <tr>
+                                                        <td>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                                do eiusmod tempor incididunt labore et dolore magna aliqua.
+                                                                Ut enim ad minim veniam</p>
+                                                        </td>
+                                                        <td>
+                                                            <label class="switch">
+                                                                <input type="checkbox" checked>
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                                                do eiusmod tempor incididunt labore et dolore magna aliqua.
+                                                                Ut enim ad minim veniam</p>
+                                                        </td>
+                                                        <td>
+                                                            <label class="switch">
+                                                                <input type="checkbox" checked>
+                                                                <span class="slider round"></span>
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
 
 
                                 </div>
                             </div>
-                        </div>             
+                        </div>
                     </div>
 
 
@@ -316,23 +372,24 @@
             </div>
             <div class="clearfix"></div>
         </div>
-    
-</div>
 
-<!--Modal copied-->
-<div class="notification" style="display: none;">
-	<p class="font-light">
-    	Copied to clipboard!
-    </p>
-</div>
+    </div>
+
+    <!--Modal copied-->
+    <div class="notification" style="display: none;">
+        <p class="font-light">
+            Copied to clipboard!
+        </p>
+    </div>
 
 
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/fontawesome-all.js"></script>
-<script src="slick/slick.min.js"></script>
-<script src="js/desktop.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome-all.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/desktop.js"></script>
 
 </body>
+
 </html>

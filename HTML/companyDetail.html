@@ -1,134 +1,169 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Smart Directory</title>
-<meta charset="utf-8" name="description" content="Smart Directory" />
-<meta charset="utf-8" name="keywords" content="Smart Directory" />
 
-<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
-<link rel="stylesheet" href="slick/slick.css" type="text/css" />
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-<link rel="stylesheet" href="css/general.css" type="text/css" />
-<link rel="stylesheet" href="css/desktop.css" type="text/css" />
-<link rel="stylesheet" href="css/tablet.css" type="text/css" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Smart Directory</title>
+    <meta charset="utf-8" name="description" content="Smart Directory" />
+    <meta charset="utf-8" name="keywords" content="Smart Directory" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
+    <link rel="stylesheet" href="slick/slick.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/general.css" type="text/css" />
+    <link rel="stylesheet" href="css/desktop.css" type="text/css" />
+    <link rel="stylesheet" href="css/tablet.css" type="text/css" />
 
 </head>
 
 <body>
 
-<div class="companydetail">
-<div class="topNav">
-	<div class="container">
-        <div class="navLogo">
-            <a href="/"><img src="images/logo.png" height="100%" /></a> 
-        </div>
-        <div class="navContent">
-            <ul>
-                <li class="searchBox">
-                      <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
-                      <button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;" ><img src="assets/search.svg" /></button>
-                      <button type="button" name="buttonTrigger" class="buttonTrigger" ><img src="assets/search.svg" /></button>
-                </li>
-                <li>
-                	<a class="dropdown-toggle" href="#" role="button" id="user">
-                       <img src="assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+    <div class="companydetail">
+        <div class="topNav">
+            <div class="container">
+                <div class="navLogo">
+                    <a href="/">
+                        <img src="images/logo.png" height="100%" />
                     </a>
+                </div>
+                <div class="navContent">
+                    <ul>
+                        <li class="searchBox">
+                            <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
+                            <button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;">
+                                <img src="assets/search.svg" />
+                            </button>
+                            <button type="button" name="buttonTrigger" class="buttonTrigger">
+                                <img src="assets/search.svg" />
+                            </button>
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#" role="button" id="user">
+                                <img src="assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+                            </a>
 
-                      <div class="dropdown-menu" aria-labelledby="user">
-                          <div class="smenu">
-                            <ul>
-                                <li><a href="#" data-toggle="modal" data-target="#login">Sign In</a></li>
-                                <li><a href="#" data-toggle="modal" data-target="#signup">Sign Up</a></li>
-                                <li><a href="#" class="colorF90">Logout</a></li>
-                            </ul>
-                          </div>
-                      </div>
-                      
-                </li>
-                <li>
-                	<a  class="dropdown-toggle" href="#" role="button" id="menu">
-                    	<img src="assets/burger.svg" width="24px" height="24px" />
-                    </a>     
-                    <div class="dropdown-menu" aria-labelledby="menu">
-                      <div class="smenu">
-                        <ul>
-                        	<li class="dropdown-submenu">
-                                <a class="test" tabindex="-1" href="#">English <img src="assets/dropdown.svg" /></a>
-                                <ul class="dropdown-menu submenu">
-                                  <li><a tabindex="-1" href="#">English </a></li>
-                                  <li><a tabindex="-1" href="#">Vietnamese</a></li>
-                                </ul>
-                              </li>
-                        	<li><a href="#" data-toggle="modal" data-target="#fail">Fail</a></li>
-                        	<li><a href="#" data-toggle="modal" data-target="#success">Success</a></li>
-                        	<li><a href="FAQ.html">F.A.Q</a></li>
-                        	<li><a href="#" data-toggle="modal" data-target="#feedback">Feedback</a></li>
-                        	<li><a href="#">Contact Us</a></li>
-                        </ul>
-                        
-                                  
-                      </div>
+                            <div class="dropdown-menu" aria-labelledby="user">
+                                <div class="smenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#login">Sign In</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="colorF90">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a class="dropdown-toggle" href="#" role="button" id="menu">
+                                <img src="assets/burger.svg" width="24px" height="24px" />
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="menu">
+                                <div class="smenu">
+                                    <ul>
+                                        <li class="dropdown-submenu">
+                                            <a class="test" tabindex="-1" href="#">English
+                                                <img src="assets/dropdown.svg" />
+                                            </a>
+                                            <ul class="dropdown-menu submenu">
+                                                <li>
+                                                    <a tabindex="-1" href="#">English </a>
+                                                </li>
+                                                <li>
+                                                    <a tabindex="-1" href="#">Vietnamese</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#fail">Fail</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#success">Success</a>
+                                        </li>
+                                        <li>
+                                            <a href="FAQ.html">F.A.Q</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#feedback">Feedback</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="companyBanner">
+        <div class="container">
+            <img class="profileTopBanner" src="assets/bernard-hermant-616385-unsplash.jpg">
+            <div class="guideNav">
+                <a href="#">Home</a> >
+                <a href="#">Company Detail</a>
+            </div>
+            <div class="companyIntroduce">
+                <div class="companyIntroAvatar">
+                    <img src="images/avatar.png" />
+                </div>
+                <div class="companyName">
+                    <h6>NSO - Connecting Services
+                        <img src="assets/check.svg" />
+                    </h6>
+                    <p class="font-regular small">Located in Binh Duong - Vietnam</p>
+                    <a class="messenger" data-toggle="modal" data-target="#contactCompany">
+                        <img src="assets/contact.svg">Messenger</a>
+                    <div class="report" data-toggle="modal" data-target="#reportCompany">
+                        <img src="assets/slash.svg" />
                     </div>
-                </li>
-            </ul>
-            
-            
-        </div>
-         
-        <div class="clearfix"></div>
-    </div>
-</div>
-</div>
-
-
-
-<div id="companyBanner">
-	<div class="container">
-        <img class="profileTopBanner" src="assets/bernard-hermant-616385-unsplash.jpg">
-    	<div class="guideNav">
-        	<a href="#">Home</a> > 
-            <a href="#">Company Detail</a>
-        </div>
-    	<div class="companyIntroduce">
-        	<div class="companyIntroAvatar">
-            	<img src="images/avatar.png" />
-            </div>
-            <div class="companyName">
-            	<h6>NSO - Connecting Services <img src="assets/check.svg" /></h6> 
-                <p class="font-regular small">Located in Binh Duong - Vietnam</p>
-                <a class="messenger" data-toggle="modal" data-target="#contactCompany"><img src="assets/contact.svg">Messenger</a> <div class="report" data-toggle="modal" data-target="#reportCompany"><img src="assets/slash.svg" /></div>
+                </div>
+                <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
         </div>
-            <div class="clearfix"></div>
     </div>
-</div>
 
 
 
-<div id="companyInfo">
-	<div class="container">
-    	<div class="companySlideNav text-left nav nav-tabs">
-        	<ul class="list-inline">
-            	<li class="companySlideNavItem active">
-                	<a data-toggle="tab" href="#basic">Company Info</a>
-                </li>
-            	<li class="companySlideNavItem">
-                	<a data-toggle="tab" href="#connection">Connection</a>
-                </li>
-            	<li class="companySlideNavItem">
-                	<a data-toggle="tab" href="#features">Features</a>
-                </li>
-            	<li class="companySlideNavItem">
-                	<a data-toggle="tab" href="#product">Product</a>
-                </li>
-            </ul>
+    <div id="companyInfo">
+        <div class="container">
+            <div class="companySlideNav text-left nav nav-tabs">
+                <ul class="list-inline">
+                    <li class="companySlideNavItem active">
+                        <a data-toggle="tab" href="#basic">Company Info</a>
+                    </li>
+                    <li class="companySlideNavItem">
+                        <a data-toggle="tab" href="#connection">Connection</a>
+                    </li>
+                    <li class="companySlideNavItem">
+                        <a data-toggle="tab" href="#features">Features</a>
+                    </li>
+                    <li class="companySlideNavItem">
+                        <a data-toggle="tab" href="#product">Product</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    
+
 
         <div class="companyInfoContent">
             <div class="mainInfo">
@@ -137,34 +172,44 @@
                         <div class="container">
                             <div class="basicIntro">
                                 <div class="basicIntroDesc font-light">
-                                    <p>Behn Meyer Vietnam offers a broad range of products for the rubber industry. Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio. Behn Meyer is actively involved in the sales of curing agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries. Release agents and processing aids such as lubricants, tackifiers, homogeniser, dispersing agents, peptizer and plasticiser are all produced by Performance Additives, Member of the Behn Meyer Group, and distributed by Behn Meyer’s sales team. A technically experienced team with excellent market knowledge is always at the customer’s disposal, with the aim to develop customer specific solutions and to strive for long-term cooperation.</p>
+                                    <p>Behn Meyer Vietnam offers a broad range of products for the rubber industry. Synthetic
+                                        rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product
+                                        portfolio. Behn Meyer is actively involved in the sales of curing agents e.g. accelerators
+                                        as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing
+                                        agents as well as flame retardant are all provided by Behn Meyer and find their application
+                                        in various industries. Release agents and processing aids such as lubricants, tackifiers,
+                                        homogeniser, dispersing agents, peptizer and plasticiser are all produced by Performance
+                                        Additives, Member of the Behn Meyer Group, and distributed by Behn Meyer’s sales
+                                        team. A technically experienced team with excellent market knowledge is always at
+                                        the customer’s disposal, with the aim to develop customer specific solutions and
+                                        to strive for long-term cooperation.</p>
 
                                     <div class="slickGallery">
                                         <img class="navLeftSlick" src="assets/left.svg">
                                         <div class="slick-for-Gallery">
                                             <div class="item22">
                                                 <a href="#">
-                                                    <img src="images/2.jpg"/>
+                                                    <img src="images/2.jpg" />
                                                 </a>
                                             </div>
                                             <div class="item22">
                                                 <a href="#">
-                                                    <img src="images/2.jpg"/>
+                                                    <img src="images/2.jpg" />
                                                 </a>
                                             </div>
                                             <div class="item22">
                                                 <a href="#">
-                                                    <img src="images/2.jpg"/>
+                                                    <img src="images/2.jpg" />
                                                 </a>
                                             </div>
                                             <div class="item22">
                                                 <a href="#">
-                                                    <img src="images/2.jpg"/>
+                                                    <img src="images/2.jpg" />
                                                 </a>
                                             </div>
                                             <div class="item22">
                                                 <a href="#">
-                                                    <img src="images/2.jpg"/>
+                                                    <img src="images/2.jpg" />
                                                 </a>
                                             </div>
                                         </div>
@@ -172,10 +217,18 @@
                                     </div>
                                 </div>
                                 <div class="basicIntroSocial">
-                                    <a href="#"><img src="assets/facebook.svg" /></a>
-                                    <a href="#"><img src="assets/google-plus.svg" /></a>
-                                    <a href="#"><img src="assets/twitter.svg" /></a>
-                                    <a href="#"><img src="assets/linkedin.svg" /></a>
+                                    <a href="#">
+                                        <img src="assets/facebook.svg" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/google-plus.svg" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/twitter.svg" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/linkedin.svg" />
+                                    </a>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -183,329 +236,17 @@
                                 <div id="accordion">
                                     <div class="card">
                                         <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            <img src="assets/home.svg" width="27px" /> <h7 class="font-regular">Company Basic Information</h7>
-                                            <i class="fa fa-angle-down"></i>
-                                            </button>
-                                        </h5>
-                                        </div>
-                                    
-                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <table class="tableContent">
-                                                <tr>
-                                                    <td>
-                                                        <h7>Address</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">36 VSIP 1</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Province</h7> 
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#" data-toggle="modal" data-target="#provinces">Binh Duong </a></h7> <a href="#" data-toggle="modal" data-target="#provinces"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Park</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">VSIP 1</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Association</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">Binh Duong Furniture Association (BIFA)</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-header" id="headingTwo">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <img src="assets/legal-struture.svg" width="27px" /> <h7 class="font-regular">Registration Information</h7>
-                                            <i class="fa fa-angle-down"></i>
-                                            </button>
-                                        </h5>
-                                        </div>
-                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="card-body">
-                                            
-                                            <table class="tableContent">
-                                                <tr>
-                                                    <td>
-                                                        <h7>Address</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">36 VSIP 1</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Province</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">Binh Duong</a></h7> <a  href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-header" id="headingThree">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <img src="assets/globe.svg" width="27px" /> <h7 class="font-regular">&nbsp;Business Introduction</h7>
-                                            <i class="fa fa-angle-down"></i>
-                                            </button>
-                                        </h5>
-                                        </div>
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <table class="tableContent">
-                                                <tr>
-                                                    <td>
-                                                        <h7>Address</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">36 VSIP 1</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Province</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">Binh Duong</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="card">
-                                        <div class="card-header" id="heading4">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                            <img src="assets/profile.svg" width="27px" /> <h7 class="font-regular">&nbsp;Contact</h7>
-                                            <i class="fa fa-angle-down"></i>
-                                            </button>
-                                        </h5>
-                                        </div>
-                                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <table class="tableContent">
-                                                <tr>
-                                                    <td>
-                                                        <h7>Address</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">36 VSIP 1</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Province</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">Binh Duong</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                    
-                                    <div class="card">
-                                        <div class="card-header" id="heading5">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                            <img src="assets/users.svg" width="27px" /> <h7 class="font-regular">&nbsp;Shareholder</h7>
-                                            <i class="fa fa-angle-down"></i>
-                                            </button>
-                                        </h5>
-                                        </div>
-                                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <table class="tableContent">
-                                                <tr>
-                                                    <td>
-                                                        <h7>Address</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">36 VSIP 1</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Province</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">Binh Duong</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                    
-                                    <div class="card">
-                                        <div class="card-header" id="heading6">
-                                        <h5 class="mb-0">
-                                            <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                            <img src="assets/city.svg" width="27px" /> <h7 class="font-regular">&nbsp;Facilities</h7>
-                                            <i class="fa fa-angle-down"></i>
-                                            </button>
-                                        </h5>
-                                        </div>
-                                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
-                                        <div class="card-body">
-                                            <table class="tableContent">
-                                                <tr>
-                                                    <td>
-                                                        <h7>Address</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">36 VSIP 1</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Province</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7><a href="#">Binh Duong</a></h7> <a href="#"><img src="assets/link.svg" /></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <h7>Country</h7>
-                                                    </td>
-                                                    <td>
-                                                        <h7 class="font-light">Viet Nam</h7>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                    
-                                    <div class="card">
-                                            <div class="card-header" id="heading7">
                                             <h5 class="mb-0">
-                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                                                <img src="assets/cpu.svg" width="27px" /> <h7 class="font-regular">&nbsp;Machines</h7>
-                                                <i class="fa fa-angle-down"></i>
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                                    aria-controls="collapseOne">
+                                                    <img src="assets/home.svg" width="27px" />
+                                                    <h7 class="font-regular">Company Basic Information</h7>
+                                                    <i class="fa fa-angle-down"></i>
                                                 </button>
                                             </h5>
-                                            </div>
-                                            <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                                        </div>
+
+                                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                             <div class="card-body">
                                                 <table class="tableContent">
                                                     <tr>
@@ -513,7 +254,12 @@
                                                             <h7>Address</h7>
                                                         </td>
                                                         <td>
-                                                            <h7><a href="#">36 VSIP 1</a></h7> <a href="#"><img src="assets/link.svg" /></a>
+                                                            <h7>
+                                                                <a href="#">36 VSIP 1</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -529,7 +275,100 @@
                                                             <h7>Province</h7>
                                                         </td>
                                                         <td>
-                                                            <h7><a href="#">Binh Duong</a></h7> <a href="#"><img src="assets/link.svg" /></a>
+                                                            <h7>
+                                                                <a href="#" data-toggle="modal" data-target="#provinces">Binh Duong </a>
+                                                            </h7>
+                                                            <a href="#" data-toggle="modal" data-target="#provinces">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Park</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">VSIP 1</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Association</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">Binh Duong Furniture Association (BIFA)</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    <img src="assets/legal-struture.svg" width="27px" />
+                                                    <h7 class="font-regular">Registration Information</h7>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+
+                                                <table class="tableContent">
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Address</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">36 VSIP 1</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Province</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">Binh Duong</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -542,21 +381,326 @@
                                                     </tr>
                                                 </table>
                                             </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    <img src="assets/globe.svg" width="27px" />
+                                                    <h7 class="font-regular">&nbsp;Business Introduction</h7>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <table class="tableContent">
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Address</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">36 VSIP 1</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Province</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">Binh Duong</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                </table>
                                             </div>
                                         </div>
-
                                     </div>
-                            </div> 
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading4">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                    <img src="assets/profile.svg" width="27px" />
+                                                    <h7 class="font-regular">&nbsp;Contact</h7>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <table class="tableContent">
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Address</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">36 VSIP 1</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Province</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">Binh Duong</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading5">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                    <img src="assets/users.svg" width="27px" />
+                                                    <h7 class="font-regular">&nbsp;Shareholder</h7>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <table class="tableContent">
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Address</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">36 VSIP 1</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Province</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">Binh Duong</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading6">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                    <img src="assets/city.svg" width="27px" />
+                                                    <h7 class="font-regular">&nbsp;Facilities</h7>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <table class="tableContent">
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Address</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">36 VSIP 1</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Province</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">Binh Duong</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="card-header" id="heading7">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                                    <img src="assets/cpu.svg" width="27px" />
+                                                    <h7 class="font-regular">&nbsp;Machines</h7>
+                                                    <i class="fa fa-angle-down"></i>
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordion">
+                                            <div class="card-body">
+                                                <table class="tableContent">
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Address</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">36 VSIP 1</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Province</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7>
+                                                                <a href="#">Binh Duong</a>
+                                                            </h7>
+                                                            <a href="#">
+                                                                <img src="assets/link.svg" />
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h7>Country</h7>
+                                                        </td>
+                                                        <td>
+                                                            <h7 class="font-light">Viet Nam</h7>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div id="connection" class="tab-pane">
                         <div class="connectContent">
-                        	<div class="connectHeader">
+                            <div class="connectHeader">
                                 <div class="container">
-                                <h4>Connection</h4>
-                                <h7 class="font-light">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam.</h7>
+                                    <h4>Connection</h4>
+                                    <h7 class="font-light">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.
+                                        Etiam.</h7>
                                 </div>
                             </div>
                             <div class="container">
@@ -568,8 +712,11 @@
                                                 <img src="assets/city.svg" class="blackSVG" />
                                             </div>
                                             <div class="connectBodyContentItemContent">
-                                                <a href="#"><h6>City</h6></a>
-                                                <p class="font-regular">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore magni dolores eos.</p>
+                                                <a href="#">
+                                                    <h6>City</h6>
+                                                </a>
+                                                <p class="font-regular">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                                    magni dolores eos.</p>
                                             </div>
                                             <div class="barConnect"></div>
                                             <div class="clearfix"></div>
@@ -577,11 +724,14 @@
                                         <div class="connectBodyContentItem">
                                             <div class="connectBodyContentItemIMG">
                                                 <div>&nbsp;</div>
-                                                <img src="assets/target.svg"/>
+                                                <img src="assets/target.svg" />
                                             </div>
                                             <div class="connectBodyContentItemContent">
-                                                <a href="#"><h6>Industrial Area</h6></a>
-                                                <p class="font-regular">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore magni dolores eos.</p>
+                                                <a href="#">
+                                                    <h6>Industrial Area</h6>
+                                                </a>
+                                                <p class="font-regular">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                                    magni dolores eos.</p>
                                             </div>
                                             <div class="barConnect"></div>
                                             <div class="clearfix"></div>
@@ -592,8 +742,11 @@
                                                 <img src="assets/globe.svg" class="blackSVG" />
                                             </div>
                                             <div class="connectBodyContentItemContent">
-                                                <a href="#"><h6>Associations</h6></a>
-                                                <p class="font-regular">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore magni dolores eos.</p>
+                                                <a href="#">
+                                                    <h6>Associations</h6>
+                                                </a>
+                                                <p class="font-regular">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                                    magni dolores eos.</p>
                                             </div>
                                             <div class="clearfix"></div>
                                         </div>
@@ -601,7 +754,8 @@
                                     <div class="connectBodyContent">
                                         <div>
                                             <h4>List Subsidiaries</h4>
-                                            <h7 class="font-light">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam.</h7>
+                                            <h7 class="font-light">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere
+                                                vulputate. Etiam.</h7>
                                             <div class="listSub">
                                                 <div class="listSubItem">
                                                     <p class="font-bold">Department 1</p>
@@ -634,14 +788,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                
+
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        
+
                         <div class="connectContent">
-                        	<div class="connectHeader">
+                            <div class="connectHeader">
                                 <div class="container">
                                     <h4>Supplier and Customer</h4>
                                     <div class="blockSC">
@@ -656,76 +810,112 @@
                             </div>
                             <div class="connectBody bodySC">
                                 <div class="container">
-                                    <a href="#"><img src="assets/logo-1@2x.png" /></a>
-                                    <a href="#"><img src="assets/logo-2@2x.png" /></a>
-                                    <a href="#"><img src="assets/logo-1@2x.png" /></a>
-                                    <a href="#"><img src="assets/logo-2@2x.png" /></a>
-                                    <a href="#"><img src="assets/logo-1@2x.png" /></a>
-                                    <a href="#"><img src="assets/logo-2@2x.png" /></a>
-                                    <a href="#"><img src="assets/logo-1@2x.png" /></a>
-                                    <a href="#"><img src="assets/logo-2@2x.png" /></a>
+                                    <a href="#">
+                                        <img src="assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/logo-2@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/logo-2@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/logo-2@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="assets/logo-2@2x.png" />
+                                    </a>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        
+
                         <div class="connectContent">
-                        	<div class="connectHeader">
+                            <div class="connectHeader">
                                 <div class="container">
                                     <h4>Location Map & Landmarks</h4>
                                 </div>
                             </div>
                             <div class="connectBody">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125309.16649832472!2d106.62312976505552!3d11.045265424293277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d9e0a3de408d%3A0x57117fc8f52229d8!2zQ8O0bmcgdHkgQ-G7lSBwaOG6p24gROG7i2NoIHbhu6UgdsOgIMSQ4bqndSB0xrAgTeG7mXQgQ-G7rWEgUXXhu5FjIEdpYSAoTlNPKQ!5e0!3m2!1sen!2s!4v1529138290854" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125309.16649832472!2d106.62312976505552!3d11.045265424293277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d9e0a3de408d%3A0x57117fc8f52229d8!2zQ8O0bmcgdHkgQ-G7lSBwaOG6p24gROG7i2NoIHbhu6UgdsOgIMSQ4bqndSB0xrAgTeG7mXQgQ-G7rWEgUXXhu5FjIEdpYSAoTlNPKQ!5e0!3m2!1sen!2s!4v1529138290854"
+                                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        
+
                         <div class="connectContent">
-                        	<div class="connectHeader">
+                            <div class="connectHeader">
                                 <div class="container">
                                     <h4>Tag Code</h4>
                                 </div>
                             </div>
                             <div class="connectBody">
                                 <div class="container">
-                                    <div class="tagCode"><a href="#">Agricare</a></div>
-                                    <div class="tagCode"><a href="#">adipiscing elit</a></div>
-                                    <div class="tagCode"><a href="#">consectetur</a></div>
-                                    <div class="tagCode"><a href="#">Lorem ipsum dolor sit amet</a></div>
-                                    <div class="tagCode"><a href="#">tempor incididunt</a></div>
-                                    <div class="tagCode"><a href="#">Agricare</a></div>
-                                    <div class="tagCode"><a href="#">sed do eiusmod</a></div>
-                                    <div class="tagCode"><a href="#">Agricare</a></div>
-                                    <div class="tagCode"><a href="#">Agricare</a></div>
+                                    <div class="tagCode">
+                                        <a href="#">Agricare</a>
+                                    </div>
+                                    <div class="tagCode">
+                                        <a href="#">adipiscing elit</a>
+                                    </div>
+                                    <div class="tagCode">
+                                        <a href="#">consectetur</a>
+                                    </div>
+                                    <div class="tagCode">
+                                        <a href="#">Lorem ipsum dolor sit amet</a>
+                                    </div>
+                                    <div class="tagCode">
+                                        <a href="#">tempor incididunt</a>
+                                    </div>
+                                    <div class="tagCode">
+                                        <a href="#">Agricare</a>
+                                    </div>
+                                    <div class="tagCode">
+                                        <a href="#">sed do eiusmod</a>
+                                    </div>
+                                    <div class="tagCode">
+                                        <a href="#">Agricare</a>
+                                    </div>
+                                    <div class="tagCode">
+                                        <a href="#">Agricare</a>
+                                    </div>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        
+
                         <div class="connectContent">
-                        	<div class="connectHeader">
+                            <div class="connectHeader">
                                 <div class="container">
                                     <h4>Related Companies</h4>
                                     <select id="selectZone" name="select-company">
-                                    <option value="0">Zone</option>
-                                    <option value="Amazon">Amazon</option>
-                                    <option value="Microsoft">Microsoft</option>
-                                    <option value="Cisco">Cisco</option>
-                                    <option value="Honda">Honda</option>
+                                        <option value="0">Zone</option>
+                                        <option value="Amazon">Amazon</option>
+                                        <option value="Microsoft">Microsoft</option>
+                                        <option value="Cisco">Cisco</option>
+                                        <option value="Honda">Honda</option>
                                     </select>
-                                    <h7 class="font-light">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam.</h7>
+                                    <h7 class="font-light">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate.
+                                        Etiam.</h7>
                                 </div>
                             </div>
                             <div class="connectBody">
                                 <div class="container">
                                     <div class="slideOthers">
-                                        <img class="navLeftSlick2" src="assets/left.svg" >
+                                        <img class="navLeftSlick2" src="assets/left.svg">
                                         <div class="slick-for">
                                             <div class="item21">
                                                 <div class="itemRelatedCompany">
                                                     <a href="#">
-                                                        <img src="images/2.jpg"/>
+                                                        <img src="images/2.jpg" />
                                                         <div class="itemRelatedContent">
                                                             <p class="font-bold">New Directory</p>
                                                             <p class="usmall font-bold">123 VSIP 2, HCM City</p>
@@ -735,50 +925,50 @@
                                                 </div>
                                             </div>
                                             <div class="item21">
-                                                <div class="itemRelatedCompany"> 
+                                                <div class="itemRelatedCompany">
                                                     <a href="#">
-                                                    <img src="images/2.jpg"/>
-                                                    <div class="itemRelatedContent">
-                                                        <p class="font-bold">New Directory</p>
-                                                        <p class="usmall font-bold">123 VSIP 2, HCM City</p>
-                                                        <div></div>
-                                                    </div>
+                                                        <img src="images/2.jpg" />
+                                                        <div class="itemRelatedContent">
+                                                            <p class="font-bold">New Directory</p>
+                                                            <p class="usmall font-bold">123 VSIP 2, HCM City</p>
+                                                            <div></div>
+                                                        </div>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="item21">
-                                                <div class="itemRelatedCompany"> 
+                                                <div class="itemRelatedCompany">
                                                     <a href="#">
-                                                    <img src="images/2.jpg"/>
-                                                    <div class="itemRelatedContent">
-                                                        <p class="font-bold">New Directory</p>
-                                                        <p class="usmall font-bold">123 VSIP 2, HCM City</p>
-                                                        <div></div>
-                                                    </div>
+                                                        <img src="images/2.jpg" />
+                                                        <div class="itemRelatedContent">
+                                                            <p class="font-bold">New Directory</p>
+                                                            <p class="usmall font-bold">123 VSIP 2, HCM City</p>
+                                                            <div></div>
+                                                        </div>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="item21">
-                                                <div class="itemRelatedCompany"> 
+                                                <div class="itemRelatedCompany">
                                                     <a href="#">
-                                                    <img src="images/2.jpg"/>
-                                                    <div class="itemRelatedContent">
-                                                        <p class="font-bold">New Directory</p>
-                                                        <p class="usmall font-bold">123 VSIP 2, HCM City</p>
-                                                        <div></div>
-                                                    </div>
+                                                        <img src="images/2.jpg" />
+                                                        <div class="itemRelatedContent">
+                                                            <p class="font-bold">New Directory</p>
+                                                            <p class="usmall font-bold">123 VSIP 2, HCM City</p>
+                                                            <div></div>
+                                                        </div>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="item21">
-                                                <div class="itemRelatedCompany"> 
+                                                <div class="itemRelatedCompany">
                                                     <a href="#">
-                                                    <img src="images/2.jpg"/>
-                                                    <div class="itemRelatedContent">
-                                                        <p class="font-bold colorF90">New Directory</p>
-                                                        <p class="usmall font-bold">123 VSIP 2, HCM City</p>
-                                                        <div></div>
-                                                    </div>
+                                                        <img src="images/2.jpg" />
+                                                        <div class="itemRelatedContent">
+                                                            <p class="font-bold colorF90">New Directory</p>
+                                                            <p class="usmall font-bold">123 VSIP 2, HCM City</p>
+                                                            <div></div>
+                                                        </div>
                                                     </a>
                                                 </div>
                                             </div>
@@ -788,8 +978,8 @@
                                 </div>
                             </div>
                             <div class="clearfix"></div>
-                       	</div>
-                        
+                        </div>
+
                     </div>
                     <div id="features" class="tab-pane">
                         <div class="container">
@@ -823,11 +1013,11 @@
                                             </td>
                                             <td>
                                                 <h7 class="font-light">
-                                                        Agricare<br>
-                                                        Ingredients<br>
-                                                        Performance Chemical<br>
-                                                        Polymers<br>
-                                                        ...
+                                                    Agricare
+                                                    <br> Ingredients
+                                                    <br> Performance Chemical
+                                                    <br> Polymers
+                                                    <br> ...
                                                 </h7>
                                             </td>
                                         </tr>
@@ -838,14 +1028,14 @@
                             <div class="featureVerticalDivider"></div>
                             <div class="connectContent featureCategory2">
                                 <div class="connectHeader">
-                                        <h4>Purchasing</h4>
-                                        <h7 class="font-light">Import  - UK - 30% - 2018</h7>
-                                        <h7 class="font-light">Local - Vietnam - 70% - 2018</h7>
+                                    <h4>Purchasing</h4>
+                                    <h7 class="font-light">Import - UK - 30% - 2018</h7>
+                                    <h7 class="font-light">Local - Vietnam - 70% - 2018</h7>
                                 </div>
                                 <div class="connectHeader">
-                                        <h4>Sales</h4>
-                                        <h7 class="font-light">Import  - UK - 30% - 2018</h7>
-                                        <h7 class="font-light">Local - Vietnam - 70% - 2018</h7>
+                                    <h4>Sales</h4>
+                                    <h7 class="font-light">Import - UK - 30% - 2018</h7>
+                                    <h7 class="font-light">Local - Vietnam - 70% - 2018</h7>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -877,7 +1067,9 @@
                                         </div>
                                         <div class="clearfix"></div>
                                     </div>
-                                    <h6>Selected Code(s) <a href="#">93640</a></h6> 
+                                    <h6>Selected Code(s)
+                                        <a href="#">93640</a>
+                                    </h6>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -889,35 +1081,39 @@
                                     </div>
                                 </div>
                                 <div class="connectBody">
-                                        <div class="featureServicesItem">
-                                            <img src="assets/ic-paint-roller.svg">
-                                            <div class="featureServicesItemContent">
-                                                <h7 class="font-bold color6F93F9">Fusce vehicul.</h7>
-                                                <h7 class="font-light">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper.</h7>
-                                            </div>
+                                    <div class="featureServicesItem">
+                                        <img src="assets/ic-paint-roller.svg">
+                                        <div class="featureServicesItemContent">
+                                            <h7 class="font-bold color6F93F9">Fusce vehicul.</h7>
+                                            <h7 class="font-light">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+                                                lacus, vitae ullamcorper.</h7>
                                         </div>
-                                        <div class="featureServicesItem">
-                                            <img src="assets/ic-binoculars.svg">
-                                            <div class="featureServicesItemContent">
-                                                <h7 class="font-bold color6F93F9">Fusce vehicul.</h7>
-                                                <h7 class="font-light">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper.</h7>
-                                            </div>
+                                    </div>
+                                    <div class="featureServicesItem">
+                                        <img src="assets/ic-binoculars.svg">
+                                        <div class="featureServicesItemContent">
+                                            <h7 class="font-bold color6F93F9">Fusce vehicul.</h7>
+                                            <h7 class="font-light">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+                                                lacus, vitae ullamcorper.</h7>
                                         </div>
-                                        <div class="featureServicesItem">
-                                            <img src="assets/ic-fountain-pen.svg">
-                                            <div class="featureServicesItemContent">
-                                                <h7 class="font-bold color6F93F9">Fusce vehicul.</h7>
-                                                <h7 class="font-light">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper.</h7>
-                                            </div>
+                                    </div>
+                                    <div class="featureServicesItem">
+                                        <img src="assets/ic-fountain-pen.svg">
+                                        <div class="featureServicesItemContent">
+                                            <h7 class="font-bold color6F93F9">Fusce vehicul.</h7>
+                                            <h7 class="font-light">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+                                                lacus, vitae ullamcorper.</h7>
                                         </div>
-                                        <div class="featureServicesItem">
-                                            <img src="assets/ic-sofa.svg">
-                                            <div class="featureServicesItemContent">
-                                                <h7 class="font-bold color6F93F9">Fusce vehicul.</h7>
-                                                <h7 class="font-light">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper.</h7>
-                                            </div>
+                                    </div>
+                                    <div class="featureServicesItem">
+                                        <img src="assets/ic-sofa.svg">
+                                        <div class="featureServicesItemContent">
+                                            <h7 class="font-bold color6F93F9">Fusce vehicul.</h7>
+                                            <h7 class="font-light">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+                                                lacus, vitae ullamcorper.</h7>
                                         </div>
-                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -961,217 +1157,252 @@
                     </div>
                     <div id="product" class="tab-pane">
                         <div class="connectContent featureProduct">
-                                <div class="connectHeader">
-                                    <div class="container">
-                                        <h4>Products lobortis id lorem.</h4>
-                                        <h7 class="font-light">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque se.</h7>
-                                    </div>
+                            <div class="connectHeader">
+                                <div class="container">
+                                    <h4>Products lobortis id lorem.</h4>
+                                    <h7 class="font-light">Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum,
+                                        neque se.</h7>
                                 </div>
-                                <div class="connectBody">
-                                    <div class="container">
-                                        <div class="featureProductItem">
-                                            <a href="#" data-toggle="modal" data-target="#product01"><img src="assets/rectangle-2.jpg"></a>
-                                            <div class="featureProductItemContent">
-                                                <h7 class="font-bold"><a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a></h7>
-                                                <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
-                                                <img src="assets/line.svg"> <a href="#" data-toggle="modal" data-target="#product01">More</a>
-                                            </div>
-                                        </div>
-                                        <div class="featureProductItem">
-                                                <a href="#" data-toggle="modal" data-target="#product01"><img src="assets/rectangle-2.jpg"></a>
-                                                <div class="featureProductItemContent">
-                                                    <h7 class="font-bold"><a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a></h7>
-                                                    <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
-                                                    <img src="assets/line.svg"> <a href="#" data-toggle="modal" data-target="#product01">More</a>
-                                                </div>
-                                        </div>
-                                        <div class="featureProductItem">
-                                                <a href="#" data-toggle="modal" data-target="#product01"><img src="assets/rectangle-2.jpg"></a>
-                                                <div class="featureProductItemContent">
-                                                    <h7 class="font-bold"><a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a></h7>
-                                                    <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
-                                                    <img src="assets/line.svg"> <a href="#" data-toggle="modal" data-target="#product01">More</a>
-                                                </div>
-                                        </div>
-                                        <div class="featureProductItem">
-                                                <a href="#" data-toggle="modal" data-target="#product01"><img src="assets/rectangle-2.jpg"></a>
-                                                <div class="featureProductItemContent">
-                                                    <h7 class="font-bold"><a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a></h7>
-                                                    <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
-                                                    <img src="assets/line.svg"> <a href="#" data-toggle="modal" data-target="#product01">More</a>
-                                                </div>
-                                        </div>
-                                        <div class="featureProductItem">
-                                                <a href="#" data-toggle="modal" data-target="#product01"><img src="assets/rectangle-2.jpg"></a>
-                                                <div class="featureProductItemContent">
-                                                    <h7 class="font-bold"><a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a></h7>
-                                                    <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
-                                                    <img src="assets/line.svg"> <a href="#" data-toggle="modal" data-target="#product01">More</a>
-                                                </div>
-                                        </div>
-                                        <div class="featureProductItem">
-                                                <a href="#" data-toggle="modal" data-target="#product01"><img src="assets/rectangle-2.jpg"></a>
-                                                <div class="featureProductItemContent">
-                                                    <h7 class="font-bold"><a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a></h7>
-                                                    <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
-                                                    <img src="assets/line.svg"> <a href="#" data-toggle="modal" data-target="#product01">More</a>
-                                                </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
                             </div>
+                            <div class="connectBody">
+                                <div class="container">
+                                    <div class="featureProductItem">
+                                        <a href="#" data-toggle="modal" data-target="#product01">
+                                            <img src="assets/rectangle-2.jpg">
+                                        </a>
+                                        <div class="featureProductItemContent">
+                                            <h7 class="font-bold">
+                                                <a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a>
+                                            </h7>
+                                            <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
+                                            <img src="assets/line.svg">
+                                            <a href="#" data-toggle="modal" data-target="#product01">More</a>
+                                        </div>
+                                    </div>
+                                    <div class="featureProductItem">
+                                        <a href="#" data-toggle="modal" data-target="#product01">
+                                            <img src="assets/rectangle-2.jpg">
+                                        </a>
+                                        <div class="featureProductItemContent">
+                                            <h7 class="font-bold">
+                                                <a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a>
+                                            </h7>
+                                            <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
+                                            <img src="assets/line.svg">
+                                            <a href="#" data-toggle="modal" data-target="#product01">More</a>
+                                        </div>
+                                    </div>
+                                    <div class="featureProductItem">
+                                        <a href="#" data-toggle="modal" data-target="#product01">
+                                            <img src="assets/rectangle-2.jpg">
+                                        </a>
+                                        <div class="featureProductItemContent">
+                                            <h7 class="font-bold">
+                                                <a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a>
+                                            </h7>
+                                            <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
+                                            <img src="assets/line.svg">
+                                            <a href="#" data-toggle="modal" data-target="#product01">More</a>
+                                        </div>
+                                    </div>
+                                    <div class="featureProductItem">
+                                        <a href="#" data-toggle="modal" data-target="#product01">
+                                            <img src="assets/rectangle-2.jpg">
+                                        </a>
+                                        <div class="featureProductItemContent">
+                                            <h7 class="font-bold">
+                                                <a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a>
+                                            </h7>
+                                            <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
+                                            <img src="assets/line.svg">
+                                            <a href="#" data-toggle="modal" data-target="#product01">More</a>
+                                        </div>
+                                    </div>
+                                    <div class="featureProductItem">
+                                        <a href="#" data-toggle="modal" data-target="#product01">
+                                            <img src="assets/rectangle-2.jpg">
+                                        </a>
+                                        <div class="featureProductItemContent">
+                                            <h7 class="font-bold">
+                                                <a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a>
+                                            </h7>
+                                            <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
+                                            <img src="assets/line.svg">
+                                            <a href="#" data-toggle="modal" data-target="#product01">More</a>
+                                        </div>
+                                    </div>
+                                    <div class="featureProductItem">
+                                        <a href="#" data-toggle="modal" data-target="#product01">
+                                            <img src="assets/rectangle-2.jpg">
+                                        </a>
+                                        <div class="featureProductItemContent">
+                                            <h7 class="font-bold">
+                                                <a href="#" data-toggle="modal" data-target="#product01">Mauris non tempor quam, et lacinia sapien.</a>
+                                            </h7>
+                                            <p class="font-light small colorCCCCCC">Lorem ipsum dolor sit amet, an consectetur adipi urabitur boain klaoi doeko anlos.</p>
+                                            <img src="assets/line.svg">
+                                            <a href="#" data-toggle="modal" data-target="#product01">More</a>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="clearfix"></div>
         </div>
-    
-</div>
+
+    </div>
 
 
-<!--each block belong to a product with different id {{rajzeNguyen}} -->
-<div class="productDetailPanel modal fade" id="product01" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="leftGallery">
-                <div class="topImgGalleryProduct">
-                    <div class="itemGal01">
-                        <img src="assets/811-i-6-hg-tx-l-sl-1500.jpg">
-                    </div>
-                    <div class="itemGal01">
-                        <img src="images/6.jpg">
-                    </div>
-                    <div class="itemGal01">
-                        <img src="images/7.jpg">
-                    </div>
-                    <div class="itemGal01">
-                        <img src="images/8.jpg">
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-                <div class="botImgGalleryProduct">
-                    <div class="itemGal02">
-                        <div>
+    <!--each block belong to a product with different id {{rajzeNguyen}} -->
+    <div class="productDetailPanel modal fade" id="product01" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="leftGallery">
+                    <div class="topImgGalleryProduct">
+                        <div class="itemGal01">
                             <img src="assets/811-i-6-hg-tx-l-sl-1500.jpg">
                         </div>
-                    </div>
-                    <div class="itemGal02">
-                        <div>
+                        <div class="itemGal01">
                             <img src="images/6.jpg">
                         </div>
-                    </div>
-                    <div class="itemGal02">
-                        <div>
+                        <div class="itemGal01">
                             <img src="images/7.jpg">
                         </div>
-                    </div>
-                    <div class="itemGal02">
-                        <div>
+                        <div class="itemGal01">
                             <img src="images/8.jpg">
                         </div>
                     </div>
+                    <div class="clearfix"></div>
+                    <div class="botImgGalleryProduct">
+                        <div class="itemGal02">
+                            <div>
+                                <img src="assets/811-i-6-hg-tx-l-sl-1500.jpg">
+                            </div>
+                        </div>
+                        <div class="itemGal02">
+                            <div>
+                                <img src="images/6.jpg">
+                            </div>
+                        </div>
+                        <div class="itemGal02">
+                            <div>
+                                <img src="images/7.jpg">
+                            </div>
+                        </div>
+                        <div class="itemGal02">
+                            <div>
+                                <img src="images/8.jpg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="rightContent">
-                <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
-                    <?xml version="1.0" encoding="UTF-8"?>
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <title>2A3D474B-2126-4573-9B6F-4F6C5F9CE77E</title>
-                        <desc>Created with sketchtool.</desc>
-                        <defs>
-                            <path d="M13.4142136,12 L18.7071068,17.2928932 C19.0976311,17.6834175 19.0976311,18.3165825 18.7071068,18.7071068 C18.3165825,19.0976311 17.6834175,19.0976311 17.2928932,18.7071068 L12,13.4142136 L6.70710678,18.7071068 C6.31658249,19.0976311 5.68341751,19.0976311 5.29289322,18.7071068 C4.90236893,18.3165825 4.90236893,17.6834175 5.29289322,17.2928932 L10.5857864,12 L5.29289322,6.70710678 C4.90236893,6.31658249 4.90236893,5.68341751 5.29289322,5.29289322 C5.68341751,4.90236893 6.31658249,4.90236893 6.70710678,5.29289322 L12,10.5857864 L17.2928932,5.29289322 C17.6834175,4.90236893 18.3165825,4.90236893 18.7071068,5.29289322 C19.0976311,5.68341751 19.0976311,6.31658249 18.7071068,6.70710678 L13.4142136,12 Z" id="path-1"></path>
-                        </defs>
-                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Icons-/-24px-/-x">
-                                <rect id="Base" x="0" y="0" width="24" height="24"></rect>
-                                <mask id="mask-2" fill="white">
-                                    <use xlink:href="#path-1"></use>
-                                </mask>
-                                <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
-                                <g id="UI/Color/Flat/Dark-1" mask="url(#mask-2)" fill="#333333">
+                <div class="rightContent">
+                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>2A3D474B-2126-4573-9B6F-4F6C5F9CE77E</title>
+                            <desc>Created with sketchtool.</desc>
+                            <defs>
+                                <path d="M13.4142136,12 L18.7071068,17.2928932 C19.0976311,17.6834175 19.0976311,18.3165825 18.7071068,18.7071068 C18.3165825,19.0976311 17.6834175,19.0976311 17.2928932,18.7071068 L12,13.4142136 L6.70710678,18.7071068 C6.31658249,19.0976311 5.68341751,19.0976311 5.29289322,18.7071068 C4.90236893,18.3165825 4.90236893,17.6834175 5.29289322,17.2928932 L10.5857864,12 L5.29289322,6.70710678 C4.90236893,6.31658249 4.90236893,5.68341751 5.29289322,5.29289322 C5.68341751,4.90236893 6.31658249,4.90236893 6.70710678,5.29289322 L12,10.5857864 L17.2928932,5.29289322 C17.6834175,4.90236893 18.3165825,4.90236893 18.7071068,5.29289322 C19.0976311,5.68341751 19.0976311,6.31658249 18.7071068,6.70710678 L13.4142136,12 Z"
+                                    id="path-1"></path>
+                            </defs>
+                            <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Icons-/-24px-/-x">
                                     <rect id="Base" x="0" y="0" width="24" height="24"></rect>
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                    <g id="UI/Color/Flat/Dark-1" mask="url(#mask-2)" fill="#333333">
+                                        <rect id="Base" x="0" y="0" width="24" height="24"></rect>
+                                    </g>
                                 </g>
                             </g>
-                        </g>
-                    </svg>
-                </button>
-                <p class="font-regular colorCCCCCC">DRY IRON</p>
-                <h4>Phabo and Entecm entec</h4>
-                <p class="font-light">
-                        Production planning, saving manpower, reducing low-cost, high output.<br><br>
-                        Found space to large, flexible space applications, can not account for folded storage space.<br><br>
-                        Using the words clear, high calculation engine.<br><br>
-                        Attached to the fixed bar belts, up and down in fast speed, can carry both goods and vehicles.
-                </p>
+                        </svg>
+                    </button>
+                    <p class="font-regular colorCCCCCC">DRY IRON</p>
+                    <h4>Phabo and Entecm entec</h4>
+                    <p class="font-light">
+                        Production planning, saving manpower, reducing low-cost, high output.
+                        <br>
+                        <br> Found space to large, flexible space applications, can not account for folded storage space.
+                        <br>
+                        <br> Using the words clear, high calculation engine.
+                        <br>
+                        <br> Attached to the fixed bar belts, up and down in fast speed, can carry both goods and vehicles.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-  </div>
 
 
-  <!--Modal for province-->
-<div class="provinceDetailPanel modal fade" id="provinces" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
+    <!--Modal for province-->
+    <div class="provinceDetailPanel modal fade" id="provinces" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
                     <img src="assets/x.svg" width="24">
                 </button>
-            <img src="images/Lam Dong.jpg">
+                <img src="images/Lam Dong.jpg">
+            </div>
         </div>
     </div>
-</div>
 
-<!--Modal for report company-->
-<div class="modal fade" id="reportCompany" tabindex="-1" role="dialog" aria-labelledby="reportCompanyLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h6 class="modal-title" id="reportCompanyLabel" style="display: contents;">Your Report</h6>
-                <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close" >
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <p class="font-regular">In hac habitasse platea dictumst. Vivamus adipisci.</p>
-                        <p class="font-regular">In hac habitasse platea dictumst. Vivamus adipisci.</p>
-                        <select name="select-company" id="select-company">
+    <!--Modal for report company-->
+    <div class="modal fade" id="reportCompany" tabindex="-1" role="dialog" aria-labelledby="reportCompanyLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h6 class="modal-title" id="reportCompanyLabel" style="display: contents;">Your Report</h6>
+                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <p class="font-regular">In hac habitasse platea dictumst. Vivamus adipisci.</p>
+                            <p class="font-regular">In hac habitasse platea dictumst. Vivamus adipisci.</p>
+                            <select name="select-company" id="select-company">
                                 <option value="1">Company Information</option>
                                 <option value="2">Business Introduction</option>
                                 <option value="3">Cisco</option>
                                 <option value="4">Honda</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="falseInfor" class="col-form-label">False information</label>
-                        <input type="text" class="" id="falseInfor" placeholder="False information" />
-                    </div>
-                    <div class="form-group">
-                        <label for="rightInfor" class="col-form-label">Information to edit</label>
-                        <textarea class="" id="rightInfor" placeholder="Information to edit"></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <div class="clearfix"></div>
-                <button type="button" class="nextButton" id="btnSubmitReport">Send</button>
-                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="falseInfor" class="col-form-label">False information</label>
+                            <input type="text" class="" id="falseInfor" placeholder="False information" />
+                        </div>
+                        <div class="form-group">
+                            <label for="rightInfor" class="col-form-label">Information to edit</label>
+                            <textarea class="" id="rightInfor" placeholder="Information to edit"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="clearfix"></div>
+                    <button type="button" class="nextButton" id="btnSubmitReport">Send</button>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!--Modal for contact company-->
-<div class="modal fade" id="contactCompany" tabindex="-1" role="dialog" aria-labelledby="contactCompanyLabel" aria-hidden="true">
+    <!--Modal for contact company-->
+    <div class="modal fade" id="contactCompany" tabindex="-1" role="dialog" aria-labelledby="contactCompanyLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h6 class="modal-title" id="contactCompanyLabel" style="display: contents;">Contact with Smart Directory</h6>
-                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close" >
-                    <span aria-hidden="true">&times;</span>
+                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -1197,20 +1428,21 @@
                 <div class="modal-footer">
                     <div class="clearfix"></div>
                     <button type="button" class="nextButton" id="btnSubmitContact">Submit</button>
-                    
+
                 </div>
             </div>
         </div>
     </div>
-    
 
 
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/fontawesome-all.js"></script>
-<script src="slick/slick.min.js"></script>
-<script src="js/desktop.js"></script>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome-all.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/desktop.js"></script>
 
 </body>
+
 </html>
