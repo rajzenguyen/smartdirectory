@@ -733,6 +733,28 @@ label{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+.filterCheck{
+	margin-left: 0;
+}
+.filterCheck.customCheck .checkmark {
+	border-radius: 50%;
+}
+.filterCheck.customCheck input:checked ~ .checkmark {
+    background-color: unset;
+    border: 1px solid #1046f1;
+}
+.filterCheck.customCheck .checkmark:after {
+    left: 11px;
+    top: -4px;
+    width: 9px;
+    height: 20px;
+    border: thin solid #1046f1;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #fff;
+}
 /*CSS for custom checkbox*/
 
 

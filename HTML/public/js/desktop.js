@@ -77,11 +77,12 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	
-	$('.customRadio').click(function(){
+	/*
+	$('.customCheck').click(function(){
 		var a = $(this).find('input').attr("name");
 		$( "input[name*='" + a + "']").parent().removeClass('active');
 		$(this).addClass('active');
-	});
+	});*/
 
 
 	$("#companyPanel").hide();

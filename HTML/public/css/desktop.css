@@ -1811,7 +1811,7 @@ div.aboutSmart > h2{
 	line-height:24px;
 	font-weight:500;
 }
-.item01 ul li .customRadio.active{
+.item01 ul li .customCheck.active{
 	color: #1046f1;
 	font-family: 'Montserrat-Bold', sans-serif;
 }
