@@ -565,6 +565,7 @@ $(document).ready(function(){
 	
 	$(".lastChildCatItem").click(function(){
 		lastClick();
+		
 		changeWidthItem();
 	});
 	/*add more filter to homepage*/
@@ -581,21 +582,21 @@ $(document).ready(function(){
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
-	var display1 = document.getElementById("companies");
+	var display1 = document.getElementById("count01");
 	var number1 = {param:0};
-	var value1= document.getElementById("companies").getAttribute("value-to");
+	var value1= document.getElementById("count01").getAttribute("value-to");
 	
-	var display2 = document.getElementById("cities");
+	var display2 = document.getElementById("count02");
 	var number2 = {param:0};
-	var value2= document.getElementById("cities").getAttribute("value-to");
+	var value2= document.getElementById("count02").getAttribute("value-to");
 	
-	var display3 = document.getElementById("searched");
+	var display3 = document.getElementById("count03");
 	var number3 = {param:0};
-	var value3= document.getElementById("searched").getAttribute("value-to");
+	var value3= document.getElementById("count03").getAttribute("value-to");
 	
-	var display4 = document.getElementById("totalUser");
+	var display4 = document.getElementById("count04");
 	var number4 = {param:0};
-	var value4= document.getElementById("totalUser").getAttribute("value-to");
+	var value4= document.getElementById("count04").getAttribute("value-to");
 	/*
 	var display5 = document.getElementById("id2");
 	var number5 = {param:0};
@@ -652,13 +653,13 @@ $(document).ready(function(){
 		separator: ',',
 		decimal: '.',
 	};
-	var companies = new CountUp('companies',0, value1, 0, 5, options);
+	var companies = new CountUp('count01',0, value1, 0, 5, options);
 	companies.start();
-	var cities = new CountUp('cities',0, value2, 0, 5, options);
+	var cities = new CountUp('count02',0, value2, 0, 5, options);
 	cities.start();
-	var searched = new CountUp('searched',0, value3, 0, 5, options);
+	var searched = new CountUp('count03',0, value3, 0, 5, options);
 	searched.start();
-	var totalUser = new CountUp('totalUser',0, value4, 0, 5, options);
+	var totalUser = new CountUp('count04',0, value4, 0, 5, options);
 	totalUser.start();
 	/*
 	var id2 = new CountUp('id2',0, value5, 0, 5, options);
