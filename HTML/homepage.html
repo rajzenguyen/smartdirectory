@@ -340,11 +340,19 @@
         <div class="container">
             <h2>Customer Review</h2>
 
-            <div class="customerNav nav nav-tabs">
-                <h7 data-toggle="tab" href="#ourPartner">Our Partners</h7>
-                <h7 data-toggle="tab" href="#ourCustomer">Our Customers</h7>
-                <h7 data-toggle="tab" href="#ourReview">Customer Review</h7>
-            </div>
+                <div class="companySlideNav customerNav text-left nav nav-tabs">
+                    <ul class="list-inline">
+                        <li class="companySlideNavItem active">
+                            <a data-toggle="tab" href="#ourPartner">Our Partners</a>
+                        </li>
+                        <li class="companySlideNavItem">
+                            <a data-toggle="tab" href="#ourCustomer">Our Customers</a>
+                        </li>
+                        <li class="companySlideNavItem">
+                            <a data-toggle="tab" href="#ourReview">Customer Review</a>
+                        </li>
+                    </ul>
+                </div>
             <div class="tab-content">
                 <div id="ourPartner" class="customerPanel tab-pane active">
                     <a href="#">
@@ -955,12 +963,26 @@
                                 <form>
                                     <div class="form-group">
                                         <label for="select-company" class="col-form-label">Company</label>
-                                        <select name="select-company">
-                                            <option value="Amazon">Amazon</option>
-                                            <option value="Microsoft">Microsoft</option>
-                                            <option value="Cisco">Cisco</option>
-                                            <option value="Honda">Honda</option>
-                                        </select>
+                                        <div class="dropdownDiv">
+                                            <input name="inputSelect" class="inputDropdownList" placeholder="Select a company">
+                                            <a class="buttonDropdownList">Item <img src="public/assets/arrow-down.svg"></a>
+                                            <div class="dropdownList">
+                                                <ul>
+                                                    <li>Ho chi minh 1</li>
+                                                    <li>Binh Duong 1</li>
+                                                    <li>Test 1</li>
+                                                    <li>test2 1</li>
+                                                    <li>Ho chi minh 2</li>
+                                                    <li>Binh Duong 2</li>
+                                                    <li>Test2</li>
+                                                    <li>test2 3</li>
+                                                    <li>Ho chi minh4</li>
+                                                    <li>Binh Duong4</li>
+                                                    <li>Test5</li>
+                                                    <li>test26</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="phone" class="col-form-label">Phone Number</label>

@@ -136,7 +136,7 @@ input {
 	font-size: 16px;
 	color: #222;
 	background-image: none;
-	padding:15px 35px 15px 16px;
+	padding:15px 50px 15px 16px;
 	border-radius:35px;
 	border:1px solid #e8eaef !important;
 	background:#f8f9fb;
@@ -568,7 +568,6 @@ label{
 }
 .expandCustomCard > .blackSVG{
 	filter: brightness(0) invert(1) !important;
-	transform: rotate(180deg) !important;
 }
 .customCard:focus > .blackSVG{
 	filter: brightness(0) invert(1);
@@ -694,20 +693,20 @@ label{
     left: 0;
     height: 24px;
     width: 24px;
-    border:2px solid #000;
+    border:2px solid #ccc;
 	border-radius: 5px;
 }
 
 /* On mouse-over, add a grey background color */
 .customCheck:hover input ~ .checkmark {
-    background-color: #1046f1;
-    border:2px solid #1046f1;
+    background-color: #fff;
+    border:2px solid #333;
 }
 
 /* When the checkbox is checked, add a blue background */
 .customCheck input:checked ~ .checkmark {
-    background-color: #1046f1;
-    border:2px solid #1046f1;
+    background-color: #6f93f9;
+    border:2px solid #6f93f9;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -773,19 +772,19 @@ label{
 
 /* On mouse-over, add a background color */
 .customRadio:hover input ~ .checkmarkRadio {
-  background-color: #1046f1;
+  background-color: #6f93f9;
   border:5px solid #EEE;
 }
 
 
 /* When the radio button is checked, add a blue background */
 .customRadio input:checked ~ .checkmarkRadio {
-  background-color: #1046f1;
+  background-color: #6f93f9;
   border:5px solid #EEE;
-  color: #1046f1;
+  color: #6f93f9;
 }
 
-
+  
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
@@ -982,4 +981,68 @@ button.close {
 
 button.close:hover {
 	background: transparent;
+}
+.dropdownDiv{
+	float: left;
+	width: 100%;
+}
+.inputDropdownList{
+	float: left;
+    position: relative;
+    width: 70%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.buttonDropdownList{
+	padding: 10px 0 20px 0;
+	border-radius: 35px;
+	border: none;
+	background: #f8f9fb;
+	box-shadow: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	height: 54px;
+	font-size: 18px;
+	line-height: 27px;
+	transition: ease-in 0.2s;
+	float: left;
+    position: relative;
+    width: 30%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #eae8ef;
+    border-left: 0;
+    text-align: center;
+	color: #333;
+	cursor: pointer;
+}
+.buttonDropdownList img{
+	transform: rotate(270deg);
+}
+.buttonDropdownList:hover{
+	background: #E8EAEF;
+    border: 1px solid #eae8ef;
+	border-left: 0;
+	color: #333;
+}
+.dropdownList{
+	display: none;
+	position: absolute;
+    background: #fff;
+    z-index: 1000;
+    margin-top: 54px;
+    width: 270px;
+	box-shadow: 0px 0px 12px 0px #ccc;
+	border-radius: 10px;
+	max-height: 300px;
+	height: auto;
+	overflow-y: auto;
+	max-width: 350px;
+}
+.dropdownList li{
+	cursor: pointer;
+}
+.dropdownList li:hover{
+	background: #6f93f9;
+	color: #fff;
 }

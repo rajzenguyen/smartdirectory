@@ -1011,25 +1011,36 @@ div.aboutSmart > h2{
 }
 
 .companySlideNav > ul > li{
-    padding: 8px 20px;
+    padding: 8px 10px;
     border: 1px solid #e8eaef;
     border-top: 2px solid #fff;
-	color:#1046f1;
+	color:#333;
 	margin-left: -4px;
 	background:#fff;
 }
 .companySlideNav > ul > li > a{
-	color:#1046f1;
+	color:#333;
 	font-size:16px;
 	line-height:24px;
 	font-family: 'Montserrat-Regular', sans-serif;
 }
 .companySlideNav > ul > li:hover{
     border-top: 2px solid #1046f1;
+    color: #1046f1;
 }
+
+.companySlideNav > ul > li:hover a{
+    color: #1046f1;
+}
+
 
 .companySlideNav > .list-inline > .active{
     border-top: 2px solid #1046f1 !important;
+	color: #1046f1 !important;
+}
+.companySlideNav > .list-inline > .active > a{
+    color: #1046f1 !important;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 
 #companyInfo .nav-tabs{
@@ -1490,9 +1501,11 @@ div.aboutSmart > h2{
 	height: 115px;
 	width: 100%; 
 	padding:0;
+	position: relative;
+	z-index: 4;
 }
 .searchResult > .topNav{
-	position:relative;padding: 31px 0px 30px 0px;
+	position:relative;padding: 31px 0px 24px 0px;
 }
 .topNavWhite.searchResult > .topNav {
     margin-top: none;
@@ -1505,7 +1518,10 @@ div.aboutSmart > h2{
 #result{
 	width: 100%;
 	float:left;
-	height:909px;
+	overflow-y: hidden;
+	display: none;
+	position: relative;
+	z-index: 1;
 }
 .map{
 	width: calc(100% - 435px);
@@ -1537,9 +1553,10 @@ div.aboutSmart > h2{
 }
 .searchBar input{	
 	height: 54px;
-	padding-right: 0;
+	padding-right: 50px;
 	background: #f8f9fb;
 	float: left;
+
 }
 .searchBar button{
 	margin-left: -30px;
@@ -1598,13 +1615,16 @@ div.aboutSmart > h2{
 .resultListing{
 	float:left;
 	margin:0 30px;
+	overflow-y: scroll;
+	padding-top:10px;
 }
 .resultItem{
-	border:1px solid #ccc;
+	border:1px solid #eee;
 	background:linear-gradient(#eee, #fff);
 	height:100px;
 	border-bottom:none;
 	float:left;
+	z-index: 0;
 }
 .resultPanel.exp .resultItem{
 	width:645px;
@@ -1619,6 +1639,9 @@ div.aboutSmart > h2{
 }
 .resultItem:hover{
 	background:#fff;
+	border: none;
+	box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.7);
+	z-index: 500;
 }
 
 .resultPanel.exp .resultItem:hover{
@@ -1699,7 +1722,9 @@ div.aboutSmart > h2{
 	position: absolute;
 }
 .resultItemView:hover div{
-	filter: invert(1) sepia(1) saturate(141) hue-rotate(191deg);
+	background:url(../assets/combined-shape-blue.svg) no-repeat;
+    background-size: auto auto;
+	background-size: cover;
 }
 .resultItemView img{    
 	width: 24px;
@@ -1707,12 +1732,11 @@ div.aboutSmart > h2{
     position: relative;
     left: 18px;
     top: 5px;
-	filter: invert(1) sepia(1) saturate(141) hue-rotate(191deg);
 	
 }
 
 .resultItemView:hover img{
-	filter: invert(1) sepia(1) saturate(0);
+	filter: brightness(0) invert(1);
 }
 .resultPanel.exp .resultItemView img{    
 	width: 48px;
@@ -1720,12 +1744,11 @@ div.aboutSmart > h2{
     position: relative;
     left: 18px;
     top: 5px;
-	filter: invert(1) sepia(1) saturate(141) hue-rotate(191deg);
 	
 }
 
 .resultPanel.exp .resultItemView:hover img{
-	filter: invert(1) sepia(1) saturate(0);
+	filter: brightness(0) invert(1);
 }
 .filterPanel{
 	position:absolute;
@@ -1735,6 +1758,7 @@ div.aboutSmart > h2{
 	box-shadow: 0px 3px 18px -10px rgba(0,0,0,0.5);
 	z-index:600;
 	border-radius:10px;
+	overflow-y: scroll;
 }
 
 .sortPanel{
@@ -1783,6 +1807,10 @@ div.aboutSmart > h2{
 	line-height:24px;
 	font-weight:500;
 }
+.item01 ul li .customRadio.active{
+	color: #1046f1;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
 .endItem{
 	padding:20px 30px;
 	float:left;
@@ -1815,6 +1843,7 @@ div.aboutSmart > h2{
 	background:#f8f9fb;
 	position:absolute;
 	cursor:pointer;
+	z-index: 100;
 }
 .expandBtn img{
 	width:24px;
@@ -2278,7 +2307,7 @@ div.aboutSmart > h2{
 	line-height: 24px;
 }
 .codeSelection .connectBody h6{
-	padding-top: 51px;
+	padding-top: 5px;
 }
 .codeSelection .connectBody h6 a{
 	padding-left: 33px;
@@ -2607,7 +2636,7 @@ div.uploadNameCard button{
 .emailSign{
 	float: left;
 	width: 100%;
-	overflow: scroll;
+	overflow-x: scroll;
 }
 .copyToClipboard{
 	cursor: pointer;
@@ -2670,12 +2699,12 @@ div.uploadNameCard button{
 	border-radius: 50%;
 	opacity: 0.4;
 }
-.changeAva img.iconPic{
-    position: absolute;
+.changeAva img.iconPic{    
+	position: relative;
     width: 48px;
     height: 48px;
-    margin-left: -109px;
-    margin-top: 61px;
+    margin-left: 0;
+    margin-top: -110px;
     filter: brightness(0) invert(1);
 }
 #editProfileInfo {
@@ -2862,4 +2891,19 @@ div.uploadNameCard button{
 }
 #contactCompany .closeButton{
 	top: 12px;
+}
+.customerNav.companySlideNav > .list-inline{
+	margin-left: 9px;
+	width: 100%;
+}
+.customerNav.companySlideNav > ul > li{
+	width: 33%;
+	text-align: center;
+}
+.connectHeader .dropdownDiv{
+	float: right;
+	width: 370px;
+}
+.connectHeader .dropdownDiv .dropdownList{
+	width: auto;
 }

@@ -77,18 +77,52 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	
+	$('.customRadio').click(function(){
+		var a = $(this).find('input').attr("name");
+		$( "input[name*='" + a + "']").parent().removeClass('active');
+		$(this).addClass('active');
+	});
+
+
 	$("#companyPanel").hide();
 	$(".buttonTrigger").click(function(){
 		$(".buttonTrigger").hide();
 		$("input[name='txtSearchNavTxt']").show();
 		$("button[name='btnSearchNavBtn']").show();
 	});
+
+	$('.buttonDropdownList').click(function(){
+		$('.dropdownList').toggle();
+	});
+
+	$('.dropdownList li').click(function(){
+		$('.inputDropdownList').val($(this).text());
+		$('.dropdownList').toggle();
+	});
+
+	$('.inputDropdownList').keypress(function(){
+		$('.dropdownList').show();
+	});
+
+	$(".inputDropdownList").on("keyup", function() {
+		var value = $(this).val().toLowerCase();
+		$(".dropdownList li").filter(function() {
+		  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		});
+	  });
+
+	$(".inputDropdownList").focus(function() {
+		$('.dropdownList').show();       
+		//return false;
+	});
+
 	
+	/* hiển thị menu anh việt - hide theo yêu cầu designer 
 	$(".submenu").click(function(){
 	$('.dropdown-submenu a.test').next('ul').toggle();
-	});
+	});*/
 });
-
+/* hiển thị menu anh việt - hide theo yêu cầu designer 
 $(document).ready(function(){
   $('.dropdown-submenu a.test').on("click", function(e){
     $(this).next('ul').toggle();
@@ -96,7 +130,7 @@ $(document).ready(function(){
     e.preventDefault();
   });
 });
-
+*/
 $(document).ready(function(){
 	if($(document).width() <= 1025)
 	{
@@ -124,20 +158,22 @@ $(document).ready(function(){
 $(document).ready(function(){
 	/*Change height fit screen*/
 	/*Change height fit screen*/
-	/*Change height fit screen*/
-	$(".map").width($(document).width()-435);
-	/*$(".map").height($(document).height()-115);
-	$(".result").height($(document).height()-115);
-	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
-	$(".filterPanel").height($(".resultListing").height());*/
+	/*Change height fit screen
+	$(".map").width($(document).width()-435);*/
+	var a =$(document).height();
+	$("#result").height($(document).height()-115);
+	$("#result").css('display','block');
+	$(".map").height($(document).height()-115);
+	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 83);
+	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 63);
 	
 	
 	$(window).resize(function(){
-        /*$(".map").height($(document).height()-115);
-		$(".result").height($(document).height()-115);
-		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + 30));
-		$(".filterPanel").height($(".resultListing").height());*/
-		$(".map").width($(document).width()-435);
+        $(".map").height($(document).height()-115);
+		$("#result").height($(document).height()-115);
+		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 83);
+		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 63);
+		/*$(".map").width($(document).width()-435);*/
 		$('.expandBtn').css('top',$('.searchBar').offset().top);
 		$('.expandBtn').css('left',$('.searchBar').offset().left-84);
 		$('#menu').next().css('top',$('#menu').offset().top+24);
@@ -226,12 +262,14 @@ $(document).ready(function(){
 	$('html').click(function() {
    		$('.filterPanel').hide(); 
    		$('.sortPanel').hide(); 
-		$('.submenu').hide(); 
+		$('.submenu').hide();  
+		$('.dropdownList').hide(); 
 	});
 	
 	$('#filterBtn').click(function(event){
 		 event.stopPropagation();
 	});
+
 	
 	
 	$('.test').click(function(event){
@@ -523,12 +561,11 @@ $(document).ready(function(){
 		showmore.show();
 		$("#catContainer").append(showmore);
 		
-		/*resize block when add more block*/
 	}
 	
 	$(".lastChildCatItem").click(function(){
-		/*lastClick();
-		changeWidthItem();*/
+		lastClick();
+		changeWidthItem();
 	});
 	/*add more filter to homepage*/
 	/*add more filter to homepage*/
