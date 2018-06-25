@@ -167,7 +167,6 @@ $(document).ready(function(){
 	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 83);
 	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 63);
 	
-	
 	$(window).resize(function(){
         $(".map").height($(document).height()-115);
 		$("#result").height($(document).height()-115);
@@ -532,8 +531,8 @@ $(document).ready(function(){
 		}*/
 	}
 	
-	/*changeWidthItem();
-	change width base on number of elements*/
+	changeWidthItem();
+	/*change width base on number of elements*/
 	/*change width base on number of elements*/
 	/*change width base on number of elements*/
 	/*change width base on number of elements*/
@@ -679,7 +678,7 @@ $(document).ready(function(){
 	/*running number for homepage*/
 	
 });
-
+/*
 $(document).ready(function(){   
 
 	var options = {
@@ -697,7 +696,7 @@ $(document).ready(function(){
 		console.error(demo.error);
 	}
 });
-
+*/
 $(document).ready(function(){
 	$('.imgFB1').click(function(){
 		$("#f1").attr('checked','checked');

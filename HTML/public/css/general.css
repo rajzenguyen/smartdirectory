@@ -866,6 +866,9 @@ label{
 .colorCCCCCC{
 	color:#CCCCCC !important;
 }
+.color333{
+	color:#333 !important;
+}
 .color000{
 	color:#000 !important;
 }
@@ -989,15 +992,13 @@ button.close:hover {
 .inputDropdownList{
 	float: left;
     position: relative;
-    width: 70%;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    width: 100%;
 }
 .buttonDropdownList{
-	padding: 10px 0 20px 0;
+	padding: 15px 0 15px 0;
 	border-radius: 35px;
 	border: none;
-	background: #f8f9fb;
+	background: none;
 	box-shadow: none;
 	outline: none;
 	-webkit-box-shadow: none;
@@ -1007,23 +1008,16 @@ button.close:hover {
 	transition: ease-in 0.2s;
 	float: left;
     position: relative;
-    width: 30%;
+    width: 50px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border: 1px solid #eae8ef;
-    border-left: 0;
     text-align: center;
 	color: #333;
 	cursor: pointer;
+	margin-left: -50px;
 }
 .buttonDropdownList img{
 	transform: rotate(270deg);
-}
-.buttonDropdownList:hover{
-	background: #E8EAEF;
-    border: 1px solid #eae8ef;
-	border-left: 0;
-	color: #333;
 }
 .dropdownList{
 	display: none;
@@ -1038,9 +1032,13 @@ button.close:hover {
 	height: auto;
 	overflow-y: auto;
 	max-width: 350px;
+	color: #cccccc;
 }
 .dropdownList li{
 	cursor: pointer;
+}
+.dropdownList li:nth-child(2n+1){
+	background: #f8f9fb;
 }
 .dropdownList li:hover{
 	background: #6f93f9;

@@ -42,6 +42,9 @@
 }
 .topNavHome .navContent{
 }
+.navContent #user img{
+	border-radius: 50%;
+}
 .contactuss, .companydetail{
 	height: 115px;
     background: none;
@@ -380,6 +383,7 @@
 	float:left;
 	margin:0px 30px 30px 0px;
 }
+/*
 .catItem:nth-child(1){
 	width:270px;
 }
@@ -408,12 +412,12 @@
 .catItem:nth-child(8){
 	width:270px;
 	margin:0px 0px 0px 0px;
-}
+}*/
 .catItem img{
 	width:45px;
 	margin:65px auto 20px auto;
-	/*filter: brightness(0) invert(1);*/
-	filter:invert(0.34543345) sepia(163) saturate(46) hue-rotate(224deg);
+	/*filter: brightness(0) invert(1);
+	filter:invert(0.34543345) sepia(163) saturate(46) hue-rotate(224deg);*/
 }
 .catItem svg{
 	width:45px;
@@ -528,7 +532,7 @@ div.aboutSmart > h2{
 	height:100%;
 }
 .aboutSmartContent > img{
-	filter: invert(1) sepia(1) saturate(1) grayscale(1);
+	filter: brightness(0) invert(0.7) sepia(0) saturate(0.5) grayscale(0.5);
 }
 .aboutSmartContent p{
 	display:none;
@@ -1863,6 +1867,9 @@ div.aboutSmart > h2{
 	margin:0 30px 0 0;
 	padding:0;
 }
+.col02 a{
+	color: #CCCCCC !important;
+}
 .col03{
 	width:270px;
 	float:left;
@@ -2012,7 +2019,7 @@ div.aboutSmart > h2{
 	float:right;
 }
 .connectHeader h7{
-	width:100%;
+	width:50%;
 	float:left;
 }
 
@@ -2497,6 +2504,33 @@ div.aboutSmart > h2{
 .provinceDetailPanel .modal-dialog{
 	width: 1170px;
 	margin-top: 10px;
+}
+#industrialPark .modal-dialog{
+	width: 770px;
+	margin-top: 10px;
+}
+#industrialPark .modal-dialog h6{
+	margin-top: 30px;
+}
+#industrialPark .modal-dialog img{
+	border-radius: 6px;
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
+}
+
+#association .modal-dialog{
+	width: 770px;
+	margin-top: 10px;
+}
+#association .modal-dialog h6{
+	margin-top: 30px;
+}
+#association .modal-dialog img{
+	border-radius: 6px;
+	margin-top: 30px;
+	width: 100%;
+	height: auto;
 }
 .provinceDetailPanel .modal-content{
 	padding: 60px 80px;

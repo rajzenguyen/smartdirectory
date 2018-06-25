@@ -197,6 +197,23 @@
 .leftColAbout h2{
 	margin-left: 5px;
 }
+
+.contactLeft {
+	height: 950px;
+
+}
+.contactRight {
+	height: 950px;
+
+}
+.contactForm {
+	height: 950px;
+}
+
+.connectHeader h7{
+	width:100%;
+	float:left;
+}
 }
 
 
@@ -420,9 +437,19 @@
 		clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 27%);
 	
 	}
+	.contactLeft {
+		height: 960px;
+	
+	}
 	.contactRight {
 		padding: 40px 30px;
-		height: 900px;
+		height: 960px;
 	
+	}
+	.contactForm {
+		height: 960px;
+	}
+	#companyInfo {
+		padding-top: 30px;
 	}
 }
