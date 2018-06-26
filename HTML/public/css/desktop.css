@@ -1047,6 +1047,39 @@ div.aboutSmart > h2{
 	font-family: 'Montserrat-Bold', sans-serif;
 }
 
+.codeSlideNav > ul > li{
+    padding: 8px 40px;
+    border: 1px solid #e8eaef;
+    border-top: 2px solid #fff;
+	color:#333;
+	margin-left: -4px;
+	background:#fff;
+}
+.codeSlideNav > ul > li > a{
+	color:#333;
+	font-size:16px;
+	line-height:24px;
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+.codeSlideNav > ul > li:hover{
+    border-top: 2px solid #00b79d;
+    color: #00b79d;
+}
+
+.codeSlideNav > ul > li:hover a{
+    color: #00b79d;
+}
+
+
+.codeSlideNav > .list-inline > .active{
+    border-top: 2px solid #00b79d !important;
+	color: #00b79d !important;
+}
+.codeSlideNav > .list-inline > .active > a{
+    color: #00b79d !important;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+
 #companyInfo .nav-tabs{
 	border:none;
 }
@@ -2940,4 +2973,9 @@ div.uploadNameCard button{
 }
 .connectHeader .dropdownDiv .dropdownList{
 	width: auto;
+}
+.showmore{
+	width: 100%;
+	float: left;
+	text-align: center;
 }
