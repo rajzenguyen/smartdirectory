@@ -49,7 +49,7 @@ body{
 }
 /* width */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 0px;
 }
 
 /* Track */
@@ -1471,11 +1471,15 @@ button.close:hover {
     padding-right: 20px;
 }
 .catItem{
-	height:215px;
+    width: 48%;
+	height:116px;
 	border-radius:25px;
 	background:#fff;
 	float:left;
-	margin:0px 30px 30px 0px;
+	margin:0px 10px 30px 0px;
+}
+.catItem:nth-child(2n){
+	margin-right:0;
 }
 /*
 .catItem:nth-child(1){
@@ -1508,22 +1512,22 @@ button.close:hover {
 	margin:0px 0px 0px 0px;
 }*/
 .catItem img{
-	width:45px;
-	margin:65px auto 20px auto;
+	width:24px;
+	margin:30px auto 10px auto;
 	/*filter: brightness(0) invert(1);
 	filter:invert(0.34543345) sepia(163) saturate(46) hue-rotate(224deg);*/
 }
 .catItem svg{
-	width:45px;
-	margin:65px auto 20px auto;
+	width:24px;
+	margin:30px auto 10px auto;
 	/*filter: brightness(0) invert(1);*/
 	filter:none;
 }
 .catItem h6{
 	clear:both;
 	font-family: 'Montserrat-Regular', sans-serif;
-	font-size:18px;
-	line-height:27px;
+	font-size:12px;
+	line-height:18px;
 }
 .lastChildCatItem{
 	border:2px dashed #ccc;
@@ -1744,13 +1748,20 @@ div.aboutSmart > h2{
 	text-align:center;
 }
 .customerNav{
-	width:561px;
+	width:100%;
+	height: auto;
 	object-fit: contain;
 	margin:0 auto;
 	display:block;
 	padding-top:20px;
 	padding-bottom:0;
 	border-bottom:none;
+	overflow-y: hidden;
+}
+.customerNav > #slideNav1header{
+	padding-right: 15px;
+	overflow-y: auto;
+	width: 561px;
 }
 .customerNav h7{
 	font-family: 'Montserrat-Regular', sans-serif;
@@ -2103,7 +2114,7 @@ div.aboutSmart > h2{
 	position: relative;
 }
 
-.companySlideNav > ul > li{
+.companySlideNav ul li{
     padding: 8px 10px;
     border: 1px solid #e8eaef;
     border-top: 2px solid #fff;
@@ -2111,23 +2122,23 @@ div.aboutSmart > h2{
 	margin-left: -4px;
 	background:#fff;
 }
-.companySlideNav > ul > li > a{
+.companySlideNav ul li a{
 	color:#333;
 	font-size:16px;
 	line-height:24px;
 	font-family: 'Montserrat-Regular', sans-serif;
 }
-.companySlideNav > ul > li:hover{
+.companySlideNav  ul  li:hover{
     border-top: 2px solid #1046f1;
     color: #1046f1;
 }
 
-.companySlideNav > ul > li:hover a{
+.companySlideNav ul li:hover a{
     color: #1046f1;
 }
 
 
-.companySlideNav > .list-inline > .active{
+.companySlideNav .list-inline .active{
     border-top: 2px solid #1046f1 !important;
 	color: #1046f1 !important;
 }
@@ -4058,11 +4069,11 @@ div.uploadNameCard button{
 #contactCompany .closeButton{
 	top: 12px;
 }
-.customerNav.companySlideNav > .list-inline{
+.customerNav.companySlideNav .list-inline{
 	margin-left: 9px;
 	width: 100%;
 }
-.customerNav.companySlideNav > ul > li{
+.customerNav.companySlideNav ul li{
 	width: 33%;
 	text-align: center;
 }
