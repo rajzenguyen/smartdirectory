@@ -78,11 +78,23 @@ $(document).ready(function(){
 $(document).ready(function(){
 	
 	/*
-	$('.customCheck').click(function(){
+	$('.customRadio').click(function(){
 		var a = $(this).find('input').attr("name");
 		$( "input[name*='" + a + "']").parent().removeClass('active');
 		$(this).addClass('active');
 	});*/
+
+	
+	$('.checkmark').click(function(){
+		if($(this).parent().hasClass('active'))
+		{
+			$(this).parent().removeClass('active');
+		}
+		else
+		{
+			$(this).parent().addClass('active');
+		}
+	});
 
 
 	$("#companyPanel").hide();

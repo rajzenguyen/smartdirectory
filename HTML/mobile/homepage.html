@@ -7,14 +7,13 @@
     <meta charset="utf-8" name="description" content="Smart Directory" />
     <meta charset="utf-8" name="keywords" content="Smart Directory" />
 
-    <link rel="stylesheet" href="public/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="public/css/fontawesome-all.css" type="text/css" />
-    <link rel="stylesheet" href="public/slick/slick.css" type="text/css" />
-    <link rel="stylesheet" href="public/css/normalize.css" />
-    <link rel="stylesheet" href="public/css/selectize.css" type="text/css" />
-    <link rel="stylesheet" href="public/css/general.css" type="text/css" />
-    <link rel="stylesheet" href="public/css/desktop.css" type="text/css" />
-    <link rel="stylesheet" href="public/css/tablet.css" type="text/css" />
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../public/css/fontawesome-all.css" type="text/css" />
+    <link rel="stylesheet" href="../public/slick/slick.css" type="text/css" />
+    <link rel="stylesheet" href="../public/css/normalize.css" />
+    <link rel="stylesheet" href="../public/css/selectize.css" type="text/css" />
+    <link rel="stylesheet" href="../public/css/general.css" type="text/css" />
+    <link rel="stylesheet" href="../public/css/mobile.css" type="text/css" />
 </head>
 
 <body>
@@ -24,23 +23,19 @@
             <div class="container">
                 <div class="navLogo">
                     <a href="/">
-                        <img src="public/images/logo.png" height="100%" />
+                        <img src="../public/images/logo.png" height="100%" />
                     </a>
                 </div>
                 <div class="navContent">
                     <ul>
                         <li class="searchBox">
-                            <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
-                            <button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;">
-                                <img src="public/assets/search.svg" />
-                            </button>
-                            <button type="button" name="buttonTrigger" class="buttonTrigger">
-                                <img src="public/assets/search.svg" />
-                            </button>
+                            <a href="" class="buttonTrigger">
+                                <img src="../public/assets/search.svg" width="16" height="16"  />
+                            </a>
                         </li>
                         <li>
                             <a class="dropdown-toggle" href="#" role="button" id="user">
-                                <img src="public/assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+                                <img src="../public/assets/profile.svg" width="16" height="16"  class="iconSVG whiteSVG" />
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="user">
@@ -62,14 +57,14 @@
                         </li>
                         <li>
                             <a class="dropdown-toggle" href="#" role="button" id="menu">
-                                <img src="public/assets/burger.svg" width="24px" height="24px" />
+                                <img src="../public/assets/burger.svg" width="16" height="16" />
                             </a>
                             <div class="dropdown-menu" aria-labelledby="menu">
                                 <div class="smenu">
                                     <ul>
                                         <li class="dropdown-submenu">
                                             <a class="test" tabindex="-1" href="#">English
-                                                <img src="public/assets/dropdown.svg" />
+                                                <img src="../public/assets/dropdown.svg" />
                                             </a>
                                             <ul class="dropdown-menu submenu">
                                                 <li>
@@ -105,6 +100,12 @@
 
 
                 </div>
+                <div class="navSearch">
+                    <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." />
+                    <button type="button" name="btnSearchNavBtn" class="iconNextInput">
+                        <img src="../public/assets/search.svg" />
+                    </button>
+                </div>
 
                 <div class="clearfix"></div>
             </div>
@@ -114,11 +115,11 @@
     <div id="banner">
         <div class="container">
             <div class="searchInfo">
-                <h2>SUSCIPIT VEHICULA ODIO</h2>
+                <h2 class="fontsize24">SUSCIPIT VEHICULA ODIO</h2>
                 <div class="controlS clearfix">
                     <input type="text" name="txtSearch" placeholder="Enter company name, industry, product, etc..." />
                     <button type="submit" name="btnSearch">
-                        <img src="public/assets/search.svg" />
+                        <img src="../public/assets/search.svg" />
                     </button>
                 </div>
                 <p class="font-regular large para01">* Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id
@@ -127,7 +128,7 @@
                     id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum
                     ut. Nunc vel rhoncus nibh, ut tincidunt turpis. </p>
                 <a class="navdown" href="#">
-                    <img src="public/assets/arrow-down.svg" />
+                    <img src="../public/assets/arrow-down.svg" />
                 </a>
             </div>
         </div>
@@ -140,43 +141,43 @@
             <div id="catContainer" class="catContainer">
                 <div class="catItem">
                     <a href="#">
-                        <img src="public/assets/legal-struture.svg" />
+                        <img src="../public/assets/legal-struture.svg" />
                         <h6>Business Types</h6>
                     </a>
                 </div>
                 <div class="catItem">
                     <a href="#">
-                        <img src="public/assets/target.svg" />
+                        <img src="../public/assets/target.svg" />
                         <h6>Provinces/Cities</h6>
                     </a>
                 </div>
                 <div class="catItem">
                     <a href="#">
-                        <img src="public/assets/city.svg" />
+                        <img src="../public/assets/city.svg" />
                         <h6>Categories</h6>
                     </a>
                 </div>
                 <div class="catItem">
                     <a href="#">
-                        <img src="public/assets/legal-struture.svg" />
+                        <img src="../public/assets/legal-struture.svg" />
                         <h6>Radio</h6>
                     </a>
                 </div>
                 <div class="catItem">
                     <a href="#">
-                        <img src="public/assets/legal-struture.svg" />
+                        <img src="../public/assets/legal-struture.svg" />
                         <h6>Radio</h6>
                     </a>
                 </div>
                 <div class="catItem">
                     <a href="#">
-                        <img src="public/assets/legal-struture.svg" />
+                        <img src="../public/assets/legal-struture.svg" />
                         <h6>Vestibul</h6>
                     </a>
                 </div>
                 <div class="catItem">
                     <a href="#">
-                        <img src="public/assets/legal-struture.svg" />
+                        <img src="../public/assets/legal-struture.svg" />
                         <h6>Radio</h6>
                     </a>
                 </div>
@@ -196,7 +197,7 @@
             <div class="aboutSmartContainer">
                 <div class="aboutSmartItem">
                     <div class="aboutSmartContent">
-                        <img src="public/assets/group-7.svg" />
+                        <img src="../public/assets/group-7.svg" />
                         <h2>What</h2>
                         <h5>is Smart Directory?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -204,7 +205,7 @@
                 </div>
                 <div class="aboutSmartItem">
                     <div class="aboutSmartContent">
-                        <img src="public/assets/group-8.svg" />
+                        <img src="../public/assets/group-8.svg" />
                         <h2>Who</h2>
                         <h5>is it for?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
@@ -213,7 +214,7 @@
                 </div>
                 <div class="aboutSmartItem">
                     <div class="aboutSmartContent">
-                        <img src="public/assets/group-9.svg" />
+                        <img src="../public/assets/group-9.svg" />
                         <h2>How</h2>
                         <h5>can your business get benefits from it?</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -234,7 +235,7 @@
                     <div class="staContentContainer">
                         <div class="staItem staItem01">
                             <div class="titleSta">
-                                <img src="public/assets/home.svg" />
+                                <img src="../public/assets/home.svg" />
                                 <h7>&nbsp;Provinces/ Cities</h7>
                             </div>
                             <div class="numberSta">
@@ -242,14 +243,14 @@
                             </div>
                             <p class="small">10968</p>
                             <div class="smallStaNumber"></div>
-                            <img class="staImgBG" src="public/assets/bg1.svg" width="100%" height="157" />
+                            <img class="staImgBG" src="../public/assets/bg1.svg" width="100%" height="157" />
                         </div>
                     </div>
 
                     <div class="staContentContainer">
                         <div class="staItem staItem02">
                             <div class="titleSta">
-                                <img src="public/assets/city.svg" />
+                                <img src="../public/assets/city.svg" />
                                 <h7>&nbsp;Companies</h7>
                             </div>
                             <div class="numberSta">
@@ -257,14 +258,14 @@
                             </div>
                             <p class="small">10968</p>
                             <div class="smallStaNumber"></div>
-                            <img class="staImgBG" src="public/assets/bg2.svg" width="100%" height="157" />
+                            <img class="staImgBG" src="../public/assets/bg2.svg" width="100%" height="157" />
                         </div>
                     </div>
 
                     <div class="staContentContainer">
                         <div class="staItem staItem03">
                             <div class="titleSta">
-                                <img src="public/assets/0-icon-holder.svg" />
+                                <img src="../public/assets/0-icon-holder.svg" />
                                 <h7>&nbsp;Total ABC</h7>
                             </div>
                             <div class="numberSta">
@@ -272,14 +273,14 @@
                             </div>
                             <p class="small">10968</p>
                             <div class="smallStaNumber"></div>
-                            <img class="staImgBG" src="public/assets/bg3.svg" width="100%" height="157" />
+                            <img class="staImgBG" src="../public/assets/bg3.svg" width="100%" height="157" />
                         </div>
                     </div>
 
                     <div class="staContentContainer">
                         <div class="staItem staItem04">
                             <div class="titleSta">
-                                <img src="public/assets/rectangle.svg" />
+                                <img src="../public/assets/rectangle.svg" />
                                 <h7>&nbsp;Total ABC</h7>
                             </div>
                             <div class="numberSta">
@@ -287,7 +288,7 @@
                             </div>
                             <p class="small">10968</p>
                             <div class="smallStaNumber"></div>
-                            <img class="staImgBG" src="public/assets/bg4.svg" width="100%" height="157" />
+                            <img class="staImgBG" src="../public/assets/bg4.svg" width="100%" height="157" />
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -303,7 +304,7 @@
                             <div></div>
                             <h5>Companies</h5>
                             <h2 class="counter" id="count01" value-to="1234">1234</h2>
-                            <img src="public/assets/search.svg" />
+                            <img src="../public/assets/search.svg" />
                         </div>
                     </div>
                     <div class="aboutStatisticItem">
@@ -311,7 +312,7 @@
                             <div></div>
                             <h5>Companies</h5>
                             <h2 class="counter" id="count02" value-to="3234">3234</h2>
-                            <img src="public/assets/profile.svg" />
+                            <img src="../public/assets/profile.svg" />
                         </div>
                     </div>
                     <div class="aboutStatisticItem">
@@ -319,7 +320,7 @@
                             <div></div>
                             <h5>Companies</h5>
                             <h2 class="counter" id="count03" value-to="4234">4234</h2>
-                            <img src="public/assets/eye.svg" />
+                            <img src="../public/assets/eye.svg" />
                         </div>
                     </div>
                     <div class="aboutStatisticItem">
@@ -327,7 +328,7 @@
                             <div></div>
                             <h5>Companies</h5>
                             <h2 class="counter" id="count04" value-to="5234">5234</h2>
-                            <img src="public/assets/0-icon-holder.svg" />
+                            <img src="../public/assets/0-icon-holder.svg" />
                         </div>
                     </div>
                     <div class="clearfix"></div>
@@ -356,56 +357,56 @@
             <div class="tab-content">
                 <div id="ourPartner" class="customerPanel tab-pane active">
                     <a href="#">
-                        <img src="public/assets/logo-1@2x.png" />
+                        <img src="../public/assets/logo-1@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-2@2x.png" />
+                        <img src="../public/assets/logo-2@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-1@2x.png" />
+                        <img src="../public/assets/logo-1@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-2@2x.png" />
+                        <img src="../public/assets/logo-2@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-1@2x.png" />
+                        <img src="../public/assets/logo-1@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-2@2x.png" />
+                        <img src="../public/assets/logo-2@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-1@2x.png" />
+                        <img src="../public/assets/logo-1@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-2@2x.png" />
+                        <img src="../public/assets/logo-2@2x.png" />
                     </a>
                 </div>
                 </a>
 
                 <div id="ourCustomer" class="customerPanel tab-pane">
                     <a href="#">
-                        <img src="public/assets/logo-1@2x.png" />
+                        <img src="../public/assets/logo-1@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-1@2x.png" />
+                        <img src="../public/assets/logo-1@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-2@2x.png" />
+                        <img src="../public/assets/logo-2@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-1@2x.png" />
+                        <img src="../public/assets/logo-1@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-2@2x.png" />
+                        <img src="../public/assets/logo-2@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-2@2x.png" />
+                        <img src="../public/assets/logo-2@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-1@2x.png" />
+                        <img src="../public/assets/logo-1@2x.png" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/logo-2@2x.png" />
+                        <img src="../public/assets/logo-2@2x.png" />
                     </a>
                 </div>
 
@@ -414,39 +415,39 @@
                     <div class="reviewSlick">
                         <div class="reviewDiv">
                             <div class="reviewAva">
-                                <img src="public/assets/rectangle-31-copy.jpg" />
+                                <img src="../public/assets/rectangle-31-copy.jpg" />
                             </div>
                             <div class="reviewContent">
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
                                 <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
                             </div>
                         </div>
 
                         <div class="reviewDiv">
                             <div class="reviewAva">
-                                <img src="public/assets/rectangle-31-copy.jpg" />
+                                <img src="../public/assets/rectangle-31-copy.jpg" />
                             </div>
                             <div class="reviewContent">
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
                                 <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
                             </div>
                         </div>
 
                         <div class="reviewDiv">
                             <div class="reviewAva">
-                                <img src="public/assets/rectangle-31-copy.jpg" />
+                                <img src="../public/assets/rectangle-31-copy.jpg" />
                             </div>
                             <div class="reviewContent">
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
                                 <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
                             </div>
                         </div>
@@ -455,39 +456,39 @@
                     <div class="reviewSlick2">
                         <div class="reviewDiv">
                             <div class="reviewAva">
-                                <img src="public/assets/rectangle-31-copy.jpg" />
+                                <img src="../public/assets/rectangle-31-copy.jpg" />
                             </div>
                             <div class="reviewContent">
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
                                 <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
                             </div>
                         </div>
 
                         <div class="reviewDiv">
                             <div class="reviewAva">
-                                <img src="public/assets/rectangle-31-copy.jpg" />
+                                <img src="../public/assets/rectangle-31-copy.jpg" />
                             </div>
                             <div class="reviewContent">
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
                                 <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
                             </div>
                         </div>
 
                         <div class="reviewDiv">
                             <div class="reviewAva">
-                                <img src="public/assets/rectangle-31-copy.jpg" />
+                                <img src="../public/assets/rectangle-31-copy.jpg" />
                             </div>
                             <div class="reviewContent">
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
                                 <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
                             </div>
                         </div>
@@ -507,7 +508,7 @@
         <div class="footerItem">
             <div class="container">
                 <div class="col01">
-                    <img src="public/images/logo.png" width="100%" />
+                    <img src="../public/images/logo.png" width="100%" />
                 </div>
                 <div class="col02">
                     <p class="font-bold">CONTACT INFO</p>
@@ -522,21 +523,21 @@
                     <p class="font-bold">SUBSCRIBE NOW</p>
                     <input type="text" name="txtSubscribe" placeholder="Enter your email..." />
                     <button type="button" class="btn-primary iconNextInput" name="btnSubscribe">
-                        <img src="public/assets/arrow-right-blue.svg" /> </button>
+                        <img src="../public/assets/arrow-right-blue.svg" /> </button>
                 </div>
                 <div class="col04 linkWith">
                     <p class="font-bold">LINK WITH</p>
                     <a href="#">
-                        <img src="public/assets/dribbble.svg" />
+                        <img src="../public/assets/dribbble.svg" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/booking.svg" />
+                        <img src="../public/assets/booking.svg" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/envato.svg" />
+                        <img src="../public/assets/envato.svg" />
                     </a>
                     <a href="#">
-                        <img src="public/assets/envato.svg" />
+                        <img src="../public/assets/envato.svg" />
                     </a>
                 </div>
                 <div class="clearfix"></div>
@@ -588,7 +589,7 @@
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="public/assets/gp-1.svg" style="margin-top:-120px; width:140px;" />
+                    <img src="../public/assets/gp-1.svg" style="margin-top:-120px; width:140px;" />
                     <h2 class="color1046f1">Success</h2>
                     <p>Thanks you for your feedback!</p>
                 </div>
@@ -636,7 +637,7 @@
                     </button>
                 </div>
                 <div class="modal-body text-center">
-                    <img src="public/assets/gp-2.svg" style="margin-top:-120px; width:140px;" />
+                    <img src="../public/assets/gp-2.svg" style="margin-top:-120px; width:140px;" />
                     <h2 class="colorF90">Fail!</h2>
                     <p>Something wrong happened!</p>
                 </div>
@@ -673,31 +674,31 @@
                             <ul class="feedbackIcon list-inline">
                                 <li>
                                     <a data-toggle="tab" href="#imgFB1" class="imgFB1">
-                                        <img class="feedbackIco imgFB1" src="public/assets/fill-5.svg" />
+                                        <img class="feedbackIco imgFB1" src="../public/assets/fill-5.svg" />
                                     </a>
                                     <input type="radio" value="1" name="opinion" id="f1" hidden="true" />
                                 </li>
                                 <li>
                                     <a data-toggle="tab" href="#imgFB2" class="imgFB2">
-                                        <img class="feedbackIco" id="imgFB2" src="public/assets/fill-8.svg" />
+                                        <img class="feedbackIco" id="imgFB2" src="../public/assets/fill-8.svg" />
                                     </a>
                                     <input type="radio" value="2" name="opinion" id="f2" hidden="true" />
                                 </li>
                                 <li>
                                     <a data-toggle="tab" href="#imgFB3" class="imgFB3">
-                                        <img class="feedbackIco" id="imgFB3" src="public/assets/fill-1.svg" />
+                                        <img class="feedbackIco" id="imgFB3" src="../public/assets/fill-1.svg" />
                                     </a>
                                     <input type="radio" value="3" name="opinion" id="f3" hidden="true" />
                                 </li>
                                 <li>
                                     <a data-toggle="tab" href="#imgFB4" class="imgFB4">
-                                        <img class="feedbackIco" id="imgFB4" src="public/assets/fill-3.svg" />
+                                        <img class="feedbackIco" id="imgFB4" src="../public/assets/fill-3.svg" />
                                     </a>
                                     <input type="radio" value="4" name="opinion" id="f4" hidden="true" />
                                 </li>
                                 <li>
                                     <a data-toggle="tab" href="#imgFB5" class="imgFB5">
-                                        <img class="feedbackIco" id="imgFB5" src="public/assets/fill-10.svg" />
+                                        <img class="feedbackIco" id="imgFB5" src="../public/assets/fill-10.svg" />
                                     </a>
                                     <input type="radio" value="4" name="opinion" id="f5" hidden="true" />
                                 </li>
@@ -803,40 +804,11 @@
     </div>
     <!-- End Forgot Password -->
 
-        <!-- Enter OTP -->
-
-        <div class="modal fade" id="confirmOTP" tabindex="-1" role="dialog" aria-labelledby="confirmOTPLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document" style="margin-top:20px; width:570px;">
-                    <div class="modal-content" style="padding:20px 40px;">
-                        <div class="modal-header">
-                            <h6 class="modal-title" id="confirmOTPLabel" style="display: contents;">Confirm Account</h6>
-                            <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="otp" class="col-form-label">OTP</label>
-                                    <input type="text" class="" id="otp" placeholder="Enter OTP number was sent to your phone" />
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="clearfix"></div>
-                            <button type="button" class="nextButton">Confirm</button>
-        
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Enter OTP -->
-
 
     <!-- Reset Password -->
 
     <div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="forgotLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="margin-top:20px;">
+        <div class="modal-dialog" role="document">
             <div class="modal-content" style="padding:20px 40px;">
                 <div class="modal-header">
                     <h6 class="modal-title" id="forgotLabel" style="display: contents;">Reset Password</h6>
@@ -920,7 +892,7 @@
                     <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <img src="public/assets/mockup-01.png" />
+                    <img src="../public/assets/mockup-01.png" />
                     <h5>Smart Business Directory</h5>
                     <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. </p>
@@ -994,7 +966,7 @@
                                         <label for="select-company" class="col-form-label">Company</label>
                                         <div class="dropdownDiv">
                                             <input name="inputSelect" class="inputDropdownList" placeholder="Select a company">
-                                            <a class="buttonDropdownList"><img src="public/assets/arrow-down.svg"></a>
+                                            <a class="buttonDropdownList"><img src="../public/assets/arrow-down.svg"></a>
                                             <div class="dropdownList font-light">
                                                 <ul>
                                                     <li>Ho chi minh 1</li>
@@ -1051,7 +1023,7 @@
                     <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <img src="public/assets/mockup-01.png" />
+                    <img src="../public/assets/mockup-01.png" />
                     <h5>Smart Business Directory</h5>
                     <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. </p>
@@ -1063,15 +1035,13 @@
 
 
 
-    <!-- Notification -->
+    <!-- Notification 
     <div class="notification">
         <p class="font-light">
             This website using cookies for improve user experiences!
         </p>
         <a class="hideNoti">GOT IT!</a>
-        <a data-toggle="modal" data-target="#confirmOTP">Confirm OTP</a>
-        <a data-toggle="modal" data-target="#reset">Reset password</a>
-    </div>
+    </div>-->
 
     <!-- End Notification -->
 
@@ -1082,16 +1052,16 @@
         </a>
     </div>
 
-    <script src="public/js/jquery-3.3.1.js"></script>
-    <script src="public/js/TweenMax.min.js"></script>
-    <script src="public/js/waypoints.min.js"></script>
-    <script src="public/js/jquery.counterup.min.js"></script>
-    <script src="public/js/fontawesome-all.js"></script>
-    <script src="public/slick/slick.js"></script>
-    <script src="public/js/bootstrap.min.js"></script>
-    <script src="public/js/selectize.js"></script>
-    <script src="public/js/countUp.js"></script>
-    <script src="public/js/desktop.js"></script>
+    <script src="../public/js/jquery-3.3.1.js"></script>
+    <script src="../public/js/TweenMax.min.js"></script>
+    <script src="../public/js/waypoints.min.js"></script>
+    <script src="../public/js/jquery.counterup.min.js"></script>
+    <script src="../public/js/fontawesome-all.js"></script>
+    <script src="../public/slick/slick.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/selectize.js"></script>
+    <script src="../public/js/countUp.js"></script>
+    <script src="../public/js/desktop.js"></script>
 
 </body>
 
