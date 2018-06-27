@@ -3,8 +3,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Smart Directory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Smart Directory</title>
     <meta charset="utf-8" name="description" content="Smart Directory" />
     <meta charset="utf-8" name="keywords" content="Smart Directory" />
 
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="../public/slick/slick.css" type="text/css" />
     <link rel="stylesheet" href="../public/css/normalize.css" />
     <link rel="stylesheet" href="../public/css/selectize.css" type="text/css" />
-    <link rel="stylesheet" href="../public/css/general.css" type="text/css" />
     <link rel="stylesheet" href="../public/css/mobile.css" type="text/css" />
 </head>
 
@@ -30,7 +29,7 @@
                 <div class="navContent">
                     <ul>
                         <li class="searchBox">
-                            <a href="" class="buttonTrigger">
+                            <a href="#" class="buttonTrigger">
                                 <img src="../public/assets/search.svg" width="16" height="16"  />
                             </a>
                         </li>
@@ -335,162 +334,209 @@
         <div class="container">
             <h2 class="fontsize18">Customer Review</h2>
 
-                <div id="slideNav1" class="companySlideNav customerNav dragging text-left nav nav-tabs">
-                    <ul class="list-inline" id="slideNav1header">
-                        <li class="companySlideNavItem active">
-                            <a data-toggle="tab" href="#ourPartner">Our Partners</a>
-                        </li>
-                        <li class="companySlideNavItem">
-                            <a data-toggle="tab" href="#ourCustomer">Our Customers</a>
-                        </li>
-                        <li class="companySlideNavItem">
-                            <a data-toggle="tab" href="#ourReview">Customer Review</a>
-                        </li>
-                    </ul>
+                <div id="slideNav1" class="companySlideNav customerNav text-left">
+                    <div class="nav nav-tabs">
+                        <ul class="list-inline" id="slideNav1header">
+                            <li class="companySlideNavItem active">
+                                <a data-toggle="tab" href="#ourPartner">Our Partners</a>
+                            </li>
+                            <li class="companySlideNavItem">
+                                <a data-toggle="tab" href="#ourCustomer">Our Customers</a>
+                            </li>
+                            <li class="companySlideNavItem">
+                                <a data-toggle="tab" href="#ourReview">Customer Review</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             <div class="tab-content">
                 <div id="ourPartner" class="customerPanel tab-pane active">
-                    <a href="#">
-                        <img src="../public/assets/logo-1@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-2@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-1@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-2@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-1@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-2@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-1@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-2@2x.png" />
-                    </a>
+                    <div class="blockPartner">
+                        <div class="blockPartnerItem">
+                            <div class="blockPartnerContent">
+                                    <a href="#">
+                                        <img src="../public/assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-2@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-2@2x.png" />
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="blockPartnerItem">
+                            <div class="blockPartnerContent">
+                                    <a href="#">
+                                        <img src="../public/assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-2@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-2@2x.png" />
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="arrowPrev" src="../public/assets/arrow.svg" width="20" height="14">
+                    <img class="arrowNext" src="../public/assets/arrow.svg" width="20" height="14">
                 </div>
-                </a>
 
                 <div id="ourCustomer" class="customerPanel tab-pane">
-                    <a href="#">
-                        <img src="../public/assets/logo-1@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-1@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-2@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-1@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-2@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-2@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-1@2x.png" />
-                    </a>
-                    <a href="#">
-                        <img src="../public/assets/logo-2@2x.png" />
-                    </a>
+                    <div class="blockCustomer">
+                        <div class="blockPartnerItem">
+                            <div class="blockPartnerContent">
+                                    <a href="#">
+                                        <img src="../public/assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-2@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-2@2x.png" />
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="blockPartnerItem">
+                            <div class="blockPartnerContent">
+                                    <a href="#">
+                                        <img src="../public/assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-2@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-1@2x.png" />
+                                    </a>
+                                    <a href="#">
+                                        <img src="../public/assets/logo-2@2x.png" />
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="arrowPrev2" src="../public/assets/arrow.svg" width="20" height="14">
+                    <img class="arrowNext2" src="../public/assets/arrow.svg" width="20" height="14">
                 </div>
 
                 <div id="ourReview" class="customerPanel tab-pane">
-
                     <div class="reviewSlick">
-                        <div class="reviewDiv">
-                            <div class="reviewAva">
-                                <img src="../public/assets/rectangle-31-copy.jpg" />
+                        <div class="reviewSlickItem">
+                            <div class="reviewDiv">
+                                <div class="reviewAva">
+                                    <img src="../public/assets/rectangle-31-copy.jpg" />
+                                </div>
+                                <div class="reviewContent">
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                                </div>
                             </div>
-                            <div class="reviewContent">
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+
+                            <div class="reviewDiv">
+                                <div class="reviewAva">
+                                    <img src="../public/assets/rectangle-31-copy.jpg" />
+                                </div>
+                                <div class="reviewContent">
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                                </div>
+                            </div>
+
+                            <div class="reviewDiv">
+                                <div class="reviewAva">
+                                    <img src="../public/assets/rectangle-31-copy.jpg" />
+                                </div>
+                                <div class="reviewContent">
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                                </div>
+                            </div>
+
+                            <div class="reviewDiv">
+                                <div class="reviewAva">
+                                    <img src="../public/assets/rectangle-31-copy.jpg" />
+                                </div>
+                                <div class="reviewContent">
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                                </div>
                             </div>
                         </div>
+                        <div class="reviewSlickItem">
+                            <div class="reviewDiv">
+                                <div class="reviewAva">
+                                    <img src="../public/assets/rectangle-31-copy.jpg" />
+                                </div>
+                                <div class="reviewContent">
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                                </div>
+                            </div>
 
-                        <div class="reviewDiv">
-                            <div class="reviewAva">
-                                <img src="../public/assets/rectangle-31-copy.jpg" />
+                            <div class="reviewDiv">
+                                <div class="reviewAva">
+                                    <img src="../public/assets/rectangle-31-copy.jpg" />
+                                </div>
+                                <div class="reviewContent">
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                                </div>
                             </div>
-                            <div class="reviewContent">
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
-                            </div>
-                        </div>
 
-                        <div class="reviewDiv">
-                            <div class="reviewAva">
-                                <img src="../public/assets/rectangle-31-copy.jpg" />
+                            <div class="reviewDiv">
+                                <div class="reviewAva">
+                                    <img src="../public/assets/rectangle-31-copy.jpg" />
+                                </div>
+                                <div class="reviewContent">
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                                </div>
                             </div>
-                            <div class="reviewContent">
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+
+                            <div class="reviewDiv">
+                                <div class="reviewAva">
+                                    <img src="../public/assets/rectangle-31-copy.jpg" />
+                                </div>
+                                <div class="reviewContent">
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <img src="../public/assets/star-copy-2.svg" />&nbsp;
+                                    <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="reviewSlick2">
-                        <div class="reviewDiv">
-                            <div class="reviewAva">
-                                <img src="../public/assets/rectangle-31-copy.jpg" />
-                            </div>
-                            <div class="reviewContent">
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
-                            </div>
-                        </div>
-
-                        <div class="reviewDiv">
-                            <div class="reviewAva">
-                                <img src="../public/assets/rectangle-31-copy.jpg" />
-                            </div>
-                            <div class="reviewContent">
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
-                            </div>
-                        </div>
-
-                        <div class="reviewDiv">
-                            <div class="reviewAva">
-                                <img src="../public/assets/rectangle-31-copy.jpg" />
-                            </div>
-                            <div class="reviewContent">
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <img src="../public/assets/star-copy-2.svg" />&nbsp;
-                                <h7>This text is over 85 characters and will auto cut down to 85 characters</h7>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
                 </div>
 
             </div>
@@ -505,22 +551,16 @@
                     <img src="../public/images/logo.png" width="100%" />
                 </div>
                 <div class="col02">
-                    <p class="font-bold">CONTACT INFO</p>
-                    <p class="small CCCCCC font-light">
+                    <p class="font-bold fontsize12">CONTACT INFO</p>
+                    <p class="fontsize10 CCCCCC font-light">
                         096-295-1665
                         <br />165-718-7089
                         <br />yvette_dare@yahoo.com
                         <br />62 Kautzer Rest Apt. 429
                     </p>
                 </div>
-                <div class="col03">
-                    <p class="font-bold">SUBSCRIBE NOW</p>
-                    <input type="text" name="txtSubscribe" placeholder="Enter your email..." />
-                    <button type="button" class="btn-primary iconNextInput" name="btnSubscribe">
-                        <img src="../public/assets/arrow-right-blue.svg" /> </button>
-                </div>
                 <div class="col04 linkWith">
-                    <p class="font-bold">LINK WITH</p>
+                    <p class="font-bold fontsize12">LINK WITH</p>
                     <a href="#">
                         <img src="../public/assets/dribbble.svg" />
                     </a>
@@ -534,32 +574,26 @@
                         <img src="../public/assets/envato.svg" />
                     </a>
                 </div>
+                <div class="col03">
+                    <p class="font-bold fontsize12">SUBSCRIBE NOW</p>
+                    <input type="text" name="txtSubscribe" placeholder="Enter your email..." />
+                    <button type="button" class="btn-primary iconNextInput" name="btnSubscribe">
+                        <img src="../public/assets/arrow-right-blue.svg" /> </button>
+                </div>
                 <div class="clearfix"></div>
             </div>
         </div>
         <div class="footerItem text-center">
             <div class="container">
-                <div class="footerLeftContent">
-                    <p class="small font-regular">&copy; 2018 by smartdirectory.com. All rights reserved</p>
-                </div>
                 <div class="footerRightContent">
-                    <ul class="listSubMenu font-regular">
-                        <li>
-                            <a href="#">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <a href="#">Privacy Policies</a>
-                        </li>
-                        <li>
-                            <a href="#">F.A.Q</a>
-                        </li>
-                        <li>
-                            <a data-toggle="modal" data-target="#feedback">Feedback</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact Us</a>
-                        </li>
-                    </ul>
+                    <a class="fontsize12 color333" href="#">Terms & Conditions</a>
+                    <a class="fontsize12 color333" href="#">Privacy Policies</a>
+                    <a class="fontsize12 color333" href="#">F.A.Q</a>
+                    <a class="fontsize12 color333" data-toggle="modal" data-target="#feedback">Feedback</a>
+                    <a class="fontsize12 color333" href="#">Contact Us</a>
+                </div>
+                <div class="footerLeftContent">
+                    <p class="fontsize10 font-regular">&copy; 2018 by smartdirectory.com. All rights reserved</p>
                 </div>
             </div>
         </div>
@@ -574,18 +608,20 @@
 
     <!-- Modal -->
     <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-labelledby="successLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="width:300px;">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header" style="border:none;">
-                    <h6 class="modal-title" id="successLabel"></h6>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="../public/assets/gp-1.svg" style="margin-top:-120px; width:140px;" />
-                    <h2 class="color1046f1">Success</h2>
-                    <p>Thanks you for your feedback!</p>
+                <div class="modalLeft">
+                    <div class="modal-header" style="border:none;">
+                        <h6 class="modal-title fontsize16" id="successLabel"></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="../public/assets/gp-1.svg"/>
+                        <h2 class="color1046f1 fontsize18">Success</h2>
+                        <p class="fontsize12">Thanks you for your feedback!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -594,11 +630,13 @@
 
     <!-- Modal -->
     <div class="modal fade" id="successInfor" tabindex="-1" role="dialog" aria-labelledby="successLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="width:300px;">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-body text-center">
-                    <h2 class="color1046f1">Success</h2>
-                    <p>Sucess register</p>
+                <div class="modalLeft">
+                    <div class="modal-body text-center">
+                        <h2 class="color1046f1 fontsize18">Success</h2>
+                        <p class="fontsize12">Sucess register</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -607,11 +645,13 @@
 
     <!-- Modal -->
     <div class="modal fade" id="failInfor" tabindex="-1" role="dialog" aria-labelledby="successLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="width:300px;">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-body text-center">
-                    <h2 class="colorF90">Fail</h2>
-                    <p>Something wrong happened</p>
+                <div class="modalLeft">
+                    <div class="modal-body text-center">
+                        <h2 class="colorF90 fontsize18">Fail</h2>
+                        <p class="fontsize12">Something wrong happened</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -622,18 +662,20 @@
 
     <!-- Modal -->
     <div class="modal fade" id="fail" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="width:300px;">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header" style="border:none;">
-                    <h6 class="modal-title" id="failLabel"></h6>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body text-center">
-                    <img src="../public/assets/gp-2.svg" style="margin-top:-120px; width:140px;" />
-                    <h2 class="colorF90">Fail!</h2>
-                    <p>Something wrong happened!</p>
+                <div class="modalLeft">
+                    <div class="modal-header" style="border:none;">
+                        <h6 class="modal-title" id="failLabel"></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="../public/assets/gp-2.svg"/>
+                        <h2 class="colorF90 fontsize18">Fail!</h2>
+                        <p class="fontsize12">Something wrong happened!</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -654,110 +696,94 @@
     <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document" style="margin-top:20px;">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h6 class="modal-title" id="feedbackLabel" style="display: contents;">Feedback</h6>
-                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="fbSelect">
-                        <p>We would like you feedback to improve our website</p>
-                        <p>What is your opinion about our website?</p>
-                        <div class="nav nav-tabs">
-                            <ul class="feedbackIcon list-inline">
-                                <li>
-                                    <a data-toggle="tab" href="#imgFB1" class="imgFB1">
-                                        <img class="feedbackIco imgFB1" src="../public/assets/fill-5.svg" />
-                                    </a>
-                                    <input type="radio" value="1" name="opinion" id="f1" hidden="true" />
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#imgFB2" class="imgFB2">
-                                        <img class="feedbackIco" id="imgFB2" src="../public/assets/fill-8.svg" />
-                                    </a>
-                                    <input type="radio" value="2" name="opinion" id="f2" hidden="true" />
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#imgFB3" class="imgFB3">
-                                        <img class="feedbackIco" id="imgFB3" src="../public/assets/fill-1.svg" />
-                                    </a>
-                                    <input type="radio" value="3" name="opinion" id="f3" hidden="true" />
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#imgFB4" class="imgFB4">
-                                        <img class="feedbackIco" id="imgFB4" src="../public/assets/fill-3.svg" />
-                                    </a>
-                                    <input type="radio" value="4" name="opinion" id="f4" hidden="true" />
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#imgFB5" class="imgFB5">
-                                        <img class="feedbackIco" id="imgFB5" src="../public/assets/fill-10.svg" />
-                                    </a>
-                                    <input type="radio" value="4" name="opinion" id="f5" hidden="true" />
-                                </li>
-                            </ul>
+                <div class="modalLeft">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="feedbackLabel" style="display: contents;">Feedback</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="fbSelect">
+                            <p class="fontsize12">We would like you feedback to improve our website</p>
+                            <p class="fontsize12">What is your opinion about our website?</p>
+                            <div class="nav nav-tabs">
+                                <ul class="feedbackIcon list-inline">
+                                    <li>
+                                        <a data-toggle="tab" href="#imgFB1" class="imgFB1">
+                                            <img class="feedbackIco imgFB1" src="../public/assets/fill-5.svg" />
+                                        </a>
+                                        <input type="radio" value="1" name="opinion" id="f1" hidden="true" />
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#imgFB2" class="imgFB2">
+                                            <img class="feedbackIco" id="imgFB2" src="../public/assets/fill-8.svg" />
+                                        </a>
+                                        <input type="radio" value="2" name="opinion" id="f2" hidden="true" />
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#imgFB3" class="imgFB3">
+                                            <img class="feedbackIco" id="imgFB3" src="../public/assets/fill-1.svg" />
+                                        </a>
+                                        <input type="radio" value="3" name="opinion" id="f3" hidden="true" />
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#imgFB4" class="imgFB4">
+                                            <img class="feedbackIco" id="imgFB4" src="../public/assets/fill-3.svg" />
+                                        </a>
+                                        <input type="radio" value="4" name="opinion" id="f4" hidden="true" />
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#imgFB5" class="imgFB5">
+                                            <img class="feedbackIco" id="imgFB5" src="../public/assets/fill-10.svg" />
+                                        </a>
+                                        <input type="radio" value="4" name="opinion" id="f5" hidden="true" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="fbCat">
+                            <p class="fontsize12">Please select your feedback catefory below</p>
+                            <div class="nav nav-tabs">
+                                <ul class="fbCategory list-inline">
+                                    <li>
+                                        <a data-toggle="tab" href="#c1" class="fbCate1">
+                                            <div>
+                                                <p class="fontsize12">Compliment</p>
+                                            </div>
+                                        </a>
+                                        <input type="radio" value="1" name="fbCategory" id="c1" hidden="true" />
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#c2" class="fbCate2">
+                                            <div>
+                                                <p class="fontsize12">Something isn't quite right</p>
+                                            </div>
+                                        </a>
+                                        <input type="radio" value="2" name="fbCategory" id="c2" hidden="true" />
+                                    </li>
+                                    <li>
+                                        <a data-toggle="tab" href="#c3" class="fbCate3">
+                                            <div>
+                                                <p class="fontsize12">Suggestion</p>
+                                            </div>
+                                        </a>
+                                        <input type="radio" value="3" name="fbCategory" id="c3" hidden="true" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="divider"></div>
+                        <div class="fbContent">
+                            <p class="fontsize12">Leave your feedback below</p>
+                            <textarea name="txtFeedback"></textarea>
                         </div>
                     </div>
-                    <div class="divider"></div>
-                    <div class="fbCat">
-                        <p>Please select your feedback catefory below</p>
-                        <div class="nav nav-tabs">
-                            <ul class="fbCategory list-inline">
-                                <li>
-                                    <a data-toggle="tab" href="#c1" class="fbCate1">
-                                        <div>
-                                            <p>Compliment</p>
-                                        </div>
-                                    </a>
-                                    <input type="radio" value="1" name="fbCategory" id="c1" hidden="true" />
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#c2" class="fbCate2">
-                                        <div>
-                                            <p>Something isn't quite right</p>
-                                        </div>
-                                    </a>
-                                    <input type="radio" value="2" name="fbCategory" id="c2" hidden="true" />
-                                </li>
-                                <li>
-                                    <a data-toggle="tab" href="#c3" class="fbCate3">
-                                        <div>
-                                            <p>Suggestion</p>
-                                        </div>
-                                    </a>
-                                    <input type="radio" value="3" name="fbCategory" id="c3" hidden="true" />
-                                </li>
-                            </ul>
-                            <!--<div class="clearfix"></div>
-                    <div>
-                    	<a data-toggle="tab" href="#c1" class="fbCate1">
-                        	<div style="width:33.333%; float:left; height:60px; background:rgba(153,0,102,1); padding:10px; text-align:center; vertical-align:middle;">
-                            	<p style="line-height:40px;">Compliment</p>
-                            </div>
-                        </a>
-                    	<a href="#">
-                        	<div style="width:33.333%; float:left; height:60px; background:rgba(153,0,102,1); padding:10px; text-align:center; vertical-align:middle;">
-                            	<p style="line-height:40px;">Something isn't quite right</p>
-                            </div>
-                        </a>
-                    	<a href="#">
-                        	<div style="width:33.333%; float:left; height:60px; background:rgba(153,0,102,1); padding:10px; text-align:center; vertical-align:middle;">
-                            	<p style="line-height:40px;">Suggestion</p>
-                            </div>
-                        </a>
-                    </div>-->
-                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="finishButton">Send</button>
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="divider"></div>
-                    <div class="fbContent">
-                        <p>Leave your feedback below</p>
-                        <textarea name="txtFeedback"></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="finishButton">Send</button>
                 </div>
             </div>
         </div>
@@ -768,30 +794,32 @@
     <!-- Forgot Password -->
 
     <div class="modal fade" id="forgot" tabindex="-1" role="dialog" aria-labelledby="forgotLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="margin-top:20px; width:570px;">
-            <div class="modal-content" style="padding:20px 40px;">
-                <div class="modal-header">
-                    <h6 class="modal-title" id="forgotLabel" style="display: contents;">Forgot Password</h6>
-                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="username" class="col-form-label">Phone Number</label>
-                            <input type="text" class="" id="phoneNumber" placeholder="Phone Number" />
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="help">
-                        <a class="font-regular" href="#">Need more help?</a>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modalLeft">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="forgotLabel" style="display: contents;">Forgot Password</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="clearfix"></div>
-                    <button type="button" class="returnButton" data-toggle="modal" data-dismiss="modal" data-target="#login">Return to Login</button>
-                    <button type="button" class="nextButton">Next</button>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="username" class="col-form-label">Phone Number</label>
+                                <input type="text" class="" id="phoneNumber" placeholder="Phone Number" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="help">
+                            <a class="font-regular" href="#">Need more help?</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <button type="button" class="returnButton" data-toggle="modal" data-dismiss="modal" data-target="#login">Return to Login</button>
+                        <button type="button" class="nextButton">Next</button>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -803,39 +831,71 @@
 
     <div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="forgotLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content" style="padding:20px 40px;">
-                <div class="modal-header">
-                    <h6 class="modal-title" id="forgotLabel" style="display: contents;">Reset Password</h6>
-                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="otp" class="col-form-label">OTP</label>
-                            <input type="text" class="" id="otp" placeholder="OTP has been sent to your mobile" />
-                        </div>
-                        <div class="form-group">
-                            <label for="newPass" class="col-form-label">New Password</label>
-                            <input type="password" class="" id="newPass" />
-                        </div>
-                        <div class="form-group">
-                            <label for="renewPass" class="col-form-label">Retype New Password</label>
-                            <input type="password" class="" id="renewPass" />
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="clearfix"></div>
-                    <button type="button" class="nextButton">Reset Password</button>
+            <div class="modal-content">
+                <div class="modalLeft">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="forgotLabel" style="display: contents;">Reset Password</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="otp" class="col-form-label">OTP</label>
+                                <input type="text" class="" id="otp" placeholder="OTP has been sent to your mobile" />
+                            </div>
+                            <div class="form-group">
+                                <label for="newPass" class="col-form-label">New Password</label>
+                                <input type="password" class="" id="newPass" />
+                            </div>
+                            <div class="form-group">
+                                <label for="renewPass" class="col-form-label">Retype New Password</label>
+                                <input type="password" class="" id="renewPass" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="clearfix"></div>
+                        <button type="button" class="nextButton">Reset Password</button>
 
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- End Reset Password -->
 
+    <!-- Enter OTP -->
+
+    <div class="modal fade" id="confirmOTP" tabindex="-1" role="dialog" aria-labelledby="confirmOTPLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modalLeft">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="confirmOTPLabel" style="display: contents;">Confirm Account</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="otp" class="col-form-label">OTP</label>
+                                <input type="text" class="" id="otp" placeholder="Enter OTP number was sent to your phone" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="clearfix"></div>
+                        <button type="button" class="nextButton">Confirm</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Enter OTP -->
 
     <!-- Login -->
 
@@ -844,8 +904,12 @@
             <div class="modal-content">
                 <div class="modalLeft">
 
-                    <div class="modal-header" style="border:none;">
-                        <h3 class="modal-title" id="loginLabel" style="display: contents;">Login</h3>
+                    <div class="modal-header">
+                        <h3 class="modal-title fontsize16" id="loginLabel" style="display: contents;">Login</h3>
+                        
+                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
                     <div class="modal-body">
                         <form>
@@ -858,15 +922,9 @@
                                 <input type="password" class="" id="userPass" placeholder="Password" />
                             </div>
                             <div class="form-group">
-                                <p>
-                                    <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#forgot" style="float:right; color:#333; margin-bottom:15px;">Forgot password?</a>
-                                </p>
+                                <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#forgot" class="aForgotPassword">Forgot password?</a>
+                                <button type="button" class="btn-primary floatRight" style="width:55%">Login</button>
                             </div>
-                            <div class="clearfix"></div>
-                            <div class="form-group">
-                                <button type="button" class="btn-primary " style="width:75%">Login</button>
-                            </div>
-                            <div class="clearfix"></div>
                             <div class="form-group">
                                 <label class="customCheck">Remember me
                                     <input type="checkbox" checked="checked" />
@@ -875,21 +933,12 @@
                             </div>
                         </form>
                     </div>
-                    <div class="modal-footer" style="text-align:left;">
+                    <div class="modal-footer">
                         Don't have an account?
                         <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#signup">
                             <b> SIGN UP</b>
                         </a>
                     </div>
-                </div>
-                <div class="modalRight">
-                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <img src="../public/assets/mockup-01.png" />
-                    <h5>Smart Business Directory</h5>
-                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. </p>
                 </div>
             </div>
         </div>
@@ -905,7 +954,10 @@
                 <div class="modalLeft">
 
                     <div class="modal-header" style="border:none;">
-                        <h3 class="modal-title" id="signupLabel" style="display: contents;">Sign Up</h3>
+                        <h3 class="modal-title fontsize16" id="signupLabel" style="display: contents;">Sign Up</h3>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
 
                     <div class="modal-body">
@@ -948,8 +1000,8 @@
                                         </label>
                                     </div>
                                     <div class="form-group">
-                                        <button type="button" class="btn-primary " id="btnPersonalSignIn" data-toggle="modal" data-dismiss="modal" data-target="#login"
-                                            style="width:75%">Sign Up</button>
+                                        <button type="button" class="btn-primary floatRight" id="btnPersonalSignIn" data-toggle="modal" data-dismiss="modal" data-target="#login"
+                                            style="width:50%">Sign Up</button>
                                     </div>
                                     <div class="clearfix"></div>
                                 </form>
@@ -998,29 +1050,19 @@
                                         </label>
                                     </div>
                                     <div class="form-group">
-                                        <button type="button" class="btn-primary " style="width:75%">Sign Up</button>
+                                        <button type="button" class="btn-primary floatRight" style="width:50%">Sign Up</button>
                                     </div>
                                     <div class="clearfix"></div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer" style="text-align:left;">
+                    <div class="modal-footer">
                         Already had account?
                         <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#login">
                             <b>LOG IN</b>
                         </a>
                     </div>
-                </div>
-                <div class="modalRight">
-
-                    <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <img src="../public/assets/mockup-01.png" />
-                    <h5>Smart Business Directory</h5>
-                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. </p>
                 </div>
             </div>
         </div>
@@ -1029,13 +1071,15 @@
 
 
 
-    <!-- Notification 
+    <!-- Notification -->
     <div class="notification">
         <p class="font-light">
             This website using cookies for improve user experiences!
         </p>
         <a class="hideNoti">GOT IT!</a>
-    </div>-->
+        <a data-toggle="modal" data-target="#confirmOTP">Confirm OTP</a>
+        <a data-toggle="modal" data-target="#reset">Reset password</a>
+    </div>
 
     <!-- End Notification -->
 
