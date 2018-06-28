@@ -3,15 +3,14 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Smart Directory</title>
 	<meta charset="utf-8" name="description" content="Smart Directory" />
 	<meta charset="utf-8" name="keywords" content="Smart Directory" />
 
 	<link rel="stylesheet" href="../public/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="../public/css/fontawesome-all.css" type="text/css" />
-	<link rel="stylesheet" href="../public/css/general.css" type="text/css" />
-	<link rel="stylesheet" href="../public/css/desktop.css" type="text/css" />
-    <link rel="stylesheet" href="../public/css/tablet.css" type="text/css" />
+	<link rel="stylesheet" href="../public/css/mobile.css" type="text/css" />
 
 </head>
 
@@ -29,17 +28,13 @@
 				<div class="navContent">
 					<ul>
 						<li class="searchBox">
-							<input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
-							<button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;">
-								<img src="../public/assets/search.svg" />
-							</button>
-							<button type="button" name="buttonTrigger" class="buttonTrigger">
-								<img src="../public/assets/search.svg" />
-							</button>
+							<a href="#" class="buttonTrigger">
+								<img src="../public/assets/search.svg" width="16" height="16"  />
+							</a>
 						</li>
 						<li>
 							<a class="dropdown-toggle" href="#" role="button" id="user">
-								<img src="../public/assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+								<img src="../public/assets/profile.svg" width="16" height="16"  class="iconSVG whiteSVG" />
 							</a>
 
 							<div class="dropdown-menu" aria-labelledby="user">
@@ -61,7 +56,7 @@
 						</li>
 						<li>
 							<a class="dropdown-toggle" href="#" role="button" id="menu">
-								<img src="../public/assets/burger.svg" width="24px" height="24px" />
+								<img src="../public/assets/burger.svg" width="16" height="16" />
 							</a>
 							<div class="dropdown-menu" aria-labelledby="menu">
 								<div class="smenu">
@@ -104,6 +99,12 @@
 
 
 				</div>
+				<div class="navSearch">
+					<input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." />
+					<button type="button" name="btnSearchNavBtn" class="iconNextInput">
+						<img src="../public/assets/search.svg" />
+					</button>
+				</div>
 
 				<div class="clearfix"></div>
 			</div>
@@ -114,15 +115,15 @@
 
 	<div id="subTitle" style="">
 		<div class="container">
-			<div class="guideNav">
-				<a href="#">Home</a> >
-				<a href="#">Company Detail</a>
-			</div>
 			<div class="pageTitle">
 				<div class="">
-					<h3>F.A.Q</h3>
+					<h3 class="fontsize18">F.A.Q</h3>
+					<h7 class="font-regular fontsize12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+						dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h7>
+					<div class="clearfix"></div>
 				</div>
-				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
@@ -131,13 +132,7 @@
 
 	<div id="content" class="">
 		<div class="container">
-			<h7 class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-				dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-				ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h7>
-			<div class="clearfix"></div>
 			<div class="mainContent">
-
 				<div id="accordion">
 					<div class="card">
 						<div class="card-header" id="headingOne">
@@ -145,7 +140,7 @@
 								<button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
 								    aria-controls="collapseOne">
 									<img src="../public/assets/hepl-center.svg" class="blackSVG" width="27px" />
-									<h7 class="font-regular">&nbsp;FAQ #1</h7>
+									<h7 class="font-bold">&nbsp;FAQ #1</h7>
 									<i class="fa fa-angle-down"></i>
 								</button>
 							</h5>
@@ -168,7 +163,7 @@
 								<button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
 								    aria-controls="collapseTwo">
 									<img src="../public/assets/hepl-center.svg" class="blackSVG" width="27px" />
-									<h7 class="font-regular">&nbsp;FAQ #2</h7>
+									<h7 class="font-bold">&nbsp;FAQ #2</h7>
 									<i class="fa fa-angle-down"></i>
 								</button>
 							</h5>
@@ -190,7 +185,7 @@
 								<button class="btn btn-link customCard collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
 								    aria-controls="collapseThree">
 									<img src="../public/assets/hepl-center.svg" class="blackSVG" width="27px" />
-									<h7 class="font-regular">&nbsp;FAQ #3</h7>
+									<h7 class="font-bold">&nbsp;FAQ #3</h7>
 									<i class="fa fa-angle-down"></i>
 								</button>
 							</h5>
@@ -227,7 +222,7 @@
 	<script src="../public/js/jquery-3.3.1.js"></script>
 	<script src="../public/js/fontawesome-all.js"></script>
 	<script src="../public/js/bootstrap.min.js"></script>
-	<script src="../public/js/desktop.js"></script>
+	<script src="../public/js/mobile.js"></script>
 
 </body>
 

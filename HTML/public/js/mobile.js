@@ -300,7 +300,20 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-		
+
+	$('.seemore').click(function(){
+		if($(this).text() == "More...")
+		{
+			$('.basicIntroDesc p').css('height','auto');
+			$(this).text("Less...");
+		}
+		else
+		{
+			$('.basicIntroDesc p').css('height','54px');
+			$(this).text("More...");
+		}
+	});
+
 	/*show scroll to top when scroll*/
 	window.onscroll = function() {scrollFunction()};
 

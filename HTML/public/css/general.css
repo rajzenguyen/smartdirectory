@@ -24,9 +24,6 @@ body{
 	outline:none !important;
 	font-stretch:normal;
 	font-style:normal;
-	-webkit-transition: ease-in 0.2s !important;
-	-o-transition: ease-in 0.2s !important;
-	transition: ease-in 0.2s !important;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;

@@ -30,18 +30,22 @@ body{
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
+  font-size: 10px;
   line-height:16px;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   font-family: 'Montserrat-Light', sans-serif;
+  font-size: 10px;
   line-height:16px;
 }
 :-ms-input-placeholder { /* IE 10+ */
   font-family: 'Montserrat-Light', sans-serif;
+  font-size: 10px;
   line-height:16px;
 }
 :-moz-placeholder { /* Firefox 18- */
   font-family: 'Montserrat-Light', sans-serif;
+  font-size: 10px;
   line-height:16px;
 }
 :focus{
@@ -230,12 +234,13 @@ input:focus, textarea:focus, select:focus{
 select
 {
 	display: block;
-    height: 54px;
+    height: 32px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 35px;
-    padding: 10px 35px 10px 16px;
-    line-height: 24px;
+	padding: 7px 25px 7px 15px;
+	font-size: 12px;
+    line-height: 18px;
     background: #f8f9fb;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -252,8 +257,8 @@ select {
     linear-gradient(135deg, gray 50%, transparent 50%),
     linear-gradient(to right, #f8f9fb, #f8f9fb);
   background-position:
-    calc(100% - 20px) calc(1.5em + 2px),
-	calc(100% - 15px) calc(1.5em + 2px),
+    calc(100% - 20px) calc(0.7em + 2px),
+	calc(100% - 15px) calc(0.7em + 2px),
 	calc(100% - 3em) 8em;
   background-size:
     5px 5px,
@@ -268,8 +273,8 @@ select:focus {
     linear-gradient(135deg, transparent 50%, gray 50%),
     linear-gradient(to right, #f8f9fb, #f8f9fb);
   background-position:
-    calc(100% - 15px) 1.5em,
-    calc(100% - 20px) 1.5em,
+    calc(100% - 15px) 0.7em,
+    calc(100% - 20px) 0.7em,
     calc(100% - 2.5em) 0.5em;
   background-size:
     5px 5px,
@@ -552,22 +557,25 @@ label{
 .customCard{
 	background: #fafbfc;
 	width: 100%;
-	height: 54px;
-	color: #000;
-	border-radius:35px;
-	text-decoration:none;
-	vertical-align:middle;
-	text-align:left;
-	padding-left:26px;
-	box-shadow:none !important;
-     outline:none !important; 
-     -webkit-box-shadow:none !important;
-	 height:66px;
+	color: #333;
+	border-radius: 35px;
+	text-decoration: none;
+	vertical-align: middle;
+	text-align: left;
+	padding-left: 26px;
+	box-shadow: none !important;
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	margin-bottom: 14px;
 }
 .customCard:hover{
 	background: #6f93f9;
 	color: #fff;
 	text-decoration:none;
+}
+.customCard img{
+	width: 16px;
+	height: 16px;
 }
 .customCard:hover > .blackSVG{
 	filter: invert(1) sepia(1) saturate(0);
@@ -601,14 +609,14 @@ label{
 }
 .customCard > svg{
 	float:right;
-	height:24px;
-	font-size:16px;
+	height:18px;
+	font-size:12px;
 	font-weight:300;
 	vertical-align:middle;
 	margin-right:10px;
 }
 #content{
-	margin-top:30px;
+	margin-top:20px;
 	margin-bottom:20px;
 }
 .card-body{
@@ -1020,7 +1028,7 @@ label{
   .col-form-label{
 	  font-size: 12px;
 	  line-height: 1.5;
-	  font-family: 'Montserrat-Regular', sans-serif;
+	  font-family: 'Montserrat-Bold', sans-serif;
   }
   .isDisabled {
 	color: currentColor;
@@ -1292,7 +1300,7 @@ button.close:hover {
 	color:#fff;
 }
 #companyBanner{
-	height:480px;
+	height:250px;
 	text-align:center;
 	background:#fff;
 	background-size:cover;
@@ -1338,12 +1346,19 @@ button.close:hover {
 	float:left;
 }
 .listAboutItem{
-	width:370px;
-    margin-right:30px;
+	width:100%;
+    margin-bottom:10px;
 	padding:50px 20px 40px 20px;
 	float:left;
 	border-radius:16px;
-	height:400px;
+}
+.listAboutItem h4{
+	font-size: 24px;
+    line-height: 36px;
+}
+.listAboutItem p{
+	font-size: 14px;
+    line-height: 21px;
 }
 .listAboutItem:nth-child(1){
 	background:#00b79d;
@@ -1353,7 +1368,6 @@ button.close:hover {
 }
 .listAboutItem:nth-child(3){
 	background:#ff6300;
-    margin-right:0;
 }
 .listAboutItem h4{
 	margin-top:30px; 
@@ -2091,17 +2105,16 @@ div.aboutSmart > h2{
 	position:absolute;*/
 }
 .companyIntroduce{
-	padding: 0;
+	padding: 0 20px;
 	float: left;
 	margin-top: 135px;
 	position: relative;
 }
 .companyIntroAvatar
 {
-	width:170px;
-	height:170px;
+	width:50px;
+	height:50px;
 	float:left;
-	padding-right:1rem;
 }
 .companyIntroAvatar > img
 {
@@ -2114,12 +2127,18 @@ div.aboutSmart > h2{
     text-align: left;
     color: #fff;
     height: auto;
-    padding: 35px 0px 34px 30px;
+	padding: 0 0 0 1rem;
+	width: calc(100% - 50px);
     vertical-align: middle;
-    margin: 0 auto;
+	margin: 0 auto;
+	
 }
 .companyName > h6{
 	margin:0;
+}
+.companyName > h6 > img{
+	width:14px;
+	height:14px;
 }
 .companyName > h6 > svg{
 	color:#0C3;
@@ -2133,37 +2152,38 @@ div.aboutSmart > h2{
 	text-align:center;
 }
 .companyName > .messenger{
-	padding:4px 25px;
+	padding:4px 15px;
 	background:#6f93f9;
 	color:#fff;
 	text-align:center;
 	border:none;
 	border-radius:40px;
 	float:left;
-	height:30px;
+	height:22px;
 	cursor: pointer;
 }
 .companyName > .messenger img{
-	widows: 18px;
-	height: 18px;
-	margin-right: 10px;
+	width: 12px;
+	height: 12px;
+	margin-right: 5px;
 	filter: brightness(0) invert(1);
+	float: left;
 }
 .companyName > .report{
-	height:30px;
-	width:30px;
+	height:22px;
+	width:22px;
 	background:#f8f9fb;
 	float:left;
-	padding:14px;
+	padding:6px;
 	border-radius:50%;
 	margin-left:10px;
 	cursor:pointer;
 }
 .report img{
-	height:16px;
-	width:16px;
-	top: -7px;
-	left: -7px;
+	height:10px;
+	width:10px;
+	top: 0px;
+	left: 0px;
 	position: relative;
 }
 
@@ -2172,8 +2192,11 @@ div.aboutSmart > h2{
     border: 1px solid #e8eaef;
     border-top: 2px solid #fff;
 	color:#333;
-	margin-left: 0px;
+	margin-left: -4px;
 	background:#fff;
+}
+.companySlideNav ul li:nth-child(1){
+	margin-left: 0px;
 }
 .companySlideNav ul li a{
 	color:#333;
@@ -2194,17 +2217,39 @@ div.aboutSmart > h2{
 .companySlideNav .list-inline .active{
     border-top: 2px solid #1046f1 !important;
 	color: #1046f1 !important;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
-.companySlideNav > .list-inline > .active > a{
+.companySlideNav .list-inline .active a{
     color: #1046f1 !important;
 	font-family: 'Montserrat-Bold', sans-serif;
 }
 
 #companyInfo .nav-tabs{
 	border:none;
+	padding: 0;
+	z-index: 1;
+	position: relative;
+	overflow-x:scroll;
+	overflow-y: hidden;
+	height: 65px;
+}
+#companyInfo .companySlideNav{
+	overflow-x:hidden;
+	overflow-y: hidden;
+	position: relative;
+	z-index: 2;
+	padding-left: 20px;
+	height: 55px;
+}
+
+#companyInfo .companySlideNav ul{
+	width: 600px;
+	z-index: 1;
+	position: relative;
 }
 .companyInfoContent{
-	padding:20px 5px;
+	padding:20px;
+	padding-top: 0px;
 }
 .companyInfoContent > .description{
 	text-align:justify;
@@ -2239,6 +2284,7 @@ div.aboutSmart > h2{
 	margin-top:0px;
 	padding:0px;
 	color:#000 !important;
+    box-shadow: 0 5px 10px 0 #e8eaef;
 }
 .topNavWhite .navContent > ul > li > a{
 	color:#000;	
@@ -2276,24 +2322,40 @@ div.aboutSmart > h2{
 	margin-top:30px;
 }
 #subTitle .pageTitle{
-	margin-top:30px;
+	margin-top:80px;
+	padding:0 20px;
+}
+#subTitle .pageTitle a{
+	width: 100%;
+}
+#subTitle .pageTitle h7{
+	width: 100%;
+	float: left;
+	margin-top: 6px;
 }
 .mainContent{
 	margin:0 auto;
-	width:70%;
-	padding:40px 0px;
+	width:100%;
+	padding:0 20px;
 }
 .termContent{
-	padding:40px 0;
+	padding:0 20px;
+	float: left;
 }
 .leftColTerm{
 	width:15%;
 	float:left;
 }
 .rightColTerm{
-	width:85%;
+	width:100%;
 	float:left;
-	padding:0 0 0 30px;
+}
+.rightColTerm p{
+	font-family: 'Montserrat-Regular', sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	width:100%;
+	float:left;
 }
 .topNavWhite .navContent > ul > li > input{
 	border:1px solid #000;
@@ -2320,38 +2382,48 @@ div.aboutSmart > h2{
 }
 .aboutBlock1{
 	background:#f8f9fb; 
-	padding-left:13%; 
-	padding-right:13%; 
-	padding-bottom:20px;
+	padding-left:1.5em; 
+	padding-right:1.5em; 
+	padding-bottom:2em;
+	margin-top:4em;
 }
 .aboutBlock2{
-	background:#fff; 
-	padding-top:120px; 
-	padding-bottom:60px; 
+	background:#fff;
+	padding:80px 20px;
 	-webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 42%); 
-	clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 42%);
+	clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 7%);
+}
+.aboutBlock2 .container div{
+	z-index: 2;
+}
+.aboutBlock2 .container div p{
+	font-size: 14px;
+	line-height: 1.5;
 }
 .aboutBlock2 img{
 	margin-left:12px;
 }
 .leftColAbout{
-	width:70%; 
+	width:100%; 
 	float:left;
-	margin-top:-160px; 
+	margin-top:-200px; 
 	padding:20px;
 }
 .leftColAbout h2{
 	margin-left: 30px;
 }
+.leftColAbout p{
+	font-size: 14px;
+	line-height: 1.5;
+}
 .rightColAbout{
-	width:30%; 
-	float:right; 
-	margin-top:-360px; 
-	padding:0px 30px;
+	width:100%; 
+	float:left;
+	padding:0px 20px;
 }
 .rightColAbout p{
 	font-size:14px; line-height:21px; color:#999;
-	margin-bottom:60px;
+	margin-bottom:10px;
 }
 .rightColAbout img{
 	width:100%;
@@ -2359,7 +2431,10 @@ div.aboutSmart > h2{
 	margin-bottom:20px;
 }
 .contactForm{
-	box-shadow: 0px 3px 18px -10px rgba(0,0,0,1); float:left; height:900px;
+	box-shadow: 0px 3px 18px -10px rgba(0,0,0,1); 
+	float:left; 
+	margin: auto 20px;
+	height:auto;
 }
 .staContent{
 	float:left; 
@@ -2560,7 +2635,13 @@ div.aboutSmart > h2{
 }
 
 .contactLeft{
-	background:#1046f1; width:50%; float:left; padding:40px; color:#fff; border-bottom-left-radius:16px; border-top-left-radius:16px; height:900px;
+	background:#1046f1; 
+	width:100%; 
+	float:left; 
+	padding:20px; 
+	color:#fff; 
+	border-top-right-radius:16px; 
+	border-top-left-radius:16px; 
 }
 .contactLeft a{
 	color:#fff;
@@ -2570,12 +2651,19 @@ div.aboutSmart > h2{
 	font-weight:600;
 }
 .contactRight{
-	background:#fff;; width:50%; float:left; padding:40px 60px; border-bottom-right-radius:16px; border-top-right-radius:16px; height:900px;
+	background:#fff;; 
+	width:100%; 
+	float:left; 
+	padding:20px; 
+	border-bottom-right-radius:16px;
+	border-bottom-left-radius:16px; 
 }
 .contactRight p{
-	font-size:18px;
-	line-height:27px;
+	font-size:14px;
+	line-height:21px;
 	font-weight:600;
+	text-align: center;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 .contactRight input[type='text']{
 	width:100%;
@@ -2598,12 +2686,12 @@ div.aboutSmart > h2{
 }
 .contactRight .btnSubmit{
 	width:45%;
-	font-size:18px;
-	line-height:27px;
+	font-size:12px;
+	line-height:18px;
 	float:left;
 	background: #6f93f9;
 	color: #fff;
-	padding: 15px 0;
+	padding: 7px 0;
 	margin:20px 0px;
 	font-family: 'Montserrat-Regular', sans-serif;
 }
@@ -2645,19 +2733,20 @@ div.aboutSmart > h2{
 	background:none;
 }
 .notiList{
-	width:770px;
-	margin:40px auto;
+	width:100%;
+	margin:10px auto;
 	height:auto;
+	float: left;
+	padding: 0 20px;
 }
 .notiItem{
 	padding:10px 0px 10px 20px;
 	float:left;
 	width:100%;
-	height:60px;
 }
 .notiItemImg{
 	float:left;
-	margin-right:20px;
+	margin-right:10px;
 	width:6%;
 	min-width:40px;
 	max-width:40px;
@@ -2669,11 +2758,12 @@ div.aboutSmart > h2{
 }
 .notiItemContent{
 	float:left;
-	width:85%;
+	width:80%;
 }
 .notiItemContent h7{
-	font-size:14px;
-	line-height:21px;
+	font-family: 'Montserrat-Regular', sans-serif;
+	font-size:12px;
+	line-height:18px;
 	font-weight:500;
 	color:#333;
 	width:100%;
@@ -3098,21 +3188,22 @@ div.aboutSmart > h2{
   text-align: right;
 }
 .whoImg{
-	margin-top:30px;
+	margin-top:10px;
 }
 .whoImg img{
-	margin:0 30px 0 0;
-	width:170px;
-	height:170px;
+	margin:0 10px 10px 0;
+	width:17%;
+	height:auto;
 	float:left;
 }
 .whoImg img:last-child{
 	margin:0;
 }
 .coverImg{
-	background-image:url(../assets/bernard-hermant-616385-unsplash-copy@2x.jpg);
-	background-size:cover;
-	height:800px;
+	background-image: url(../assets/bernard-hermant-616385-unsplash-copy@2x.jpg);
+	height: 400px;
+	background-position: -340px,0px;
+	background-size: cover;
 }
 
 .customCard{
@@ -3124,13 +3215,16 @@ div.aboutSmart > h2{
 	font-weight:normal;
 }
 #content .mainContent .card-body > p{
-	margin-top:30px;
-	margin-bottom:20px;
+	margin-top:0px;
+	margin-bottom:10px;
+	font-size: 10px;
+	line-height: 16px;
+	font-family: 'Montserrat-Regular', sans-serif;
 }
 .basicContent{
-	margin: 40px auto 0px;
-	width:70%;
-	padding:00px 0px;
+	margin: 30px 0px 0px 0px;
+	width:100%;
+	padding:0px;
 }
 .basicContent .customCard{
 	background: #fafbfc;
@@ -3166,10 +3260,14 @@ div.aboutSmart > h2{
 	float:left;
 	vertical-align:middle;
 	margin-left:5px;
+	font-size: 12px;
+	line-height: 18px;
 }
 .basicContent .customCard > img{
 	float: left;
 	filter: grayscale(1) invert(0) brightness(0);
+	width: 16px;
+	height: 16px;
 	
 }
 .basicContent .customCard:hover > img{
@@ -3179,8 +3277,8 @@ div.aboutSmart > h2{
 }
 .basicContent .customCard > svg{
 	float:right;
-	height:24px;
-	font-size:16px;
+	height:18px;
+	font-size:12px;
 	font-weight:300;
 	vertical-align:middle;
 	margin-right:10px;
@@ -3190,24 +3288,28 @@ div.aboutSmart > h2{
 	margin:0 auto;
 }
 .tableContent td:nth-child(1){
-	padding-bottom:10px;
-	padding-top:10px;
-	padding-left:55px;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:0px;
 	width:40%;
 }
 .tableContent td{
-	padding-bottom:10px;
-	padding-top:10px;
-	padding-left:50px;
+	padding-bottom:0px;
+	padding-top:0px;
+	padding-left:0px;
 	width:60%;
 }
+.tableContent h7{
+	font-size: 14px;
+	line-height: 21px;
+}
 .tableContent img{
-	height:20px;
+	height:16px;
 	vertical-align: sub;
 }
 .connectContent{
 	width:100%;
-	margin-bottom:60px;
+	margin-bottom:20px;
 }
 .connectHeader{
 	width:100%;
@@ -3215,20 +3317,28 @@ div.aboutSmart > h2{
 }
 .connectHeader h4{
 	float:left;
+	font-size: 18px;
+	line-height: 27px;
 }
 .connectHeader select{
 	width:270px;
 	float:right;
 }
 .connectHeader h7{
-	width:50%;
+	width:100%;
 	float:left;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .connectBody{
 	width:100%;
 	float:left;
-	margin-top:30px;
+	margin-top:10px;
+}
+.connectBody .tableCategory h7{
+	font-size: 14px;
+	line-height: 21px;
 }
 .connectBodyContent{
 	width:50%;
@@ -3407,36 +3517,56 @@ div.aboutSmart > h2{
 	width:100%;
 }
 .basicIntroDesc{
-	width:970px;
-	margin-right:78px;
+	width: 100%;
 	float:left;
 }
+.basicIntroDesc p{
+	width: 100%;
+	float:left;
+	font-size: 12px;
+	line-height: 18px;
+	height: 54px;
+	overflow: hidden;
+	text-align: justify;
+}
+.basicIntroDesc .seemore{
+	height: auto;
+	margin-bottom: 10px;
+	float: left;
+	font-size: 12px;
+	line-height: 18px;
+}
 .item22{
-	width:260px;
-	height:170px;
+	width:130px;
+	height:85px;
 	float:left;
 	margin-left:20px;
 }
 .item22 img{
-	width:300px;
-	height:170px;
+	width:130px;
+	height:85px;
 }
 .basicIntroSocial{
-	width:70px;
+	width:100%;
 	float:left;
 }
 .basicIntroSocial img{
-	width:100%;
+	width:35px;
 	float:left;
-	height:70px;
-	margin-bottom:30px;
+	height:35px;
+	margin-right: 10px;
+	margin-bottom:0;
+}
+#aboutBanner{
+	padding: 0 20px;
+	height: auto;
 }
 #aboutBanner .guildNav{
 	margin-top:145px;
 }
 #aboutBanner .companyIntro{
-	margin-top:-20px;
-	margin-bottom:60px;
+	margin-top:86px;
+	margin-bottom:20px;
 	padding:0;
 }
 #aboutBanner .companyIntro h3{
@@ -3451,37 +3581,40 @@ div.aboutSmart > h2{
 	margin-top:145px;
 }
 #contactForm .companyIntro{
-	margin-top:185px;
-	margin-bottom:10px;
+	margin:85px auto 10px auto;
 	padding:0;
+	width: 100%;
+	text-align: center;
 }
 #contactForm .companyIntro .companyName{
 	padding:0;
+	width: 100%;
+	text-align: center;
 }
 
 #contactForm .companyIntro .companyName h3{
 	margin:0;
+	width: 100%;
+	text-align: center;
 }
 .featureCategory, .featureCategory2{
-	width: 48%;
+	width: 100%;
 	float: left;
+	margin-bottom: 20px;
+}
+.featureCategory2 .connectHeader{
+	margin-bottom: 20px;
 }
 .tableCategory td{
-	vertical-align: top;
+	vertical-align: middle;
 	padding-bottom: 10px;
 }
 .tableCategory td:nth-child(1){
-	width: 30%;
+	width: 20%;
 }
 .tableCategory td:nth-child(2){
-	width: 70%;
-	padding-left: 60px;
-}
-.featureCategory2 .connectHeader{
-	margin-left: 118px;
-}
-.featureCategory2 .connectHeader:nth-child(2){
-	margin-top: 84px;
+	width: 80%;
+	padding-left: 20px;
 }
 .featureVerticalDivider{
 	height: 230px;
@@ -3492,64 +3625,77 @@ div.aboutSmart > h2{
 	margin-top: 60px;
 }
 .codeSelection .connectBody{
-	padding-left: 100px;
+	padding-left: 0;
 	margin-top: 10px;
 }
+.codeSelection .tab-content{
+	text-align: center;
+}
 .codeSelectItem{
-	width: 370px;
-	margin-right: 130px;
+	width: 100%;
 	float: left;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	text-align: left;
 }
 .codeSelectItem p{
-	margin: auto auto 10px 20px;
+	margin: auto auto 5px 20px;
+	font-size: 12px;
+	line-height: 18px;
 }
 .codeSelectItem div{
 	width: 100%;
-	height: 53px;
-	padding: 12px 0 16px 18px;
+	height: 32px;
+	padding: 6px 0 6px 18px;
 	background: #f8f9fb;
 	border: 1px solid #e8eaef;
 	border-radius: 26px;
 	color: #333;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 12px;
+	line-height: 18px;
 }
 .codeSelection .connectBody h6{
 	padding-top: 5px;
+	font-size: 14px;
+	line-height: 21px;
 }
 .codeSelection .connectBody h6 a{
-	padding-left: 33px;
+	padding-left: 5px;
+}
+.showmore{
+	font-size: 10px;
+	line-height: 16px;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 .featureServicesItem{
-	width: 50%;
+	width: 100%;
 	float: left;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 .featureServicesItem img{
-	width: 80px;
-	padding: 23px 48px 0 0;
+	width: 40px;
+	padding: 20px 10px 0 0;
 	float: left;
 }
 .featureServicesItem .featureServicesItemContent{
-	width: calc(100% - 80px);
+	width: calc(100% - 40px);
 	position: relative;
 	float: left;
-	padding-right: 103px;
 }
 .featureServicesItem .featureServicesItemContent h7{
 	float: left;
+	font-size: 14px;
+	line-height: 21px;
 }
 .featureCertItem{
-	width: 270px;
+	width: 100%;
 	float: left;
-	margin-right: 30px;
 	text-align: center;
+	margin-bottom: 10px;
 }
 .featureCertItem img{
 	width: 100%;
-	height: 200px;
-	margin-bottom: 10px;
+	height: auto;
+	margin-bottom: 5px;
 	float: left;
 }
 .featureCertItem .featureCertItemContent{
@@ -3571,25 +3717,25 @@ div.aboutSmart > h2{
     padding: 0 7.5px;
     position: absolute;
     display: block;
-    margin-top: 15px;
-    margin-left: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 .featureProductItem{
-	width: 270px;
-	height: 449px;
+	width: 100%;
+	height: auto;
 	float: left;
-	margin-right: 30px;
 	background: #fff;
 	border-radius: 12px;
 	box-shadow: 0px 0px 20px -1px #cccccc;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 .featureProductItem:nth-child(4n+4){
 	margin-right: 0px;
 }
 .featureProductItem img{
-	width: 270px;
-	height: 240px;
+	width: 100%;
+	height: auto;
 	float: left;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
@@ -3612,13 +3758,13 @@ div.aboutSmart > h2{
 	margin-right: 5px;
 }
 .productDetailPanel .modal-dialog{
-	width: 1170px;
-	height: 680px;
+	width: 90%;
+	height: auto;
 	margin-top: 10px;
 }
 .productDetailPanel .modal-content{
-	width: 1170px;
-	height: 680px;
+	width: 100%;
+	height: auto;
 	border-radius: 16px;
 }
 .productDetailPanel .slick-list{
@@ -3633,50 +3779,55 @@ div.aboutSmart > h2{
 	background:transparent;
 }
 .leftGallery{
-	width: 45%;
+	width: 100%;
 	float: left;
 }
 .rightContent{
-	width: 55%;
+	width: 100%;
 	float: left;
-	padding: 60px 60px 0 30px;
+	padding: 10px 20px 0 20px;
+	text-align: center;
+}
+.rightContent p{
+	font-size: 12px;
+	line-height: 18px;
 }
 .topImgGalleryProduct{
 	width: 100%;
-	height: 570px;
+	height: auto;
 	float: left;
 }
 .botImgGalleryProduct{
 	width: 100%;
 	float: left;
-	margin-top: 10px;
 }
 .itemGal01{
 	width: 100%;
-	height: 570px;
+	height: auto;
 }
 .itemGal01 img{
 	width: 100%;
 	height: 100%;
 	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
 }
 .itemGal02{
-	width: 70px;
-	height: 70px;
+	width: 54px;
+	height: 54px;
 	float: left;
 }
 .itemGal02 div{
-	width: 70px;
-	height: 70px;
+	width: 45px;
+	height: 54px;
 	margin-left: 10px;
 	float: left;
 }
 .itemGal02 img{
-	width: 70px;
-	height: 70px;
+	width: 54px;
+	height: 45px;
 }
 .rightContent h4{
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 .navLeftSlick, .navRightSlick{
 	width: 60px;
@@ -3686,8 +3837,11 @@ div.aboutSmart > h2{
 	margin:20px 0;
 	position: relative;
 }
+.slickGallery{
+	margin-left: -20px;
+}
 .slickGallery .slick-for-Gallery{
-	width: calc(100% - 120px);
+	width: 100%;
 	float: left;
 }
 .slick-for{
@@ -3704,15 +3858,16 @@ div.aboutSmart > h2{
 	position: relative;
 }
 .provinceDetailPanel .modal-dialog{
-	width: 1170px;
+	width: 90%;
 	margin-top: 10px;
 }
 #industrialPark .modal-dialog{
-	width: 770px;
+	width: 90%;
 	margin-top: 10px;
 }
 #industrialPark .modal-dialog h6{
 	margin-top: 30px;
+
 }
 #industrialPark .modal-dialog img{
 	border-radius: 6px;
@@ -3720,9 +3875,16 @@ div.aboutSmart > h2{
 	width: 100%;
 	height: auto;
 }
-
+.modal-content{
+	float: left;
+	width: 100%;
+}
+h6.modal-title{
+	font-size: 16px;
+	line-height: 24px;
+}
 #association .modal-dialog{
-	width: 770px;
+	width: 90%;
 	margin-top: 10px;
 }
 #association .modal-dialog h6{
@@ -3735,7 +3897,7 @@ div.aboutSmart > h2{
 	height: auto;
 }
 .provinceDetailPanel .modal-content{
-	padding: 60px 80px;
+	padding: 20px 10px;
 }
 .provinceDetailPanel .modal-dialog img{
 	width: 100%;
@@ -3915,7 +4077,7 @@ div.uploadNameCard button{
     top: 0;
     left: 0;
     width: 100%;
-    height: 480px;
+    height: 250px;
 }
 #profileEdit .pageTitle{
 	float: left;
@@ -4052,18 +4214,18 @@ div.uploadNameCard button{
 	color: #fff;
 }
 #reportCompany select{
-	width: 70%;
+	width: 100%;
 }
 #reportCompany .modal-dialog{
 	margin-top:20px; 
-	width:570px;
+	width:90%;
 }
 
 #reportCompany .modal-body{
-	padding:20px 40px 0px 40px;
+	padding:0px 20px;
 }
 #reportCompany .modal-header{
-	padding:20px 40px 20px 40px;
+	padding:20px 20px 0px 20px;
 }
 #reportCompany textarea{
 	width: 100%;
@@ -4075,13 +4237,13 @@ div.uploadNameCard button{
 	background: #f8f9fb;
 }
 #reportCompany button.nextButton{
-	width: 140px;
-    font-size: 18px;
-    line-height: 27px;
+	width: 50%;
+    font-size: 12px;
+    line-height: 18px;
     float: right;
     background: #6f93f9;
     color: #fff;
-    padding: 15px 0;
+    padding: 7px 0;
     font-family: 'Montserrat-Regular', sans-serif;
 }
 #reportCompany .modal-footer {
@@ -4094,13 +4256,13 @@ div.uploadNameCard button{
 
 #contactCompany .modal-dialog{
 	margin-top:20px; 
-	width:570px;
+	width:90%;
 }
 #contactCompany .modal-body{
-	padding:20px 40px 0px 40px;
+	padding:20px 20px 0px 20px;
 }
 #contactCompany .modal-header{
-	padding:20px 40px 20px 40px;
+	padding:20px 20px 0px 20px;
 }
 #contactCompany textarea{
 	width: 100%;
@@ -4112,13 +4274,13 @@ div.uploadNameCard button{
 	background: #f8f9fb;
 }
 #contactCompany button.nextButton{
-	width: 140px;
-    font-size: 18px;
-    line-height: 27px;
+	width: 50%;
+    font-size: 12px;
+    line-height: 18px;
     float: right;
     background: #6f93f9;
     color: #fff;
-    padding: 15px 0;
+    padding: 7px 0;
     font-family: 'Montserrat-Regular', sans-serif;
 }
 #contactCompany .modal-footer {
@@ -4201,4 +4363,42 @@ div.uploadNameCard button{
 }
 .resultContainer{
 	overflow-x: hidden;
+}
+
+.codeSlideNav > ul > li{
+	width: 33%;
+    padding: 4px 10px;
+    border: 1px solid #e8eaef;
+    border-top: 2px solid #fff;
+	color:#333;
+	margin-left: -4px;
+	background:#fff;
+	text-align: center;
+}
+.codeSlideNav > ul > li:nth-child(1){
+	margin-left: 0px;
+}
+.codeSlideNav > ul > li > a{
+	color:#333;
+	font-size:12px;
+	line-height:18px;
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+.codeSlideNav > ul > li:hover{
+    border-top: 2px solid #00b79d;
+    color: #00b79d;
+}
+
+.codeSlideNav > ul > li:hover a{
+    color: #00b79d;
+}
+
+
+.codeSlideNav > .list-inline > .active{
+    border-top: 2px solid #00b79d !important;
+	color: #00b79d !important;
+}
+.codeSlideNav > .list-inline > .active > a{
+    color: #00b79d !important;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
