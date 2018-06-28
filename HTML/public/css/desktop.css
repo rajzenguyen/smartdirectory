@@ -239,28 +239,27 @@
 	margin:0 auto;
 }
 .searchInfo > h2{
-	width:655px;
 	margin:0 auto 60px auto;
 }
 .searchInfo > .para01{
-	width:772px;
 	height:54px;
-	margin:20px auto 115px auto;
+	margin: 20px auto 115px auto;
+	width: 70%;
 }
 .searchInfo > .para02{
-	width:757px;
 	height:63px;
-	margin:0 auto 49px auto;
+	margin: 0 auto 49px auto;
+	width: 70%;
 }
 .controlS{
-	width:770px;
 	margin:0 auto;
+	width: 70%;
 }
 .searchInfo .controlS > input{
 	border-bottom-right-radius:unset !important;
 	border-top-right-radius:unset !important;
 	border:hidden;
-	width:670px;
+	width:80%;
 	height:64px;
 	float: left;
 }
@@ -292,7 +291,7 @@
 	border:none;
 	color:#fff;
 	padding:20px 38px;
-	width:100px;
+	width:20%;
 	height:64px;
 	float:left;
 }
@@ -302,7 +301,6 @@
 }
 .searchInfo > p{
 	color:#fff;
-	width:60%;
 	margin:auto;
 }
 
@@ -369,7 +367,7 @@
 #category h2{
 	padding:0;
 	margin:0 auto;
-	width:464px;
+	width:100%;
 	height: 100px;
 }
 .catContainer{
@@ -514,7 +512,7 @@
 	vertical-align:middle;
 }
 div.aboutSmart > h2{
-	width:809px;
+	width:100%;
 	margin:60px auto 30px auto;
 }
 .aboutSmartContainer{
@@ -576,12 +574,12 @@ div.aboutSmart > h2{
 }
 
 .aboutStatistic > div.container > h2{
-	width:900px;
+	width:100%;
 	margin: 0 auto;
 	padding-bottom:10px;
 }
 .aboutStatistic > div.container > p{
-	width:770px;
+	width:100%;
 	height:70px;
 	margin: 0 auto;
 }
@@ -654,7 +652,7 @@ div.aboutSmart > h2{
 	text-align:center;
 }
 .customerNav{
-	width:561px;
+	width:60%;
 	height: 42px;
 	object-fit: contain;
 	margin:0 auto;
