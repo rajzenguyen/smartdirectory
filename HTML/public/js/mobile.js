@@ -783,7 +783,7 @@ $(document).ready(function(){
 		$('.notification').css('position','absolute');
 		$('.notification').css('height','60px');
 		$('.notification').css('top',element.offset().top+30);
-		$('.notification').css('left',element.offset().left);
+		$('.notification').css('left',element.offset().left - 50);
 		$('.notification').toggle();
 		setTimeout(function() {
 			$(".notification").fadeOut();

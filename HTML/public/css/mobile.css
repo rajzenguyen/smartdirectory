@@ -129,8 +129,9 @@ a{
 	text-decoration:none !important;
 }
 p{
-	font-size:16px;
-	line-height:24px;
+	font-size:12px;
+	line-height:18px;
+	margin-bottom: 0;
 }
 ul{
 	list-style:none;
@@ -620,7 +621,7 @@ label{
 	margin-bottom:20px;
 }
 .card-body{
-	padding:6px 14px;
+	padding:0px 14px;
 }
 .form-control::-moz-placeholder {
     line-height: 31px;
@@ -1309,7 +1310,7 @@ button.close:hover {
 }
 
 #profileBanner, #profileEdit{
-	height:480px;
+	height:200px;
 	text-align:center;
 	background:#fff;
 	background-size:cover;
@@ -2107,7 +2108,7 @@ div.aboutSmart > h2{
 .companyIntroduce{
 	padding: 0 20px;
 	float: left;
-	margin-top: 135px;
+	margin-top: 111px;
 	position: relative;
 }
 .companyIntroAvatar
@@ -2248,7 +2249,7 @@ div.aboutSmart > h2{
 	position: relative;
 }
 .companyInfoContent{
-	padding:20px;
+	padding-bottom:20px;
 	padding-top: 0px;
 }
 .companyInfoContent > .description{
@@ -3287,6 +3288,10 @@ div.aboutSmart > h2{
 	width:100%;
 	margin:0 auto;
 }
+.tableSetting p{
+	font-size:10px;
+	line-height: 16px;
+}
 .tableContent td:nth-child(1){
 	padding-bottom:5px;
 	padding-top:5px;
@@ -3910,22 +3915,30 @@ h6.modal-title{
 	border-radius: 50%;
 }
 #profileBanner .companyName{
-	padding: 49px 0 64px 30px;
+	padding: 5px 0 0px 10px;
 	display: table;
     vertical-align: middle;
     margin: 0 auto;
 }
 #profileBanner .myCompany, #profileEdit .myCompany{
 	float: right;
-	padding: 9px 38px 9px 39px;
+	padding: 6px 12px;
 	background: #1046f1;
 	color: #fff;
-	height: 54px;
+	height: 28px;
 	position: relative;
-	margin-top: 276px;
-	margin-right: 0;
+	margin-top: 11px;
+	margin-right: 20px;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
+}
+#profileEdit .changeCover{
+	margin-top: 172px;
+}
+#profileEdit .myCompany h6 img{
+	margin-bottom: 8px;
+	width: 16px;
+	height: 16px;
 }
 #profileEdit .myCompany{
 	color: #1046f1;
@@ -3938,26 +3951,32 @@ h6.modal-title{
 #profileBanner .myCompany h6 img{
 	filter: brightness(0) invert(1);
 	margin-bottom: 8px;
+	width: 16px;
+	height: 16px;
 }
 .profileLeft{
-	width: 50%;
+	width: 100%;
 	float: left;
+	padding: 0 20px;
+	margin-bottom: 20px;
 }
 .profileLeft > a{
 	width: 100%;
 	text-align: right;
-	height: 24px;
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 1.5;
 	float: right;
-	padding-right: 30px;
+}
+.profileLeft > a > img{
+	height: 16px;
+	margin-bottom: 6px;
 }
 .profileRight{
-	width: 50%;
+	width: 100%;
 	float: left;
 	background: #f8f9fb;
 	border-radius: 16px;
-	padding: 30px 70px 60px 60px;
+	padding: 30px 20px 30px 20px;
 }
 .profileLeftContent{
 	float: left;
@@ -3965,8 +3984,10 @@ h6.modal-title{
 
 .profileLeftContent h7{
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 20px;
 	float: left;
+	font-size: 14px;
+	line-height: 21px;
 }
 .profileLeftContent p{
 	width: 100%;
@@ -3974,6 +3995,8 @@ h6.modal-title{
 	margin-top:10px;
 	margin-bottom: 0;
 	padding-right: 60px;
+	font-size: 12px;
+	line-height: 18px;
 }
 .profileRight .top{
 	margin-bottom: 20px;
@@ -3999,26 +4022,25 @@ h6.modal-title{
 }
 .profileRight > img.imgNameCard{
 	width: 100%;
-	height: 265px;
+	height: auto;
 	float: left;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 }
 div.uploadNameCard{
 	width: 100%;
-	height: 265px;
+	height: auto;
 	float: left;
 	margin-bottom: 30px;
 }
 div.uploadEmailSign{
 	width: 100%;
-	height: 160px;
+	height: auto;
 	float: left;
 	margin-bottom: 30px;
 }
 div.uploadEmailSign button{
 	border-radius: 36px;
-	padding: 0 35px;
-	margin:53px auto;
+	margin:38px auto;
 }
 div.uploadNameCard, div.uploadEmailSign{
 	background: #fff;
@@ -4028,8 +4050,7 @@ div.uploadNameCard, div.uploadEmailSign{
 
 div.uploadNameCard button{
 	border-radius: 36px;
-	padding: 0 35px;
-	margin:100px auto;
+	margin:64px auto;
 }
 .emailSign{
 	float: left;
@@ -4039,9 +4060,14 @@ div.uploadNameCard button{
 .copyToClipboard{
 	cursor: pointer;
 }
+#setting{
+	width: 100%;
+	padding: 0 20px;
+}
 .formControl{
-	width: 570px;
+	width: 100%;
 	margin: 0 auto;
+	float: left;
 }
 
 .input_img {    
@@ -4053,17 +4079,16 @@ div.uploadNameCard button{
     right: 16px;
 }
 #btnSavePass{
-	width: 50%;
-	margin-left: 50%;
-	font-size: 18px;
-	line-height: 27px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 18px;
 }
 .tableSetting td:nth-child(1){
 	width: 85%;
 }
 .tableSetting td:nth-child(2){
 	width: 15%;
-	padding-left: 15px;
+	padding-left: 5px;
 }
 
 .formControl .form-group{
@@ -4077,7 +4102,7 @@ div.uploadNameCard button{
     top: 0;
     left: 0;
     width: 100%;
-    height: 250px;
+    height: 200px;
 }
 #profileEdit .pageTitle{
 	float: left;
@@ -4085,24 +4110,24 @@ div.uploadNameCard button{
 }
 .changeAva{
 	margin: 30px auto 0;
-	width: 170px;
-	height: 170px;
+	width: 100px;
+	height: 100px;
 	background: #000;
 	border-radius: 50%;
 }
 .changeAva img.avaPic{
 	position: relative;
-	width: 170px;
-	height: 170px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 	opacity: 0.4;
 }
 .changeAva img.iconPic{    
 	position: relative;
-    width: 48px;
-    height: 48px;
+    width: 32px;
+    height: 32px;
     margin-left: 0;
-    margin-top: -110px;
+    margin-top: -60px;
     filter: brightness(0) invert(1);
 }
 #editProfileInfo {
@@ -4111,8 +4136,13 @@ div.uploadNameCard button{
     padding-bottom: 10px;
 }
 .formEdit{
-	width: 570px;
+	width: 100%;
+	padding: 0 20px;
 	margin: 0 auto;
+	float: left;
+}
+.formEdit .formControl{
+	margin-top: 30px;
 }
 .formEdit input{
 	border: none;
@@ -4139,19 +4169,20 @@ div.uploadNameCard button{
 	transition: none;
 }
 .form-group .uploadNameCard{
-	width: 100%;
-	height: 270px;
-	float: left;
-	margin-bottom: 30px;
 	display: block;
-	padding-top: 93px;
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 0;
+	padding-bottom: 35px;
+	padding-top: 35px;
 	border:none;
 	border-radius: 26px;
 	background: #f8f9fb;
 }
 .formEdit #btnDone{
-	width: 270px;
-	font-size:18px;
+	width: 60%;
+	font-size:12px;
 	line-height: 1.5;
 }
 .updateAccout{
@@ -4162,15 +4193,17 @@ div.uploadNameCard button{
 .accountLevelInfo{
 	width: 100%;
 	margin-top: 30px;
+	padding: 0 20px;
+	float: left;
 }
 .levelInfoItem{
-	width: 270px;
-	height: 564px;
+	width: 100%;
+	height: auto;
 	border-top: 4px solid #fff;
 	background: #fff;
 	border-radius: 7px;
-	margin-right: 30px;
-	padding: 60px 20px;
+	margin-bottom: 20px;
+	padding: 30px 20px;
 	float: left;
 	color: #333;
 }
@@ -4184,22 +4217,31 @@ div.uploadNameCard button{
 .levelInfoItem.currentLevel h6{
 	color: #1046f1;
 }
-.levelInfoItemTop{
-	height: 390px;
-}
 .levelInfoItem h6{
 	margin: 0;
-	height: 80px;
 	color: #333;
+	margin-bottom: 40px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.levelInfoItemTop p{
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
 }
 .levelInfoItem a{
 	margin: 0;
+	margin-top: 20px;
+	float: left;
+	width: 100%;
 }
 .levelInfoItem a p{
 	border-radius: 26px;
 	padding: 11.5px 0;
 	margin: 0;
 	color: #333;
+	font-size: 12px;
+	line-height: 1.5;
 }
 .levelInfoItem a.finishedLevel p{
 	background: #E8EAEF;
