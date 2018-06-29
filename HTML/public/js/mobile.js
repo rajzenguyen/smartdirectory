@@ -86,14 +86,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	
-	/*
-	$('.customRadio').click(function(){
-		var a = $(this).find('input').attr("name");
-		$( "input[name*='" + a + "']").parent().removeClass('active');
-		$(this).addClass('active');
-	});*/
-
-	
 	$('.checkmark').click(function(){
 		if($(this).parent().hasClass('active'))
 		{
@@ -136,32 +128,6 @@ $(document).ready(function(){
 		$('.dropdownList').show();       
 		//return false;
 	});
-
-});
-$(document).ready(function(){
-	/*if($(document).width() <= 1025)
-	{
-		
-		$('.staContent').slick({
-		dots: false,
-		infinite: false,
-		slidesToShow: 1,
-		centerMode: false,
-		variableWidth: true,
-		arrows: false
-		});
-
-		$('.staContent2').slick({
-			dots: false,
-			infinite: false,
-			slidesToShow: 1,
-			centerMode: false,
-			variableWidth: true,
-			arrows: false
-		});
-
-	}*/
-/*FUnction drag title */
 
 });
 
@@ -225,27 +191,6 @@ $(document).ready(function(){
 			$('.expandBtn').css('left',0);
 			$('.expandBtn').css('transform','rotate(180deg)');
 		}
-/*
-		if(a==true)
-		{
-			$('.expandBtn').removeAttr('style');
-			$('.map').removeClass('hideMap');
-			$('.resultPanel').addClass('hideResult');
-			$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
-			$('.expandBtn').css('right',0);
-			$('.expandBtn').css('transform','rotate(0)');
-		}
-		
-		if(b==true)
-		{
-			$('.expandBtn').removeAttr('style');
-			$('.resultPanel').removeClass('hideResult');
-			$('.map').addClass('hideMap');
-			$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
-			$('.expandBtn').css('left',0);
-			$('.expandBtn').css('transform','rotate(180deg)');
-		}
-		*/
 		
 	});
 	
@@ -490,56 +435,7 @@ $(document).ready(function(){
 			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="17%";
 			
 		}
-		/*if(odd == 0)
-		{
-			for(i = 0; i<numberOfElement;i++){
-				element.getElementsByClassName("catItem")[i].style.width="22%";
-			}
-		}
-		else if(numberOfElement%5==0)
-		{
-			for(i = 0; i<numberOfElement;i++){
-				element.getElementsByClassName("catItem")[i].style.width="17%";
-			}
-		}
-		else if(odd == 1 && numberOfElement < 9){
-			for(i = 0; i<numberOfElement;i++){
-				element.getElementsByClassName("catItem")[i].style.width="17%";
-			}
-		}
-		else if(odd == 1 && numberOfElement >=9)
-		{
-			for(i = 0; i<numberOfElement-4;i++){
-				element.getElementsByClassName("catItem")[i].style.width="22%";
-			}
-			element.getElementsByClassName("catItem")[numberOfElement-5].style.width="18%";
-			element.getElementsByClassName("catItem")[numberOfElement-4].style.width="24%";
-			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="14%";
-			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="14%";
-			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="15%";
-		}
-		else if(odd == 2)
-		{
-			for(i = 0; i<numberOfElement;i++){
-				element.getElementsByClassName("catItem")[i].style.width="17%";
-			}
-			element.getElementsByClassName("catItem")[numberOfElement-7].style.width="33%";
-			element.getElementsByClassName("catItem")[numberOfElement-6].style.width="20%";
-			element.getElementsByClassName("catItem")[numberOfElement-5].style.width="38%";
-			element.getElementsByClassName("catItem")[numberOfElement-4].style.width="18%";
-			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="30%";
-			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="24%";
-			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="15%";
-		}
-		else if(odd == 3)
-		{
-			for(i = 0; i<numberOfElement-3;i++){
-				element.getElementsByClassName("catItem")[i].style.width="22%";
-			}
-			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="33%";
-			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="20%";
-			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="38%";
-		}*/
+		
 	}
 	
 	/*changeWidthItem();
@@ -607,56 +503,7 @@ $(document).ready(function(){
 	var display4 = document.getElementById("count04");
 	var number4 = {param:0};
 	var value4= document.getElementById("count04").getAttribute("value-to");
-	/*
-	var display5 = document.getElementById("id2");
-	var number5 = {param:0};
-	var value5= document.getElementById("id2").getAttribute("value-to");
-	
-	var display6 = document.getElementById("id3");
-	var number6 = {param:0};
-	var value6= document.getElementById("id3").getAttribute("value-to");
-	
-	var display7 = document.getElementById("id4");
-	var number7 = {param:0};
-	var value7= document.getElementById("id4").getAttribute("value-to");
-	
-	var display8 = document.getElementById("id5");
-	var number8 = {param:0};
-	var value8 = document.getElementById("id5").getAttribute("value-to");
-	
-	var duration = 8;
-	
-	function count() {
-	  TweenLite.to(number1, duration, {param:"+=" + value1, roundProps:"param", onUpdate:update1, onComplete:complete, ease:Linear.easeNone});
-	  TweenLite.to(number2, duration, {param:"+=" + value2, roundProps:"param", onUpdate:update2, onComplete:complete, ease:Linear.easeNone});
-	  TweenLite.to(number3, duration, {param:"+=" + value3, roundProps:"param", onUpdate:update3, onComplete:complete, ease:Linear.easeNone});
-	  TweenLite.to(number4, duration, {param:"+=" + value4, roundProps:"param", onUpdate:update4, onComplete:complete, ease:Linear.easeNone});
-	}
-			
-	function update1() {
-	  //display1.innerHTML = number1.param;
-	}	
 		
-	function update2() {
-	  display2.innerHTML = number2.param;
-	}	
-		
-	function update3() {
-	  display3.innerHTML = number3.param;
-	}	
-		
-	function update4() {
-	  display4.innerHTML = number4.param;
-	}
-	
-	
-	function complete() {
-	  //alert("Complete");
-	}
-	
-	count();*/
-	
-	
 	var options = {
 		useEasing: true,
 		useGrouping: true,
@@ -671,43 +518,14 @@ $(document).ready(function(){
 	searched.start();
 	var totalUser = new CountUp('count04',0, value4, 0, 5, options);
 	totalUser.start();
-	/*
-	var id2 = new CountUp('id2',0, value5, 0, 5, options);
-	id2.start();
-	var id3 = new CountUp('id3',0, value6, 0, 5, options);
-	id3.start();
-	var id4 = new CountUp('id4',0, value7, 0, 5, options);
-	id4.start();
-	var id5 = new CountUp('id5',0, value8, 0, 5, options);
-	id5.start();
 	
-	
-	running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
 	
 });
-/*
-$(document).ready(function(){   
 
-	var options = {
-		useEasing: true,
-		useGrouping: true,
-		separator: ',',
-		decimal: '.',
-	};
-	var control = document.getElementsByClassName("counter");
-	var value =control.item(0).getAttribute("value-to");
-	var demo = new CountUp('counter', value, 0, 0, 2.5, options);
-	if (!demo.error) {
-		demo.start();
-	} else {
-		console.error(demo.error);
-	}
-});
-*/
 $(document).ready(function(){
 	$('.imgFB1').click(function(){
 		$("#f1").attr('checked','checked');
