@@ -2610,10 +2610,6 @@ div.aboutSmart > h2{
     top: 10px;
     left: 168px;
 }
-.staItem04 .staImgBG{
-    transform: scale(1, 0.6);
-    bottom: -37px;
-}
 
 .aboutStatisticContent1 > div {
 	border-top:4px solid #06F;
