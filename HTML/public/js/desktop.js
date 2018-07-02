@@ -95,6 +95,16 @@ $(document).ready(function(){
 			$(this).parent().addClass('active');
 		}
 	});
+	$('.customCheck p').click(function(){
+		if($(this).parent().hasClass('active'))
+		{
+			$(this).parent().removeClass('active');
+		}
+		else
+		{
+			$(this).parent().addClass('active');
+		}
+	});
 
 
 	$("#companyPanel").hide();

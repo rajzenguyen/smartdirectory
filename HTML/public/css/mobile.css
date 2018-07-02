@@ -324,6 +324,7 @@ select:-moz-focusring {
 	background:#1046f1;
 	color:#fff;
 	border-radius:40px;
+	z-index: 9999;
 }
 .gottopping:hover{
 	cursor:pointer;
