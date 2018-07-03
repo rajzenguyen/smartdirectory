@@ -2980,10 +2980,16 @@ div.uploadNameCard button{
 }
 .nearBy{
     position: absolute;
+    height: 400px;
+    overflow: none;
+    margin-top: 105px;
+}
+.nearByWrapper{
+	position: relative;
+	float: left;
     width: 400px;
     max-height: 400px;
     overflow-y: auto;
-    margin-top: 105px;
     background: #fff;
     height: auto;
 	padding: 30px;
@@ -3055,4 +3061,12 @@ div.uploadNameCard button{
 .filterPanelNav img{
 	transform: rotate(270deg);
 	opacity: 0.4;
+}
+.searchNearByExpand{
+	padding: 15px;
+	background: #f8f9fb;
+	position: relative;
+	cursor: pointer;
+	z-index: 100;
+	float: left;
 }
