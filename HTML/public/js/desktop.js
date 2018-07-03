@@ -341,6 +341,7 @@ $(document).ready(function(){
 	$('.gottopping').click(function(){
 		jQuery('html,body').animate({scrollTop:0},800);
 	});
+
 	
 	$('.hideNoti').click(function(){
 		$('.hideNoti').parent(this).toggle();

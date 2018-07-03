@@ -1013,9 +1013,9 @@ div.aboutSmart > h2{
 }
 
 .companySlideNav > ul > li{
-    padding: 8px 10px;
-    border: 1px solid #e8eaef;
-    border-top: 2px solid #fff;
+    padding: 8px 15px;
+    border: none;
+    border-bottom: 2px solid #fff;
 	color:#333;
 	margin-left: -4px;
 	background:#fff;
@@ -1027,7 +1027,7 @@ div.aboutSmart > h2{
 	font-family: 'Montserrat-Regular', sans-serif;
 }
 .companySlideNav > ul > li:hover{
-    border-top: 2px solid #1046f1;
+    border-bottom: 2px solid #1046f1;
     color: #1046f1;
 }
 
@@ -1037,7 +1037,7 @@ div.aboutSmart > h2{
 
 
 .companySlideNav > .list-inline > .active{
-    border-top: 2px solid #1046f1 !important;
+    border-bottom: 2px solid #1046f1 !important;
 	color: #1046f1 !important;
 }
 .companySlideNav > .list-inline > .active > a{
@@ -2044,6 +2044,7 @@ div.aboutSmart > h2{
 }
 .connectHeader h4{
 	float:left;
+	width: 100%;
 }
 .connectHeader select{
 	width:270px;
@@ -2976,4 +2977,82 @@ div.uploadNameCard button{
 	width: 100%;
 	float: left;
 	text-align: center;
+}
+.nearBy{
+    position: absolute;
+    width: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-top: 105px;
+    background: #fff;
+    height: auto;
+	padding: 30px;
+	box-shadow: 0px 5px 10px 0px #cedbfd;
+}
+.searchNearBy{
+	padding-bottom: 8px;
+	width: 100%;
+	float: left;
+}
+.searchNearByResult{
+	padding: 8px;
+	width: 100%;
+	float: left;
+}
+.searchNearByResult table{
+	margin-left: 12px;
+}
+.searchNearByResult table tr td{
+	vertical-align: top;
+	padding: 8px 0px;
+}
+.nearByLocation{
+	float: left;
+	width: 100%;
+}
+.nearByLocation > p{
+	margin-left: 20px;
+}
+.nearByLocation .panel-heading{
+	background: #fff;
+	border: none;
+	border-top: 2px solid #e2e2e2;
+	color: #00b79d !important;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	padding-top: 20px;
+	padding-bottom: 14px;
+	padding-left: 20px;
+}
+.nearByLocation .panel:nth-child(2n+1) .panel-heading{
+	color: #1046f1 !important;
+}
+.nearByLocation .panel-heading img{
+	float: right;
+	transform: rotate(270deg);
+}
+.nearByLocation .panel-heading a.collapsed img{
+	transform: rotate(270deg);
+}
+.nearByLocation .panel-heading a img{
+	transform: rotate(90deg);
+}
+.nearByLocation .panel-body, .nearByLocation .panel-default, .nearByLocation .panel-collapse{
+	border: none !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.nearByLocation .panel-body{
+	padding-left: 20px;
+}
+.nearByLocation .panel-group .panel + .panel {
+    margin-top: 0px;
+}
+.nearByLocation .panel-body table tr td{
+	vertical-align: top;
+	padding: 10px 0px;
+}
+.filterPanelNav img{
+	transform: rotate(270deg);
+	opacity: 0.4;
 }
