@@ -5,11 +5,10 @@ $(document).ready(function(){
 		if(a=='#connection')
 		{
 			$('.slick-for').slick({
-				prevArrow:$('.navLeftSlick2'),
-				nextArrow:$('.navRightSlick2'),
+				arrows:false,
 				autoplay: true,
 				centerMode: false,
-				slidesToShow: 3,
+				slidesToShow: 1,
 				variableWidth:true,
 				responsive: [
 				  {
@@ -29,6 +28,15 @@ $(document).ready(function(){
 				  }
 				]
 			});	
+			$('.blockContentSC').slick({
+			  prevArrow:$('.arrowPrev2'),
+			  nextArrow:$('.arrowNext2'),
+			  autoplay: true,
+			  infinite: true,
+			  centerMode: false,
+			  variableWidth: false,
+			  slidesToShow: 1
+			});
 		}
 	});
 	
@@ -71,6 +79,7 @@ $(document).ready(function(){
 		variableWidth: false,
 		slidesToShow: 1
 	  });
+
   
 	  $('.blockCustomer').slick({
 		prevArrow:$('.arrowPrev2'),
@@ -87,6 +96,18 @@ $(document).ready(function(){
 $(document).ready(function(){
 	
 	$('.checkmark').click(function(){
+		if($(this).parent().hasClass('active'))
+		{
+			$(this).parent().removeClass('active');
+		}
+		else
+		{
+			$(this).parent().addClass('active');
+		}
+	});
+
+	
+	$('.customCheck p').click(function(){
 		if($(this).parent().hasClass('active'))
 		{
 			$(this).parent().removeClass('active');
