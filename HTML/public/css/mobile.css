@@ -400,8 +400,8 @@ label{
 	border-radius:40px;
 }
 .notification{
-	width:200px;
-	padding:20px;
+	width:145px;
+	padding:10px;
 	right:20px;
 	bottom:100px;
 	background:#fff;
@@ -1662,7 +1662,7 @@ button.close:hover {
 	vertical-align:middle;
 }
 div.aboutSmart > h2{
-	margin:60px 20px 30px 20px;
+	margin:20px 20px 0px 20px;
 }
 .aboutSmartContainer{
     padding:0 10px;
@@ -1671,11 +1671,11 @@ div.aboutSmart > h2{
 }
 .aboutSmartItem{
 	width:100%;
-    height:auto;
     margin:0 0 60px 0;
     position: relative;
     float: left;
-    padding: 10px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
+	height: 416px;
 }
 .aboutSmartContent{
 	padding:49px 20px 20px 20px;
@@ -1706,11 +1706,13 @@ div.aboutSmart > h2{
 }
 .aboutSmartContent p{
 	padding-top:0;
-	margin:20px 20px 40px 20px;
+	margin:20px;
 	font-size:18px;
 	line-height:27px;
 	color:#000;
 	font-family: 'Montserrat-Light', sans-serif;
+	height: 146px;
+	overflow: hidden;
 }
 .aboutStatistic{
 	background:#f8f9fb;
@@ -1882,7 +1884,8 @@ div.aboutSmart > h2{
 
 #ourCustomer img,#ourPartner img{
 	width:100%;
-	padding:80px 70px;
+	padding:20px;
+	height: 70px;
 }
 .reviewDiv{
 	max-width:96%;
@@ -2277,6 +2280,9 @@ div.aboutSmart > h2{
 }
 .slick-list{
 	margin:20px;
+}
+.topNavHome .searchBox{
+	display: none;
 }
 .topNavWhite{
 	margin-top:0px;
