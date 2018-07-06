@@ -2,31 +2,35 @@
 /* CSS Document */
 
 @font-face {
-font-family: 'Montserrat-Regular';
-font-weight:normal;
-font-style: normal;
-src: local('Montserrat-Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.ttf) format('truetype');
-}
-@font-face {
-font-family: 'Montserrat-Bold';
-font-weight:bold;
-font-style: normal;
-src: local('Montserrat-Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
-}
-@font-face {
-font-family: 'Montserrat-Light';
-font-weight:300;
-font-style: normal;
-src: local('Montserrat-Light'), local('Montserrat-Light'), url(../fonts/Montserrat-Light.ttf) format('truetype');
+	font-family: 'Montserrat-Medium';
+	font-weight:normal;
+	font-style: normal;
+	src: local('Montserrat-Medium'), local('Montserrat-Medium'), url(../fonts/Montserrat-Medium.ttf) format('truetype');
+	}
+	@font-face {
+	font-family: 'Montserrat-Bold';
+	font-weight:bold;
+	font-style: normal;
+	src: local('Montserrat-Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
+	}
+	@font-face {
+	font-family: 'Montserrat-Light';
+	font-weight:300;
+	font-style: normal;
+	src: local('Montserrat-Light'), local('Montserrat-Light'), url(../fonts/Montserrat-Light.ttf) format('truetype');
+	}
+html{
+	font-size: 10px;
 }
 body{
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 	outline:none !important;
 	font-stretch:normal;
 	font-style:normal;
 	-webkit-transition: ease-in 0.2s !important;
 	-o-transition: ease-in 0.2s !important;
 	transition: ease-in 0.2s !important;
+	line-height: 1.5 !important;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
@@ -78,59 +82,59 @@ h1{
 	line-height:80px;
 }
 h2{
-	font-size:48px;
-	line-height:60px;
+	font-size:24px;
+	line-height:1.5;
 }
 h3{
-	font-size:40px;
-	line-height:50px;
+	font-size:18px;
+	line-height:1.5;
 }
 h4{
-	font-size:36px;
-	line-height:45px;
+	font-size:16px;
+	line-height:1.5;
 }
 h5{
-	font-size:32px;
-	line-height:40px;
+	font-size:14px;
+	line-height:1.5;
 }
 h6{
-	font-size:24px;
-	line-height:36px;
+	font-size:12px;
+	line-height:1.5;
 }
 h7{
-	font-size:18px;
-	line-height:27px;
+	font-size:12px;
+	line-height:1.5;
 }
 .fontsize24{
 	font-size:24px !important;
-	line-height:36px !important;
+	line-height:1.5 !important;
 }
 .fontsize18{
 	font-size:18px !important;
-	line-height:27px !important;
+	line-height:1.5 !important;
 }
 .fontsize16{
 	font-size:16px !important;
-	line-height:24px !important;
+	line-height:1.5 !important;
 }
 .fontsize14{
 	font-size:14px !important;
-	line-height:21px !important;
+	line-height:1.5 !important;
 }
 .fontsize12{
 	font-size:12px !important;
-	line-height:18px !important;
+	line-height:1.5 !important;
 }
 .fontsize10{
 	font-size:10px !important;
-	line-height:16px !important;
+	line-height:1.5 !important;
 }
 a{
 	text-decoration:none !important;
 }
 p{
 	font-size:12px;
-	line-height:18px;
+	line-height:1.5;
 	margin-bottom: 0;
 }
 ul{
@@ -139,7 +143,7 @@ ul{
 }
 p.large{
 	font-size:18px;
-	line-height:27px;
+	line-height:1.5;
 }
 p.small{
 	font-size:14px;
@@ -468,7 +472,6 @@ label{
 .fbCategory > .active{
 	background:#1046f1;
 	color:#fff;
-	box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
 }
 .fbCategory > .active > a{
 	color:#fff;
@@ -504,7 +507,6 @@ label{
 	background:#6f93f9;
 	border:1px solid #1046f1;
 	color:#fff !important;
-	box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
 }
 .fbCategory > li:hover > a{
 	color:#fff !important;
@@ -539,6 +541,7 @@ label{
 }
 .fbSelect .nav-tabs, .fbCat .nav-tabs {
 	border:none;
+	margin-top: 5px;
 }
 #feedback .modal-footer{
 	border:none;    
@@ -552,7 +555,7 @@ label{
 	background: #6f93f9;
 	color: #fff;
 	padding: 7px 0;
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 #feedback .finishButton:hover{
 	background: #1046f1;
@@ -886,7 +889,7 @@ label{
 	font-family: 'Montserrat-Light', sans-serif;
 }
 .font-regular{
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .font-bold{
 	font-family: 'Montserrat-Bold', sans-serif;
@@ -1102,7 +1105,7 @@ button.close:hover {
 	height: auto;
 	overflow-y: auto;
 	max-width: 350px;
-	color: #cccccc;
+	color: #666;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -1389,6 +1392,9 @@ button.close:hover {
 .searchInfo > .para01{
 	height:54px;
 	margin:20px auto 66px auto;
+	font-size: 10px;
+	line-height: 16px;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .searchInfo > .para02{
 	height:63px;
@@ -1575,7 +1581,7 @@ button.close:hover {
 }
 .catItem h6{
 	clear:both;
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 	font-size:12px;
 	line-height:18px;
 }
@@ -1660,9 +1666,13 @@ button.close:hover {
 .aboutVisionNavItemi{
 	margin:20px 0;
 	vertical-align:middle;
+	font-size: 18px;
+	line-height: 27px;
 }
 div.aboutSmart > h2{
 	margin:20px 20px 0px 20px;
+	font-size: 18px;
+	line-height: 27px;
 }
 .aboutSmartContainer{
     padding:0 10px;
@@ -1695,20 +1705,22 @@ div.aboutSmart > h2{
 	margin-top:20px;
 	margin-bottom:0px;
 	text-transform:uppercase;
+	font-size: 24px;
+	line-height: 36px;
 }
 .aboutSmartContent h5{
 	padding-top:0;
 	margin-top:10px;
 	margin-bottom:20px;
-	font-size:18px;
-	line-height:27px;
+	font-size: 14px;
+	line-height: 21px;
 	color:#000;
 }
 .aboutSmartContent p{
 	padding-top:0;
 	margin:20px;
-	font-size:18px;
-	line-height:27px;
+	font-size:14px;
+	line-height:21px;
 	color:#000;
 	font-family: 'Montserrat-Light', sans-serif;
 	height: 146px;
@@ -1761,17 +1773,21 @@ div.aboutSmart > h2{
 	text-transform:uppercase;
 	float:left;
 	margin:10px 0px 0px 10px;
+	font-size: 24px;
+	line-height: 1.5;
 }
 .aboutStatisticContent > h5{
 	padding-top:0px;
 	padding-bottom:0px;
 	margin:10px 0px 0px 10px;
-	font-size:18px;
+	font-size:14px;
+	line-height: 1.5;
 	color:#ccc;
 	text-transform:uppercase;
 	float:left;
 	text-align:left;
 	width: calc(100% - 30px);
+
 }
 .aboutStatisticContent > img{
 	float:right;
@@ -1827,7 +1843,7 @@ div.aboutSmart > h2{
 	margin-left: 5px;
 }
 .customerNav h7{
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 	border-bottom:1px solid #e8eaef;
 	border-left:1px solid #e8eaef;
 	border-right:1px solid #e8eaef;
@@ -1924,7 +1940,8 @@ div.aboutSmart > h2{
 	font-size:12px;
 	line-height:18px;
 	vertical-align:middle;
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
+	font-weight: normal;
 	color:#333;
 	float:left;
 }
@@ -2027,6 +2044,10 @@ div.aboutSmart > h2{
 .footerLeftContent > p{
 	vertical-align:middle;
 	margin:0 0 20px 0;
+	font-size: 10px;
+	line-height: 16px;
+	color: #333;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .footerLeftContent img{
 	filter: invert(.5) sepia(.5) saturate(1) grayscale(1);
@@ -2040,6 +2061,9 @@ div.aboutSmart > h2{
 .footerRightContent a{
 	padding: 0 5px 5px 5px;
 	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 18px;
+	color: #333;
 }
 .linkWith a img{
 	filter: grayscale(0);
@@ -2099,7 +2123,7 @@ div.aboutSmart > h2{
 	background: #6f93f9;
 	color: #fff;
 	padding: 7px 0;
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 #forgot .nextButton:hover, #reset .nextButton:hover{
 	background: #1046f1;
@@ -2142,6 +2166,11 @@ div.aboutSmart > h2{
 }
 .companyName > h6{
 	margin:0;
+	font-size: 16px;
+}
+#profileBanner .companyName > p{
+	font-size: 10px;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .companyName > h6 > img{
 	width:14px;
@@ -2159,7 +2188,7 @@ div.aboutSmart > h2{
 	text-align:center;
 }
 .companyName > .messenger{
-	padding:1px 15px;
+	padding:2px 15px;
 	background:#6f93f9;
 	color:#fff;
 	text-align:center;
@@ -2171,9 +2200,9 @@ div.aboutSmart > h2{
 }
 .companyName > .messenger img{
 	width: 12px;
-	height: 12px;
+	height: 10px;
 	margin-top: 3px;
-	margin-right: 5px;
+	margin-right: 0;
 	filter: brightness(0) invert(1);
 	float: left;
 }
@@ -2200,7 +2229,7 @@ div.aboutSmart > h2{
     border: 0px solid #e8eaef;
     border-bottom: 2px solid #fff;
 	color:#333;
-	margin-left: -4px;
+	margin-left: 0;
 	background:#fff;
 }
 .companySlideNav ul li:nth-child(1){
@@ -2210,7 +2239,7 @@ div.aboutSmart > h2{
 	color:#333;
 	font-size:12px;
 	line-height:18px;
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .companySlideNav  ul  li:hover{
     border-bottom: 2px solid #1046f1;
@@ -2220,7 +2249,6 @@ div.aboutSmart > h2{
 .companySlideNav ul li:hover a{
     color: #1046f1;
 }
-
 
 .companySlideNav .list-inline .active{
     border-bottom: 2px solid #1046f1 !important;
@@ -2362,7 +2390,7 @@ div.aboutSmart > h2{
 	float:left;
 }
 .rightColTerm p{
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 	font-size: 12px;
 	line-height: 1.5;
 	width:100%;
@@ -2504,7 +2532,7 @@ div.aboutSmart > h2{
 }
 
 .titleSta h7{
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
     font-size: 14px;
     line-height: 21px;
 }
@@ -2619,7 +2647,9 @@ div.aboutSmart > h2{
     top: 10px;
     left: 168px;
 }
-
+.staItem04 .staImgBG{
+	height: 122px;
+}
 .aboutStatisticContent1 > div {
 	border-top:4px solid #06F;
 	width:60px;
@@ -2700,7 +2730,7 @@ div.aboutSmart > h2{
 	color: #fff;
 	padding: 7px 0;
 	margin:20px 0px;
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .contactRight .btnSubmit:hover{
 	background: #1046f1
@@ -2768,7 +2798,7 @@ div.aboutSmart > h2{
 	width:80%;
 }
 .notiItemContent h7{
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 	font-size:12px;
 	line-height:18px;
 	font-weight:500;
@@ -2905,6 +2935,9 @@ div.aboutSmart > h2{
 	width:100%;
 	float:left;
 }
+.resultIngo p{
+	font-family: 'Montserrat-Medium', sans-serif;
+}
 .pageNav a.act{
 	background:#6F93F9;
 	border-radius:50%;
@@ -2964,7 +2997,7 @@ div.aboutSmart > h2{
 	max-height: 80px;
 }
 .resultItemContent{
-	width:calc(100% - 110px);
+	width:calc(100% - 130px);
 	float:left;
 	padding:10px 0px 10px 10px;
 	vertical-align:middle;
@@ -2986,13 +3019,23 @@ div.aboutSmart > h2{
 }
 .resultItemContent h7{
 	margin-bottom:2px;
+	font-size: 18px;
+	line-height: 27px;
 }
 
 .resultItemContent p.pAdd{
 	margin:0px;
+	font-family: 'Montserrat-Light', sans-serif;
+	font-size: 10px;
+	line-height: 16px;
+	color: #666;
 }
 .resultItemContent p.pFull{
 	margin:0px !important;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #333;
 }
 .resultItemView{
     width: 50px;
@@ -3152,7 +3195,7 @@ div.aboutSmart > h2{
 	float:right;
 }
 .expandBtn{
-	padding:15px;
+	padding:10px;
 	background:#f8f9fb;
 	position:absolute;
 	cursor:pointer;
@@ -3231,7 +3274,7 @@ div.aboutSmart > h2{
 	font-weight:bold;
 }
 .customCard.collapsed{
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 	font-weight:normal;
 }
 #content .mainContent .card-body > p{
@@ -3239,7 +3282,7 @@ div.aboutSmart > h2{
 	margin-bottom:10px;
 	font-size: 10px;
 	line-height: 16px;
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .basicContent{
 	margin: 30px 0px 0px 0px;
@@ -3331,6 +3374,12 @@ div.aboutSmart > h2{
 	height:16px;
 	vertical-align: sub;
 }
+.basicContent .tableContent tr td:nth-child(2) h7{
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.basicContent .tableContent tr td:nth-child(2) h7 a{
+	font-family: 'Montserrat-Bold', sans-serif;
+}
 .connectContent{
 	width:100%;
 	margin-bottom:20px;
@@ -3354,12 +3403,24 @@ div.aboutSmart > h2{
 	float:left;
 	font-size: 14px;
 	line-height: 21px;
+	font-family: 'Montserrat-Light', sans-serif;
 }
 
 .connectBody{
 	width:100%;
 	float:left;
 	margin-top:10px;
+}
+.tableCategory td:nth-child(1){
+	width: 30%;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+.tableCategory td:nth-child(2) h7{
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.tableCategory td:nth-child(2){
+	width: 70%;
+	font-family: 'Montserrat-Light', sans-serif;
 }
 .connectBody .tableCategory h7{
 	font-size: 14px;
@@ -3369,6 +3430,9 @@ div.aboutSmart > h2{
 	width:100%;
 	padding-right:0;
 	float:left;
+}
+.connectBodyContent h7{
+	font-family: 'Montserrat-Light', sans-serif;
 }
 .connectBodyContent:last-child{
 	padding-right:0;
@@ -3428,6 +3492,7 @@ div.aboutSmart > h2{
 .connectBodyContentItemContent > p{
 	font-size: 10px;
 	line-height: 1.5;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .connectBodyContentItemContent a{
 	color: #000;
@@ -3459,6 +3524,18 @@ div.aboutSmart > h2{
 	width:50%;
 	float:left;
 	margin-bottom:20px;
+}
+.listSubItem p {
+    color: #666;
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+}
+.listSubItem p:nth-child(1) {
+    color: #333;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
 }
 .blockSC{
 	margin-bottom: 10px;
@@ -3493,16 +3570,19 @@ div.aboutSmart > h2{
 }
 .tagCode{
 	border-radius:35px;
-	padding:9px 15px;
+	padding:5px 13px;
 	margin-right:10px;
 	margin-bottom:10px;
 	background:#e8eaef;
 	display:table;
-	font-size: 12px;
+	font-size: 10px;
 	line-height: 1.5;
 	float:left;
 }
 .tagCode a{
+	color:#666;
+}
+.tagCode:hover a{
 	color:#000;
 }
 .item21{
@@ -3532,6 +3612,15 @@ div.aboutSmart > h2{
 .itemRelatedCompany .itemRelatedContent > p{
 	margin:0;
 	padding:0;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.itemRelatedCompany .itemRelatedContent > p:nth-child(2){
+	font-size: 10px;
+	line-height: 1.5;
+	font-family: 'Montserrat-Light', sans-serif;
+	color: #666;
 }
 .itemRelatedCompany .itemRelatedContent > div{
 	border:none;
@@ -3560,6 +3649,7 @@ div.aboutSmart > h2{
 	height: 54px;
 	overflow: hidden;
 	text-align: justify;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .basicIntroDesc .seemore{
 	height: auto;
@@ -3567,6 +3657,8 @@ div.aboutSmart > h2{
 	float: left;
 	font-size: 12px;
 	line-height: 18px;
+	color: #1046f1 !important;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 .item22{
 	width:130px;
@@ -3637,6 +3729,9 @@ div.aboutSmart > h2{
 .featureCategory2 .connectHeader{
 	margin-bottom: 20px;
 }
+.featureCategory2 h7{
+	font-family: 'Montserrat-Light', sans-serif;
+}
 .tableCategory td{
 	vertical-align: middle;
 	padding-bottom: 10px;
@@ -3673,6 +3768,7 @@ div.aboutSmart > h2{
 	margin: auto auto 5px 20px;
 	font-size: 12px;
 	line-height: 18px;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 .codeSelectItem div{
 	width: 100%;
@@ -3718,6 +3814,15 @@ div.aboutSmart > h2{
 	font-size: 14px;
 	line-height: 21px;
 }
+.featureServicesItem .featureServicesItemContent h7:nth-child(1){
+	float: left;
+	color: #1046f1;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+.featureServicesItem .featureServicesItemContent h7:nth-child(2){
+	float: left;
+	font-family: 'Montserrat-Light', sans-serif;
+}
 .featureCertItem{
 	width: 100%;
 	float: left;
@@ -3737,6 +3842,10 @@ div.aboutSmart > h2{
 .featureCertItem .featureCertItemContent p{
 	margin: 0;
 	padding: 0;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #666 !important;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .featureCertItemYear{
 	width: 53px;
@@ -3779,9 +3888,22 @@ div.aboutSmart > h2{
 }
 .featureProductItem .featureProductItemContent p{
 	margin-top: 10px;
+	font-size: 12px;
+	line-height: 1.5;
+	font-family: 'Montserrat-Light', sans-serif;
+	color: #777;
 }
 .featureProductItem .featureProductItemContent h7 a{
 	color: #333;
+	font-size: 14px;
+	line-height: 1.5;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.featureProductItemContent > a{
+	font-size: 12px;
+	line-height: 1.5;
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 .featureProductItemContent img{
 	width: 24px;
@@ -3793,6 +3915,18 @@ div.aboutSmart > h2{
 	width: 90%;
 	height: auto;
 	margin-top: 10px;
+}
+.productDetailPanel .rightContent p{
+	color: #666;
+	font-family: 'Montserrat-Medium', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.productDetailPanel .rightContent h4{
+	font-family: 'Montserrat-Medium', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
 }
 .productDetailPanel .modal-content{
 	width: 100%;
@@ -3817,7 +3951,7 @@ div.aboutSmart > h2{
 .rightContent{
 	width: 100%;
 	float: left;
-	padding: 10px 20px 0 20px;
+	padding: 10px 20px 20px 20px;
 	text-align: center;
 }
 .rightContent p{
@@ -3897,9 +4031,21 @@ div.aboutSmart > h2{
 	width: 90%;
 	margin-top: 10px;
 }
-#industrialPark .modal-dialog h6{
+#industrialPark .modal-dialog h6, #association .modal-dialog h6{
 	margin-top: 30px;
-
+	font-size: 18px;
+	line-height: 27px;
+}
+#industrialPark .modal-dialog h4, #association .modal-dialog h4{
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+}
+#industrialPark .modal-dialog p, #association .modal-dialog p{
+	color: #333;
+	font-family: 'Montserrat-Medium', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
 }
 #industrialPark .modal-dialog img{
 	border-radius: 6px;
@@ -3970,6 +4116,8 @@ h6.modal-title{
 #profileEdit .myCompany{
 	color: #1046f1;
 	background: #fff;
+	font-size: 12px;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 #profileBanner .myCompany h6, #profileEdit .myCompany h6{
 	margin: 0;
@@ -4005,6 +4153,13 @@ h6.modal-title{
 	border-radius: 16px;
 	padding: 30px 20px 30px 20px;
 }
+.profileRight .top h7{
+	font-size: 14px;
+}
+.profileRight .top a{
+	font-size: 12px;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
 .profileLeftContent{
 	float: left;
 }
@@ -4021,7 +4176,7 @@ h6.modal-title{
 	float: left;
 	margin-top:10px;
 	margin-bottom: 0;
-	padding-right: 60px;
+	padding-right: 0;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -4090,6 +4245,10 @@ div.uploadNameCard button{
 #setting{
 	width: 100%;
 	padding: 0 20px;
+}
+#setting > .container > p{
+	font-size: 12px;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .formControl{
 	width: 100%;
@@ -4313,7 +4472,7 @@ div.uploadNameCard button{
     background: #6f93f9;
     color: #fff;
     padding: 7px 0;
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 #reportCompany .modal-footer {
     border: none;
@@ -4350,7 +4509,7 @@ div.uploadNameCard button{
     background: #6f93f9;
     color: #fff;
     padding: 7px 0;
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Montserrat-Medium', sans-serif;
 }
 #contactCompany .modal-footer {
     border: none;
@@ -4435,12 +4594,12 @@ div.uploadNameCard button{
 }
 
 .codeSlideNav > ul > li{
-	width: 33%;
-    padding: 4px 10px;
-    border: 1px solid #e8eaef;
-    border-top: 2px solid #fff;
+	width: auto;
+    padding: 5px 15px;
+    border: none;
+    border-bottom: 2px solid #fff;
 	color:#333;
-	margin-left: -4px;
+	margin-left: 0;
 	background:#fff;
 	text-align: center;
 }
@@ -4451,10 +4610,10 @@ div.uploadNameCard button{
 	color:#333;
 	font-size:12px;
 	line-height:18px;
-	font-family: 'Montserrat-Regular', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .codeSlideNav > ul > li:hover{
-    border-top: 2px solid #00b79d;
+    border-bottom: 2px solid #00b79d;
     color: #00b79d;
 }
 
@@ -4464,7 +4623,7 @@ div.uploadNameCard button{
 
 
 .codeSlideNav > .list-inline > .active{
-    border-top: 2px solid #00b79d !important;
+    border-bottom: 2px solid #00b79d !important;
 	color: #00b79d !important;
 }
 .codeSlideNav > .list-inline > .active > a{
@@ -4497,6 +4656,15 @@ div.uploadNameCard button{
 .searchNearByResult table tr td{
 	vertical-align: top;
 	padding: 8px 0px;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #333;
+}
+.searchNearByResult table tr td:nth-child(1){
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.searchNearByResult table tr td:nth-child(2){
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 .nearByLocation{
 	float: left;
@@ -4504,6 +4672,9 @@ div.uploadNameCard button{
 }
 .nearByLocation > p{
 	margin-left: 0px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 12px;
+	color: #333;
 }
 .nearByLocation .panel-heading{
 	background: #fff;
@@ -4515,6 +4686,10 @@ div.uploadNameCard button{
 	padding-top: 10px;
 	padding-bottom: 12px;
 	padding-left: 0px;
+}
+.nearByLocation .panel-heading a{
+	font-family: 'Montserrat-Medium', sans-serif;
+	font-size: 12px;
 }
 .nearByLocation .panel:nth-child(2n+1) .panel-heading{
 	color: #1046f1 !important;
@@ -4543,6 +4718,15 @@ div.uploadNameCard button{
 .nearByLocation .panel-body table tr td{
 	vertical-align: top;
 	padding: 10px 3px;
+	font-size: 12px;
+	line-height: 1.5;
+	color: #333;
+}
+.nearByLocation .panel-body table tr td:nth-child(1){
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.nearByLocation .panel-body table tr td:nth-child(2){
+	font-family: 'Montserrat-Bold', sans-serif;
 }
 .filterPanelNav img{
 	transform: rotate(270deg);
@@ -4559,4 +4743,19 @@ div.uploadNameCard button{
 .slideOthers .slick-for{
 	width: 100%;
 	float: left;
+}
+.colFooter p:nth-child(1){
+	color: #333;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+.colFooter p:nth-child(2){
+	color: #666;
+	font-family: 'Montserrat-Light', sans-serif;    
+	font-size: 10px;
+    line-height: 16px;
+}
+#content .container > h7{
+	font-family: 'Montserrat-Light', sans-serif;
 }

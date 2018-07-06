@@ -52,15 +52,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	   
-	$('.reviewSlick').slick({
-		dots: false,
-		autoplay: true,
-		infinite: true,
-		centerMode: false,
-		variableWidth: false,
-		arrows: false,
-		slidesToShow: 1
-	  });   
+
 
 	$('.aboutSmartContainer').slick({
 		autoplay: false,
@@ -70,26 +62,87 @@ $(document).ready(function(){
 		slidesToShow: 1
 	  });
 
+
 	  $('.blockPartner').slick({
 		prevArrow:$('.arrowPrev'),
 		nextArrow:$('.arrowNext'),
 		autoplay: true,
-		infinite: false,
+		infinite: true,
 		centerMode: false,
 		variableWidth: false,
 		slidesToShow: 1
-	  });
+	});
+
+	$('.customerNav a').click(function(){
+		var a = $(this).attr("href");
+		if(a == '#ourCustomer')
+		{
+			if($('.blockPartner').hasClass('slick-initialized'))
+			{
+				$('.blockPartner').slick('unslick');
+			}
+			if($('.reviewSlick').hasClass('slick-initialized'))
+			{
+				$('.reviewSlick').slick('unslick');
+			}
+
+			$('.blockCustomer').slick({
+				prevArrow:$('.arrowPrev2'),
+				nextArrow:$('.arrowNext2'),
+				autoplay: true,
+				infinite: true,
+				centerMode: false,
+				variableWidth: false,
+				slidesToShow: 1
+			  });
+		}
+		else if(a == '#ourReview')
+		{
+			if($('.blockPartner').hasClass('slick-initialized'))
+			{
+				$('.blockPartner').slick('unslick');
+			}
+			if($('.blockCustomer').hasClass('slick-initialized'))
+			{
+				$('.blockCustomer').slick('unslick');
+			}
+
+			$('.reviewSlick').slick({
+				dots: false,
+				autoplay: true,
+				infinite: true,
+				centerMode: false,
+				variableWidth: false,
+				arrows: false,
+				slidesToShow: 1
+			});   
+		}
+		else if(a == '#ourPartner')
+		{
+			if($('.reviewSlick').hasClass('slick-initialized'))
+			{
+				$('.reviewSlick').slick('unslick');
+			}
+			if($('.blockCustomer').hasClass('slick-initialized'))
+			{
+				$('.blockCustomer').slick('unslick');
+			}
+			$('.blockPartner').slick({
+				prevArrow:$('.arrowPrev'),
+				nextArrow:$('.arrowNext'),
+				autoplay: true,
+				infinite: true,
+				centerMode: false,
+				variableWidth: false,
+				slidesToShow: 1
+			});
+		}
+	});
+
+
 
   
-	  $('.blockCustomer').slick({
-		prevArrow:$('.arrowPrev2'),
-		nextArrow:$('.arrowNext2'),
-		autoplay: true,
-		infinite: false,
-		centerMode: false,
-		variableWidth: false,
-		slidesToShow: 1
-	  });
+
 		
 });
 
@@ -197,19 +250,19 @@ $(document).ready(function(){
 	$('.expandBtn').click(function(){
 		var a = $(".map").css('margin-left');
 		var b = "-" + $(document).width() + "px";
-		$('.expandBtn').removeAttr('style');
+		/*$('.expandBtn').removeAttr('style');*/
 		if(a==b)
 		{
 			$(".map").animate({marginLeft: "0"});
-			$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
-			$('.expandBtn').css('right',0);
+			/*$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
+			$('.expandBtn').css('right',0);*/
 			$('.expandBtn').css('transform','rotate(0)');
 		}
 		else
 		{
 			$(".map").animate({marginLeft: b});
-			$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
-			$('.expandBtn').css('left',0);
+			/*$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
+			$('.expandBtn').css('left',0);*/
 			$('.expandBtn').css('transform','rotate(180deg)');
 		}
 		
@@ -665,7 +718,7 @@ $(document).ready(function(){
 		var a = $(this).children("a").attr("data-target");
 
 		$(a + ' .topImgGalleryProduct').slick({
-			autoplay: false,
+			autoplay: true,
 			centerMode: false,
 			arrows:false,
 			slidesToShow: 1,
