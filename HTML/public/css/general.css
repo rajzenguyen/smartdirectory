@@ -27,22 +27,23 @@ body{
 	outline:none !important;
 	font-stretch:normal;
 	font-style:normal;
+	line-height: 1.5 !important;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
-  line-height:24px;
+  line-height:1.5;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   font-family: 'Montserrat-Light', sans-serif;
-  line-height:24px;
+  line-height:1.5;
 }
 :-ms-input-placeholder { /* IE 10+ */
   font-family: 'Montserrat-Light', sans-serif;
-  line-height:24px;
+  line-height:1.5;
 }
 :-moz-placeholder { /* Firefox 18- */
   font-family: 'Montserrat-Light', sans-serif;
-  line-height:24px;
+  line-height:1.5;
 }
 :focus{
 	outline:none !important;
@@ -71,31 +72,31 @@ h1,h2,h3,h4,h5,h6,h7{
 }
 h1{
 	font-size:64px;
-	line-height:80px;
+	line-height:1.5;
 }
 h2{
 	font-size:48px;
-	line-height:60px;
+	line-height:1.5;
 }
 h3{
 	font-size:40px;
-	line-height:50px;
+	line-height:1.5;
 }
 h4{
 	font-size:36px;
-	line-height:45px;
+	line-height:1.5;
 }
 h5{
 	font-size:32px;
-	line-height:40px;
+	line-height:1.5;
 }
 h6{
 	font-size:24px;
-	line-height:36px;
+	line-height:1.5;
 }
 h7{
 	font-size:18px;
-	line-height:27px;
+	line-height:1.5;
 }
 .fontsize24{
 	font-size:24px !important;
@@ -118,7 +119,7 @@ a{
 }
 p{
 	font-size:16px;
-	line-height:24px;
+	line-height:1.5;
 }
 ul{
 	list-style:none;
@@ -126,19 +127,19 @@ ul{
 }
 p.large{
 	font-size:18px;
-	line-height:27px;
+	line-height:1.5;
 }
 p.small{
 	font-size:14px;
-	line-height:21px;
+	line-height:1.5;
 }
 p.ssmall{
 	font-size:12px;
-	line-height:18px;
+	line-height:1.5;
 }
 p.usmall{
 	font-size:10px;
-	line-height:16px;
+	line-height:1.5;
 }
 ul > li{
 	padding:10px 25px;
@@ -160,7 +161,7 @@ input {
      outline:none; 
      -webkit-box-shadow:none;
 	 height:54px;
-	 line-height:24px;
+	 line-height:1.5;
 	 -webkit-box-shadow: none !important;
 	 box-shadow: none !important;
 	 -webkit-transition: ease-in 0.2s !important;
@@ -177,7 +178,7 @@ button {
     -webkit-box-shadow:none;
 	height:54px;
 	font-size: 18px;
-	line-height:27px;
+	line-height:1.5;
 	transition:ease-in 0.2s;
 }
 
@@ -197,7 +198,7 @@ button.iconNextInput{
 }
 button.form-control {
 	 font-size: 18px;
-	 line-height:27px;
+	 line-height:1.5;
 }
 textarea{
 	border:1px solid #e8eaef !important;
@@ -274,7 +275,7 @@ select:focus {
 }
 select option{
 	font-size:16px;
-	line-height:24px;
+	line-height:1.5;
 }
 
 
@@ -303,7 +304,7 @@ select:-moz-focusring {
 .gottopping > a{
 	padding:16px 20px;
 	font-size:20px;
-	bottom:15px;
+	bottom:70px;
 	right:15px;
 	position:fixed;
 	background:#1046f1;
@@ -463,7 +464,7 @@ label{
 	text-align:center;
 	border-radius:15px;
 	font-size:16px;
-	line-height:24px;
+	line-height:1.5;
 	height:88px;
 	position: relative;
 	background:#e8eaef;
@@ -532,7 +533,7 @@ label{
 #feedback .finishButton{
 	width:140px;
 	font-size:18px;
-	line-height:27px;
+	line-height:1.5;
 	float:right;
 	background: #6f93f9;
 	color: #fff;
@@ -869,7 +870,7 @@ label{
 	background:#f8f9fb;
     outline:none; 
 	height:54px;
-	line-height:24px;
+	line-height:1.5;
 	border:1px solid #ccc;
 	border-bottom-left-radius:40px;
 	border-top-left-radius:40px;
