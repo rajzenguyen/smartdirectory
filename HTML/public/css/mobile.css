@@ -35,22 +35,22 @@ body{
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
   font-size: 10px;
-  line-height:16px;
+   
 }
 ::-moz-placeholder { /* Firefox 19+ */
   font-family: 'Montserrat-Light', sans-serif;
   font-size: 10px;
-  line-height:16px;
+   
 }
 :-ms-input-placeholder { /* IE 10+ */
   font-family: 'Montserrat-Light', sans-serif;
   font-size: 10px;
-  line-height:16px;
+   
 }
 :-moz-placeholder { /* Firefox 18- */
   font-family: 'Montserrat-Light', sans-serif;
   font-size: 10px;
-  line-height:16px;
+   
 }
 :focus{
 	outline:none !important;
@@ -83,27 +83,26 @@ h1{
 }
 h2{
 	font-size:24px;
-	line-height:1.5;
 }
 h3{
 	font-size:18px;
-	line-height:1.5;
+	 
 }
 h4{
 	font-size:16px;
-	line-height:1.5;
+	 
 }
 h5{
 	font-size:14px;
-	line-height:1.5;
+	 
 }
 h6{
 	font-size:12px;
-	line-height:1.5;
+	 
 }
 h7{
 	font-size:12px;
-	line-height:1.5;
+	 
 }
 .fontsize24{
 	font-size:24px !important;
@@ -134,7 +133,7 @@ a{
 }
 p{
 	font-size:12px;
-	line-height:1.5;
+	 
 	margin-bottom: 0;
 }
 ul{
@@ -143,19 +142,19 @@ ul{
 }
 p.large{
 	font-size:18px;
-	line-height:1.5;
+	 
 }
 p.small{
 	font-size:14px;
-	line-height:21px;
+	 
 }
 p.ssmall{
 	font-size:12px;
-	line-height:18px;
+	 
 }
 p.usmall{
 	font-size:10px;
-	line-height:16px;
+	 
 }
 ul > li{
 	padding:10px 25px;
@@ -177,7 +176,7 @@ input {
      outline:none; 
      -webkit-box-shadow:none;
 	 height:32px;
-	 line-height:16px;
+	  
 	 -webkit-box-shadow: none !important;
 	 box-shadow: none !important;
 	 -webkit-transition: ease-in 0.2s !important;
@@ -194,7 +193,7 @@ button {
     -webkit-box-shadow:none;
 	height:32px;
 	font-size: 12px;
-	line-height:18px;
+	 
 	transition:ease-in 0.2s;
 	text-align: center;
 }
@@ -215,7 +214,7 @@ button.iconNextInput{
 }
 button.form-control {
 	 font-size: 10px;
-	 line-height:16px;
+	  
 }
 textarea{
 	border:1px solid #e8eaef !important;
@@ -245,7 +244,7 @@ select
     border-radius: 35px;
 	padding: 7px 25px 7px 15px;
 	font-size: 12px;
-    line-height: 18px;
+     
     background: #f8f9fb;
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -293,7 +292,7 @@ select:focus {
 }
 select option{
 	font-size:16px;
-	line-height:24px;
+	 
 }
 
 
@@ -426,7 +425,7 @@ label{
 	float:left;
 	width:100%;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 }
 .iconSVG {
 	vertical-align:middle;
@@ -483,7 +482,7 @@ label{
 	text-align:center;
 	border-radius:15px;
 	font-size:12px;
-	line-height:18px;
+	 
 	height:60px;
 	position: relative;
 	background:#e8eaef;
@@ -550,7 +549,7 @@ label{
 #feedback .finishButton{
 	width:50%;
 	font-size:12px;
-	line-height:18px;
+	 
 	float:right;
 	background: #6f93f9;
 	color: #fff;
@@ -817,7 +816,7 @@ label{
   margin-bottom: 0px;
   cursor: pointer;
   font-size: 12px;
-  line-height: 18px;
+   
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -904,7 +903,7 @@ label{
 	background:#f8f9fb;
     outline:none; 
 	height:54px;
-	line-height:24px;
+	 
 	border:1px solid #ccc;
 	border-bottom-left-radius:40px;
 	border-top-left-radius:40px;
@@ -1034,7 +1033,7 @@ label{
 
   .col-form-label{
 	  font-size: 12px;
-	  line-height: 1.5;
+	   
 	  font-family: 'Montserrat-Bold', sans-serif;
   }
   .isDisabled {
@@ -1046,7 +1045,7 @@ label{
   }
   .modal-footer{
 	font-size: 12px;
-	line-height: 1.5;
+	 
   }
 button.close {
 	width: auto;
@@ -1075,7 +1074,7 @@ button.close:hover {
 	-webkit-box-shadow: none;
 	height: 32px;
 	font-size: 12px;
-	line-height: 18px;
+	 
 	transition: ease-in 0.2s;
 	float: left;
     position: relative;
@@ -1107,7 +1106,7 @@ button.close:hover {
 	max-width: 350px;
 	color: #666;
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 .dropdownList ul{
 	padding:0;
@@ -1115,7 +1114,7 @@ button.close:hover {
 .dropdownList li{
 	cursor: pointer;
 	font-size: 12px;
-	line-height: 18px;
+	 
 	padding:10px 16px;
 }
 .dropdownList li:nth-child(2n+1){
@@ -1180,7 +1179,7 @@ button.close:hover {
 }
 .navContent > ul > li{
 	padding:0px 15px;
-	line-height:16px;
+	 
 	margin:auto 0;
 	font-size: 10px;
 }
@@ -1190,7 +1189,7 @@ button.close:hover {
 .navContent > ul > li > a{
     color:#fff;	
     font-size: 10px;
-    line-height: 16px;
+     
 }
 .navContent > ul > li > .dropdown-menu{
 	padding:0;
@@ -1276,7 +1275,7 @@ button.close:hover {
 	background:#fff;
 	font-family: 'Montserrat-Light', sans-serif;
 	font-size: 10px;
-	line-height: 16px;
+	 
 	padding: 7px 14px;
 }
 .smenu ul > li:hover{
@@ -1365,7 +1364,7 @@ button.close:hover {
 }
 .listAboutItem p{
 	font-size: 14px;
-    line-height: 21px;
+     
 }
 .listAboutItem:nth-child(1){
 	background:#00b79d;
@@ -1378,6 +1377,12 @@ button.close:hover {
 }
 .listAboutItem h4{
 	margin-top:30px; 
+}
+.listAboutItem p:nth-child(1){
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+.listAboutItem p:nth-child(2){
+	font-family: 'Montserrat-Light', sans-serif;
 }
 .listAboutItem img{
 	filter: brightness(0) invert(1); 
@@ -1393,7 +1398,7 @@ button.close:hover {
 	height:54px;
 	margin:20px auto 66px auto;
 	font-size: 10px;
-	line-height: 16px;
+	 
 	font-family: 'Montserrat-Medium', sans-serif;
 }
 .searchInfo > .para02{
@@ -1411,26 +1416,26 @@ button.close:hover {
     float: left;
     width: 85%;
     font-size: 12px;
-    line-height: 18px;
+     
 }
 .searchInfo .controlS > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-family: 'Montserrat-Light', sans-serif;
-    line-height:18px;
+     
     font-size:12px;
 }
 .searchInfo .controlS > input::-moz-placeholder { /* Firefox 19+ */
     font-family: 'Montserrat-Light', sans-serif;
-    line-height:18px;
+     
     font-size:12px;
 }
 .searchInfo .controlS > input:-ms-input-placeholder { /* IE 10+ */
     font-family: 'Montserrat-Light', sans-serif;
-    line-height:18px;
+     
     font-size:12px;
 }
 .searchInfo .controlS > input:-moz-placeholder { /* Firefox 18- */
     font-family: 'Montserrat-Light', sans-serif;
-    line-height:18px;
+     
     font-size:12px;
 }
 .searchInfo .controlS > button{
@@ -1583,7 +1588,7 @@ button.close:hover {
 	clear:both;
 	font-family: 'Montserrat-Medium', sans-serif;
 	font-size:12px;
-	line-height:18px;
+	 
 }
 .lastChildCatItem{
 	border:2px dashed #ccc;
@@ -1667,12 +1672,12 @@ button.close:hover {
 	margin:20px 0;
 	vertical-align:middle;
 	font-size: 18px;
-	line-height: 27px;
+	 
 }
 div.aboutSmart > h2{
 	margin:20px 20px 0px 20px;
 	font-size: 18px;
-	line-height: 27px;
+	 
 }
 .aboutSmartContainer{
     padding:0 10px;
@@ -1713,14 +1718,14 @@ div.aboutSmart > h2{
 	margin-top:10px;
 	margin-bottom:20px;
 	font-size: 14px;
-	line-height: 21px;
+	 
 	color:#000;
 }
 .aboutSmartContent p{
 	padding-top:0;
-	margin:20px;
+	margin:20px 0px;
 	font-size:14px;
-	line-height:21px;
+	 
 	color:#000;
 	font-family: 'Montserrat-Light', sans-serif;
 	height: 146px;
@@ -1774,14 +1779,14 @@ div.aboutSmart > h2{
 	float:left;
 	margin:10px 0px 0px 10px;
 	font-size: 24px;
-	line-height: 1.5;
+	 
 }
 .aboutStatisticContent > h5{
 	padding-top:0px;
 	padding-bottom:0px;
 	margin:10px 0px 0px 10px;
 	font-size:14px;
-	line-height: 1.5;
+	 
 	color:#ccc;
 	text-transform:uppercase;
 	float:left;
@@ -1936,9 +1941,9 @@ div.aboutSmart > h2{
 .reviewContent img{
 	float:left;
 }
-.reviewContent h7{
+.reviewContent p{
 	font-size:12px;
-	line-height:18px;
+	 
 	vertical-align:middle;
 	font-family: 'Montserrat-Medium', sans-serif;
 	font-weight: normal;
@@ -1961,7 +1966,7 @@ div.aboutSmart > h2{
 	text-decoration:none;
 	text-transform:uppercase;
 	font-size:12px;
-	line-height:18px;
+	 
 }
 .footerItem{
 	padding:50px 0px;
@@ -2012,7 +2017,7 @@ div.aboutSmart > h2{
 .footerColContent > input{
 	border:thin solid #F8F9FB;
 	padding:12px 30px 12px 15px;
-	line-height:14px;
+	 
 	width:80%;
 }
 .footerColContent > button{
@@ -2045,7 +2050,7 @@ div.aboutSmart > h2{
 	vertical-align:middle;
 	margin:0 0 20px 0;
 	font-size: 10px;
-	line-height: 16px;
+	 
 	color: #333;
 	font-family: 'Montserrat-Medium', sans-serif;
 }
@@ -2062,7 +2067,7 @@ div.aboutSmart > h2{
 	padding: 0 5px 5px 5px;
 	text-transform: uppercase;
 	font-size: 12px;
-	line-height: 18px;
+	 
 	color: #333;
 }
 .linkWith a img{
@@ -2102,7 +2107,7 @@ div.aboutSmart > h2{
 #forgot .modal-footer button, #reset .modal-footer button{
 	width:46%;
 	font-size:12px;
-	line-height:18px;
+	 
 	
 }
 #forgot .returnButton, #reset .returnButton{
@@ -2238,7 +2243,7 @@ div.aboutSmart > h2{
 .companySlideNav ul li a{
 	color:#333;
 	font-size:12px;
-	line-height:18px;
+	 
 	font-family: 'Montserrat-Medium', sans-serif;
 }
 .companySlideNav  ul  li:hover{
@@ -2392,7 +2397,7 @@ div.aboutSmart > h2{
 .rightColTerm p{
 	font-family: 'Montserrat-Medium', sans-serif;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 	width:100%;
 	float:left;
 }
@@ -2426,6 +2431,17 @@ div.aboutSmart > h2{
 	padding-bottom:2em;
 	margin-top:4em;
 }
+.aboutBlock1 h2, .aboutBlock2 h2{
+	font-size: 18px;
+}
+.aboutBlock1 p{
+	font-family: 'Montserrat-Light', sans-serif !important;
+	font-size: 14px;
+}
+.aboutBlock2 p{
+	font-family: 'Montserrat-Medium', sans-serif !important;
+	font-size: 14px;
+}
 .aboutBlock2{
 	background:#fff;
 	padding:80px 20px;
@@ -2437,7 +2453,7 @@ div.aboutSmart > h2{
 }
 .aboutBlock2 .container div p{
 	font-size: 14px;
-	line-height: 1.5;
+	 
 }
 .aboutBlock2 img{
 	margin-left:12px;
@@ -2450,10 +2466,11 @@ div.aboutSmart > h2{
 }
 .leftColAbout h2{
 	margin-left: 30px;
+	font-size: 18px;
 }
 .leftColAbout p{
 	font-size: 14px;
-	line-height: 1.5;
+	 text-align: justify;
 }
 .rightColAbout{
 	width:100%; 
@@ -2461,8 +2478,10 @@ div.aboutSmart > h2{
 	padding:0px 20px;
 }
 .rightColAbout p{
-	font-size:14px; line-height:21px; color:#999;
+	font-size:10px;   
+	color:#999;
 	margin-bottom:10px;
+	font-family: 'Montserrat-Light', sans-serif;
 }
 .rightColAbout img{
 	width:100%;
@@ -2534,7 +2553,7 @@ div.aboutSmart > h2{
 .titleSta h7{
     font-family: 'Montserrat-Medium', sans-serif;
     font-size: 14px;
-    line-height: 21px;
+     
 }
 .smallStaNumber{
     width: 20px;
@@ -2697,7 +2716,7 @@ div.aboutSmart > h2{
 }
 .contactRight p{
 	font-size:14px;
-	line-height:21px;
+	margin-bottom: 10px;
 	font-weight:600;
 	text-align: center;
 	font-family: 'Montserrat-Bold', sans-serif;
@@ -2724,7 +2743,7 @@ div.aboutSmart > h2{
 .contactRight .btnSubmit{
 	width:45%;
 	font-size:12px;
-	line-height:18px;
+	 
 	float:left;
 	background: #6f93f9;
 	color: #fff;
@@ -2800,7 +2819,7 @@ div.aboutSmart > h2{
 .notiItemContent h7{
 	font-family: 'Montserrat-Medium', sans-serif;
 	font-size:12px;
-	line-height:18px;
+	 
 	font-weight:500;
 	color:#333;
 	width:100%;
@@ -3020,21 +3039,21 @@ div.aboutSmart > h2{
 .resultItemContent h7{
 	margin-bottom:2px;
 	font-size: 18px;
-	line-height: 27px;
+	 
 }
 
 .resultItemContent p.pAdd{
 	margin:0px;
 	font-family: 'Montserrat-Light', sans-serif;
 	font-size: 10px;
-	line-height: 16px;
+	 
 	color: #666;
 }
 .resultItemContent p.pFull{
 	margin:0px !important;
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-size: 12px;
-	line-height: 18px;
+	 
 	color: #333;
 }
 .resultItemView{
@@ -3158,7 +3177,7 @@ div.aboutSmart > h2{
 .item01 ul li .customRadio{
 	margin-left:0;
 	font-size:16px;
-	line-height:24px;
+	 
 	font-weight:500;
 }
 .item01 ul li .customCheck.active{
@@ -3179,7 +3198,7 @@ div.aboutSmart > h2{
 .endItem p{
 	color:#1046f1;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 }
 .endItem button{
 	padding:5px 15px 5px 15px;
@@ -3246,7 +3265,7 @@ div.aboutSmart > h2{
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.5;
+   
   letter-spacing: normal;
   text-align: right;
 }
@@ -3281,7 +3300,7 @@ div.aboutSmart > h2{
 	margin-top:0px;
 	margin-bottom:10px;
 	font-size: 10px;
-	line-height: 16px;
+	 
 	font-family: 'Montserrat-Medium', sans-serif;
 }
 .basicContent{
@@ -3324,7 +3343,7 @@ div.aboutSmart > h2{
 	vertical-align:middle;
 	margin-left:5px;
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 .basicContent .customCard > img{
 	float: left;
@@ -3352,7 +3371,7 @@ div.aboutSmart > h2{
 }
 .tableSetting p{
 	font-size:10px;
-	line-height: 16px;
+	 
 }
 .tableContent td:nth-child(1){
 	padding-bottom:8px;
@@ -3368,7 +3387,7 @@ div.aboutSmart > h2{
 }
 .tableContent h7{
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 .tableContent img{
 	height:16px;
@@ -3392,7 +3411,7 @@ div.aboutSmart > h2{
 .connectHeader h4{
 	float:left;
 	font-size: 18px;
-	line-height: 27px;
+	 
 }
 .connectHeader select{
 	width:270px;
@@ -3402,7 +3421,7 @@ div.aboutSmart > h2{
 	width:100%;
 	float:left;
 	font-size: 14px;
-	line-height: 21px;
+	 
 	font-family: 'Montserrat-Light', sans-serif;
 }
 
@@ -3424,7 +3443,7 @@ div.aboutSmart > h2{
 }
 .connectBody .tableCategory h7{
 	font-size: 14px;
-	line-height: 21px;
+	 
 }
 .connectBodyContent{
 	width:100%;
@@ -3487,11 +3506,11 @@ div.aboutSmart > h2{
 .connectBodyContentItemContent h6{
 	margin-top:0;
 	font-size: 14px;
-	line-height: 1.5;
+	 
 }
 .connectBodyContentItemContent > p{
 	font-size: 10px;
-	line-height: 1.5;
+	 
 	font-family: 'Montserrat-Medium', sans-serif;
 }
 .connectBodyContentItemContent a{
@@ -3529,13 +3548,13 @@ div.aboutSmart > h2{
     color: #666;
     font-family: 'Montserrat-Light', sans-serif;
     font-size: 10px;
-    line-height: 1.5;
+     
 }
 .listSubItem p:nth-child(1) {
     color: #333;
     font-family: 'Montserrat-Bold', sans-serif;
     font-size: 14px;
-    line-height: 1.5;
+     
 }
 .blockSC{
 	margin-bottom: 10px;
@@ -3576,7 +3595,7 @@ div.aboutSmart > h2{
 	background:#e8eaef;
 	display:table;
 	font-size: 10px;
-	line-height: 1.5;
+	 
 	float:left;
 }
 .tagCode a{
@@ -3614,11 +3633,11 @@ div.aboutSmart > h2{
 	padding:0;
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 }
 .itemRelatedCompany .itemRelatedContent > p:nth-child(2){
 	font-size: 10px;
-	line-height: 1.5;
+	 
 	font-family: 'Montserrat-Light', sans-serif;
 	color: #666;
 }
@@ -3645,7 +3664,7 @@ div.aboutSmart > h2{
 	width: 100%;
 	float:left;
 	font-size: 12px;
-	line-height: 18px;
+	 
 	height: 54px;
 	overflow: hidden;
 	text-align: justify;
@@ -3656,7 +3675,7 @@ div.aboutSmart > h2{
 	margin-bottom: 10px;
 	float: left;
 	font-size: 12px;
-	line-height: 18px;
+	 
 	color: #1046f1 !important;
 	font-family: 'Montserrat-Bold', sans-serif;
 }
@@ -3767,7 +3786,7 @@ div.aboutSmart > h2{
 .codeSelectItem p{
 	margin: auto auto 5px 20px;
 	font-size: 12px;
-	line-height: 18px;
+	 
 	font-family: 'Montserrat-Bold', sans-serif;
 }
 .codeSelectItem div{
@@ -3779,19 +3798,19 @@ div.aboutSmart > h2{
 	border-radius: 26px;
 	color: #333;
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 .codeSelection .connectBody h6{
 	padding-top: 5px;
 	font-size: 14px;
-	line-height: 21px;
+	 
 }
 .codeSelection .connectBody h6 a{
 	padding-left: 5px;
 }
 .showmore{
 	font-size: 10px;
-	line-height: 16px;
+	 
 	font-family: 'Montserrat-Bold', sans-serif;
 }
 .featureServicesItem{
@@ -3812,7 +3831,7 @@ div.aboutSmart > h2{
 .featureServicesItem .featureServicesItemContent h7{
 	float: left;
 	font-size: 14px;
-	line-height: 21px;
+	 
 }
 .featureServicesItem .featureServicesItemContent h7:nth-child(1){
 	float: left;
@@ -3843,7 +3862,7 @@ div.aboutSmart > h2{
 	margin: 0;
 	padding: 0;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 	color: #666 !important;
 	font-family: 'Montserrat-Medium', sans-serif;
 }
@@ -3851,7 +3870,7 @@ div.aboutSmart > h2{
 	width: 53px;
     height: 24px;
     font-size: 14px;
-    line-height: 21px;
+     
     background: #1046f1;
     color: #fff;
     border-radius: 24px;
@@ -3889,20 +3908,20 @@ div.aboutSmart > h2{
 .featureProductItem .featureProductItemContent p{
 	margin-top: 10px;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 	font-family: 'Montserrat-Light', sans-serif;
 	color: #777;
 }
 .featureProductItem .featureProductItemContent h7 a{
 	color: #333;
 	font-size: 14px;
-	line-height: 1.5;
+	 
 	font-family: 'Montserrat-Bold', sans-serif;
 }
 
 .featureProductItemContent > a{
 	font-size: 12px;
-	line-height: 1.5;
+	 
 	font-family: 'Montserrat-Bold', sans-serif;
 }
 .featureProductItemContent img{
@@ -3920,13 +3939,13 @@ div.aboutSmart > h2{
 	color: #666;
 	font-family: 'Montserrat-Medium', sans-serif;
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 
 .productDetailPanel .rightContent h4{
 	font-family: 'Montserrat-Medium', sans-serif;
 	font-size: 18px;
-	line-height: 1.5;
+	 
 }
 .productDetailPanel .modal-content{
 	width: 100%;
@@ -3956,7 +3975,7 @@ div.aboutSmart > h2{
 }
 .rightContent p{
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 .topImgGalleryProduct{
 	width: 100%;
@@ -4034,18 +4053,18 @@ div.aboutSmart > h2{
 #industrialPark .modal-dialog h6, #association .modal-dialog h6{
 	margin-top: 30px;
 	font-size: 18px;
-	line-height: 27px;
+	 
 }
 #industrialPark .modal-dialog h4, #association .modal-dialog h4{
 	font-size: 18px;
-	line-height: 27px;
+	 
 	text-align: center;
 }
 #industrialPark .modal-dialog p, #association .modal-dialog p{
 	color: #333;
 	font-family: 'Montserrat-Medium', sans-serif;
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 #industrialPark .modal-dialog img{
 	border-radius: 6px;
@@ -4059,7 +4078,7 @@ div.aboutSmart > h2{
 }
 h6.modal-title{
 	font-size: 16px;
-	line-height: 24px;
+	 
 }
 #association .modal-dialog{
 	width: 90%;
@@ -4139,7 +4158,7 @@ h6.modal-title{
 	width: 100%;
 	text-align: right;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 	float: right;
 }
 .profileLeft > a > img{
@@ -4169,7 +4188,7 @@ h6.modal-title{
 	margin-top: 20px;
 	float: left;
 	font-size: 14px;
-	line-height: 21px;
+	 
 }
 .profileLeftContent p{
 	width: 100%;
@@ -4178,7 +4197,7 @@ h6.modal-title{
 	margin-bottom: 0;
 	padding-right: 0;
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 .profileRight .top{
 	margin-bottom: 20px;
@@ -4267,7 +4286,7 @@ div.uploadNameCard button{
 #btnSavePass{
 	width: 100%;
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 .tableSetting td:nth-child(1){
 	width: 85%;
@@ -4369,12 +4388,15 @@ div.uploadNameCard button{
 .formEdit #btnDone{
 	width: 60%;
 	font-size:12px;
-	line-height: 1.5;
+	 
 }
-.updateAccout{
+.updateAccount{
 	width: 100%;
 	padding: 60px 0;
 	background: #f8f9fb;
+}
+.updateAccount > .container > h2{
+	font-size: 18px;
 }
 .accountLevelInfo{
 	width: 100%;
@@ -4408,11 +4430,11 @@ div.uploadNameCard button{
 	color: #333;
 	margin-bottom: 40px;
 	font-size: 18px;
-	line-height: 1.5;
+	 
 }
 .levelInfoItemTop p{
 	font-size: 16px;
-	line-height: 1.5;
+	 
 	margin-bottom: 10px;
 }
 .levelInfoItem a{
@@ -4427,7 +4449,7 @@ div.uploadNameCard button{
 	margin: 0;
 	color: #333;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 }
 .levelInfoItem a.finishedLevel p{
 	background: #E8EAEF;
@@ -4467,7 +4489,7 @@ div.uploadNameCard button{
 #reportCompany button.nextButton{
 	width: 50%;
     font-size: 12px;
-    line-height: 18px;
+     
     float: right;
     background: #6f93f9;
     color: #fff;
@@ -4504,7 +4526,7 @@ div.uploadNameCard button{
 #contactCompany button.nextButton{
 	width: 50%;
     font-size: 12px;
-    line-height: 18px;
+     
     float: right;
     background: #6f93f9;
     color: #fff;
@@ -4565,7 +4587,7 @@ div.uploadNameCard button{
 	color:#333; 
 	margin-bottom:10px;
 	font-size: 12px;
-	line-height: 18px;
+	 
 	width: 100%;
 	text-align: right;
 }
@@ -4584,7 +4606,7 @@ div.uploadNameCard button{
 }
 #fail h2, #success h2{
 	font-size: 18px;
-	line-height: 27px;
+	 
 }
 .topNavWhite .navSearch{
 	background: #fff;
@@ -4609,7 +4631,7 @@ div.uploadNameCard button{
 .codeSlideNav > ul > li > a{
 	color:#333;
 	font-size:12px;
-	line-height:18px;
+	 
 	font-family: 'Montserrat-Medium', sans-serif;
 }
 .codeSlideNav > ul > li:hover{
@@ -4657,7 +4679,7 @@ div.uploadNameCard button{
 	vertical-align: top;
 	padding: 8px 0px;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 	color: #333;
 }
 .searchNearByResult table tr td:nth-child(1){
@@ -4719,7 +4741,7 @@ div.uploadNameCard button{
 	vertical-align: top;
 	padding: 10px 3px;
 	font-size: 12px;
-	line-height: 1.5;
+	 
 	color: #333;
 }
 .nearByLocation .panel-body table tr td:nth-child(1){
@@ -4748,13 +4770,13 @@ div.uploadNameCard button{
 	color: #333;
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-size: 12px;
-	line-height: 18px;
+	 
 }
 .colFooter p:nth-child(2){
 	color: #666;
 	font-family: 'Montserrat-Light', sans-serif;    
 	font-size: 10px;
-    line-height: 16px;
+     
 }
 #content .container > h7{
 	font-family: 'Montserrat-Light', sans-serif;
