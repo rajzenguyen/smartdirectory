@@ -737,17 +737,9 @@ div.aboutSmart > h2{
 	left:50px;
 }
 #ourCustomer img,#ourPartner img{
-	width:85%;
-	height: auto;
-}
-#ourCustomer a,#ourPartner a{
 	width:15%;
 	height: 160px;
-	padding: 60px;
-	display: -webkit-flex;
-	-webkit-align-items: center;
-	content: center;
-	align-items: center;
+	padding:60px 30px;
 }
 .reviewDiv{
 	max-width:700px;
