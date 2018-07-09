@@ -387,6 +387,11 @@
 	float:left;
 	margin:0px 30px 30px 0px;
 }
+.catItem:last-child{
+	border:2px dashed #ccc;
+	color:#ccc !important;
+	cursor:pointer;
+}
 /*
 .catItem:nth-child(1){
 	width:270px;
@@ -732,8 +737,17 @@ div.aboutSmart > h2{
 	left:50px;
 }
 #ourCustomer img,#ourPartner img{
-	width:216px;
-	padding:80px 70px;
+	width:85%;
+	height: auto;
+}
+#ourCustomer a,#ourPartner a{
+	width:15%;
+	height: 160px;
+	padding: 60px;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	content: center;
+	align-items: center;
 }
 .reviewDiv{
 	max-width:700px;
@@ -760,7 +774,7 @@ div.aboutSmart > h2{
 	vertical-align:middle;
 }
 .reviewContent{
-	width:80%;
+	width:calc(100% - 110px);
 	float:left;
 	vertical-align:middle;
 	text-align:left;
@@ -1717,7 +1731,8 @@ div.aboutSmart > h2{
 }
 .resultItem{
 	border:1px solid #eee;
-	background:linear-gradient(#eee, #fff);
+	/*background:linear-gradient(#eee, #fff);*/
+	background:#fff;
 	height:auto;
 	border-bottom:none;
 	float:left;
@@ -1726,8 +1741,9 @@ div.aboutSmart > h2{
 .resultPanel.exp .resultItem{
 	width:645px;
 	border:1px solid #ccc;
-	background:linear-gradient(#eee, #fff);
-	height:200px;
+	/*background:linear-gradient(#eee, #fff);*/
+	background:#fff;
+	height:auto;
 	border-bottom:none;
 	float:left;
 }
@@ -1735,14 +1751,13 @@ div.aboutSmart > h2{
 	border-bottom:1px solid #ccc;
 }
 .resultItem:hover{
-	background:#fff;
-	border: none;
-	box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.7);
+	background:#eee;
+	border: 1px solid #fff;
 	z-index: 500;
 }
 
 .resultPanel.exp .resultItem:hover{
-	background:#fff;
+	background:#eee;
 }
 .resultItemAva{
 	width:100px;
@@ -1750,6 +1765,9 @@ div.aboutSmart > h2{
 	padding:10px 0px 10px 15px;
 	float:left;
 	vertical-align:middle;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
 }
 .resultItemCompanyTitle{
 	width: calc(100% - 100px);
@@ -1794,6 +1812,7 @@ div.aboutSmart > h2{
 }
 .resultItemCompanyShortDesc table{
 	vertical-align: middle;
+	color: #666;
 }
 .resultItemCompanyShortDesc table td{
 	padding: 5px;
@@ -1803,9 +1822,24 @@ div.aboutSmart > h2{
 }
 .resultPanel.exp .resultItemAva{
 	width:160px;
-	margin:20px 0px 20px 20px;
+	height:160px;
+	padding:20px 0px 20px 20px;
 	float:left;
 	vertical-align:middle;
+}
+
+.resultPanel.exp .resultItemCompanyTitle{
+	width: calc(100% - 160px);
+	height: 80px;
+	padding:20px;
+	float: left;
+}
+
+.resultPanel.exp .resultItemCompanyShortDesc{
+	width: calc(100% - 160px);
+	padding: 0 20px 20px 20px;
+	font-size: 12px;
+	float: left;
 }
 .resultItemAva img{
 	width:100%;
@@ -1948,6 +1982,9 @@ div.aboutSmart > h2{
 .item01 ul{
 	padding:0;
 	float:left;
+	width: 100%;
+	overflow-y: auto;
+	max-height: 250px;
 }
 .item01 ul li{
 	padding:11px 0px;
