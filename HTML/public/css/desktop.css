@@ -127,6 +127,8 @@
 }
 .smenu a{
 	color:#333;
+	display: block;
+	padding: 10px 25px;
 }
 .smenu > ul{
 	padding:0px !important;
@@ -737,9 +739,9 @@ div.aboutSmart > h2{
 	left:50px;
 }
 #ourCustomer img,#ourPartner img{
-	width:15%;
-	height: 160px;
-	padding:60px 30px;
+	width:auto;
+	height: 80px;
+	padding:30px;
 }
 .reviewDiv{
 	max-width:700px;
@@ -1609,7 +1611,7 @@ div.aboutSmart > h2{
     padding: none;
 }
 .searchResult .searchBox{
-	display:none;
+	display:block;
 }
 
 #result{
@@ -1621,14 +1623,14 @@ div.aboutSmart > h2{
 	z-index: 1;
 }
 .map{
-	width: calc(100% - 435px);
+	width: calc(100% - 500px);
 	float:left;
 }
 .map.exp{
 	float:left;
 }
 .resultPanel{
-	width:435px;
+	width:500px;
 	float:left;
 	right:0;
 	background:#fff;
@@ -1641,12 +1643,13 @@ div.aboutSmart > h2{
 .resultTop{
 	float:left;
 	width:100%;
-	margin: 30px auto 0 auto;
+	margin: 15px auto 0 auto;
 	padding: 0 30px;
 }
 .searchBar{
 	float:left;
 	width:100%;
+	display: none;
 }
 .searchBar input{	
 	height: 54px;
@@ -1717,7 +1720,7 @@ div.aboutSmart > h2{
 }
 .resultListing{
 	float:left;
-	margin:0 30px;
+	margin:0 10px;
 	overflow-y: scroll;
 	padding-top:10px;
 }
@@ -1725,6 +1728,7 @@ div.aboutSmart > h2{
 	border:1px solid #eee;
 	/*background:linear-gradient(#eee, #fff);*/
 	background:#fff;
+	width: 100%;
 	height:auto;
 	border-bottom:none;
 	float:left;
@@ -1773,6 +1777,9 @@ div.aboutSmart > h2{
 }
 .resultItemCompanyTitle a{
 	color: #333;
+	display: block;
+	width: 100%;
+	height: 100%;;
 }
 .resultItemCompanyTitle h7{
 	font-size: 14px;
@@ -1807,7 +1814,10 @@ div.aboutSmart > h2{
 	color: #666;
 }
 .resultItemCompanyShortDesc table td{
-	padding: 5px;
+	padding: 5px 5px 0px 5px;
+}
+.resultItemCompanyShortDesc table td:nth-child(1){
+	width: 100px;
 }
 .resultItemCompanyShortDesc table p{
 	margin:0;
@@ -2035,6 +2045,7 @@ div.aboutSmart > h2{
 	width:24px;
 	height:24px;
 	filter: invert(0) sepia(0) saturate(1);
+	transform: rotate(180deg);
 }
 .col01{
 	width:226px;
@@ -2050,7 +2061,7 @@ div.aboutSmart > h2{
 	padding:0;
 }
 .col02 a{
-	color: #CCCCCC !important;
+	color: #666 !important;
 }
 .col03{
 	width:270px;
@@ -2409,7 +2420,7 @@ div.aboutSmart > h2{
 	width:100%;
 }
 .basicIntroDesc{
-	width:970px;
+	width:100%;
 	margin-right:78px;
 	float:left;
 }
@@ -2426,12 +2437,18 @@ div.aboutSmart > h2{
 .basicIntroSocial{
 	width:70px;
 	float:left;
+	display: none;
 }
 .basicIntroSocial img{
 	width:100%;
 	float:left;
 	height:70px;
 	margin-bottom:30px;
+}
+.onUpdate{
+	font-size: 13px;
+	color: #888 !important;
+	font-style: italic !important;
 }
 #aboutBanner .guildNav{
 	margin-top:145px;
@@ -3301,4 +3318,8 @@ div.uploadNameCard button{
 }
 #content .container > h7{
 	font-family: 'Montserrat-Light', sans-serif;
+}
+.grayStar{
+	filter: grayscale(1);
+	opacity: 0.7;
 }
