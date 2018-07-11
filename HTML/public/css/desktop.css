@@ -1044,7 +1044,7 @@ div.aboutSmart > h2{
 }
 
 .companySlideNav > ul > li{
-    padding: 8px 15px;
+    padding: 0;
     border: none;
     border-bottom: 2px solid #fff;
 	color:#333;
@@ -1052,6 +1052,8 @@ div.aboutSmart > h2{
 	background:#fff;
 }
 .companySlideNav > ul > li > a{
+	padding: 8px 15px;
+	display: block;
 	color:#333;
 	font-size:16px;
 	line-height:1.5;
@@ -1066,6 +1068,9 @@ div.aboutSmart > h2{
     color: #1046f1;
 }
 
+.imgCustomerConnection{
+	filter:invert(0.34543345) sepia(163) saturate(46) hue-rotate(224deg);
+}
 
 .companySlideNav > .list-inline > .active{
     border-bottom: 2px solid #1046f1 !important;
@@ -2375,18 +2380,14 @@ div.aboutSmart > h2{
 .itemRelatedCompany{
 	margin-left:15px;
 	margin-right:15px;
-	width:300px;
-	height:170px;
+	width:400px;
+	height:200px;
 	float:left;
 	box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.7);
 }
-.itemRelatedCompany img{
-	height:75px;
-	width:auto;
-	max-width:160px;
-	float:right;
-	margin-top:20px;
-	margin-right:20px;
+.itemRelatedCompany .resultItem{
+	border: none;
+	height: 100%;
 }
 
 .itemRelatedCompany .itemRelatedContent{
@@ -2414,7 +2415,7 @@ div.aboutSmart > h2{
 	margin-top:10px;
 }
 .itemRelatedCompany a{
-	color:#000;
+	color:#666;
 }
 .basicIntro{
 	width:100%;
@@ -2745,7 +2746,7 @@ div.aboutSmart > h2{
 	height: 60px;
 	float: left;
 	top: 60px;
-	margin:20px 0;
+	margin:40px 0;
 	position: relative;
 }
 .provinceDetailPanel .modal-dialog{

@@ -1,3 +1,12 @@
+
+$(document).ready(function(){
+	$(".navdown").click(function() {
+		var a = $(this).attr('href');
+		$('html,body').animate({
+			scrollTop: $(a).offset().top},
+			'slow');
+	});
+});
 $(document).ready(function(){  
 	
 	$('.companySlideNavItem').click(function(){
@@ -5,6 +14,7 @@ $(document).ready(function(){
 		if(a=='#connection')
 		{
 			$('.slick-for').slick({
+				dots: true,
 				arrows:false,
 				autoplay: true,
 				centerMode: false,
@@ -43,6 +53,7 @@ $(document).ready(function(){
 	$('.slick-for-Gallery').slick({
 		prevArrow:$('.navLeftSlick'),
 		nextArrow:$('.navRightSlick'),
+		dots: true,
 		autoplay: true,
 		centerMode: false,
 		variableWidth: true,
@@ -55,6 +66,7 @@ $(document).ready(function(){
 
 
 	$('.aboutSmartContainer').slick({
+		dots: true,
 		autoplay: false,
 		arrows:false,
 		centerMode: false,
@@ -66,7 +78,7 @@ $(document).ready(function(){
 	  $('.blockPartner').slick({
 		prevArrow:$('.arrowPrev'),
 		nextArrow:$('.arrowNext'),
-		autoplay: true,
+		autoplay: false,
 		infinite: true,
 		centerMode: false,
 		variableWidth: false,
@@ -589,14 +601,21 @@ $(document).ready(function(){
 		decimal: '.',
 	};
 	var companies = new CountUp('count01',0, value1, 0, 5, options);
-	companies.start();
 	var cities = new CountUp('count02',0, value2, 0, 5, options);
-	cities.start();
 	var searched = new CountUp('count03',0, value3, 0, 5, options);
-	searched.start();
 	var totalUser = new CountUp('count04',0, value4, 0, 5, options);
-	totalUser.start();
 	
+	$(window).scroll(function() {
+		var height = $(window).scrollTop();
+		var topPosition = $('.staContent2').offset().top - 300;
+		if(height  >= topPosition) {
+			// do something
+			totalUser.start();
+			searched.start();
+			cities.start();
+			companies.start();
+		}
+	});
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
@@ -726,18 +745,19 @@ $(document).ready(function(){
 			centerMode: false,
 			arrows:false,
 			slidesToShow: 1,
-			slidesToScroll: 1,
-			asNavFor: '.botImgGalleryProduct'
+			slidesToScroll: 1
+			/*,
+			asNavFor: '.botImgGalleryProduct'*/
 		});	
-		
-		$(a + ' .botImgGalleryProduct').slick({
+		$(a + ' .botImgGalleryProduct').css('display','none');
+		/*$(a + ' .botImgGalleryProduct').slick({
 			autoplay: true,
 			centerMode: false,
 			arrows:false,
 			variableWidth:true,
 			focusOnSelect: true,
 			asNavFor: '.topImgGalleryProduct'
-		});	
+		});*/	
 
 	});
 	

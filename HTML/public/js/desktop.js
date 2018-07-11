@@ -653,56 +653,7 @@ $(document).ready(function(){
 	
 	var display4 = document.getElementById("count04");
 	var number4 = {param:0};
-	var value4= document.getElementById("count04").getAttribute("value-to");
-	/*
-	var display5 = document.getElementById("id2");
-	var number5 = {param:0};
-	var value5= document.getElementById("id2").getAttribute("value-to");
-	
-	var display6 = document.getElementById("id3");
-	var number6 = {param:0};
-	var value6= document.getElementById("id3").getAttribute("value-to");
-	
-	var display7 = document.getElementById("id4");
-	var number7 = {param:0};
-	var value7= document.getElementById("id4").getAttribute("value-to");
-	
-	var display8 = document.getElementById("id5");
-	var number8 = {param:0};
-	var value8 = document.getElementById("id5").getAttribute("value-to");
-	
-	var duration = 8;
-	
-	function count() {
-	  TweenLite.to(number1, duration, {param:"+=" + value1, roundProps:"param", onUpdate:update1, onComplete:complete, ease:Linear.easeNone});
-	  TweenLite.to(number2, duration, {param:"+=" + value2, roundProps:"param", onUpdate:update2, onComplete:complete, ease:Linear.easeNone});
-	  TweenLite.to(number3, duration, {param:"+=" + value3, roundProps:"param", onUpdate:update3, onComplete:complete, ease:Linear.easeNone});
-	  TweenLite.to(number4, duration, {param:"+=" + value4, roundProps:"param", onUpdate:update4, onComplete:complete, ease:Linear.easeNone});
-	}
-			
-	function update1() {
-	  //display1.innerHTML = number1.param;
-	}	
-		
-	function update2() {
-	  display2.innerHTML = number2.param;
-	}	
-		
-	function update3() {
-	  display3.innerHTML = number3.param;
-	}	
-		
-	function update4() {
-	  display4.innerHTML = number4.param;
-	}
-	
-	
-	function complete() {
-	  //alert("Complete");
-	}
-	
-	count();*/
-	
+	var value4= document.getElementById("count04").getAttribute("value-to");	
 	
 	var options = {
 		useEasing: true,
@@ -711,50 +662,30 @@ $(document).ready(function(){
 		decimal: '.',
 	};
 	var companies = new CountUp('count01',0, value1, 0, 5, options);
-	companies.start();
+	
 	var cities = new CountUp('count02',0, value2, 0, 5, options);
-	cities.start();
+	
 	var searched = new CountUp('count03',0, value3, 0, 5, options);
-	searched.start();
+	
 	var totalUser = new CountUp('count04',0, value4, 0, 5, options);
-	totalUser.start();
-	/*
-	var id2 = new CountUp('id2',0, value5, 0, 5, options);
-	id2.start();
-	var id3 = new CountUp('id3',0, value6, 0, 5, options);
-	id3.start();
-	var id4 = new CountUp('id4',0, value7, 0, 5, options);
-	id4.start();
-	var id5 = new CountUp('id5',0, value8, 0, 5, options);
-	id5.start();
 	
-	
-	running number for homepage*/
+		$(window).scroll(function() {
+			var height = $(window).scrollTop();
+			var topPosition = $('.staContent').offset().top;
+			if(height  >= topPosition) {
+				// do something
+				totalUser.start();
+				searched.start();
+				cities.start();
+				companies.start();
+			}
+		});
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
 	/*running number for homepage*/
 	
 });
-/*
-$(document).ready(function(){   
-
-	var options = {
-		useEasing: true,
-		useGrouping: true,
-		separator: ',',
-		decimal: '.',
-	};
-	var control = document.getElementsByClassName("counter");
-	var value =control.item(0).getAttribute("value-to");
-	var demo = new CountUp('counter', value, 0, 0, 2.5, options);
-	if (!demo.error) {
-		demo.start();
-	} else {
-		console.error(demo.error);
-	}
-});
-*/
 $(document).ready(function(){
 	$('.imgFB1').click(function(){
 		$("#f1").attr('checked','checked');
