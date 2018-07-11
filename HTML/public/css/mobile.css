@@ -1147,7 +1147,7 @@ button.close:hover {
 	float:right;
 	margin:16px 0;
 	padding: 0;
-    height:16px;
+    height:24px;
     padding: 0 20px;
 }
 .navContent > ul{
@@ -1211,8 +1211,8 @@ button.close:hover {
 }
 
 .navSearch{
-    height: 52px;
-    padding: 10px 20px;
+    height: 55px;
+    padding: 5px 20px;
     float: left;
 	width: 100%;
 	display: none;
@@ -1691,7 +1691,7 @@ div.aboutSmart > h2{
 }
 .aboutSmartItem{
 	width:100%;
-    margin:0 0 60px 0;
+    margin:0 0 10px 0;
     position: relative;
     float: left;
 	padding: 20px 20px 20px 20px;
@@ -1702,7 +1702,7 @@ div.aboutSmart > h2{
     border-radius:10px;
     width: 100%;
 	height:100%;
-	box-shadow: 0px 0px 36px -14px rgba(0,0,0,0.4);
+	box-shadow: 0px 0px 25px -2px rgba(0,0,0,0.1);
 	color:#1046f1;
 }
 .aboutSmartContent > img{
@@ -4882,4 +4882,10 @@ div.uploadNameCard button{
 .overlayProfileBanner{
 	background: #000; 
 	opacity: 0.4;
+}
+
+.onUpdate{
+	font-size: 10px !important;
+	color: #888 !important;
+	font-style: italic !important;
 }
