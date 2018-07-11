@@ -67,7 +67,7 @@ $(document).ready(function(){
 
 	$('.aboutSmartContainer').slick({
 		dots: true,
-		autoplay: false,
+		autoplay: true,
 		arrows:false,
 		centerMode: false,
 		variableWidth: false,
@@ -78,7 +78,7 @@ $(document).ready(function(){
 	  $('.blockPartner').slick({
 		prevArrow:$('.arrowPrev'),
 		nextArrow:$('.arrowNext'),
-		autoplay: false,
+		autoplay: true,
 		infinite: true,
 		centerMode: false,
 		variableWidth: false,
