@@ -543,7 +543,14 @@ div.aboutSmart > h2{
 	height:100%;
 }
 .aboutSmartContent > img{
-	filter: brightness(0) invert(0.7) sepia(0) saturate(0.5) grayscale(0.5);
+	filter: brightness(0) invert(0.2) sepia(0) saturate(0.5) grayscale(0.5);
+	width: 20%;
+}
+.aboutSmartItem:first-child .aboutSmartContent > img{
+	width: 30%;
+}
+.aboutSmartItem:nth-child(3) .aboutSmartContent > img{
+	width: 30%;
 }
 .aboutSmartContent p{
 	display:none;
