@@ -354,6 +354,8 @@
 }
 #about
 {
+	background: url(../assets/stateBuilding.jpg) no-repeat;
+	background-size: cover;
 	padding-top:0;
 	padding-bottom:0;
 }
@@ -541,6 +543,9 @@ div.aboutSmart > h2{
 	padding: 50px 20px 20px 20px;
 	border-radius:10px;
 	height:100%;
+	width: 90%;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.76);
 }
 .aboutSmartContent > img{
 	filter: brightness(0) invert(0.2) sepia(0) saturate(0.5) grayscale(0.5);
@@ -558,6 +563,7 @@ div.aboutSmart > h2{
 .aboutSmartContent:hover{
 	color:#1046f1;
 	box-shadow: 0px 0px 36px -14px rgba(0,0,0,0.4);
+	background: #fff;
 }
 .aboutSmartContent:hover img{
 	filter: none;
