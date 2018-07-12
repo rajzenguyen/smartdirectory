@@ -197,13 +197,13 @@ $(document).ready(function(){
 	$("#result").css('display','block');
 	$(".map").height($(document).height()-115);
 	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 31);
-	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 63);
+	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 23);
 	
 	$(window).resize(function(){
         $(".map").height($(document).height()-115);
 		$("#result").height($(document).height()-115);
 		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 31);
-		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 63);
+		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 23);
 		/*$(".map").width($(document).width()-435);*/
 		$('.expandBtn').css('top',$('.filterBar').offset().top);
 		$('.expandBtn').css('left',$('.filterBar').offset().left-84);
@@ -239,7 +239,7 @@ $(document).ready(function(){
 			$('.resultPanel').removeAttr('style');
 			$('.expandBtn').removeAttr('style');
 			$(".map").height($(document).height()-115);
-			$("#result").height($(document).height()-104);
+			$("#result").height($(document).height()-115);
 			$('.expandBtn').css('top',$('.filterBar').offset().top);
 			$('.expandBtn').css('left',$('.filterBar').offset().left-84);
 		}
@@ -314,48 +314,52 @@ $(document).ready(function(){
 	/*Expand Result*/
 	/*Expand Result*/
 	
+	
+});
+
+$(document).ready(function(){
 	/*Show filter for maps*/
 	$('html').click(function() {
-   		$('.filterPanel').hide(); 
-   		$('.sortPanel').hide(); 
-		$('.submenu').hide();  
-		$('.dropdownList').hide(); 
-	});
-	
-	$('#filterBtn').click(function(event){
-		 event.stopPropagation();
-	});
+		$('.filterPanel').hide(); 
+		$('.sortPanel').hide(); 
+	 $('.submenu').hide();  
+	 $('.dropdownList').hide(); 
+ });
+ 
+ $('#filterBtn').click(function(event){
+	  event.stopPropagation();
+ });
 
-	
-	
-	$('.test').click(function(event){
-		 event.stopPropagation();
-	});
-	
-	$('.filterPanel').click(function(event){
-		 event.stopPropagation();
-	});
-	
-	$('#filterBtn').click(function(){
-		$('.filterPanel').css('top',$('#filterBtn').offset().top + $('#filterBtn').height() + 5);
-		$('.filterPanel').css('left',$('#filterBtn').offset().left-70);
-		$('.filterPanel').toggle();
-		$('.sortPanel').hide();
-	});
-	
-	$('#sortBtn').click(function(event){
-		 event.stopPropagation();
-	});
-	
-	
-	$('#sortBtn').click(function(){
-		$('.sortPanel').css('top',$('#sortBtn').offset().top + $('#sortBtn').height() + 5);
-		$('.sortPanel').css('left',$('#sortBtn').offset().left-70);
-		$('.filterPanel').hide();
-		$('.sortPanel').toggle();
-	});
-	
-	/*Show filter for maps*/
+ 
+ 
+ $('.test').click(function(event){
+	  event.stopPropagation();
+ });
+ 
+ $('.filterPanel').click(function(event){
+	  event.stopPropagation();
+ });
+ 
+ $('#filterBtn').click(function(){
+	 $('.filterPanel').css('top',$('#filterBtn').offset().top + $('#filterBtn').height() + 5);
+	 $('.filterPanel').css('left',$('#filterBtn').offset().left-70);
+	 $('.filterPanel').toggle();
+	 $('.sortPanel').hide();
+ });
+ 
+ $('#sortBtn').click(function(event){
+	  event.stopPropagation();
+ });
+ 
+ 
+ $('#sortBtn').click(function(){
+	 $('.sortPanel').css('top',$('#sortBtn').offset().top + $('#sortBtn').height() + 5);
+	 $('.sortPanel').css('left',$('#sortBtn').offset().left-70);
+	 $('.filterPanel').hide();
+	 $('.sortPanel').toggle();
+ });
+ 
+ /*Show filter for maps*/
 });
 
 $(document).ready(function(){

@@ -190,7 +190,13 @@ $(document).ready(function(){
 		$(".navSearch").slideToggle(300);
 	});
 
-	$('.buttonDropdownList').click(function(){
+
+
+});
+
+$(document).ready(function(){
+	$('.buttonDropdownList').click(function(event){
+		event.stopPropagation();
 		$('.dropdownList').toggle();
 	});
 
@@ -210,11 +216,11 @@ $(document).ready(function(){
 		});
 	  });
 
-	$(".inputDropdownList").focus(function() {
-		$('.dropdownList').show();       
+	$(".inputDropdownList").focus(function(event) {
+		event.stopPropagation();
+		$('.dropdownList').show();      
 		//return false;
 	});
-
 });
 
 $(document).ready(function(){
