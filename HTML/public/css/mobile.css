@@ -4907,7 +4907,7 @@ div.uploadNameCard button{
 
 .popUpCompanyOnMap{
 	width: 95%;
-    height: 140px;
+    height: 145px;
     border-radius: 6px;
     background: #fff;
     padding: 10px;
@@ -4936,7 +4936,7 @@ div.uploadNameCard button{
 }
 .popUpContent p{
 	font-size: 10px;
-	margin: 0;
+	margin: 3px;
 }
 .popUpContent p:nth-child(2), .popUpContent p:nth-child(3) a{
 	color: #555;
@@ -4947,11 +4947,12 @@ div.uploadNameCard button{
 .popUpImage{
 	width: 20%;
 	float: left;
-	display: -webkit-flex;
-	-webkit-justify-content: center;	
-	-webkit-align-items: center;
-	
-	position: relative;
+	height: calc(100% - 42px);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 .popUpImage img{
 	width: 100%;
