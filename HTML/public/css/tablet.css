@@ -235,6 +235,27 @@
 .aboutSmartContent p {
     display: block;
 }
+
+#ourCustomer, #ourPartner {
+    min-height: 340px;
+    background-size: 100%;
+}
+
+.basicContent .customCard > .whiteSVG, .customCard > h7{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	-webkit-justify-content: none;
+	-webkit-align-items: none;
+	height: auto;
+}
+.customCard > .blackSVG{
+	height: auto;
+}
+.customCard > svg{
+	height: auto;
+}
 }
 
 
@@ -509,5 +530,25 @@
 .modalLeft {
 	width: 100%;
 	border-radius: 6px;
+}
+#ourCustomer, #ourPartner {
+    min-height: 310px;
+    background-size: 100%;
+}
+
+.basicContent .customCard > .whiteSVG, .customCard > h7{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	-webkit-justify-content: none;
+	-webkit-align-items: none;
+	height: auto;
+}
+.customCard > .blackSVG{
+	height: auto;
+}
+.customCard > svg{
+	height: auto;
 }
 }

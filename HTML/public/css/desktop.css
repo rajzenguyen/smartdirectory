@@ -734,8 +734,9 @@ div.aboutSmart > h2{
 	width:100%;
 }
 #ourCustomer, #ourPartner{
-	background:url(../assets/map.png) no-repeat;
-	background-size:cover;
+	background:url(../assets/map@2x.png) no-repeat;
+	min-height: 410px;
+	background-size: 100%;
 }
 #ourReview{
 	float:left;
@@ -1389,8 +1390,6 @@ div.aboutSmart > h2{
 }
 
 .staItem01 .staImgBG{
-	width:100%;
-	height:157px;
 }
 
 .staItem02{
@@ -1413,8 +1412,6 @@ div.aboutSmart > h2{
 }
 
 .staItem02 .staImgBG{
-	width:100%;
-	height:157px;
 }
 
 .staItem03{
@@ -1437,8 +1434,6 @@ div.aboutSmart > h2{
 }
 
 .staItem03 .staImgBG{
-	width:100%;
-	height:157px;
 }
 
 .staItem04{
@@ -1458,8 +1453,6 @@ div.aboutSmart > h2{
 }
 
 .staItem04 .staImgBG{
-	width:100%;
-	height:157px;
 }
 .aboutStatisticContent1 > div {
 	border-top:4px solid #06F;
@@ -2130,6 +2123,7 @@ div.aboutSmart > h2{
 .customCard{
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-weight:bold;
+	min-height: 66px;
 }
 .customCard.collapsed{
 	font-family: 'Montserrat-Medium', sans-serif;
@@ -2178,6 +2172,15 @@ div.aboutSmart > h2{
 	float:left;
 	vertical-align:middle;
 	margin-left:5px;
+	white-space: normal;
+	width: calc(100% - 100px);
+	display: -webkit-flex;
+	-webkit-justify-content: left;
+	-webkit-align-items: center;
+	height: 100%;
+}
+.customCard > .blackSVG{
+	height: 100%;
 }
 .basicContent .customCard > img{
 	float: left;
@@ -2368,7 +2371,9 @@ div.aboutSmart > h2{
 }
 .connectBody.bodySC .container{
 	background:url(../assets/map.png) no-repeat;
-	background-size:cover;
+	background-size:100%;
+	min-height: 560px;
+
 }
 .connectBody.bodySC img{
 	width: 10%;
@@ -3344,4 +3349,55 @@ div.uploadNameCard button{
 .overlayProfileBanner{
 	background: #000; 
 	opacity: 0.4;
+}
+.popUpCompanyOnMap{
+	width: 400px;
+	height: 126px;
+	border-radius: 6px;
+	background: #fff;
+	padding: 10px;
+	box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.1);
+	position: fixed;
+	/*các thông số ở đây sẽ đổi tùy theo vị trí con trỏ chuột*/
+	top: 300px;
+	left: 100px;
+	/*các thông số ở đây sẽ đổi tùy theo vị trí con trỏ chuột*/
+	z-index: 100;
+	color: #333;
+	overflow: hidden;
+}
+.popUpContent{
+	width: 80%;
+	float: left;
+	padding: 0 15px 0 5px;
+}
+.popUpContent a{
+	color: #333;
+}
+.popUpContent h7{
+	font-size: 14px; 
+	margin-bottom: 10px;
+	float: left;  
+}
+.popUpContent p{
+	font-size: 12px;
+	margin: 0;
+}
+.popUpContent p:nth-child(2), .popUpContent p:nth-child(3) a{
+	color: #555;
+}
+.popUpContent p:nth-child(3), .popUpContent p:nth-child(3) a{
+	color: #F90;
+}
+.popUpImage{
+	width: 20%;
+	float: left;
+	display: -webkit-flex;
+	-webkit-justify-content: center;	
+	-webkit-align-items: center;
+	position: relative;
+}
+.popUpImage img{
+	width: 100%;
+	height: 100%;
 }
