@@ -114,7 +114,29 @@ $(document).ready(function(){
 		$("button[name='btnSearchNavBtn']").show();
 	});
 
-	$('.buttonDropdownList').click(function(){
+
+
+	
+	/* hiển thị menu anh việt - hide theo yêu cầu designer 
+	$(".submenu").click(function(){
+	$('.dropdown-submenu a.test').next('ul').toggle();
+	});*/
+});
+/* hiển thị menu anh việt - hide theo yêu cầu designer 
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+*/
+
+
+/*block hiển thị pop up khi chọn company signup*/
+$(document).ready(function(){
+	$('.buttonDropdownList').click(function(event){
+		event.stopPropagation();
 		$('.dropdownList').toggle();
 	});
 
@@ -134,26 +156,12 @@ $(document).ready(function(){
 		});
 	  });
 
-	$(".inputDropdownList").focus(function() {
-		$('.dropdownList').show();       
-		//return false;
+	$(".inputDropdownList").focus(function(event) {
+		$('.dropdownList').show();
 	});
+});
+/*end block hiển thị pop up khi chọn company signup*/
 
-	
-	/* hiển thị menu anh việt - hide theo yêu cầu designer 
-	$(".submenu").click(function(){
-	$('.dropdown-submenu a.test').next('ul').toggle();
-	});*/
-});
-/* hiển thị menu anh việt - hide theo yêu cầu designer 
-$(document).ready(function(){
-  $('.dropdown-submenu a.test').on("click", function(e){
-    $(this).next('ul').toggle();
-    e.stopPropagation();
-    e.preventDefault();
-  });
-});
-*/
 $(document).ready(function(){
 	if($(document).width() <= 1025)
 	{
@@ -320,46 +328,43 @@ $(document).ready(function(){
 $(document).ready(function(){
 	/*Show filter for maps*/
 	$('html').click(function() {
-		$('.filterPanel').hide(); 
-		$('.sortPanel').hide(); 
-	 $('.submenu').hide();  
-	 $('.dropdownList').hide(); 
- });
+			$('.filterPanel').hide(); 
+			$('.sortPanel').hide(); 
+			$('.submenu').hide();  
+	});
  
- $('#filterBtn').click(function(event){
-	  event.stopPropagation();
- });
-
- 
- 
- $('.test').click(function(event){
-	  event.stopPropagation();
- });
- 
- $('.filterPanel').click(function(event){
-	  event.stopPropagation();
- });
- 
- $('#filterBtn').click(function(){
-	 $('.filterPanel').css('top',$('#filterBtn').offset().top + $('#filterBtn').height() + 5);
-	 $('.filterPanel').css('left',$('#filterBtn').offset().left-70);
-	 $('.filterPanel').toggle();
-	 $('.sortPanel').hide();
- });
- 
- $('#sortBtn').click(function(event){
-	  event.stopPropagation();
- });
- 
- 
- $('#sortBtn').click(function(){
-	 $('.sortPanel').css('top',$('#sortBtn').offset().top + $('#sortBtn').height() + 5);
-	 $('.sortPanel').css('left',$('#sortBtn').offset().left-70);
-	 $('.filterPanel').hide();
-	 $('.sortPanel').toggle();
- });
- 
- /*Show filter for maps*/
+	$('#filterBtn').click(function(event){
+		event.stopPropagation();
+	});	
+	
+	$('.test').click(function(event){
+		event.stopPropagation();
+	});
+	
+	$('.filterPanel').click(function(event){
+		event.stopPropagation();
+	});
+	
+	$('#filterBtn').click(function(){
+		$('.filterPanel').css('top',$('#filterBtn').offset().top + $('#filterBtn').height() + 5);
+		$('.filterPanel').css('left',$('#filterBtn').offset().left-70);
+		$('.filterPanel').toggle();
+		$('.sortPanel').hide();
+	});
+	
+	$('#sortBtn').click(function(event){
+		event.stopPropagation();
+	});
+	
+	
+	$('#sortBtn').click(function(){
+		$('.sortPanel').css('top',$('#sortBtn').offset().top + $('#sortBtn').height() + 5);
+		$('.sortPanel').css('left',$('#sortBtn').offset().left-70);
+		$('.filterPanel').hide();
+		$('.sortPanel').toggle();
+	});
+	
+	/*Show filter for maps*/
 });
 
 $(document).ready(function(){

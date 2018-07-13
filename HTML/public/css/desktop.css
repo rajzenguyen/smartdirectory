@@ -158,7 +158,7 @@
 	color:#fff !important;
 }
 #banner{
-	height:820px;
+	min-height:820px;
 	text-align:center;
 	background-image:url(../assets/boss-fight-free-high-quality-stock-images-photos-photography-windows-building-clouds.png);
 	background-size:cover;
@@ -234,6 +234,7 @@
 }
 .listAboutItem img{
 	filter: brightness(0) invert(1); 
+	width: 30%;
 }
 .searchInfo{
 	padding-top:245px;
@@ -273,22 +274,22 @@
 }
 .searchInfo .controlS > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
-  line-height:1.5;
+  line-height:34px;
 	font-size:16px;
 }
 .searchInfo .controlS > input::-moz-placeholder { /* Firefox 19+ */
   font-family: 'Montserrat-Light', sans-serif;
-  line-height:1.5;
+  line-height:34px;
 	font-size:16px;
 }
 .searchInfo .controlS > input:-ms-input-placeholder { /* IE 10+ */
   font-family: 'Montserrat-Light', sans-serif;
-  line-height:1.5;
+  line-height:34px;
 	font-size:16px;
 }
 .searchInfo .controlS > input:-moz-placeholder { /* Firefox 18- */
   font-family: 'Montserrat-Light', sans-serif;
-  line-height:1.5;
+  line-height:34px;
 	font-size:16px;
 }
 .searchInfo .controlS > button{
@@ -1344,7 +1345,10 @@ div.aboutSmart > h2{
 .staItem p{
 	font-family: 'Montserrat-Light', sans-serif;
 }
-
+.staItem .titleSta img{
+	width: 24px;
+	height: 24px;
+}
 .staItem:nth-child(4){
 	 background:#fff; float:left; border-radius:10px;
 }
@@ -1390,7 +1394,7 @@ div.aboutSmart > h2{
 }
 
 .staItem02{
-	width:190px;
+	width:174px;
 }
 .staItem02 .titleSta{
 	margin-left: 15px;
@@ -1414,7 +1418,7 @@ div.aboutSmart > h2{
 }
 
 .staItem03{
-	width:190px;
+	width:210px;
 }
 .staItem03 .titleSta{
 	margin-left: 15px;
@@ -1797,7 +1801,6 @@ div.aboutSmart > h2{
 	color: #333;
 	display: block;
 	width: 100%;
-	height: 100%;;
 }
 .resultItemCompanyTitle h7{
 	font-size: 14px;
@@ -1835,7 +1838,7 @@ div.aboutSmart > h2{
 	padding: 5px 5px 0px 5px;
 }
 .resultItemCompanyShortDesc table td:nth-child(1){
-	width: 100px;
+	width: 120px;
 }
 .resultItemCompanyShortDesc table p{
 	margin:0;
@@ -2369,7 +2372,8 @@ div.aboutSmart > h2{
 }
 .connectBody.bodySC img{
 	width: 10%;
-	margin: 80px 55px;
+	height: 80px;
+	margin: 100px 55px;
 }
 .tagCode{
 	border-radius:35px;

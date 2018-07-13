@@ -300,8 +300,7 @@ $(document).ready(function(){
 		$('html').click(function() {
 			$('.filterPanel').hide(); 
 			$('.sortPanel').hide(); 
-		 $('.submenu').hide();  
-		 $('.dropdownList').hide(); 
+			$('.submenu').hide();  
 	 });
 	 
 	 $('#filterBtn').click(function(event){

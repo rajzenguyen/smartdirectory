@@ -184,7 +184,9 @@
 }
 .listAboutItem {
     width: 31%;
-    margin-right: 26px;
+	margin-right: 26px;
+	height: auto;
+	min-height: 450px;
 }
 .whoImg img {
     margin: 0 30px 0 0;
@@ -492,6 +494,20 @@
 	height: 100px;
     padding: 40px;
 }
-
-
+.aboutSmartContent h2 {
+    font-size: 36px;
+}
+#login .modal-dialog {
+    width: 90%;
+}
+#signup .modal-dialog {
+    width: 90%;
+}
+.modalRight {
+    display: none;
+}
+.modalLeft {
+	width: 100%;
+	border-radius: 6px;
+}
 }
