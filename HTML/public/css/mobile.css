@@ -4006,7 +4006,8 @@ div.aboutSmart > h2{
 .featureProductItem .featureProductItemContent p{
 	margin-top: 10px;
 	font-size: 12px;
-	 
+	max-height: 55px;
+	overflow: hidden;
 	font-family: 'Montserrat-Light', sans-serif;
 	color: #777;
 }

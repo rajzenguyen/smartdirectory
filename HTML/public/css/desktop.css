@@ -2669,6 +2669,8 @@ div.aboutSmart > h2{
 	line-height:1.5;
 	font-family: 'Montserrat-Light', sans-serif;
 	color: #777;
+	max-height: 63px;
+	overflow: hidden;
 }
 .featureProductItem .featureProductItemContent h7 a{
 	color: #333;
