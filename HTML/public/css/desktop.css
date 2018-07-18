@@ -2185,8 +2185,11 @@ div.aboutSmart > h2{
 	-webkit-align-items: center;
 	height: 100%;
 }
-.customCard > .blackSVG{
+.customCard .blackSVG{
 	height: 100%;
+}
+.customCard table tr td{
+	padding: 0 5px;
 }
 .basicContent .customCard > img{
 	float: left;

@@ -556,14 +556,14 @@ label{
 	box-shadow:none !important;
      outline:none !important; 
      -webkit-box-shadow:none !important;
-	 height:66px;
+	 height:auto;
 }
 .customCard:hover{
 	background: #6f93f9;
 	color: #fff;
 	text-decoration:none;
 }
-.customCard:hover > .blackSVG{
+.customCard:hover .blackSVG{
 	filter: invert(1) sepia(1) saturate(0);
 }
 .customCard:focus{
@@ -576,27 +576,28 @@ label{
 	color: #fff !important;
 	text-decoration:none !important;
 }
-.expandCustomCard > img{
+.expandCustomCard img{
 	filter: brightness(0) invert(1) !important;
 }
-.expandCustomCard > svg{
+.expandCustomCard svg{
 	filter: brightness(0) invert(1) !important;
 	transform: rotate(180deg) !important;
 }
-.expandCustomCard > .blackSVG{
+.expandCustomCard .blackSVG{
 	filter: brightness(0) invert(1) !important;
 }
-.customCard:focus > .blackSVG{
+.customCard:focus .blackSVG{
 	filter: brightness(0) invert(1);
 }
-.customCard > .blackSVG, .customCard > h7{
+.customCard .blackSVG, .customCard h7{
 	float:left;
 	vertical-align:middle;
+	white-space: normal;
 }
-.customCard > .blackSVG{
+.customCard .blackSVG{
 	height: 100%;
 }
-.customCard > svg{
+.customCard svg{
 	float:right;
 	height:100%;
 	font-size:16px;
