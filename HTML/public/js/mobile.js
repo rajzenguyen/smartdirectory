@@ -312,10 +312,6 @@ $(document).ready(function(){
 	 });
 	 
 	 /*Show filter for maps*/
-	 $('.expandBtn').click(function(event){
-		$('.map').hide();
-		$('.resultPanel').show();
-   });
 });
 
 $(document).ready(function(){
