@@ -204,14 +204,16 @@ $(document).ready(function(){
 	$("#result").height($(document).height()-115);
 	$("#result").css('display','block');
 	$(".map").height($(document).height()-115);
-	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 31);
-	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 23);
+	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 46);
+	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 36);
 	
 	$(window).resize(function(){
         $(".map").height($(document).height()-115);
 		$("#result").height($(document).height()-115);
-		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 31);
-		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 23);
+		$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 46);
+		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 36);
+		$('.filterPanel').css('left',$('.resultPanel').offset().left);
+		$('.filterPanel').css('width',$('.resultPanel').width());
 		/*$(".map").width($(document).width()-435);*/
 		$('.expandBtn').css('top',$('.filterBar').offset().top);
 		$('.expandBtn').css('left',$('.filterBar').offset().left-84);
@@ -347,7 +349,8 @@ $(document).ready(function(){
 	
 	$('#filterBtn').click(function(){
 		$('.filterPanel').css('top',$('#filterBtn').offset().top + $('#filterBtn').height() + 5);
-		$('.filterPanel').css('left',$('#filterBtn').offset().left-70);
+		$('.filterPanel').css('left',$('.resultPanel').offset().left);
+		$('.filterPanel').css('width',$('.resultPanel').width());
 		$('.filterPanel').toggle();
 		$('.sortPanel').hide();
 	});

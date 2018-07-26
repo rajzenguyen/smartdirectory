@@ -17,7 +17,7 @@ $(document).ready(function(){
 				dots: true,
 				arrows:false,
 				autoplay: true,
-				centerMode: false,
+				centerMode: true,
 				slidesToShow: 1,
 				variableWidth:true,
 				responsive: [
@@ -262,35 +262,6 @@ $(document).ready(function(){
 	$('.expandBtn').css('right',0);
 	/*set position of expand button*/
 	
-	/*Expand Result*/
-	/*Expand Result*/
-	/*Expand Result*/
-	$('.expandBtn').click(function(){
-		var a = $(".map").css('margin-left');
-		var b = "-" + $(document).width() + "px";
-		/*$('.expandBtn').removeAttr('style');*/
-		if(a==b)
-		{
-			$(".map").animate({marginLeft: "0"});
-			/*$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
-			$('.expandBtn').css('right',0);*/
-			$('.expandBtn').css('transform','rotate(0)');
-		}
-		else
-		{
-			$(".map").animate({marginLeft: b});
-			/*$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
-			$('.expandBtn').css('left',0);*/
-			$('.expandBtn').css('transform','rotate(180deg)');
-		}
-		
-	});
-	
-	var sd = $(".resultItemView img").offset().left;
-	var s2d = $(".resultItemView").offset().left;
-	/*Expand Result*/
-	/*Expand Result*/
-	/*Expand Result*/
 	
 
 });
@@ -337,6 +308,7 @@ $(document).ready(function(){
 	 });
 	 
 	 /*Show filter for maps*/
+
 });
 
 $(document).ready(function(){
@@ -479,101 +451,6 @@ $(document).ready(function(){
 	/*cut down the content of notification to match 85 characters*/
 	/*cut down the content of notification to match 85 characters*/
 	
-	
-	/*change width base on number of elements*/
-	/*change width base on number of elements*/
-	/*change width base on number of elements*/
-	/*change width base on number of elements*/
-	function changeWidthItem(){
-		var element = document.getElementById("catContainer");
-		var numberOfElement = element.getElementsByClassName("catItem").length;
-		var odd=numberOfElement%4;
-		if(odd == 0)
-		{
-			for(i = 0; i<numberOfElement;i++){
-				element.getElementsByClassName("catItem")[i].style.width="22%";
-			}
-		}
-		else if(odd == 1){
-			for(i = 0; i<numberOfElement;i++){
-				element.getElementsByClassName("catItem")[i].style.width="22%";
-			}
-			element.getElementsByClassName("catItem")[numberOfElement-5].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-4].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="17%";
-			
-		}
-		else if(odd == 2){
-			for(i = 0; i<numberOfElement;i++){
-				element.getElementsByClassName("catItem")[i].style.width="22%";
-			}
-			element.getElementsByClassName("catItem")[numberOfElement-10].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-9].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-8].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-7].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-6].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-5].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-4].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="17%";
-			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="17%";
-			
-		}
-		else if(odd == 3){
-			for(i = 0; i<numberOfElement;i++){
-				element.getElementsByClassName("catItem")[i].style.width="22%";
-			}
-			element.getElementsByClassName("catItem")[numberOfElement-3].style.width="37%";
-			element.getElementsByClassName("catItem")[numberOfElement-2].style.width="37%";
-			element.getElementsByClassName("catItem")[numberOfElement-1].style.width="17%";
-			
-		}
-		
-	}
-	
-	/*changeWidthItem();
-	change width base on number of elements*/
-	/*change width base on number of elements*/
-	/*change width base on number of elements*/
-	/*change width base on number of elements*/
-	/*change width base on number of elements*/
-	/*change width base on number of elements*/
-	
-	
-	/*add more filter to homepage*/
-	/*add more filter to homepage*/
-	/*add more filter to homepage*/
-	/*add more filter to homepage*/
-	/*add more filter to homepage*/
-	function lastClick(){
-		
-		var element = document.getElementById("catContainer");
-		var numberOfElement = element.getElementsByClassName("catItem").length;	
-		
-		/*script for demo add item*/	
-		var lastChildItem="<div class=\"catItem\"><a href=\"#\"><img src=\"public/assets/legal-struture.svg\" /><h6>Show More</h6></a></div>";
-		$("#catContainer").append(lastChildItem);
-		/*script for demo add item*/
-		
-		$(".lastChildCatItem").hide();
-		var showmore = $(".lastChildCatItem");
-		showmore.show();
-		$("#catContainer").append(showmore);
-		
-	}
-	
-	$(".lastChildCatItem").click(function(){
-		lastClick();
-		
-		/*changeWidthItem();*/
-	});
-	/*add more filter to homepage*/
-	/*add more filter to homepage*/
-	/*add more filter to homepage*/
-	/*add more filter to homepage*/
-	/*add more filter to homepage*/
 	
 	
 	

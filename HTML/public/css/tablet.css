@@ -10,17 +10,15 @@
 .topNavHome .navContent {
 	padding: 0;
 }
-.catItem{
-	margin:10px 13px !important;
-	width: 22% !important;
-}
 .aboutSmartItem {
     width: 33% !important;
     float: left;
-    height: 400px;
+    height: 500px;
     margin-bottom: 60px;
 }
-
+.aboutSmartContent h2 {
+    font-size: 34px;
+}
 .aboutStatisticItem{
 	padding:0;
 	float:left;
@@ -50,7 +48,22 @@
     opacity: 0.5;
     position: relative;
 }
-
+.searchInfo .controlS > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-family: 'Montserrat-Light', sans-serif;
+	line-height:1.5;
+  }
+  .searchInfo .controlS > input::-moz-placeholder { /* Firefox 19+ */
+	font-family: 'Montserrat-Light', sans-serif;
+	line-height:1.5;
+  }
+  .searchInfo .controlS > input:-ms-input-placeholder { /* IE 10+ */
+	font-family: 'Montserrat-Light', sans-serif;
+	line-height:1.5;
+  }
+  .searchInfo .controlS > input:-moz-placeholder { /* Firefox 18- */
+	font-family: 'Montserrat-Light', sans-serif;
+	line-height:1.5;
+  }
 
 .col01{
 	width:24%;
@@ -97,8 +110,8 @@
     width: 69%;
 }
 .basicIntroDesc {
-    width: calc(100% - 110px);
-    margin-right: 40px;
+    width: 100%;
+    margin-right: 0;
 }
 .connectBody.bodySC img {
     margin: 80px 68px;
@@ -202,15 +215,15 @@
 }
 
 .contactLeft {
-	height: 950px;
+	height: 1000px;
 
 }
 .contactRight {
-	height: 950px;
+	height: 1000px;
 
 }
 .contactForm {
-	height: 950px;
+	height: 1000px;
 }
 
 .connectHeader h7{
@@ -241,8 +254,8 @@
     background-size: 100%;
 }
 
-.basicContent .customCard > .whiteSVG, .customCard > h7{
-	white-space: nowrap;
+.basicContent .customCard .whiteSVG, .customCard h7{
+	white-space: normal;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: block;
@@ -250,11 +263,15 @@
 	-webkit-align-items: none;
 	height: auto;
 }
-.customCard > .blackSVG{
+.customCard .blackSVG{
 	height: auto;
 }
-.customCard > svg{
+.customCard svg{
 	height: auto;
+}
+
+.customCard table tr td{
+	padding: 0 5px;
 }
 }
 
@@ -262,6 +279,9 @@
 
 @media only screen and (max-width: 769px) {
 
+	.customCard table tr td{
+		padding: 0 5px;
+	}
 	.controlS{
 		width:90%;
 		margin:0 auto;
@@ -304,16 +324,12 @@
 	.topNavHome .navContent {
 		padding: 0;
 	}
-	.catItem{
-		margin:10px !important;
-		width: 30% !important;
-	}
 	div.aboutSmart > h2 {
 		width: 90%;
 		margin: 60px auto 30px auto;
 	}
 	.aboutSmartItem {
-		height: 455px;
+		height: 570px;
 	}
 	
 	.aboutStatistic > div.container > h2{
@@ -486,16 +502,16 @@
 		color: #666;	
 	}
 	.contactLeft {
-		height: 960px;
+		height: 1000px;
 	
 	}
 	.contactRight {
 		padding: 40px 30px;
-		height: 960px;
+		height: 1000px;
 	
 	}
 	.contactForm {
-		height: 960px;
+		height: 1000px;
 	}
 	#companyInfo {
 		padding-top: 30px;
@@ -536,7 +552,7 @@
     background-size: 100%;
 }
 
-.basicContent .customCard > .whiteSVG, .customCard > h7{
+.basicContent .customCard .whiteSVG, .customCard h7{
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -545,10 +561,10 @@
 	-webkit-align-items: none;
 	height: auto;
 }
-.customCard > .blackSVG{
+.customCard .blackSVG{
 	height: auto;
 }
-.customCard > svg{
+.customCard svg{
 	height: auto;
 }
 }

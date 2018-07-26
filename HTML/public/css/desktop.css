@@ -40,8 +40,6 @@
 {
 	display:none;
 }
-.topNavHome .navContent{
-}
 .navContent #user img{
 	border-radius: 50%;
 }
@@ -86,11 +84,14 @@
 	filter: invert(0.9) grayscale(4);
 }
 .navContent > ul > li > input{
+	-webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
 	border:1px solid #fff;
 	background:none;
 	color:#fff;
 	height:54px;
-	width:310px;
+	width:370px;
 }
 .companydetail .navContent > ul > li > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	color:#fff;
@@ -375,68 +376,36 @@
 	background:#f8f9fb;
 	padding:60px 0px;
 }
-#category h2{
+#category h2 {
 	padding:0;
 	margin:0 auto;
 	width:100%;
 	height: 100px;
 }
-.catContainer{
+.catContainer {
 	float:left;
 	width:100%;
 }
-.catItem{
+.catItem {
 	height:215px;
 	border-radius:25px;
 	background:#fff;
 	float:left;
 	margin:0px 30px 30px 0px;
+	padding: 0 10px;
 }
 .catItem:last-child{
 	border:2px dashed #ccc;
 	color:#ccc !important;
 	cursor:pointer;
 }
-/*
-.catItem:nth-child(1){
-	width:270px;
-}
-.catItem:nth-child(2){
-	width:370px;
-}
-.catItem:nth-child(3){
-	width:270px;
-}
-.catItem:nth-child(4){
-	width:170px;
-	margin:0px 0px 30px 0px;
-}
-.catItem:nth-child(5){
-	width:170px;
-	margin:0px 30px 0px 0px;
-}
-.catItem:nth-child(6){
-	width:370px;
-	margin:0px 30px 0px 0px;
-}
-.catItem:nth-child(7){
-	width:270px;
-	margin:0px 30px 0px 0px;
-}
-.catItem:nth-child(8){
-	width:270px;
-	margin:0px 0px 0px 0px;
-}*/
 .catItem img{
 	width:45px;
 	margin:65px auto 20px auto;
-	/*filter: brightness(0) invert(1);
-	filter:invert(0.34543345) sepia(163) saturate(46) hue-rotate(224deg);*/
 }
 .catItem svg{
 	width:45px;
 	margin:65px auto 20px auto;
-	/*filter: brightness(0) invert(1);*/
 	filter:none;
 }
 .catItem h6{
@@ -541,22 +510,21 @@ div.aboutSmart > h2{
 	margin-bottom: 60px;
 }
 .aboutSmartContent{
-	padding: 50px 20px 20px 20px;
+	padding: 50px 12px 20px 12px;
 	border-radius:10px;
 	height:100%;
 	width: 90%;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.76);
+	overflow: hidden;
 }
 .aboutSmartContent > img{
 	filter: brightness(0) invert(0.2) sepia(0) saturate(0.5) grayscale(0.5);
-	width: 20%;
-}
-.aboutSmartItem:first-child .aboutSmartContent > img{
-	width: 30%;
-}
-.aboutSmartItem:nth-child(3) .aboutSmartContent > img{
-	width: 30%;
+	width: 35%;
+	-webkit-transition: ease-in 0.2s !important;
+	-o-transition: ease-in 0.2s !important;
+	transition: ease-in 0.2s !important;
+	line-height: 1.5 !important;
 }
 .aboutSmartContent p{
 	display:none;
@@ -568,6 +536,7 @@ div.aboutSmart > h2{
 }
 .aboutSmartContent:hover img{
 	filter: none;
+	width: 20%;
 }
 .aboutSmartContent:hover p{
 	display:block;
@@ -919,7 +888,7 @@ div.aboutSmart > h2{
 .linkWith a img{
 	filter: grayscale(0);
 	margin-right: 20px;
-	width: 40px;
+	height: 40px;
 }
 .linkWith a:last-child img{
 	margin-right: 0;
@@ -989,19 +958,28 @@ div.aboutSmart > h2{
 	float: left;
 	margin-top: 135px;
 	position: relative;
+	width: 100%;
 }
 .companyIntroAvatar
 {
 	width:170px;
 	height:170px;
 	float:left;
-	padding-right:1rem;
+	background: #fff;
+	vertical-align: middle;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	border-radius: 16px;
 }
 .companyIntroAvatar > img
 {
 	width:100%;
-	height:100%;
-	border-radius:16px;
+	max-height: 90%;
+	vertical-align: middle;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
 }
 .companyName{
 	float: left;
@@ -1010,10 +988,14 @@ div.aboutSmart > h2{
     height: auto;
     padding: 35px 0px 34px 30px;
     vertical-align: middle;
-    margin: 0 auto;
+	margin: 0 auto;
+	width: calc(100% - 250px);
 }
 .companyName > h6{
 	margin:0;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 .companyName > h6 > svg{
 	color:#0C3;
@@ -1039,29 +1021,31 @@ div.aboutSmart > h2{
 	float:left;
 	height:30px;
 	cursor: pointer;
+	margin-right: 5px;
 }
 .companyName > .messenger img{
-	widows: 18px;
-	height: 18px;
+	width: 16px;
+	height: 17px;
 	margin-right: 10px;
 	filter: brightness(0) invert(1);
 }
 .companyName > .report{
-	height:30px;
-	width:30px;
-	background:#f8f9fb;
-	float:left;
-	padding:14px;
-	border-radius:50%;
-	margin-left:10px;
-	cursor:pointer;
+	padding: 4px 25px;
+	background: #f8f9fb;
+	color: #527af8;
+	text-align: center;
+	border: none;
+	border-radius: 40px;
+	float: left;
+	height: 30px;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 1.5;
 }
 .report img{
-	height:16px;
-	width:16px;
-	top: -7px;
-	left: -7px;
-	position: relative;
+	width: 16px;
+	height: 17px;
+	margin-right: 10px;
 }
 
 .companySlideNav > ul > li{
@@ -1240,14 +1224,15 @@ div.aboutSmart > h2{
 	font-family: 'Montserrat-Medium', sans-serif;
 }
 .topNavWhite .navContent > ul > li > input{
-	border:1px solid #000;
+	
 	color:#000;
+	/*border:1px solid #000;
 	background:none;	
 	height:54px;
 	box-shadow:none !important;
      outline:none !important; 
      -webkit-box-shadow:none !important;
-	width:370px;
+	width:370px;*/
 }
 .topNavWhite .navContent > ul > li > input:focus:hover{
 	box-shadow:none !important;
@@ -1301,8 +1286,8 @@ div.aboutSmart > h2{
 }
 .leftColAbout p{
 	text-align: justify !important;
-	font-size: 16px;
-	font-family: 'Montserrat-Medium', sans-serif !important;
+	font-size: 18px;
+	font-family: 'Montserrat-Light', sans-serif !important;
 }
 .rightColAbout{
 	width:30%; 
@@ -1360,7 +1345,9 @@ div.aboutSmart > h2{
 	 background:#fff; float:left; border-radius:10px;
 }
 .titleSta{
-	float:left; width:100%; margin:20px 0px 5px 35px;
+	float:left; 
+	width:100%; 
+	margin:20px 0px 5px 15px;
 }
 
 .titleSta h7{
@@ -1373,7 +1360,7 @@ div.aboutSmart > h2{
 	border-radius:10px;
 }
 .numberSta{
-	float:left; margin-left:35px;
+	float:left; margin-left:15px;
 }
 .slick-list{
 	margin-left:0px;
@@ -1401,9 +1388,10 @@ div.aboutSmart > h2{
 .staItem02{
 	width:174px;
 }
-.staItem02 .titleSta{
+.staItem02 .titleSta, .staItem02 .numberSta{
 	margin-left: 15px;
 }
+
 .staItem02 .titleSta img{
 	float:left;
 }
@@ -1423,7 +1411,7 @@ div.aboutSmart > h2{
 .staItem03{
 	width:210px;
 }
-.staItem03 .titleSta{
+.staItem03 .titleSta, .staItem03 .numberSta{
 	margin-left: 15px;
 }
 .staItem03 .titleSta img{
@@ -1728,6 +1716,11 @@ div.aboutSmart > h2{
 	padding-top:5px;
 	border-top:1px solid #e8eaef;
 	font-family: 'Montserrat-Light', sans-serif;
+	color: #1046f1;
+	z-index: 20;
+	margin-bottom: 10px;	
+	padding-bottom: 5px;
+	box-shadow: 0 5px 10px 0 #e8eaef;
 }
 .resultIngo p{
 	font-family: 'Montserrat-Medium', sans-serif;
@@ -1746,18 +1739,18 @@ div.aboutSmart > h2{
 	padding-top:10px;
 }
 .resultItem{
-	border:1px solid #eee;
+	border:1px solid #eae8ef;
 	/*background:linear-gradient(#eee, #fff);*/
 	background:#fff;
 	width: 100%;
 	height:auto;
-	border-bottom:none;
 	float:left;
 	z-index: 0;
+	margin-bottom: 6px;
 }
 .resultPanel.exp .resultItem{
 	width:645px;
-	border:1px solid #ccc;
+	border:1px solid #eae8ef;
 	/*background:linear-gradient(#eee, #fff);*/
 	background:#fff;
 	height:auto;
@@ -1765,16 +1758,35 @@ div.aboutSmart > h2{
 	float:left;
 }
 .resultItem:last-child{
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #eae8ef;
 }
 .resultItem:hover{
-	background:#eee;
-	border: 1px solid #fff;
+	/*background:#eae8ef;*/
+	border: 1px solid #9ab1fd;
 	z-index: 500;
 }
-
+.resultItem:hover .resultItemProvince h6{
+	background:#9ab1fd;
+	color: #fff;
+}
 .resultPanel.exp .resultItem:hover{
 	background:#eee;
+}
+.resultItemProvince{
+	float: left;
+	padding: 0;
+	width: 100%;
+}
+.resultItemProvince h6{
+	text-align: center;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px 20px;
+	display: -webkit-inline-flex;
+	float: right;
+	border-bottom-left-radius: 12px;
+	background: #eae8ef;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .resultItemAva{
 	width:100px;
@@ -1802,13 +1814,14 @@ div.aboutSmart > h2{
 	width: 100%;
 }
 .resultItemCompanyTitle h7{
-	font-size: 14px;
+	font-size: 15px;
 }
 .resultItemCompanyShortDesc{
 	width: 100%;
 	padding: 15px;
-	font-size: 12px;
+	font-size: 14px;
 	float: left;
+	padding-top: 0;
 }
 .resultItemCompanyShortDesc table img{
 	margin-right: 5px;
@@ -1818,7 +1831,7 @@ div.aboutSmart > h2{
 	opacity: 1;
 }
 .resultItemCompanyShortDesc p, .resultItemCompanyShortDesc a{
-	font-size: 12px;
+	font-size: 14px;
 	font-family: 'Montserrat-Light', sans-serif;
 	color: #666;
 }
@@ -1967,7 +1980,7 @@ div.aboutSmart > h2{
 	position:absolute;
 	display:none;
 	background:#fff;
-	width:370px;
+	width:300px;
 	box-shadow: 0px 3px 18px -10px rgba(0,0,0,0.5);
 	z-index:600;
 	border-radius:10px;
@@ -2042,12 +2055,14 @@ div.aboutSmart > h2{
 	color:#1046f1;
 }
 .endItem button{
-	padding:11px 15px 12px 15px;
-	width:140px;
-	background:#e8eaef;
-	color:#000;
-	height:54px;
-	float:left;
+	padding: 7px 20px 7px 20px;
+	margin-right: 10px;
+	width: auto;
+	background: #e8eaef;
+	color: #000;
+	height: auto;
+	float: left;
+	font-size: 14px;
 }
 .endItem button:last-child{
 	background:#6f93f9;
@@ -2184,6 +2199,9 @@ div.aboutSmart > h2{
 	-webkit-justify-content: left;
 	-webkit-align-items: center;
 	height: 100%;
+}
+.basicContent .customCard > h7{
+	height: auto;
 }
 .customCard .blackSVG{
 	height: 100%;
@@ -2414,7 +2432,7 @@ div.aboutSmart > h2{
 	margin-left:15px;
 	margin-right:15px;
 	width:400px;
-	height:200px;
+	height:220px;
 	float:left;
 	box-shadow: 0px 0px 18px -6px rgba(0,0,0,0.7);
 }
@@ -2455,8 +2473,19 @@ div.aboutSmart > h2{
 }
 .basicIntroDesc{
 	width:100%;
-	margin-right:78px;
+	/*margin-right:78px;*/
 	float:left;
+	text-align: justify;
+}
+.basicIntroDesc p, .basicIntroDesc ul, .basicIntroDesc ul li, .basicIntroDesc a{
+	color: #333 !important;
+	font-size: 14px !important;
+	text-align: justify !important;
+	list-style: inside;
+	font-family: 'Montserrat-Light', sans-serif !important;
+	font-style: normal !important;
+	font-stretch: normal !important;
+	font-weight: 300 !important;
 }
 .item22{
 	width:260px;
@@ -2498,8 +2527,12 @@ div.aboutSmart > h2{
 }
 #aboutBanner .companyIntro .companyName{
 	padding:0;
+	width: 100%;
 }
 
+#companyBanner .companyName{
+	width: calc(100% - 170px);
+}
 #contactForm .guildNav{
 	margin-top:145px;
 }
@@ -2510,6 +2543,7 @@ div.aboutSmart > h2{
 }
 #contactForm .companyIntro .companyName{
 	padding:0;
+	width: 100%;
 }
 
 #contactForm .companyIntro .companyName h3{
@@ -2780,7 +2814,7 @@ div.aboutSmart > h2{
 	width: 60px;
 	height: 60px;
 	float: left;
-	top: 60px;
+	top: 90px;
 	margin:40px 0;
 	position: relative;
 }
@@ -3262,7 +3296,7 @@ div.uploadNameCard button{
 }
 .searchNearByResult table tr td{
 	vertical-align: top;
-	padding: 8px 0px;
+	padding: 8px 8px;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #333;
@@ -3363,24 +3397,32 @@ div.uploadNameCard button{
 	background: #000; 
 	opacity: 0.4;
 }
+
+.searchNearByResult table tr td a{
+	vertical-align: top;
+	padding: 8px 0px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
 .popUpCompanyOnMap{
-	width: 400px;
-	height: 126px;
+	width: 300px;
+	height: 115px;
 	border-radius: 6px;
 	background: #fff;
 	padding: 10px;
 	box-shadow: 0px 10px 35px 0px rgba(0,0,0,0.1);
 	position: fixed;
-	/*các thông số ở đây sẽ đổi tùy theo vị trí con trỏ chuột*/
-	top: 300px;
-	left: 100px;
-	/*các thông số ở đây sẽ đổi tùy theo vị trí con trỏ chuột*/
+	/* c�c th�ng s? ? d�y s? d?i t�y theo v? tr� con tr? chu?t*/
+	top: 100px;
+	left: 132px;
+	/*c�c th�ng s? ? d�y s? d?i t�y theo v? tr� con tr? chu?t */
 	z-index: 100;
 	color: #333;
 	overflow: hidden;
 }
 .popUpContent{
-	width: 80%;
+	width: 70%;
 	float: left;
 	padding: 0 15px 0 5px;
 }
@@ -3403,7 +3445,7 @@ div.uploadNameCard button{
 	color: #F90;
 }
 .popUpImage{
-	width: 20%;
+	width: 30%;
 	height: 100%;
 	float: left;
 	display: flex;
@@ -3419,4 +3461,21 @@ div.uploadNameCard button{
 
 .customer .tab-content > .active{
     display: flex;
+}
+
+.sorted a{
+	color: #1046f1 !important;
+	font-weight: 800;
+}
+.resultItem.highlightItem{
+	background:#fff;
+	border: 1px solid #89bce9;
+	box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.7);
+	z-index: 500;
+}
+.resultItem.highlightItem .resultItemCompanyTitle h7 {
+    color: #1046f1;
+}
+.slickGallery{
+	margin-top: 20px;
 }
