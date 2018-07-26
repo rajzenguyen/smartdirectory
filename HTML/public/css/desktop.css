@@ -1984,7 +1984,7 @@ div.aboutSmart > h2{
 	box-shadow: 0px 3px 18px -10px rgba(0,0,0,0.5);
 	z-index:600;
 	border-radius:10px;
-	overflow-y: scroll;
+	overflow-y: hidden;
 }
 
 .sortPanel{
@@ -2008,6 +2008,9 @@ div.aboutSmart > h2{
 	border-bottom:1px solid #CCC;
 	float:left;
 	width:100%;
+}
+.item01:nth-last-child(1){
+	margin-bottom: 30px;
 }
 .item01 h7{
 	margin:0 0 25px 0;
@@ -2040,10 +2043,14 @@ div.aboutSmart > h2{
 	color: #1046f1;
 	font-family: 'Montserrat-Bold', sans-serif;
 }
+.holderContent{
+	overflow-y: auto;
+}
 .endItem{
 	padding:20px 30px;
 	float:left;
-	width:100%;
+	background: #fff;
+	width: 100%;
 }
 
 .endItem a{
@@ -3295,11 +3302,12 @@ div.uploadNameCard button{
 	margin-left: 12px;
 }
 .searchNearByResult table tr td{
-	vertical-align: top;
+	vertical-align: middle;
 	padding: 8px 8px;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #333;
+	min-width: 90px;
 }
 .searchNearByResult table tr td:nth-child(1){
 	font-family: 'Montserrat-Medium', sans-serif;

@@ -82,7 +82,9 @@ $(document).ready(function(){
 		infinite: true,
 		centerMode: false,
 		variableWidth: false,
-		slidesToShow: 1
+		slidesToShow: 1,
+		fade: true,
+		speed: 1000
 	});
 
 	$('.customerNav a').click(function(){
@@ -237,12 +239,14 @@ $(document).ready(function(){
 	$(".resultContainer").width($(".resultPanel").width() + $(".map").width());
 	$(".resultListing").height($(document).height() - (56 + $('.resultTop').height() + $('.resultIngo').height()) - 23);
 	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height());
-	
+	$(".holderContent").height($(".filterPanel").height() + $('.endItem').height() - 100);
+
 	$(window).resize(function(){
         $(".map").height($(document).height()-115);
 		$("#result").height($(document).height()-115);
 		$(".resultListing").height($(document).height() - (56 + $('.resultTop').height() + $('.resultIngo').height()) - 23);
 		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height());
+		$(".holderContent").height($(".filterPanel").height() + $('.endItem').height() - 100);
 		/*$(".map").width($(document).width()-435);*/
 		$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
 		$('.expandBtn').css('right',0);
@@ -308,7 +312,10 @@ $(document).ready(function(){
 	 });
 	 
 	 /*Show filter for maps*/
-
+	 $('.expandBtn').click(function(event){
+		$('.map').hide();
+		$('.resultPanel').show();
+   });
 });
 
 $(document).ready(function(){

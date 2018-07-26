@@ -206,7 +206,7 @@ $(document).ready(function(){
 	$(".map").height($(document).height()-115);
 	$(".resultListing").height($(document).height() - (115 + $('.resultTop').height() + $('.resultIngo').height()) - 46);
 	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 36);
-	
+	$(".holderContent").height($(".filterPanel").height() + $('.endItem').height() - 100);
 	$(window).resize(function(){
         $(".map").height($(document).height()-115);
 		$("#result").height($(document).height()-115);
@@ -214,6 +214,7 @@ $(document).ready(function(){
 		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height() + 36);
 		$('.filterPanel').css('left',$('.resultPanel').offset().left);
 		$('.filterPanel').css('width',$('.resultPanel').width());
+		$(".holderContent").height($(".filterPanel").height() + $('.endItem').height() - 100);
 		/*$(".map").width($(document).width()-435);*/
 		$('.expandBtn').css('top',$('.filterBar').offset().top);
 		$('.expandBtn').css('left',$('.filterBar').offset().left-84);
@@ -367,6 +368,9 @@ $(document).ready(function(){
 		$('.sortPanel').toggle();
 	});
 	
+	$('.closeFilter').click(function(){
+		$('.filterPanel').hide();
+	});
 	/*Show filter for maps*/
 });
 

@@ -3003,27 +3003,27 @@ div.aboutSmart > h2{
 	overflow-y: scroll;
 }
 .resultItem{
-	border:1px solid #eee;
+	border:1px solid #eae8ef;
 	background:linear-gradient(#eee, #fff);
 	height:auto;
-	border-bottom:none;
 	float:left;
 	z-index: 0;
+	margin-bottom: 10px;
 }
 .resultPanel.exp .resultItem{
 	width:645px;
-	border:1px solid #ccc;
-	background:linear-gradient(#eee, #fff);
+	border:1px solid #eae8ef;
+	background:linear-gradient(#eae8ef, #fff);
 	height:auto;
 	border-bottom:none;
 	float:left;
 }
 .resultItem:last-child{
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #eae8ef;
 }
 .resultItem:hover{
 	background:#fff;
-	border: 1px solid #fff;
+	border: 1px solid #9ab1fd;
 	box-shadow: 0px 3px 18px -5px rgba(0,0,0,0.7);
 	z-index: 500;
 }
@@ -4818,10 +4818,10 @@ div.uploadNameCard button{
 	float: left;
 }
 .searchNearByResult table tr td{
-	vertical-align: top;
-	padding: 8px 0px;
+	vertical-align: middle;
+	padding: 8px 8px 8px 0px;
 	font-size: 12px;
-	 
+	min-width: 60px;	 
 	color: #333;
 }
 .searchNearByResult table tr td:nth-child(1){
@@ -4880,7 +4880,7 @@ div.uploadNameCard button{
     margin-top: 0px;
 }
 .nearByLocation .panel-body table tr td{
-	vertical-align: top;
+	vertical-align: middle;
 	padding: 10px 3px;
 	font-size: 12px;
 	 
@@ -5046,4 +5046,28 @@ div.uploadNameCard button{
 .connectBody #mapNearby{
 	width: 100% !important;
 	height: 250px !important;
+}
+
+.holderContent{
+	overflow-y: auto;
+}
+.resultItem:hover .resultItemProvince h6{
+	background:#9ab1fd;
+	color: #fff;
+}
+.resultItemProvince{
+	float: left;
+	padding: 0;
+	width: 100%;
+}
+.resultItemProvince h6{
+	text-align: center;
+	font-size: 14px;
+	margin: 0;
+	padding: 5px 20px;
+	display: -webkit-inline-flex;
+	float: right;
+	border-bottom-left-radius: 12px;
+	background: #eae8ef;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
