@@ -2227,6 +2227,7 @@ div.aboutSmart > h2{
 	float:left;
 	height:22px;
 	cursor: pointer;
+	margin-right: 5px;
 }
 .companyName > .messenger img{
 	width: 12px;
@@ -2237,21 +2238,22 @@ div.aboutSmart > h2{
 	float: left;
 }
 .companyName > .report{
-	height:22px;
-	width:22px;
-	background:#f8f9fb;
-	float:left;
-	padding:6px;
-	border-radius:50%;
-	margin-left:10px;
-	cursor:pointer;
+	padding: 2px 15px;
+	background: #f8f9fb;
+	color: #527af8;
+	text-align: center;
+	border: none;
+	border-radius: 40px;
+	float: left;
+	height: 22px;
+	cursor: pointer;
+	font-size: 11px;
+	line-height: 1.5;
 }
 .report img{
-	height:10px;
-	width:10px;
-	top: 0px;
-	left: 0px;
-	position: relative;
+	width: 12px;
+	height: 10px;
+	margin-right: 5px;
 }
 
 .companySlideNav ul li{
