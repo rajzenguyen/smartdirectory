@@ -451,6 +451,14 @@ label{
 	font-size: 12px;
 	 
 }
+.notification > p{
+	font-size: 12px;
+	margin-top: 20px;
+}
+.notification .closeButton{
+	top: 5px;
+	right: 15px;
+}
 .iconSVG {
 	vertical-align:middle;
 }
@@ -3006,7 +3014,7 @@ div.aboutSmart > h2{
 }
 .resultItem{
 	border:1px solid #eae8ef;
-	background:linear-gradient(#eee, #fff);
+	/*background:linear-gradient(#eee, #fff);*/
 	height:auto;
 	float:left;
 	z-index: 0;
@@ -3230,12 +3238,13 @@ div.aboutSmart > h2{
 	border-radius:10px;
 	overflow-y: hidden;
 }
+/*
 .filterPanel > div{
 	width: 100%;
 	height: 90%;
 	overflow-y: auto;
 	margin: 15px 0px;
-}
+}*/
 .sortPanel{
 	position:absolute;
 	display:none;
@@ -3267,7 +3276,8 @@ div.aboutSmart > h2{
 	padding:0;
 	float:left;
 	width: 100%;
-	height: 130px;
+	height: auto !important;
+	max-height: 188px !important;
 	overflow-y: auto;
 }
 .item01 ul li{
@@ -3290,9 +3300,11 @@ div.aboutSmart > h2{
 	font-family: 'Montserrat-Bold', sans-serif;
 }
 .endItem{
-	padding:10px 15px 20px 15px;
+	padding:10px 15px;
 	float:left;
 	width:100%;
+	border-top: 2px solid #ccc;
+	height: 55px !important;
 }
 
 .endItem a{
@@ -3734,9 +3746,10 @@ div.aboutSmart > h2{
 .itemRelatedCompany{
 	width:100%;
 	max-width: 320px !important;
-	height:320px;
-	margin: 5px;
+	height:280px;
+	margin: 8px 15px;
 	overflow: hidden;
+	box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.3);
 }
 
 .itemRelatedCompany .itemRelatedContent{
@@ -3779,7 +3792,7 @@ div.aboutSmart > h2{
 }
 .basicIntro{
 	width:100%;
-	padding: 0 20px;
+	padding: 0;
 }
 .basicIntroDesc{
 	width: 100%;
@@ -5072,4 +5085,61 @@ div.uploadNameCard button{
 	border-bottom-left-radius: 12px;
 	background: #eae8ef;
 	font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.featureProductItemShortDesc{
+	height: 63px;
+	max-height: 63px !important;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.featureProductItemShortDesc p, .featureProductItemShortDesc span, .featureProductItemShortDesc a{	
+	font-size: 12px;
+	line-height:1.5;
+	font-family: 'Montserrat-Light', sans-serif;
+	color: #777;
+	overflow: hidden;
+}
+.featureProductItemShortDesc table, .featureProductItemShortDesc table tr td, .featureProductItemShortDesc table tr{
+	font-size: 12px;
+	line-height:1.5;
+	height: 63px;
+	overflow: hidden;
+	font-family: 'Montserrat-Light', sans-serif;
+	color: #777;
+	overflow: hidden;
+	text-transform: capitalize;
+	border: none;
+}
+.featureProductItemShortDesc h1, .featureProductItemShortDesc h2, .featureProductItemShortDesc h3, .featureProductItemShortDesc h4, .featureProductItemShortDesc h5, .featureProductItemShortDesc h6, .featureProductItemShortDesc h7{
+	font-size: 12px;
+	line-height:1.5;
+	height: 63px;
+	overflow: hidden;
+	font-family: 'Montserrat-Light', sans-serif;
+	color: #777;
+	overflow: hidden;
+	text-transform: capitalize;
+}
+.productDetailPanel .rightContent .productDescription{
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+.productDetailPanel .rightContent .productDescription p, .productDetailPanel .rightContent .productDescription span{
+	float: left;
+	text-align: justify;
+	font-size: 12px;
+	text-transform: capitalize;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.productDetailPanel .rightContent .productDescription table, .productDetailPanel .rightContent .productDescription table tr td{
+	float: left;
+	font-size: 12px;
+	height: 350px;
+	max-height: 350px;
+	font-family: 'Montserrat-Medium', sans-serif;
+	text-transform: capitalize;
+	overflow: hidden;
+	border: none;
 }
