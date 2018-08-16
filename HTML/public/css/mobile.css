@@ -2089,9 +2089,13 @@ div.aboutSmart > h2{
 	 
 	color: #333;
 }
+.linkWith a{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
 .linkWith a img{
 	filter: grayscale(0);
-	margin-right: 10px;
 	margin-bottom: 10px;
 	height: 40px;
 }
@@ -4186,7 +4190,7 @@ div.aboutSmart > h2{
 	float: left;
 }
 
-.navLeftSlick2, .navRightSlick2{
+.navLeftSlick2, .navRightSlick2, .navLeftSlick3, .navRightSlick3 {
 	width: 60px;
 	height: 60px;
 	float: left;
@@ -4937,6 +4941,9 @@ div.uploadNameCard button{
 	font-family: 'Montserrat-Light', sans-serif;    
 	font-size: 12px;
      
+}
+.colFooter:nth-child(2) p a:last-child{
+	display: none;
 }
 #content .container > h7{
 	font-family: 'Montserrat-Light', sans-serif;

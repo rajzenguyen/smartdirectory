@@ -84,7 +84,7 @@ $(document).ready(function(){
 		variableWidth: false,
 		slidesToShow: 1,
 		fade: true,
-		speed: 1000
+		speed: 600
 	});
 
 	$('.customerNav a').click(function(){
@@ -107,7 +107,9 @@ $(document).ready(function(){
 				infinite: true,
 				centerMode: false,
 				variableWidth: false,
-				slidesToShow: 1
+				slidesToShow: 1,
+				fade: true,
+				speed: 600
 			  });
 		}
 		else if(a == '#ourReview')
@@ -148,7 +150,9 @@ $(document).ready(function(){
 				infinite: true,
 				centerMode: false,
 				variableWidth: false,
-				slidesToShow: 1
+				slidesToShow: 1,
+				fade: true,
+				speed: 600
 			});
 		}
 	});
@@ -239,14 +243,14 @@ $(document).ready(function(){
 	$(".resultContainer").width($(".resultPanel").width() + $(".map").width());
 	$(".resultListing").height($(document).height() - (56 + $('.resultTop').height() + $('.resultIngo').height()) - 23);
 	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height());
-	$(".holderContent").height($(".filterPanel").height() + $('.endItem').height() - 100);
+	$(".holderContent").height($(".filterPanel").height() - 55);
 
 	$(window).resize(function(){
         $(".map").height($(document).height()-115);
 		$("#result").height($(document).height()-115);
 		$(".resultListing").height($(document).height() - (56 + $('.resultTop').height() + $('.resultIngo').height()) - 23);
 		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height());
-		$(".holderContent").height($(".filterPanel").height() + $('.endItem').height() - 100);
+		$(".holderContent").height($(".filterPanel").height() - 55);
 		/*$(".map").width($(document).width()-435);*/
 		$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
 		$('.expandBtn').css('right',0);
