@@ -5233,3 +5233,67 @@ div.uploadNameCard button{
 .newsPanelContent img{
 	width: 100% !important;
 }
+
+.hintBox{
+	display: none;
+	position: absolute;
+	z-index: 200;
+	overflow-y: auto;
+	background: #f8f9fb;
+	box-shadow: 0px 10px 20px 0px #cccccc;
+	padding: 10px 0px 10px 10px;
+	min-height: 100px;
+	max-height: 300px;
+}
+.hintBox > div{
+	overflow-y: auto;
+	background: #f8f9fc;
+	height: 100%;
+}
+.hintBlockTitle{
+	font-family: 'Montserrat-Medium', sans-serif;
+	text-transform: uppercase;
+	color: #527af8;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.hintBlockList{
+	float: left;
+	padding: 0;
+}
+.hintBlockList li{
+	width: 100%;
+	float: left;
+	padding: 5px;
+}
+.hintBlockList li:hover{
+	background: #6f93f9;
+}
+.hintBlockList li:hover p{
+	color: #fff;
+}
+.hintBlockList li img{
+	width: 18px;
+	height: 18px;
+	float: left;
+	border: 1px solid #ccc;
+	margin-right: 5px;
+}
+.hintBlockList li a, .hintViewAll a{
+	color: #333;
+}
+.hintBlockList li p{
+	font-family: 'Montserrat-Light', sans-serif;
+	float: left;
+	margin: 0;
+}
+.hintBlockList li p b{
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+.hintViewAll p{
+	font-weight: 800;
+	font-size: 12px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-style: italic;
+}

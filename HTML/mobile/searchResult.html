@@ -99,7 +99,7 @@
         
                         </div>
                         <div class="navSearch">
-                            <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." />
+                            <input type="text" class="searchInputForHint" name="txtSearchNavTxt" placeholder="enter anything to search...." />
                             <button type="button" name="btnSearchNavBtn" class="iconNextInput">
                                 <img src="../public/assets/search.svg" />
                             </button>
@@ -117,7 +117,7 @@
                 <img src="../public/assets/sliders.svg" id="sortBtn" />
             </div>
             <div class="searchBar">
-                <input type="text" name="txtSearchBar" placeholder="enter anything to search...." />
+                <input type="text" name="txtSearchBar" class="searchInputForHint" placeholder="enter anything to search...." />
                 <button type="button" name="btnSearchBar" class="iconNextInput">
                     <img src="../public/assets/search.svg" />
                 </button>
@@ -488,6 +488,70 @@
             </div>
         </div>
 
+    <!-- Hint for search -->
+    <div class="hintBox">
+            <div>
+                <div class="hintViewAll">
+                    <p><a href="#"> > See all results related to "keywords 12345"</a></p>
+                </div>
+                <div class="hintBlock">
+                    <h6 class="hintBlockTitle">Company Name</h6>
+                    <ul class="hintBlockList">
+                        <li>
+                            <a href="#">
+                                <img class="logoCap" src="../public/images/logo.png">
+                                <p class="fullCap"><b>Com</b>pany Name 1</p
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="logoCap" src="../public/images/logo.png">
+                                <p class="fullCap"><b>Com</b>pany Name 1</p
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="logoCap" src="../public/images/logo.png">
+                                <p class="fullCap"><b>Com</b>pany Name 1</p
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="logoCap" src="../public/images/logo.png">
+                                <p class="fullCap"><b>Com</b>pany Name 1</p
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hintViewAll" href="#">
+                                <p>>> See all company names have "com"</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hintBlock">
+                    <h6 class="hintBlockTitle">Company Activities</h6>
+                    <ul class="hintBlockList">
+                        <li>
+                            <a href="#">
+                                <p class="fullCap"><b>Com</b>pnents Product</p
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="fullCap">Plastic <b>Com</b>ponents</p
+                            </a>
+                        </li>
+                        <li>
+                            <a class="hintViewAll" href="#">
+                                <p>>> See all activities have "com"</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End hint for search -->
+    
     <script src="../public/js/TweenMax.min.js"></script>
     <script src="../public/js/waypoints.min.js"></script>
     <script src="../public/js/jquery.counterup.min.js"></script>

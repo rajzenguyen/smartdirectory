@@ -102,7 +102,7 @@
 
                 </div>
                 <div class="navSearch">
-                    <input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." />
+                    <input type="text" class="searchInputForHint" name="txtSearchNavTxt" placeholder="enter anything to search...." />
                     <button type="button" name="btnSearchNavBtn" class="iconNextInput">
                         <img src="../public/assets/search.svg" />
                     </button>
@@ -118,7 +118,7 @@
             <div class="searchInfo">
                 <h2>SUSCIPIT VEHICULA ODIO</h2>
                 <div class="controlS clearfix">
-                    <input type="text" name="txtSearch" placeholder="Enter company name, industry, product, etc..." />
+                    <input type="text" name="txtSearch" class="searchInputForHint" placeholder="Enter company name, industry, product, etc..." />
                     <button type="submit" name="btnSearch">
                         <img src="../public/assets/search.svg" />
                     </button>
@@ -1076,6 +1076,69 @@
 
     <!-- End Notification -->
 
+    <!-- Hint for search -->
+    <div class="hintBox">
+        <div>
+            <div class="hintViewAll">
+                <p><a href="#"> > See all results related to "keywords 12345"</a></p>
+            </div>
+            <div class="hintBlock">
+                <h6 class="hintBlockTitle">Company Name</h6>
+                <ul class="hintBlockList">
+                    <li>
+                        <a href="#">
+                            <img class="logoCap" src="../public/images/logo.png">
+                            <p class="fullCap"><b>Com</b>pany Name 1</p
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="logoCap" src="../public/images/logo.png">
+                            <p class="fullCap"><b>Com</b>pany Name 1</p
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="logoCap" src="../public/images/logo.png">
+                            <p class="fullCap"><b>Com</b>pany Name 1</p
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="logoCap" src="../public/images/logo.png">
+                            <p class="fullCap"><b>Com</b>pany Name 1</p
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hintViewAll" href="#">
+                            <p>>> See all company names have "com"</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hintBlock">
+                <h6 class="hintBlockTitle">Company Activities</h6>
+                <ul class="hintBlockList">
+                    <li>
+                        <a href="#">
+                            <p class="fullCap"><b>Com</b>pnents Product</p
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p class="fullCap">Plastic <b>Com</b>ponents</p
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hintViewAll" href="#">
+                            <p>>> See all activities have "com"</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End hint for search -->
 
     <div class="gottopping" style="display:none;">
         <a>

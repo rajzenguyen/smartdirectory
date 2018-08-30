@@ -7,6 +7,22 @@ $(document).ready(function(){
 			'slow');
 	});
 });
+
+/* Control hintbox */
+$(document).ready(function(){
+	
+	$('.searchInputForHint').keypress(function(){
+		var hei=$(window).height() - $(this).offset().top + $(this).height();
+		$(".hintBox").width($(this).width()+38);
+		$(".hintBox").height(hei);
+		$(".hintBox").css('left',$(this).offset().left);
+		$(".hintBox").css('top',$(this).offset().top + $(this).height() + 18);
+		$('.hintBox').show();
+	});
+
+ });
+/* Control hintbox */
+
 $(document).ready(function(){  
 	
 	$('.companySlideNavItem').click(function(){
@@ -280,6 +296,7 @@ $(document).ready(function(){
 			$('.filterPanel').hide(); 
 			$('.sortPanel').hide(); 
 			$('.submenu').hide();  
+			$('.hintBox').hide();  
 	 });
 	 
 	 $('#filterBtn').click(function(event){
