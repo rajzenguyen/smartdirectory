@@ -73,7 +73,7 @@ $(document).ready(function(){
 	
 	$('.searchInputForHint').keypress(function(){
 		var hei=$(window).height() - $(this).offset().top + $(this).height();
-		$(".hintBox").width($(this).width()+38);
+		$(".hintBox").width($(this).width() + 52);
 		$(".hintBox").height(hei);
 		$(".hintBox").css('left',$(this).offset().left);
 		$(".hintBox").css('top',$(this).offset().top + $(this).height() + 32);
