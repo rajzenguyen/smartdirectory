@@ -5297,3 +5297,232 @@ div.uploadNameCard button{
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-style: italic;
 }
+
+#app{
+	background: #fff;
+	padding: 30px 0px 30px 0px;
+	text-align: center;
+}
+#app .appImg{
+	width: 100%;
+	float: left;
+	margin-top: 20px;
+}
+#app .appImg img{
+	width: 75%;
+	margin-left: 20px;
+	float: left;
+}
+#app .appContent{
+	float: right;
+	width: 100%;
+}
+#app .appContent h2{
+	font-size: 18px;
+	margin: 0 20px;
+}
+#app .appContent p{
+	margin: 15px 20px;
+	font-size: 14px;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+#app .appContent > a{
+	background: #6f93f9;
+	padding: 7px 0;
+	font-size: 12px;
+	text-align: center;
+	color: #fff;
+	border-radius: 26px;
+	display: block;
+	width: 50%;	
+	margin-left: auto;
+	margin-right: auto;
+}
+#app .appContent .appDownload{
+	position: absolute;
+	margin-top: 20px;
+	right: 20px;
+	width: 33%;
+}
+#app .appContent .appDownload h4{
+	float: left;
+	margin: auto 0;
+	font-size: 12px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+#app .appContent .appDownload img{
+	float: left;
+	margin-right: 20px;
+}
+
+#contentapp{	
+	background: #f8f9fb;
+}
+#contentapp #app{	
+	background: none;
+	padding: 80px 0px 30px 0px;
+}
+.appFeature{
+	padding: 60px 0px;
+	background: #fff;
+}
+.appFeatureInfo{
+	width: 100%;
+	text-align: center;
+}
+.appFeatureInfo span{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #333333;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.appFeatureInfo h2{
+	font-size: 18px;
+	color: #333333;
+	margin-top: 10px;
+	margin-bottom: 0;
+	line-height: 1.25;
+}
+.appFeatureInfo p{
+	font-size: 14px;
+	color: #333333;
+	margin: 10px 20px;
+	font-weight: 300;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.appFeatureContent{
+	height: auto;
+	width: 80%;
+	max-width: calc(100% - 100px);
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #cccccc;
+	border-radius: 50%;
+}
+.featureIcon{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: #fff;
+	padding: 15px;
+	box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.15);
+	cursor: pointer;
+	position: relative;
+	float: left;
+}
+
+.featureIcon:hover, .featureActive{
+	background: #1046f1;
+}
+
+.featureIcon:hover img, .featureActive img{
+	filter: brightness(0) invert(1);
+}
+.featureIcon:first-child{
+	top: -30px;
+	left: 110px;
+}
+.featureIcon:nth-child(2){
+	top: 50px;
+	left: -80px;
+}
+.featureIcon:nth-child(3){
+	top: 50px;
+	left: 110px;
+}
+.featureIcon:nth-child(4){
+	top: 200px;
+	left: -160px;
+}
+.featureIcon:nth-child(5){
+	top: 140px;
+	left: 190px;
+}
+.featureIcon img{
+	width: 100%;
+}
+.featureInfo{
+	text-align: center;
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	display: none;
+}
+.featureInfo.info01{
+	display: block;
+}
+.featureInfo h4{
+	font-size: 24px;
+}
+.featureInfo p{
+	font-size: 16px;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.appPros{
+	background-image:url(../assets/app3.png);
+	background-size: cover;
+	padding: 100px 0;
+	height: 750px;
+	width: 100%;
+}
+.appPros .appContent{
+	width: 100%;
+	text-align: center;
+	margin-top: 360px;
+}
+
+.appPros .appContent h2{
+	color: #1046f1;
+	line-height: 1.5;
+	margin: 0 20px;
+}
+.appPros .appContent p{
+	margin-top: 15px;
+	font-size: 14px;
+	font-family: 'Montserrat-Light', sans-serif;
+	margin: 0 20px;
+}
+.appDown{
+	text-align: center;
+	margin: 0 20px;
+	margin-top: 50px;
+}
+.appDown h4{
+	font-size: 18px;
+}
+.appStore, .qrCode{
+	width: 100%;
+	float: left;
+}
+.appStore img{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+.appStore img:first-child{
+	margin-top: 20px;
+}
+.appStore p{
+	font-size: 24px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	text-transform: uppercase;
+	line-height: 50px;	
+	margin: 0;
+	margin-top: 50px;
+	margin-left: 10px;
+}
+.appQR{
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}
+.appQR:last-child{
+	margin-top: 40px;
+}
+.appQR p{
+	font-size: 18px;
+	text-align: center;
+}

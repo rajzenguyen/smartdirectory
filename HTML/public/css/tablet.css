@@ -273,6 +273,35 @@
 .customCard table tr td{
 	padding: 0 5px;
 }
+#contentapp #app .appImg img{
+	width: 100%;
+}
+.appFeatureInfo {
+    width: 50%;
+}
+.appFeatureContent{
+	width: 50%;
+}
+.appPros .appContent {
+    margin-top: 180px;
+}
+.appDown {
+    padding: 50px 0;
+}
+.appStore img {
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+.appQR {
+    margin-right: 30px;
+}
+.appStore p {
+	margin-top: 40px;
+}
+#contentapp #app .appContent {
+    margin-top: 50px;
+}
 }
 
 
@@ -566,5 +595,59 @@
 }
 .customCard svg{
 	height: auto;
+}
+#app .appContent {
+	float: left;
+}
+#contentapp #app .appImg img{
+	width: 100%;
+}
+#contentapp #app {
+    padding: 60px 0px;
+}
+.appFeatureInfo {
+    width: 40%;
+}
+.appFeatureContent{
+	width: 60%;
+	max-width: 400px;
+	float: left;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+}
+.appFeatureInfo h2{
+	font-size: 40px;
+}
+.appPros{
+	margin-bottom: 300px;
+}
+.appPros .appContent {
+	width: 100%;
+	text-align: center;
+	margin-top: 650px;
+	height: 300px;
+	background: #fff;
+}
+.appDown {
+    padding: 50px 0;
+}
+.appStore img {
+	width: 30%;
+	margin-right: 20px;
+}
+.appQR {
+	width: 30%;
+    margin-right: 30px;
+}
+.appQR img{
+	width: 100%;
+}
+.appStore p {
+	margin-top: 40px;
+	font-size: 18px;
+}
+#contentapp #app .appContent {
+    margin-top: 50px;
 }
 }

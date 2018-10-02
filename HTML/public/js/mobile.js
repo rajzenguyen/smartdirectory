@@ -8,6 +8,24 @@ $(document).ready(function(){
 	});
 });
 
+/* Control app feature content */
+$(document).ready(function(){
+	$('.appFeatureContent').height($('.appFeatureContent').width());
+});
+/* show app feature */
+$(document).ready(function(){  
+	
+	$('.featureIcon').click(function(){
+		var a = $(this).attr("data");
+		$('.featureInfo').hide();
+		$('.' + a).show();
+	});
+});
+/* show app feature */
+/* Control app feature content */
+
+/* Control hintbox */
+
 /* Control hintbox */
 $(document).ready(function(){
 	

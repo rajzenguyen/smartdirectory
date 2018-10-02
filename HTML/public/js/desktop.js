@@ -67,6 +67,18 @@ $(document).ready(function(){
 	});		
 });
 
+/* show app feature */
+$(document).ready(function(){  
+	$('.appFeatureContent').height($('.appFeatureContent').width());
+	$('.featureIcon').click(function(){
+		var a = $(this).attr("data");
+		$('.featureInfo').hide();
+		$('.featureIcon').removeClass('featureActive');
+		$('.' + a).show();
+		$(this).addClass('featureActive');
+	});
+});
+/* show app feature */
 
 /* Control hintbox */
 $(document).ready(function(){
@@ -303,6 +315,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	/*Show filter for maps*/
+	
 	$('html').click(function() {
 			$('.filterPanel').hide(); 
 			$('.sortPanel').hide(); 

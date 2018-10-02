@@ -3669,6 +3669,9 @@ div.uploadNameCard button{
 	background: #f8f9fc;
 	height: 100%;
 }
+.hintBlock{
+	float: left;
+}
 .hintBlockTitle{
 	font-family: 'Montserrat-Medium', sans-serif;
 	text-transform: uppercase;
@@ -3676,10 +3679,12 @@ div.uploadNameCard button{
 	font-size: 18px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	float: left;
 }
 .hintBlockList{
 	float: left;
 	padding: 0;
+	width: 100%;
 }
 .hintBlockList li{
 	width: 100%;
@@ -3701,6 +3706,7 @@ div.uploadNameCard button{
 }
 .hintBlockList li a, .hintViewAll a{
 	color: #333;
+	display: flex;
 }
 .hintBlockList li p{
 	font-family: 'Montserrat-Light', sans-serif;
@@ -3715,4 +3721,214 @@ div.uploadNameCard button{
 	font-size: 16px;
 	font-family: 'Montserrat-Bold', sans-serif;
 	font-style: italic;
+}
+#app{
+	background: #fff;
+	padding: 72px 0px 82px 0px;
+}
+#app .appImg{
+	width: 40%;
+	float: left;
+}
+#app .appContent{
+	float: right;
+	width: 55%;
+	text-align: right;
+}
+#app .appContent h2{
+	line-height: 60px;
+}
+#app .appContent p{
+	margin-top: 15px;
+	font-size: 18px;
+}
+#app .appContent > a{
+	margin-top: 20px;
+	background: #6f93f9;
+	padding: 10px 0;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	border-radius: 26px;
+	display: block;
+	width: 40%;	
+	float: right;
+}
+#app .appContent .appDownload{
+	float: right;
+	margin-top: 40px;
+}
+#app .appContent .appDownload h4{
+	float: left;
+	margin: auto 0;
+	font-size: 14px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+#app .appContent .appDownload img{
+	float: left;
+	margin-left: 20px;
+}
+#contentapp{	
+	background: #f8f9fb;
+}
+#contentapp #app{	
+	background: none;
+	padding: 125px 0px;
+}
+#contentapp #app .appContent{	
+	margin-top: 120px;
+}
+.appFeature{
+	padding: 125px 0px;
+	background: #fff;
+}
+.appFeatureInfo{
+	width: 60%;
+	float: left;
+	text-align: left;
+}
+.appFeatureInfo span{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #333333;
+	margin-left: 8px;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.appFeatureInfo h2{
+	font-size: 48px;
+	color: #333333;
+	margin-top: 10px;
+	margin-bottom: 0;
+	line-height: 1.25;
+}
+.appFeatureInfo p{
+	font-size: 18px;
+	color: #333333;
+	margin-left: 8px;
+	font-weight: 300;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.appFeatureContent{
+	height: 400px;
+	width: 40%;
+	max-width: 400px;
+	float: right;
+	border: 1px solid #cccccc;
+	border-radius: 50%;
+}
+.featureIcon{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #fff;
+	padding: 15px;
+	box-shadow: 2px 3px 9px 0px rgba(0,0,0,0.15);
+	cursor: pointer;
+	position: relative;
+	float: left;
+}
+.featureIcon:hover, .featureActive{
+	background: #1046f1;
+}
+
+.featureIcon:hover img, .featureActive img{
+	filter: brightness(0) invert(1);
+}
+.featureIcon:first-child{
+	top: -40px;
+	left: 150px;
+}
+.featureIcon:nth-child(2){
+	top: 80px;
+	left: -100px;
+}
+.featureIcon:nth-child(3){
+	top: 80px;
+	left: 180px;
+}
+.featureIcon:nth-child(4){
+	top: 300px;
+	left: -210px;
+}
+.featureIcon:nth-child(5){
+	top: 220px;
+	left: 290px;
+}
+.featureIcon img{
+	width: 100%;
+}
+.featureInfo{
+	text-align: center;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	display: none;
+}
+.featureInfo.info01{
+	display: block;
+}
+.featureInfo h4{
+	font-size: 24px;
+}
+.featureInfo p{
+	font-size: 16px;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.appPros{
+	background-image:url(../assets/app2.png);
+	background-size: cover;
+	padding: 100px 0;
+	height: 750px;
+	width: 100%;
+}
+.appPros .appContent{
+	width: 60%;
+	float: right;
+	text-align: right;
+	margin-top: 160px;
+}
+
+.appPros .appContent h2{
+	line-height: 60px;
+	color: #1046f1;
+}
+.appPros .appContent p{
+	margin-top: 15px;
+	font-size: 18px;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.appDown{
+	padding: 50px;
+}
+.appDown h4{
+	font-size: 24px;
+}
+.appStore, .qrCode{
+	width: 50%;
+	float: left;
+}
+.appStore img{
+	float: left;
+	margin-right: 60px;
+	margin-top: 50px;
+}
+.appStore p{
+	font-size: 24px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 50px;	
+	margin: 0;
+	margin-top: 50px;
+	margin-left: 10px;
+}
+.appQR{
+	float: left;
+	margin-right: 80px;
+}
+.appQR p{
+	font-size: 18px;
+	text-align: center;
 }
