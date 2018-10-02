@@ -5250,6 +5250,9 @@ div.uploadNameCard button{
 	background: #f8f9fc;
 	height: 100%;
 }
+.hintBlock{
+	float: left;
+}
 .hintBlockTitle{
 	font-family: 'Montserrat-Medium', sans-serif;
 	text-transform: uppercase;
@@ -5257,10 +5260,12 @@ div.uploadNameCard button{
 	font-size: 14px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	float: left;
 }
 .hintBlockList{
 	float: left;
 	padding: 0;
+	width: 100%;
 }
 .hintBlockList li{
 	width: 100%;
@@ -5282,6 +5287,7 @@ div.uploadNameCard button{
 }
 .hintBlockList li a, .hintViewAll a{
 	color: #333;
+	display: flex;
 }
 .hintBlockList li p{
 	font-family: 'Montserrat-Light', sans-serif;
