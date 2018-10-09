@@ -3932,3 +3932,89 @@ div.uploadNameCard button{
 	font-size: 18px;
 	text-align: center;
 }
+.conLeft, .conRight{
+	width: 50%;
+	float: left;
+}
+.conLeft h4{	
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 40px;
+}
+.block-rendered{
+	width: 50%;
+	float: left;
+	margin-bottom: 50px;
+}
+.block-rendered:hover{
+	cursor: pointer;
+}
+.block-rendered:hover img{
+	filter: none;
+}
+.block-rendered:hover .block-rendered-content h7, .block-rendered:hover .block-rendered-content p{
+	color: #1046f1;
+}
+.block-rendered img{
+	float: left;
+	filter:grayscale(1) invert(0) brightness(0);
+}
+.block-rendered-content{
+	float: left;
+	padding-left: 20px;
+	padding-top: 6px;
+}
+.block-rendered-content h7{
+	font-size: 16px;
+	font-family: 'Montserrat-Medium', sans-serif;
+	text-align: left;
+}
+.block-rendered-content p{
+	margin: 0;
+	font-size: 22px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	text-align: left;
+}
+.backButton, .viewOtherButton{
+	width: 50%;
+	float: left;
+	text-align: center;
+	height: 40px;
+	font-size: 16px;
+	padding: 8px 0;
+}
+.backButton{
+	color: #333333;
+	background: #e6e7e8;
+}
+.backButton:hover{
+	color: #333333;
+	background: #c2c2c2;
+}
+.viewOtherButton{
+	color: #ffffff;
+	background: #6f93f9;
+}
+.viewOtherButton:hover{
+	color: #fff;
+	background: #1046f1;
+}
+.conBody{
+	width: 100%;
+	margin-top: 50px;
+	float: left;
+}
+.conBodyLeft{
+	width: 25%;
+	float: left;
+}
+.conBodyRight{
+	width: 75%;
+	float: left;
+	background: #f1f1f2;
+	border: 1px solid #bbbdbf;
+	padding: 50px;
+}
+.con-left-menu{
+	
+}
