@@ -4005,15 +4005,19 @@ div.uploadNameCard button{
 	float: left;
 }
 .conBodyLeft{
-	width: 25%;
+	width: 300px;
 	float: left;
+	z-index: 2;
+	position: absolute;
 }
 .conBodyRight{
-	width: 75%;
+	width: calc(100% - 300px);
 	float: left;
 	background: #f1f1f2;
 	border: 1px solid #bbbdbf;
 	padding: 50px;
+	z-index: 1;
+	margin-left: 299px;
 }
 .con-left-menu {
 	padding: 8px 30px;
@@ -4068,4 +4072,107 @@ div.uploadNameCard button{
 	padding-left: 50px;
 	font-size: 16px;
 	font-family: 'Montserrat-Medium', sans-serif;
+}
+.blockD{
+	margin-bottom: 40px;
+}
+.blockDTitle{
+	margin-bottom: 20px;
+}
+.blockDTitle h7{
+	font-size: 20px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	color: #000;
+}
+.blockDTitle a{
+	font-size: 12px;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.blockDTitle{
+	float: left;
+	width: 100%;
+}
+.blockDGrid{
+	float: left;
+	width: 100%;
+}
+.blockDFooter{
+	float: left;
+	width: 100%;
+}
+.IPListItem{
+	width: 100%;
+	float: left;
+	padding: 12px 25px;
+}
+.IPListItemAva{
+	width: 25%;
+	float: left;
+}
+.IPListItemAva img{
+	width: 100%;
+}
+.IPListItemContent{
+	width: 75%;
+	float: left;
+	padding-left: 30px;
+}
+.IPListItemContent h7{
+	color: #000;
+	margin-bottom: 5px;
+	float: left;
+	width: 100%;
+}
+.IPListItemContent p{
+	font-size: 16px;
+	font-family: 'Montserrat-Light', sans-serif;
+	color: #404041;
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+.blockDFooter .pageNav{
+	float: none;
+	margin: 10px auto;
+}
+.blockDGrid .resultItem table tr td:nth-child(1) p{
+	font-size: 14px;
+}
+.blockDGrid .resultItem table tr td:nth-child(2) {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    font-size: 14px;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+.blockDGrid .resultItem .resultItemAva{
+	width: 70px;
+	height: 70px;
+}
+.blockDGrid .resultItem .resultItemCompanyTitle {
+	width: calc(100% - 70px);
+	max-height: 80px;
+	overflow: hidden;
+}
+.companyListItem .resultItem{
+	height: 210px;
+}
+.companyListItem .resultItem .resultItemCompanyShortDesc a:hover{
+	color: #4366db;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.companyListItem{
+	float: left;
+	width: 50%;
+	padding: 0 5px 0 10px;
+	margin-top: 5px;
+}
+.companyListItem:nth-child(2n){
+	padding: 0 10px 0 5px;
+}
+.divider{
+	border-top: 1px solid #e2e2e2;
+	width: 60%;
+	height: 1px;
+	margin: 0 auto;
 }
