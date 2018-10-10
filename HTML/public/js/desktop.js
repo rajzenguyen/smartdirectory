@@ -707,3 +707,13 @@ $(document).ready(function(){
 		
 	});
 });
+
+$(document).ready(function(){
+	$(".con-left-menu").click(function(){
+		var a = $(this).attr('data-target');
+		$(".blockC").hide();
+		$("." + a).show();
+		$(".con-left-menu").removeClass("activeMenu");
+		$(this).addClass("activeMenu");
+	});
+});

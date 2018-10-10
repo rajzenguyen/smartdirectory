@@ -4015,6 +4015,57 @@ div.uploadNameCard button{
 	border: 1px solid #bbbdbf;
 	padding: 50px;
 }
-.con-left-menu{
-	
+.con-left-menu {
+	padding: 8px 30px;
+	font-size: 18px;
+}
+.con-left-menu:hover {
+	cursor: pointer;
+	color: #1046f1;
+	background: #f1f1f2;
+	font-family: 'Montserrat-Bold', sans-serif;
+	border-top: 1px solid #bbbdbf;
+	border-bottom: 1px solid #bbbdbf;
+}
+.con-left-menu img{
+	width: 30px;
+	margin-right: 10px;
+}
+.con-left-menu.activeMenu{
+	color: #1046f1;
+	background: #f1f1f2;
+	font-family: 'Montserrat-Bold', sans-serif;
+	border-top: 1px solid #bbbdbf;
+	border-bottom: 1px solid #bbbdbf;
+}
+.blockC{
+	display: none;
+}
+.blockC.geography{
+	display: block;
+}
+.conBodyRight table{
+	width: 100%;
+}
+.conBodyRight table tr td{
+	vertical-align: middle;
+	padding: 15px 0;
+	font-size: 18px;
+	color: #333;
+}
+.conBodyRight table tr td ul li{
+	font-size: 16px;
+}
+.conBodyRight table tr td:nth-child(1){
+	width: 25%;
+	font-family: 'Montserrat-Bold', sans-serif;
+}
+.conBodyRight table tr td:nth-child(1) p{
+	font-size: 16px;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.conBodyRight table tr td:nth-child(2){
+	padding-left: 50px;
+	font-size: 16px;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
