@@ -4015,7 +4015,7 @@ div.uploadNameCard button{
 	float: left;
 	background: #f1f1f2;
 	border: 1px solid #bbbdbf;
-	padding: 50px;
+	padding: 50px 20px 50px 50px;
 	z-index: 1;
 	margin-left: 299px;
 }
@@ -4062,16 +4062,16 @@ div.uploadNameCard button{
 }
 .conBodyRight table tr td:nth-child(1){
 	width: 25%;
-	font-family: 'Montserrat-Bold', sans-serif;
+	font-family: 'Montserrat-Medium', sans-serif;
 }
 .conBodyRight table tr td:nth-child(1) p{
 	font-size: 16px;
-	font-family: 'Montserrat-Medium', sans-serif;
+	font-family: 'Montserrat-Light', sans-serif;
 }
 .conBodyRight table tr td:nth-child(2){
 	padding-left: 50px;
 	font-size: 16px;
-	font-family: 'Montserrat-Medium', sans-serif;
+	font-family: 'Montserrat-Light', sans-serif;
 }
 .blockD{
 	margin-bottom: 40px;
@@ -4086,7 +4086,7 @@ div.uploadNameCard button{
 }
 .blockDTitle a{
 	font-size: 12px;
-	font-family: 'Montserrat-Light', sans-serif;
+	font-family: 'Montserrat-Regular', sans-serif;
 }
 .blockDTitle{
 	float: left;
@@ -4095,6 +4095,7 @@ div.uploadNameCard button{
 .blockDGrid{
 	float: left;
 	width: 100%;
+	margin-bottom: 10px;
 }
 .blockDFooter{
 	float: left;
@@ -4103,7 +4104,7 @@ div.uploadNameCard button{
 .IPListItem{
 	width: 100%;
 	float: left;
-	padding: 12px 25px;
+	padding: 12px 25px 12px 10px;
 }
 .IPListItemAva{
 	width: 25%;
@@ -4134,6 +4135,7 @@ div.uploadNameCard button{
 .blockDFooter .pageNav{
 	float: none;
 	margin: 10px auto;
+	width: 29%;
 }
 .blockDGrid .resultItem table tr td:nth-child(1) p{
 	font-size: 14px;
@@ -4143,7 +4145,7 @@ div.uploadNameCard button{
 	padding-top: 5px;
 	padding-bottom: 5px;
     font-size: 14px;
-    font-family: 'Montserrat-Medium', sans-serif;
+    font-family: 'Montserrat-Light', sans-serif;
 }
 .blockDGrid .resultItem .resultItemAva{
 	width: 70px;
@@ -4172,7 +4174,91 @@ div.uploadNameCard button{
 }
 .divider{
 	border-top: 1px solid #e2e2e2;
-	width: 60%;
+	width: 100%;
+	float: left;
 	height: 1px;
-	margin: 0 auto;
+	margin: 10px auto 40px auto;
+}
+.propertyListItem{
+	width: 33.33333%;
+	float: left;
+	padding-left: 10px;
+}
+.propertyListItemTop{
+	width: 100%;
+	float: left;
+}
+.propertyListItemTop img{
+	height: 190px;
+}
+.propertyListItemTop h6{
+	font-size: 16px;
+	margin-top: -60px;
+	margin-left: 10px;
+	color: #fff;
+}
+.propertyListItemBot{
+	width: 100%;
+	float: left;
+	padding: 0px 10px;
+	background: #fff;
+}
+.propertyListItemBot h6{
+	font-size: 18px;
+	margin-top: 15px;
+}
+.botB{
+	width: 100%;
+	float: left;
+}
+.botB h7{
+	float: right;
+	font-size: 13px;
+}
+.botB p{
+	float: left;
+	font-size: 13px;
+}
+.newsItemPH{
+	width: 100%;
+	padding: 10px;
+	float: left;
+}
+.newsItemH{
+	float: left;
+	border-bottom: 1px solid rgb(218, 218, 218);
+}
+.newsItemHL{
+	width: 30%;
+	float: left;
+}
+.newsItemHR{
+	width: 70%;
+	padding-left: 30px;
+	float: left;
+}
+.newsItemHR a{
+	color: #333;
+	float: left;
+}
+.newsItemHR h7{
+	float: left;
+	margin-bottom: 8px;
+}
+.newsItemHR span{
+	font-size: 14px;
+	color: #999;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.newsItemHR p{
+	font-size: 14px;
+	color: #333;
+	font-family: 'Montserrat-Light', sans-serif;
+	margin-top: 8px;
+}
+.newsItemHL img{
+	width: 100%;
+}
+.newsevents .newsItemTitle h6{
+	font-size: 16px;
 }

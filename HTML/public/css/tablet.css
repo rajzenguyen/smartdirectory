@@ -302,6 +302,26 @@
 #contentapp #app .appContent {
     margin-top: 50px;
 }
+.conLeft {
+	width: 60%;
+}
+.conRight {
+	width: 40%;
+}
+.blockDFooter .pageNav {
+    width: 41%;
+}
+.companyListItem {
+	width: 100%;
+	padding: 5px 5px 0 10px;
+}
+.companyListItem:nth-child(2n) {
+	padding: 5px 5px 0 10px;
+}
+.propertyListItem {
+    width: 50%;
+    margin-bottom: 20px;
+}
 }
 
 
@@ -545,109 +565,210 @@
 	#companyInfo {
 		padding-top: 30px;
 	}
-	
-.footerLeftContent {
-    width: 25%;
-}
-.footerRightContent {
-	width: 75%;
-}
-.aboutSmartContent p {
-    margin: 10px 10px 20px 10px;
-}
-#ourCustomer img, #ourPartner img {
-	width: 150px;
-	height: 100px;
-    padding: 40px;
-}
-.aboutSmartContent h2 {
-    font-size: 36px;
-}
-#login .modal-dialog {
-    width: 90%;
-}
-#signup .modal-dialog {
-    width: 90%;
-}
-.modalRight {
-    display: none;
-}
-.modalLeft {
-	width: 100%;
-	border-radius: 6px;
-}
-#ourCustomer, #ourPartner {
-    min-height: 310px;
-    background-size: 100%;
-}
+		
+	.footerLeftContent {
+		width: 25%;
+	}
+	.footerRightContent {
+		width: 75%;
+	}
+	.aboutSmartContent p {
+		margin: 10px 10px 20px 10px;
+	}
+	#ourCustomer img, #ourPartner img {
+		width: 150px;
+		height: 100px;
+		padding: 40px;
+	}
+	.aboutSmartContent h2 {
+		font-size: 36px;
+	}
+	#login .modal-dialog {
+		width: 90%;
+	}
+	#signup .modal-dialog {
+		width: 90%;
+	}
+	.modalRight {
+		display: none;
+	}
+	.modalLeft {
+		width: 100%;
+		border-radius: 6px;
+	}
+	#ourCustomer, #ourPartner {
+		min-height: 310px;
+		background-size: 100%;
+	}
 
-.basicContent .customCard .whiteSVG, .customCard h7{
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: block;
-	-webkit-justify-content: none;
-	-webkit-align-items: none;
-	height: auto;
-}
-.customCard .blackSVG{
-	height: auto;
-}
-.customCard svg{
-	height: auto;
-}
-#app .appContent {
-	float: left;
-}
-#contentapp #app .appImg img{
-	width: 100%;
-}
-#contentapp #app {
-    padding: 60px 0px;
-}
-.appFeatureInfo {
-    width: 40%;
-}
-.appFeatureContent{
-	width: 60%;
-	max-width: 400px;
-	float: left;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 60px;
-}
-.appFeatureInfo h2{
-	font-size: 40px;
-}
-.appPros{
-	margin-bottom: 300px;
-}
-.appPros .appContent {
-	width: 100%;
-	text-align: center;
-	margin-top: 650px;
-	height: 300px;
-	background: #fff;
-}
-.appDown {
-    padding: 50px 0;
-}
-.appStore img {
-	width: 30%;
-	margin-right: 20px;
-}
-.appQR {
-	width: 30%;
-    margin-right: 30px;
-}
-.appQR img{
-	width: 100%;
-}
-.appStore p {
-	margin-top: 40px;
-	font-size: 18px;
-}
-#contentapp #app .appContent {
-    margin-top: 50px;
-}
+	.basicContent .customCard .whiteSVG, .customCard h7{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: block;
+		-webkit-justify-content: none;
+		-webkit-align-items: none;
+		height: auto;
+	}
+	.customCard .blackSVG{
+		height: auto;
+	}
+	.customCard svg{
+		height: auto;
+	}
+	#app .appContent {
+		float: left;
+	}
+	#contentapp #app .appImg img{
+		width: 100%;
+	}
+	#contentapp #app {
+		padding: 60px 0px;
+	}
+	.appFeatureInfo {
+		width: 40%;
+	}
+	.appFeatureContent{
+		width: 60%;
+		max-width: 400px;
+		float: left;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 60px;
+	}
+	.appFeatureInfo h2{
+		font-size: 40px;
+	}
+	.appPros{
+		margin-bottom: 300px;
+	}
+	.appPros .appContent {
+		width: 100%;
+		text-align: center;
+		margin-top: 650px;
+		height: 300px;
+		background: #fff;
+	}
+	.appDown {
+		padding: 50px 0;
+	}
+	.appStore img {
+		width: 30%;
+		margin-right: 20px;
+	}
+	.appQR {
+		width: 30%;
+		margin-right: 30px;
+	}
+	.appQR img{
+		width: 100%;
+	}
+	.appStore p {
+		margin-top: 40px;
+		font-size: 18px;
+	}
+	#contentapp #app .appContent {
+		margin-top: 50px;
+	}
+	.conLeft {
+		width: 60%;
+	}
+	.conRight {
+		width: 40%;
+	}
+	.conRight a{
+		font-size: 12px;
+	}
+	.block-rendered img {
+		width: 40px;
+		padding-top: 10px;
+	}
+	.block-rendered-content {
+		padding-left: 10px;
+		padding-top: 6px;
+	}
+	.block-rendered-content h7 {
+		font-size: 14px;
+	}
+	.block-rendered-content p {
+		font-size: 18px;
+	}
+	.conBodyLeft {
+		width: 200px;
+	}
+	.conLeft h4 {
+		font-size: 32px;
+	}
+	.conBodyRight {
+		width: calc(100% - 200px);
+		margin-left: 199px;
+		padding: 20px 10px 20px 20px;
+	}
+	.con-left-menu {
+		padding: 8px 10px;
+		font-size: 14px;
+	}
+	.conBodyRight table tr td {
+		font-size: 14px;
+	}
+	.conBodyRight table tr td:nth-child(1) p{
+		font-size: 14px;
+	}
+	.conBodyRight table tr td:nth-child(2){
+		padding-left: 30px;
+		font-size: 14px;
+	}
+	.conBodyRight table tr td:nth-child(2) p{
+		font-size: 14px;
+	}
+	.blockDTitle h7 {
+		font-size: 18px;
+	}
+	.IPListItem {
+		padding: 12px 5px 12px 10px;
+	}
+	.IPListItemContent h7 {
+		font-size: 16px;
+	}
+	.IPListItemContent p {
+		font-size: 14px;
+	}
+	.blockDFooter .pageNav {
+		width: 43%;
+	}
+	.blockD {
+		margin-bottom: 20px;
+	}
+	.companyListItem {
+		width: 100%;
+		padding: 5px 5px 0 10px;
+		margin-top: 5px;
+	}
+	.companyListItem:nth-child(2n) {
+		padding: 5px 5px 0 10px;
+	}
+	.companyListItem .resultItem {
+		height: auto;
+		padding-top: 5px;
+	}
+	.propertyListItem {
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.newsItemHL {
+		width: 25%;
+	}
+	.newsItemHR {
+		width: 75%;
+		padding-left: 20px;
+	}
+	.newsItemHR h7 {
+		font-size: 16px;
+	}
+	.newsItemHR p {
+		font-size: 12px;
+	}
+	.newsItemHR span {
+		font-size: 12px;
+	}
 }

@@ -5532,3 +5532,371 @@ div.uploadNameCard button{
 	font-size: 18px;
 	text-align: center;
 }
+
+.conLeft{
+	width: 100%;
+	float: left;
+	padding: 0 20px;
+}
+.conRight{
+	width: 100%;
+	float: left;
+}
+.conHead{
+	float: left;
+}
+.conLeft h4{	
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+.block-rendered{
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+.block-rendered:hover{
+	cursor: pointer;
+}
+.block-rendered:hover img{
+	filter: none;
+}
+.block-rendered:hover .block-rendered-content h7, .block-rendered:hover .block-rendered-content p{
+	color: #1046f1;
+}
+.block-rendered img {
+    float: left;
+    filter: grayscale(1) invert(0) brightness(0);
+    width: 30px;
+	margin-top: 5px;
+}
+.block-rendered-content{
+	float: left;
+	padding-left: 20px;
+	padding-top: 6px;
+}
+.block-rendered-content h7{
+	font-size: 10px;
+	font-family: 'Montserrat-Medium', sans-serif;
+	text-align: left;
+}
+.block-rendered-content p{
+	margin: 0;
+	font-size: 13px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	text-align: left;
+}
+.backButton, .viewOtherButton{
+	width: 50%;
+	float: left;
+	text-align: center;
+	height: 40px;
+	font-size: 16px;
+	padding: 8px 0;
+}
+.backButton{
+	color: #333333;
+	background: #e6e7e8;
+}
+.backButton:hover{
+	color: #333333;
+	background: #c2c2c2;
+}
+.viewOtherButton{
+	color: #ffffff;
+	background: #6f93f9;
+}
+.viewOtherButton:hover{
+	color: #fff;
+	background: #1046f1;
+}
+.conBody{
+	width: 100%;
+	margin-top: 10px;
+	float: left;
+}
+.conBody .nav-tabs {
+    border: none;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 65px;
+}
+.conBody .companySlideNav {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 2;
+    padding-left: 10px;
+	height: 55px;
+	border: none;
+}
+.conBody .companySlideNav ul {
+    width: 800px;
+    z-index: 1;
+    position: relative;
+}
+.conBodyLeft{
+	width: 300px;
+	float: left;
+	z-index: 2;
+	position: absolute;
+}
+.conBodyRight{
+	width: 100%;
+	float: left;
+	padding: 10px;
+	z-index: 1;
+}
+.con-left-menu {
+	padding: 8px 30px;
+	font-size: 18px;
+}
+.con-left-menu:hover {
+	cursor: pointer;
+	color: #1046f1;
+	background: #f1f1f2;
+	font-family: 'Montserrat-Bold', sans-serif;
+	border-top: 1px solid #bbbdbf;
+	border-bottom: 1px solid #bbbdbf;
+}
+.con-left-menu img{
+	width: 30px;
+	margin-right: 10px;
+}
+.con-left-menu.activeMenu{
+	color: #1046f1;
+	background: #f1f1f2;
+	font-family: 'Montserrat-Bold', sans-serif;
+	border-top: 1px solid #bbbdbf;
+	border-bottom: 1px solid #bbbdbf;
+}
+.conBodyRight table{
+	width: 100%;
+}
+.conBodyRight table tr td{
+	vertical-align: middle;
+	padding: 8px 0;
+	font-size: 12px;
+	color: #333;
+}
+.conBodyRight table tr td ul{
+	padding: 0;
+}
+.conBodyRight table tr td ul li{
+	font-size: 12px;
+	padding: 0;
+}
+.conBodyRight table tr td:nth-child(1){
+	width: 29%;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.conBodyRight table tr td:nth-child(1) p{
+	font-size: 12px;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.conBodyRight table tr td:nth-child(2){
+	padding-left: 50px;
+	font-size: 12px;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.blockD{
+	margin-bottom: 0px;
+}
+.blockDTitle h7{
+	font-size: 16px;
+	font-family: 'Montserrat-Bold', sans-serif;
+	color: #000;
+}
+.blockDTitle a{
+	font-size: 12px;
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+.blockDTitle{
+	float: left;
+	width: 100%;
+	margin-bottom: 0px;
+}
+.blockDGrid{
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.blockDFooter{
+	float: left;
+	width: 100%;
+}
+.IPListItem{
+	width: 100%;
+	float: left;
+	padding: 15px;
+}
+.IPListItemAva{
+	width: 100%;
+	float: left;
+}
+.IPListItemAva img{
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+}
+.IPListItemContent{
+	width: 100%;
+	float: left;
+	background: #f1f2f2;
+	padding: 0 10px 20px 10px;
+}
+.IPListItemContent h7{
+	color: #000;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	float: left;
+	width: 100%;
+	font-size: 15px;
+}
+.IPListItemContent p{
+	font-size: 14px;
+	font-family: 'Montserrat-Light', sans-serif;
+	color: #404041;
+	margin: 0;
+	float: left;
+	width: 100%;
+	margin: 5px 0px;
+}
+.blockDFooter .pageNav{
+	float: none;
+	margin: 10px auto;
+	width: 29%;
+}
+.blockDGrid .resultItem table tr td:nth-child(1) p{
+	font-size: 14px;
+}
+.blockDGrid .resultItem table tr td:nth-child(2) {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    font-size: 14px;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+.blockDGrid .resultItem .resultItemAva{
+	width: 70px;
+	height: 70px;
+}
+.blockDGrid .resultItem .resultItemCompanyTitle {
+	width: calc(100% - 70px);
+	max-height: 80px;
+	overflow: hidden;
+}
+.companyListItem .resultItem{
+	height: 210px;
+}
+.companyListItem .resultItem .resultItemCompanyShortDesc a:hover{
+	color: #4366db;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+.companyListItem{
+	float: left;
+	width: 50%;
+	padding: 0 10px 0 10px;
+	margin-top: 5px;
+}
+.companyListItem:nth-child(2n){
+	padding: 0 10px 0 5px;
+}
+.divider{
+	border-top: 1px solid #e2e2e2;
+	width: 100%;
+	float: left;
+	height: 1px;
+	margin: 10px auto 40px auto;
+}
+.propertyListItem{
+	width: 33.33333%;
+	float: left;
+	padding: 0 10px;
+}
+.propertyListItemTop{
+	width: 100%;
+	float: left;
+}
+.propertyListItemTop img{
+	height: 220px;
+}
+.propertyListItemTop h6{
+	font-size: 16px;
+	margin-top: -60px;
+	margin-left: 10px;
+	color: #fff;
+}
+.propertyListItemBot{
+	width: 100%;
+	float: left;
+	padding: 0px 20px 20px 20px;
+	background: #f1f2f2;
+}
+.propertyListItemBot h6{
+	font-size: 18px;
+	margin-top: 15px;
+}
+.botB{
+	width: 100%;
+	float: left;
+	margin: 5px 0;
+}
+.botB h7{
+	float: right;
+	font-size: 13px;
+}
+.botB p{
+	float: left;
+	font-size: 13px;
+}
+.newsItemPH{
+	width: 100%;
+	padding: 10px;
+	float: left;
+}
+.newsItemH{
+	float: left;
+	border-bottom: 1px solid rgb(218, 218, 218);
+	padding-bottom: 20px;
+}
+.newsItemHL{
+	width: 20%;
+	float: left;
+}
+.newsItemHR{
+	width: 80%;
+	padding-left: 10px;
+	float: left;
+}
+.newsItemHR a{
+	color: #333;
+	float: left;
+}
+.newsItemHR h7{
+	float: left;
+	margin-bottom: 8px;
+	font-size: 16px;
+}
+.newsItemHR span{
+	font-size: 12px;
+	color: #999;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+.newsItemHR p{
+	font-size: 14px;
+	color: #333;
+	font-family: 'Montserrat-Light', sans-serif;
+	margin-top: 8px;
+}
+.newsItemHL img{
+	width: 100%;
+}
+.newsevents .newsItemTitle h6{
+	font-size: 16px;
+}

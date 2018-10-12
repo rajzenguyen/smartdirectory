@@ -81,6 +81,16 @@ $(document).ready(function(){
 			  variableWidth: false,
 			  slidesToShow: 1
 			});
+				
+			$('.blockDGrid').slick({
+				arrows: false,
+				dots: true,
+				autoplay: true,
+				infinite: true,
+				centerMode: false,
+				variableWidth: false,
+				slidesToShow: 1
+			});
 		}
 	});
 	
