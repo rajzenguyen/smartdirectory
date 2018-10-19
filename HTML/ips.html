@@ -1,0 +1,997 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Smart Directory</title>
+	<meta charset="utf-8" name="description" content="Smart Directory" />
+	<meta charset="utf-8" name="keywords" content="Smart Directory" />
+
+	<link rel="stylesheet" href="public/css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="public/css/fontawesome-all.css" type="text/css" />
+    <link rel="stylesheet" href="public/slick/slick.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="public/slick/slick-theme.css" />
+	<link rel="stylesheet" href="public/css/general.css" type="text/css" />
+	<link rel="stylesheet" href="public/css/desktop.css" type="text/css" />
+    <link rel="stylesheet" href="public/css/tablet.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+	<div class="topNavWhite">
+		<div class="topNav">
+			<div class="container">
+				<div class="navLogo">
+					<a href="/">
+						<img src="public/images/logo.png" height="100%" />
+					</a>
+				</div>
+				<div class="navContent">
+					<ul>
+						<li class="searchBox">
+							<input type="text" name="txtSearchNavTxt" placeholder="enter anything to search...." style="display:none;" />
+							<button type="button" name="btnSearchNavBtn" class="iconNextInput" style="display:none;">
+								<img src="public/assets/search.svg" />
+							</button>
+							<button type="button" name="buttonTrigger" class="buttonTrigger">
+								<img src="public/assets/search.svg" />
+							</button>
+						</li>
+						<li>
+							<a class="dropdown-toggle" href="#" role="button" id="user">
+								<img src="public/assets/profile.svg" width="24px" class="iconSVG whiteSVG" />
+							</a>
+
+							<div class="dropdown-menu" aria-labelledby="user">
+								<div class="smenu">
+									<ul>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#login">Sign In</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#signup">Sign Up</a>
+										</li>
+										<li>
+											<a href="#" class="colorF90">Logout</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<a class="dropdown-toggle" href="#" role="button" id="menu">
+								<img src="public/assets/burger.svg" width="24px" height="24px" />
+							</a>
+							<div class="dropdown-menu" aria-labelledby="menu">
+								<div class="smenu">
+									<ul>
+										<li class="dropdown-submenu">
+											<a class="test" tabindex="-1" href="#">English
+												<img src="public/assets/dropdown.svg" />
+											</a>
+											<ul class="dropdown-menu submenu">
+												<li>
+													<a tabindex="-1" href="#">English </a>
+												</li>
+												<li>
+													<a tabindex="-1" href="#">Vietnamese</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#fail">Fail</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#success">Success</a>
+										</li>
+										<li>
+											<a href="FAQ.html">F.A.Q</a>
+										</li>
+										<li>
+											<a href="#" data-toggle="modal" data-target="#feedback">Feedback</a>
+										</li>
+										<li>
+											<a href="#">Contact Us</a>
+										</li>
+									</ul>
+
+
+								</div>
+							</div>
+						</li>
+					</ul>
+
+
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<div id="content">
+		<div class="container">
+			<div class="conHead">
+				<div class="conLeft">
+					<h4>Vietnam Singapore Industrial Park 1 (VSIP 1)</h4>
+					<div class="block-rendered">
+						<img src="public/assets/areaIcon-01.svg">
+						<div class="block-rendered-content">
+							<h7>Total Area</h7>
+							<p>2694 ha</p>
+						</div>
+					</div>
+					<div class="block-rendered">
+						<img src="public/assets/ips-oRate-01.svg">
+						<div class="block-rendered-content">
+							<h7>Occupancy Rate</h7>
+							<p>100%</p>
+						</div>
+					</div>
+					<div class="block-rendered">
+						<img src="public/assets/ips-location-01.svg">
+						<div class="block-rendered-content">
+							<h7>Location</h7>
+							<p>Thuan An, Binh Duong</p>
+						</div>
+					</div>
+					<div class="block-rendered">
+						<img src="public/assets/companyIcon-01.svg">
+						<div class="block-rendered-content">
+							<h7>Number of Tenants</h7>
+							<p>12,069</p>
+						</div>
+					</div>
+					<div class="block-rendered">
+						<img src="public/assets/populationIcon-01.svg">
+						<div class="block-rendered-content">
+							<h7>Employees</h7>
+							<p>1,802,500 people</p>
+						</div>
+					</div>
+					<div class="block-rendered">
+						<img src="public/assets/propertiesIcon-01.svg">
+						<div class="block-rendered-content">
+							<h7>On-sale Properties</h7>
+							<p>200</p>
+						</div>
+					</div>
+				</div>
+				<div class="conRight">
+					<div class="citiesMap">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501001.6519969793!2d106.37078818047354!3d11.18205270000898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174b66a8ef92879%3A0x339fda891c8d1473!2sBinh+Duong%2C+Vietnam!5e0!3m2!1sen!2s!4v1539058887428" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="conBody">
+				<div class="conBodyLeft">
+					<div class="con-left-menu activeMenu" data-target="geography">
+						<img src="public/assets/geography-01.png"/>
+						General Information
+					</div>
+					<div class="con-left-menu" data-target="infrastructure">
+						<img src="public/assets/infrastructure-01.png"/>
+						Infrastructure
+					</div>
+					<div class="con-left-menu" data-target="fee">
+						<img src="public/assets/ips-fee-01.svg"/>
+						Fee
+					</div>
+					<div class="con-left-menu" data-target="connection">
+						<img src="public/assets/connection-01.png"/>
+						Connection
+					</div>
+					<div class="con-left-menu" data-target="gallery">
+						<img src="public/assets/ips-gallery-01.svg"/>
+						Gallery
+					</div>
+					<div class="con-left-menu" data-target="newsevents">
+						<img src="public/assets/news-events-01.png"/>
+						News & Events
+					</div>
+				</div>
+				<div class="conBodyRight">
+					<div class="blockC geography">
+						<table>
+							<tr>
+								<td colspan="2">
+									Investor
+									<p>
+										Vietnam-Singapore Industrial Park Joint Venture Company (Joint Venture between Becamex IDC Corporation & Sembcorp Development)
+										<br>
+										* Management office:<br>
+										- Address: VSIP I Binh Duong, No. 8 Dai lo Huu Nghi, VSIP, <br>
+										Thuan An Town, Binh Duong.<br>
+										- Tel: (0274) 3743 898; Fax: (0274) 3743 430<br>
+										- Email: marketing@vsip.com.vn<br>
+										- Website: www.vsip.com.vn <br>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Total Area
+									<p>
+										250 ha
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Address
+									<p>
+										Thuan An, Binh Duong, Viet Nam
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Distance to key location
+									<table class="tblDistance">
+										<tr>
+											<td>- Ben Thanh Market:</td>
+											<td>123 km</td>
+										</tr>
+										<tr>
+											<td>- Mien Dong Coach Station:</td>
+											<td>123 km</td>
+										</tr>
+										<tr>
+											<td>- Cat Lai Port:</td>
+											<td>123 km</td>
+										</tr>
+										<tr>
+											<td>- Thu Dau Mot Market: </td>
+											<td>123 km</td>
+										</tr>
+										<tr>
+											<td>- Moc Bai Gate: </td>
+											<td>123 km</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Policies to attract investment
+									<p>
+										VSIP is a self-contained industrial park with modern facilities such as:<br>
+											- Ready-built factories<br>
+											- Full infrastructure facilities including electricity, treated water, sewerage treatment<br>
+											- Telecommunications<br>
+										For investors to set up their manufacturing plants.<br>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Scope of investment
+									<p>
+										Engineering and Car Parts and Accessories Electronics and Electrical, Pharmaceuticals and Health Care, Food and Beverage, Supporting Industries, Food Processing, Construction Materials, Mechanical Engineering, Electronics, Equipment and Spare parts, Medical Instruments.
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					
+					<div class="blockC infrastructure">
+						<table>
+							<tr>
+								<td colspan="2">
+									Infrastructure
+									<p>
+										Infrastructure meeting the international standards, wastewater treatment plants, power plants...
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Land Usage Structure
+									<p>
+										Minimum land plot from 5,000 sqm (currently 100% occupied)
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Weather
+									<p>
+										Tropical equatorial nature, year-round temperatures, high humidity and abundant light source.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Terrain
+									<p>
+										Flat land
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Traffic Network
+									<p>
+										Spindle system wide 28m, 4-lane traffic system 18m wide internal axis, including 2 lanes
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Electricity supply system
+									<p>
+										VSIP Power Plant synchronized with National - Grid Supply: 4x63 MVA – 110/22 KV transformer equal to 214.2 MW
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Water supply system
+									<p>
+										WHO Quality Standard: max capacity of 40,000 m3
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Sewage treament
+									<p>
+										18,000 m3 per day. On progress to install the 4th module which will increase the total capacity up to 24,000 m3 per day
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Telecommunication system
+									<p>
+										6,000 lines, equipped with IDD, private leased lines and fiber optic capabilities. Broadband ADSL services available.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Public ultilities
+									<p>
+										Sports facilities, banks, post office, restaurants, canteen and commercial centre
+									</p>
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+
+					<div class="blockC connection">
+						<div class="blockD">
+							<div class="connectBodyContentItem">
+								<div class="connectBodyContentItemIMG">
+									<div>&nbsp;</div>
+									<img src="public/assets/city.svg" class="blackSVG" />
+								</div>
+								<div class="connectBodyContentItemContent">
+									<a href="#">
+										<h6>Binh Duong Province</h6>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+
+						<div class="blockD companyList">
+								<div class="blockDTitle">
+									<h7>Tenants</h7>
+									<a href="#">View all on map</a>
+								</div>
+								<div class="blockDGrid">
+									<div class="companyListItem">
+										<div class="resultItem">
+											<div class="resultItemAva">
+												<a href="#">
+													<img src="public/assets/rectangle-3.jpg" />
+												</a>
+											</div>
+											<div class="resultItemCompanyTitle">
+												<a href="#">
+													<h7>Idico Investment Construction Oil And Natural Gas Joint Stock Company</h7>
+												</a>
+											</div>
+											<div class="resultItemCompanyShortDesc">
+												<table>
+													<tr>
+														<td>
+																<p><b>Categories:</b></p>
+														</td>
+														<td>
+																<a href="#">Manufacturing</a>, <a href="#">test </a>, <a href="#">test 2</a>, <a href="#">test 3</a>, <a href="#">Manufacturing</a> 
+														</td>
+													</tr>
+													<tr>
+														<td>
+																<p><b>Address:</b></p>
+														</td>
+														<td>
+																<p><a href="#">Room 306, 3rd Floor, Saigon Tower, 29 Le Duan Street, Ben Nghe Ward</a></p>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="companyListItem">
+										<div class="resultItem">
+											<div class="resultItemAva">
+												<a href="#">
+													<img src="public/assets/rectangle-3.jpg" />
+												</a>
+											</div>
+											<div class="resultItemCompanyTitle">
+												<a href="#">
+													<h7>Idico Investment Construction Oil And Natural Gas Joint Stock Company</h7>
+												</a>
+											</div>
+											<div class="resultItemCompanyShortDesc">
+												<table>
+													<tr>
+														<td>
+																<p><b>Categories:</b></p>
+														</td>
+														<td>
+																<a href="#">Manufacturing</a>, <a href="#">test </a>, <a href="#">test 2</a>, <a href="#">test 3</a>, <a href="#">Manufacturing</a> 
+														</td>
+													</tr>
+													<tr>
+														<td>
+																<p><b>Address:</b></p>
+														</td>
+														<td>
+																<p><a href="#">Room 306, 3rd Floor, Saigon Tower, 29 Le Duan Street, Ben Nghe Ward</a></p>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="companyListItem">
+										<div class="resultItem">
+											<div class="resultItemAva">
+												<a href="#">
+													<img src="public/assets/rectangle-3.jpg" />
+												</a>
+											</div>
+											<div class="resultItemCompanyTitle">
+												<a href="#">
+													<h7>Idico Investment Construction Oil And Natural Gas Joint Stock Company</h7>
+												</a>
+											</div>
+											<div class="resultItemCompanyShortDesc">
+												<table>
+													<tr>
+														<td>
+																<p><b>Categories:</b></p>
+														</td>
+														<td>
+																<a href="#">Manufacturing</a>, <a href="#">test </a>, <a href="#">test 2</a>, <a href="#">test 3</a>, <a href="#">Manufacturing</a> 
+														</td>
+													</tr>
+													<tr>
+														<td>
+																<p><b>Address:</b></p>
+														</td>
+														<td>
+																<p><a href="#">Room 306, 3rd Floor, Saigon Tower, 29 Le Duan Street, Ben Nghe Ward</a></p>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="companyListItem">
+										<div class="resultItem">
+											<div class="resultItemAva">
+												<a href="#">
+													<img src="public/assets/rectangle-3.jpg" />
+												</a>
+											</div>
+											<div class="resultItemCompanyTitle">
+												<a href="#">
+													<h7>Idico Investment Construction Oil And Natural Gas Joint Stock Company</h7>
+												</a>
+											</div>
+											<div class="resultItemCompanyShortDesc">
+												<table>
+													<tr>
+														<td>
+																<p><b>Categories:</b></p>
+														</td>
+														<td>
+																<a href="#">Manufacturing</a>, <a href="#">test </a>, <a href="#">test 2</a>, <a href="#">test 3</a>, <a href="#">Manufacturing</a> 
+														</td>
+													</tr>
+													<tr>
+														<td>
+																<p><b>Address:</b></p>
+														</td>
+														<td>
+																<p><a href="#">Room 306, 3rd Floor, Saigon Tower, 29 Le Duan Street, Ben Nghe Ward</a></p>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="companyListItem">
+										<div class="resultItem">
+											<div class="resultItemAva">
+												<a href="#">
+													<img src="public/assets/rectangle-3.jpg" />
+												</a>
+											</div>
+											<div class="resultItemCompanyTitle">
+												<a href="#">
+													<h7>Idico Investment Construction Oil And Natural Gas Joint Stock Company</h7>
+												</a>
+											</div>
+											<div class="resultItemCompanyShortDesc">
+												<table>
+													<tr>
+														<td>
+																<p><b>Categories:</b></p>
+														</td>
+														<td>
+																<a href="#">Manufacturing</a>, <a href="#">test </a>, <a href="#">test 2</a>, <a href="#">test 3</a>, <a href="#">Manufacturing</a> 
+														</td>
+													</tr>
+													<tr>
+														<td>
+																<p><b>Address:</b></p>
+														</td>
+														<td>
+																<p><a href="#">Room 306, 3rd Floor, Saigon Tower, 29 Le Duan Street, Ben Nghe Ward</a></p>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="companyListItem">
+										<div class="resultItem">
+											<div class="resultItemAva">
+												<a href="#">
+													<img src="public/assets/rectangle-3.jpg" />
+												</a>
+											</div>
+											<div class="resultItemCompanyTitle">
+												<a href="#">
+													<h7>Idico Investment Construction Oil And Natural Gas Joint Stock Company</h7>
+												</a>
+											</div>
+											<div class="resultItemCompanyShortDesc">
+												<table>
+													<tr>
+														<td>
+																<p><b>Categories:</b></p>
+														</td>
+														<td>
+																<a href="#">Manufacturing</a>, <a href="#">test </a>, <a href="#">test 2</a>, <a href="#">test 3</a>, <a href="#">Manufacturing</a> 
+														</td>
+													</tr>
+													<tr>
+														<td>
+																<p><b>Address:</b></p>
+														</td>
+														<td>
+																<p><a href="#">Room 306, 3rd Floor, Saigon Tower, 29 Le Duan Street, Ben Nghe Ward</a></p>
+														</td>
+													</tr>
+												</table>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
+								<div class="blockDFooter">
+									<div class="pageNav">
+										<a href="#" class="number act">1</a>
+										<a href="#" class="number">2</a>
+										<a href="#" class="number">3</a>
+										...
+										<a href="#" class="number">10</a>
+										<a href="#" class="number">11</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="divider"></div>
+	
+						<div class="blockD industrialParkList">
+							<div class="blockDTitle">
+								<h7>Industrial Park Listing</h7>
+								<a href="#">View all IPs on map</a>
+							</div>
+							<div class="blockDGrid">
+								<div class="IPListItem">
+									<div class="IPListItemAva">
+										<a href="#"><img src="public/images/fulls/02.jpg"></a>
+									</div>
+									<div class="IPListItemContent">
+										<a href="#"><h7>Vietnam Singapore Industrial Park</h7></a>
+										<p>Area: 5000 m<sup>2</sup></p>
+										<p>Occupancy rate: 100% </p>
+										<p>Location: 8 Huu Nghi Avenue, Thuan An District, Vietnam</p>
+									</div>
+								</div>
+								<div class="IPListItem">
+									<div class="IPListItemAva">
+										<a href="#"><img src="public/images/fulls/02.jpg"></a>
+									</div>
+									<div class="IPListItemContent">
+										<a href="#"><h7>Vietnam Singapore Industrial Park</h7></a>
+										<p>Area: 5000 m<sup>2</sup></p>
+										<p>Occupancy rate: 100% </p>
+										<p>Location: 8 Huu Nghi Avenue, Thuan An District, Vietnam</p>
+									</div>
+								</div>
+								<div class="IPListItem">
+									<div class="IPListItemAva">
+										<a href="#"><img src="public/images/fulls/02.jpg"></a>
+									</div>
+									<div class="IPListItemContent">
+										<a href="#"><h7>Vietnam Singapore Industrial Park</h7></a>
+										<p>Area: 5000 m<sup>2</sup></p>
+										<p>Occupancy rate: 100% </p>
+										<p>Location: 8 Huu Nghi Avenue, Thuan An District, Vietnam</p>
+									</div>
+								</div>
+								<div class="IPListItem">
+									<div class="IPListItemAva">
+										<a href="#"><img src="public/images/fulls/02.jpg"></a>
+									</div>
+									<div class="IPListItemContent">
+										<a href="#"><h7>Vietnam Singapore Industrial Park</h7></a>
+										<p>Area: 5000 m<sup>2</sup></p>
+										<p>Occupancy rate: 100% </p>
+										<p>Location: 8 Huu Nghi Avenue, Thuan An District, Vietnam</p>
+									</div>
+								</div>
+							</div>
+							<div class="blockDFooter">
+								<div class="pageNav">
+									<a href="#" class="number act">1</a>
+									<a href="#" class="number">2</a>
+									<a href="#" class="number">3</a>
+									...
+									<a href="#" class="number">10</a>
+									<a href="#" class="number">11</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						
+						<div class="divider"></div>
+
+						<div class="blockD propertyList">
+							<div class="blockDTitle">
+								<h7>Properties on-sale</h7>
+								<a href="#">View all</a>
+							</div>
+							<div class="blockDGrid">
+								<div class="propertyListItem">
+									<div class="propertyListItemTop">
+										<a href="#">
+											<img src="public/images/fulls/03.jpg" width="100%">
+											<h6>1900m² Factory for Lease in Thuan An, Binh Duong</h6>
+										</a>
+									</div>
+									<div class="propertyListItemBot">
+										<h6>96 mil VND</h6>
+										<div class="botB">
+											<p>Type</p>
+											<h7>For Lease - Factory</h7>											
+										</div>
+										<div class="botB">
+											<p>Area</p>
+											<h7>1,900 m<sup>2</sup></h7>											
+										</div>
+										<div class="botB">
+											<p>Location</p>
+											<h7>Thuan An, Binh Duong</h7>											
+										</div>
+										<div class="botB">
+											<p>Purpose</p>
+											<h7>For lease</h7>											
+										</div>
+									</div>
+								</div>
+								<div class="propertyListItem">
+									<div class="propertyListItemTop">
+										<a href="#">
+											<img src="public/images/fulls/03.jpg" width="100%">
+											<h6>1900m² Factory for Lease in Thuan An, Binh Duong</h6>
+										</a>
+									</div>
+									<div class="propertyListItemBot">
+										<h6>96 mil VND</h6>
+										<div class="botB">
+											<p>Type</p>
+											<h7>For Lease - Factory</h7>											
+										</div>
+										<div class="botB">
+											<p>Area</p>
+											<h7>1,900 m<sup>2</sup></h7>											
+										</div>
+										<div class="botB">
+											<p>Location</p>
+											<h7>Thuan An, Binh Duong</h7>											
+										</div>
+										<div class="botB">
+											<p>Purpose</p>
+											<h7>For lease</h7>											
+										</div>
+									</div>
+								</div>
+								<div class="propertyListItem">
+									<div class="propertyListItemTop">
+										<a href="#">
+											<img src="public/images/fulls/03.jpg" width="100%">
+											<h6>1900m² Factory for Lease in Thuan An, Binh Duong</h6>
+										</a>
+									</div>
+									<div class="propertyListItemBot">
+										<h6>96 mil VND</h6>
+										<div class="botB">
+											<p>Type</p>
+											<h7>For Lease - Factory</h7>											
+										</div>
+										<div class="botB">
+											<p>Area</p>
+											<h7>1,900 m<sup>2</sup></h7>											
+										</div>
+										<div class="botB">
+											<p>Location</p>
+											<h7>Thuan An, Binh Duong</h7>											
+										</div>
+										<div class="botB">
+											<p>Purpose</p>
+											<h7>For lease</h7>											
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="blockDFooter">
+								<div class="pageNav">
+									<a href="#" class="number act">1</a>
+									<a href="#" class="number">2</a>
+									<a href="#" class="number">3</a>
+									...
+									<a href="#" class="number">10</a>
+									<a href="#" class="number">11</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+
+
+					<div class="blockC fee">
+						<table>
+							<tr>
+								<td colspan="2">
+									Electricity tariff
+									<p>
+										According to EVN's price
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Water tariff
+									<p>
+										Under the current provisions of the PPC
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									Sewage treatment tariff
+									<p>
+										Under the provisions of the provincial People's Committee and of the Management Board of Industrial Zones
+									</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+
+					<div class="blockC gallery">
+						<div class="blockD galleryList">
+							<div class="galleryItem">
+								<img src="public/images/fulls/06.jpg">
+							</div>
+							<div class="galleryItem">
+								<img src="public/images/fulls/07.jpg">
+							</div>
+							<div class="galleryItem">
+								<img src="public/images/fulls/08.jpg">
+							</div>
+							<div class="galleryItem">
+								<img src="public/images/fulls/01.jpg">
+							</div>
+							<div class="galleryItem">
+								<img src="public/images/fulls/02.jpg">
+							</div>
+						</div>
+					</div>
+					
+					<div class="blockC newsevents">
+							<div class="newsItemPH">
+								<div class="newsItemH">
+									<div class="newsItemHL">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<img src="public/images/fulls/03.jpg">
+										</a>
+									</div>
+									<div class="newsItemHR">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<h7>Provincial leaders reception President Sembcorp Industries (Singapore)</h7>
+										</a>
+										<span>News - 12-Oct-2018</span>
+										<p>Afternoon 12-6, at the Civic Center province, Tran Van Nam - Member of the Party Central Committee Secretary, Head of Provincial Parliament delegation has met and worked with Neil McGregor - Front President and CEO Sembcorp Industries (Singapore).</p>
+									</div>
+								</div>
+							</div>
+							<div class="newsItemPH">
+								<div class="newsItemH">
+									<div class="newsItemHL">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<img src="public/images/fulls/03.jpg">
+										</a>
+									</div>
+									<div class="newsItemHR">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<h7>Provincial leaders reception President Sembcorp Industries (Singapore)</h7>
+										</a>
+										<span>Event - 12-Oct-2018</span>
+										<p>Afternoon 12-6, at the Civic Center province, Tran Van Nam - Member of the Party Central Committee Secretary, Head of Provincial Parliament delegation has met and worked with Neil McGregor - Front President and CEO Sembcorp Industries (Singapore).</p>
+									</div>
+								</div>
+							</div>
+							<div class="newsItemPH">
+								<div class="newsItemH">
+									<div class="newsItemHL">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<img src="public/images/fulls/03.jpg">
+										</a>
+									</div>
+									<div class="newsItemHR">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<h7>Provincial leaders reception President Sembcorp Industries (Singapore)</h7>
+										</a>
+										<span>Event - 12-Oct-2018</span>
+										<p>Afternoon 12-6, at the Civic Center province, Tran Van Nam - Member of the Party Central Committee Secretary, Head of Provincial Parliament delegation has met and worked with Neil McGregor - Front President and CEO Sembcorp Industries (Singapore).</p>
+									</div>
+								</div>
+							</div>
+							<div class="newsItemPH">
+								<div class="newsItemH">
+									<div class="newsItemHL">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<img src="public/images/fulls/03.jpg">
+										</a>
+									</div>
+									<div class="newsItemHR">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<h7>Provincial leaders reception President Sembcorp Industries (Singapore)</h7>
+										</a>
+										<span>News - 12-Oct-2018</span>
+										<p>Afternoon 12-6, at the Civic Center province, Tran Van Nam - Member of the Party Central Committee Secretary, Head of Provincial Parliament delegation has met and worked with Neil McGregor - Front President and CEO Sembcorp Industries (Singapore).</p>
+									</div>
+								</div>
+							</div>
+							<div class="newsItemPH">
+								<div class="newsItemH">
+									<div class="newsItemHL">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<img src="public/images/fulls/03.jpg">
+										</a>
+									</div>
+									<div class="newsItemHR">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<h7>Provincial leaders reception President Sembcorp Industries (Singapore)</h7>
+										</a>
+										<span>News - 12-Oct-2018</span>
+										<p>Afternoon 12-6, at the Civic Center province, Tran Van Nam - Member of the Party Central Committee Secretary, Head of Provincial Parliament delegation has met and worked with Neil McGregor - Front President and CEO Sembcorp Industries (Singapore).</p>
+									</div>
+								</div>
+							</div>
+							<div class="newsItemPH">
+								<div class="newsItemH">
+									<div class="newsItemHL">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<img src="public/images/fulls/03.jpg">
+										</a>
+									</div>
+									<div class="newsItemHR">
+										<a href="#" data-toggle="modal" data-target="#news01">
+											<h7>Provincial leaders reception President Sembcorp Industries (Singapore)</h7>
+										</a>
+										<span>News - 12-Oct-2018</span>
+										<p>Afternoon 12-6, at the Civic Center province, Tran Van Nam - Member of the Party Central Committee Secretary, Head of Provincial Parliament delegation has met and worked with Neil McGregor - Front President and CEO Sembcorp Industries (Singapore).</p>
+									</div>
+								</div>
+							</div>
+							
+							<div class="pageNav">
+								<a href="#" class="number">1</a>
+								<a href="#" class="number">2</a>
+								<a href="#" class="number">3</a>
+								...
+								<a href="#" class="number">10</a>
+								<a href="#" class="numberr act">11</a>
+							</div>
+						</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!--Modal for News-->
+    <div class="newsPanel modal fade" id="news01" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h6 class="newsPanelTitle">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</h4>
+                <span><i class="fa fa-clock"></i> 12-Nov-2018</span>
+                <div class="newsDivider"></div>
+                <div class="newsPanelContent">
+                    <p style="text-align: justify;">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+
+                    <p style="text-align: justify;">This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+                    
+                    <p style="text-align: center;"><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+                    
+                    <p style="text-align: center;"><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+                    
+                    <p style="text-align: center;"><em>number of transactions reaching around 200 million per year</em></p>
+                    
+                    <p style="text-align: justify;">In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+                    <br>
+                    The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+                    <br>
+                    To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+                    
+                    <p style="text-align: justify;">&nbsp;</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
+	<script src="public/js/waypoints.min.js"></script>
+	<script src="public/js/jquery.counterup.min.js"></script>
+	<script src="public/js/jquery-3.3.1.js"></script>
+	<script src="public/js/fontawesome-all.js"></script>
+	<script src="public/js/bootstrap.min.js"></script>	
+    <script src="public/slick/slick.min.js"></script>
+	<script src="public/js/desktop.js"></script>
+
+</body>
+
+</html>

@@ -322,6 +322,9 @@
     width: 50%;
     margin-bottom: 20px;
 }
+.asrlList {
+	width: 100%;
+}
 }
 
 
@@ -770,5 +773,8 @@
 	}
 	.newsItemHR span {
 		font-size: 12px;
+	}
+	.asrlList {
+		width: 100%;
 	}
 }

@@ -1996,7 +1996,6 @@ div.aboutSmart > h2{
 	border-radius:10px;
 	overflow-y: hidden;
 }
-
 .sortPanel{
 	position:absolute;
 	display:none;
@@ -3963,6 +3962,8 @@ div.uploadNameCard button{
 	float: left;
 	padding-left: 20px;
 	padding-top: 6px;
+	width: calc(100% - 60px);
+	height: 96px;
 }
 .block-rendered-content h7{
 	font-size: 16px;
@@ -4261,4 +4262,78 @@ div.uploadNameCard button{
 }
 .newsevents .newsItemTitle h6{
 	font-size: 16px;
+}
+.tblDistance tr td{
+	width: 50% !important;
+	font-family: 'Montserrat-Light', sans-serif !important;
+	font-size: 16px !important;
+	padding: 3px !important;
+}
+.tblDistance tr td:nth-child(2){
+	font-family: 'Montserrat-Medium', sans-serif !important;
+}
+.blockC .connectBodyContentItemContent h6 {
+    margin-top: 18px;
+}
+.galleryList{
+	width: 100%;
+}
+.galleryItem{
+	width: 33.333%;
+	float: left;
+	padding: 0 5px;
+}
+.galleryItem img{
+	width: 100%;
+}
+.conTitle{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.conTitle img{
+	width: 100px;
+	float: left;
+}
+.conTitle h4{
+	width: calc(100% - 100px);
+	float: left;
+	margin: 0;
+	padding-left: 30px;
+}
+.conLeft > p{
+	text-align: center;
+}
+.asrlList{
+	width: 50%;
+	float: left;
+	padding: 10px 30px 20px 30px;
+}
+.asrlListItem{
+	background: #fff;
+	padding: 10px 30px 20px 30px;
+}
+.asrlImg, .asrlName{
+	text-align: center;
+}
+.asrlInfo table tr td{
+	font-size: 14px;
+}
+.asrlInfo table tr td:nth-child(1){
+	width: 20%;
+}
+.asrlInfo table tr td:nth-child(2){
+	width: 80%;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.layerPanel{
+	position:absolute;
+	display:none;
+	background:#fff;
+	width:300px;
+	box-shadow: 0px 3px 18px -10px rgba(0,0,0,0.5);
+	z-index:600;
+	border-radius:10px;
+	overflow-y: hidden;
 }

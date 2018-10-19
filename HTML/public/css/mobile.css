@@ -5533,10 +5533,11 @@ div.uploadNameCard button{
 	text-align: center;
 }
 
+/*Copy tu day xuong */
 .conLeft{
 	width: 100%;
 	float: left;
-	padding: 0 20px;
+	padding: 10px 20px;
 }
 .conRight{
 	width: 100%;
@@ -5576,6 +5577,8 @@ div.uploadNameCard button{
 	float: left;
 	padding-left: 20px;
 	padding-top: 6px;
+	width: calc(100% - 30px);
+	height: 60px;
 }
 .block-rendered-content h7{
 	font-size: 10px;
@@ -5705,16 +5708,31 @@ div.uploadNameCard button{
 	font-family: 'Montserrat-Light', sans-serif;
 }
 .blockD{
-	margin-bottom: 0px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.blockDTitle{
+	background: #4366db;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 16px;
 }
 .blockDTitle h7{
-	font-size: 16px;
+	font-size: 14px;
 	font-family: 'Montserrat-Bold', sans-serif;
-	color: #000;
+	color: #fff;
 }
 .blockDTitle a{
 	font-size: 12px;
 	font-family: 'Montserrat-Regular', sans-serif;
+	color: #fff;
+	margin-left: 5px;
+}
+.blockDTitle svg{
+	float: right;
+	height: 24px;
+	margin-right: 4px;
+	color: #fff;
 }
 .blockDTitle{
 	float: left;
@@ -5725,6 +5743,7 @@ div.uploadNameCard button{
 	float: left;
 	width: 100%;
 	margin-bottom: 10px;
+	display: none;
 }
 .blockDFooter{
 	float: left;
@@ -5800,7 +5819,7 @@ div.uploadNameCard button{
 }
 .companyListItem{
 	float: left;
-	width: 50%;
+	width: 100%;
 	padding: 0 10px 0 10px;
 	margin-top: 5px;
 }
@@ -5815,7 +5834,7 @@ div.uploadNameCard button{
 	margin: 10px auto 40px auto;
 }
 .propertyListItem{
-	width: 33.33333%;
+	width: 100%;
 	float: left;
 	padding: 0 10px;
 }
@@ -5899,4 +5918,80 @@ div.uploadNameCard button{
 }
 .newsevents .newsItemTitle h6{
 	font-size: 16px;
+}
+.tblDistance tr td{
+	width: 50% !important;
+	font-family: 'Montserrat-Light', sans-serif !important;
+	font-size: 12px !important;
+	padding: 3px !important;
+}
+.tblDistance tr td:nth-child(2){
+	font-family: 'Montserrat-Medium', sans-serif !important;
+}
+.blockC .connectBodyContentItemContent h6 {
+    margin-top: 14px;
+}
+.galleryList{
+	width: 100%;
+}
+.galleryItem{
+	width: 33.333%;
+	float: left;
+	padding: 0 5px;
+}
+.galleryItem img{
+	width: 100%;
+}
+.conTitle{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 60px;
+	padding: 0 20px;
+}
+.conTitle img{
+	width: 60px;
+	float: left;
+}
+.conTitle h4{
+	width: calc(100% - 60px);
+	float: left;
+	margin: 0;
+	padding-left: 10px;
+}
+.asGal{
+	padding: 0 20px;
+	float: left;
+}
+.asrlList{
+	width: 50%;
+	float: left;
+	padding: 10px 30px 20px 30px;
+}
+.asrlListItem{
+	background: #eae8ef;
+	padding: 20px;
+}
+.asrlImg, .asrlName{
+	text-align: center;
+}
+.asrlImg{
+	margin-bottom: 20px;
+}
+.asrlName h7{
+	font-size: 16px;
+}
+.asrlImg img{
+	margin: 0 auto !important;
+}
+.asrlInfo table tr td{
+	font-size: 12px;
+}
+.asrlInfo table tr td:nth-child(1){
+	width: 20%;
+}
+.asrlInfo table tr td:nth-child(2){
+	width: 80%;
+	font-size: 12px;
+	padding-left: 10px;
 }
