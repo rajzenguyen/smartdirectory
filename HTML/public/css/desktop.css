@@ -4337,3 +4337,136 @@ div.uploadNameCard button{
 	border-radius:10px;
 	overflow-y: hidden;
 }
+#job .mb-0 .btn{
+	padding: 20px 0px
+}
+table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
+	vertical-align: middle;
+}
+.jobHeader tr td:nth-child(1){
+	width: 70% !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-left: 40px;
+}
+.jobHeader tr td:nth-child(2){
+	width: 25% !important;
+	text-align: center;
+}
+.jobHeader tr td:nth-child(3){
+	width: 5% !important;
+}
+.jobTitle{
+	font-family: 'Montserrat-Bold', sans-serif !important;
+	font-size: 18px;
+	color: #6F93F9;
+	word-wrap:break-word;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-top: 0;
+}
+.jobAdd{
+	font-family: 'Montserrat-Bold', sans-serif !important;
+	font-size: 14px;
+	margin: 0;
+	color: #414042;
+}
+.jobPostDate{
+	font-family: 'Montserrat-Light', sans-serif !important;
+	font-size: 14px;
+	color: #414042;
+}
+.jobDes{
+	font-family: 'Montserrat-Medium', sans-serif !important;
+	font-size: 14px;
+	color: #414042;
+	word-wrap:break-word;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.jobWorkType{
+	font-family: 'Montserrat-Medium', sans-serif !important;
+	font-size: 18px;
+	color: #414042;
+	margin: 0;
+}
+.jobWorkTime{
+	font-family: 'Montserrat-Medium', sans-serif !important;
+	font-style: italic;
+	font-size: 14px;
+	color: #414042;
+}
+.jobSalary{
+	font-family: 'Montserrat-Bold', sans-serif !important;
+	font-size: 28px;
+	color: #1046f1;
+}
+
+.customCard:hover .jobTitle, .customCard:hover .jobSalary, .customCard:hover .jobPostDate, .customCard:hover .jobWorkType, .customCard:hover .jobWorkTime, .customCard:hover .jobAdd,.customCard:hover .jobDes{
+	color: #fff;
+}
+.customCard.expandCustomCard .jobTitle, .customCard.expandCustomCard .jobSalary, .customCard.expandCustomCard .jobPostDate, .customCard.expandCustomCard .jobWorkType, .customCard.expandCustomCard .jobWorkTime, .customCard.expandCustomCard .jobAdd, .customCard.expandCustomCard .jobDes{
+	color: #fff;
+}
+.jobContent p{
+	font-family: 'Montserrat-Light', sans-serif !important;
+	font-size: initial !important;
+}
+.jobContent{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.applyJob{
+	text-align: center;
+}
+#job .mb-0 > button{
+	position: relative;
+}
+.newsExpired{
+	display: none;
+	position: absolute; 
+	width: 100%; 
+	height: 100%; 
+	top: 0; 
+	left: 0;
+	text-align: center;
+	padding: 20px;
+}
+.expired{
+	border: 1px solid #DDA46B;
+	cursor: not-allowed;
+	text-decoration: none;
+	pointer-events: none;
+}
+.expired .newsExpired{
+	display: block;
+}
+.expired .jobHeader{
+	opacity: 0.4;
+}
+.newsExpired h3{
+	color: #DDA46B;
+	font-style: italic;
+	font-size: 40px;
+	transform:rotate(354deg);
+}
+.newsItem span{
+	padding-left: 2px;
+	padding-right: 2px;
+	font-size: 14px;
+}
+.newsType01{
+	color: #3F5BA9 !important;
+	padding-left: 15px !important;
+}
+.newsType02{
+	color: #F26A22 !important;
+	padding-left: 15px !important;
+}
+.newsType03{
+	color: #00B89E !important;
+	padding-left: 15px !important;
+}

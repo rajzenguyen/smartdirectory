@@ -731,6 +731,7 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+	/*$('.blockDGrid').eq(0).slideToggle(500);*/
 	$('.blockDTitle').click(function(){
 
 		$(this).parent().children('.blockDGrid').slideToggle(500);
