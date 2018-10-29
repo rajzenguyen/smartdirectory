@@ -755,3 +755,72 @@ $(document).ready(function(){
 		slidesToShow: 3
 	});
 });
+
+
+/* Demo code, can be delete or modified to get data from server */
+$(document).ready(function(){
+	$(".blockA table td span.editInfo").click(function(){
+		var target= $(this).attr("data-target");
+		var datatype=$(this).attr("data-type");
+		var value = $(this).parent().prev().text();
+		if(datatype == "textbox")
+		{
+			$(this).parent().prev().html("<input type=\"text\" name=\"" + target + "\" placeholder=\"" + value + "\" value=\"" + value + "\"/>");
+		}
+		else if(datatype == "textarea")
+		{
+			$(this).parent().prev().html("<textarea type=\"text\" name=\"" + target + "\" placeholder=\"" + value + "\">" + value + "</textarea>");
+		}
+		else if(datatype == "dropdown")
+		{
+			$(this).parent().prev().html("<select name=\"select-ip\"><option value=\"0\">Zone</option><option value=\"VSIP2\">Viet Nam Singapore Industrial Park 2</option><option value=\"VSIP1\">Viet Nam Singapore Industrial Park 1</option></select>");
+			$(this).parent().prev().children("select").val(value).change();
+		}
+		else if(datatype == "image")
+		{
+
+		}
+		$(this).parent().children(".submitInfo").show();
+		$(this).parent().children(".cancelInfo").show();
+		$(this).hide();
+	});
+	$(".blockA table td span.submitInfo").click(function(){
+		var datatype=$(this).attr("data-type");
+		var value;
+		if(datatype == "textbox"){
+			value = $(this).parent().prev().children("input").val();
+		}
+		else if(datatype == "textarea")
+		{
+			value = $(this).parent().prev().children("textarea").text();
+		}
+		else if(datatype == "dropdown")
+		{
+			value = $(this).parent().prev().children("select").find('option:selected').text();
+		}
+		$(this).parent().prev().text(value);
+		$(this).hide();
+		$(this).parent().children(".cancelInfo").hide();
+		$(this).parent().children(".editInfo").show();
+	});
+	$(".blockA table td span.cancelInfo").click(function(){
+		var datatype=$(this).attr("data-type");
+		var value;
+		if(datatype == "textbox"){
+			value = $(this).parent().prev().children("input").attr("placeholder");
+		}
+		else if(datatype == "textarea")
+		{
+			value = $(this).parent().prev().children("textarea").attr("placeholder");
+		}
+		else if(datatype == "dropdown")
+		{
+			value = $(this).parent().prev().children("select").find('option:selected').text();
+		}
+		$(this).parent().prev().text(value);
+		$(this).hide();
+		$(this).parent().children(".submitInfo").hide();
+		$(this).parent().children(".editInfo").show();
+	});
+});
+/* Demo code, can be delete or modified to get data from server */
