@@ -7,11 +7,16 @@
 	<meta charset="utf-8" name="description" content="Smart Directory" />
 	<meta charset="utf-8" name="keywords" content="Smart Directory" />
 
+	<link rel="stylesheet" type="text/css" href="public/css/jquery-ui.css">
 	<link rel="stylesheet" href="public/css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="public/css/fontawesome-all.css" type="text/css" />
+	<link rel="stylesheet" href="public/css/jquery.tagit.css" type="text/css">
+	<link rel="stylesheet" href="public/froalaEditor/css/froala_editor.min.css" type="text/css">
+	<link rel="stylesheet" href="public/froalaEditor/css/froala_style.min.css" type="text/css">
+	<link rel="stylesheet" href="public/froalaEditor/css/themes/royal.min.css" type="text/css">
 	<link rel="stylesheet" href="public/css/general.css" type="text/css" />
 	<link rel="stylesheet" href="public/css/desktop.css" type="text/css" />
-    <link rel="stylesheet" href="public/css/tablet.css" type="text/css" />
+	<link rel="stylesheet" href="public/css/tablet.css" type="text/css" />
 
 </head>
 
@@ -127,21 +132,21 @@
 	<div id="content">
 		<div class="container">
 			<div class="leftNav">
-				<div class="leftNavItem active">
-					<a href="#">Company Information</a>
+				<div class="leftNavItem active" data-target="editCompany">
+					<p>Company Information</p>
 				</div>
-				<div class="leftNavItem">
-					<a href="#">News & Promotions</a>
+				<div class="leftNavItem" data-target="editNews">
+					<p>News & Promotions</p>
 				</div>
-				<div class="leftNavItem">
-					<a href="#">Account Information</a>
+				<div class="leftNavItem" data-target="editAccount">
+					<p>Account Information</p>
 				</div>
-				<div class="leftNavItem">
-					<a href="#">Other Settings</a>
+				<div class="leftNavItem" data-target="editSetting">
+					<p>Other Settings</p>
 				</div>
 			</div>
 			<div class="rightCont">
-				<div class="panelCont">
+				<div class="panelCont editCompany">
 					<div class="blockA">
 						<div class="blockATit">
 							<h7>General Information</h7>
@@ -149,7 +154,24 @@
 						<table>
 							<tr>
 								<td>Company Name</td>
-								<td data-end="comName">NSO - Connecting Service</td>
+								<td>
+									<div class="infoPanel">
+										<label>English: </label> <p class="en">NSO - Connecting Services</p>
+										<label>Vietnamese: </label> <p class="vi">Công ty cổ phần một cửa</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<label>English: </label>
+											<input id="comAliasEN" placeholder="NSO - Connecting Services" value="NSO - Connecting Services"/>
+											<div class="clearfix"></div>
+										</div>
+										<div class="editItem">
+											<label>Vietnamese: </label>
+											<input id="comAliasVi" placeholder="Công ty cổ phần một cửa" value="Công ty cổ phần một cửa"/>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</td>
 								<td>
 									<span class="editInfo" data-type="textbox">Edit</span>
 									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
@@ -158,7 +180,24 @@
 							</tr>
 							<tr>
 								<td>Alias Name</td>
-								<td>NSO</td>
+								<td>
+									<div class="infoPanel">
+										<label>English: </label> <p class="en">NSO</p>
+										<label>Vietnamese: </label> <p class="vi">N.S.O</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<label>English: </label>
+											<input id="comAliasEN" placeholder="NSO" value="NSO"/>
+											<div class="clearfix"></div>
+										</div>
+										<div class="editItem">
+											<label>Vietnamese: </label>
+											<input id="comAliasVi" placeholder="N.S.O" value="N.S.O"/>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</td>
 								<td>
 									<span class="editInfo" data-type="textbox">Edit</span>
 									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
@@ -166,8 +205,43 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Fax</td>
-								<td>0234561789</td>
+								<td>Address</td>
+								<td>
+									<div class="infoPanel">
+										<label>English: </label> <p class="en">372 D33 - VietSing Town - Thuan An - Binh Duong</p>
+										<label>Vietnamese: </label> <p class="vi">Số 372 Đường D33 - Khu dân cư Việt Sing - Thuận An - Bình Dương</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<label>English: </label>
+											<input id="comAddressEN" placeholder="NSO" value="NSO"/>
+											<div class="clearfix"></div>
+										</div>
+										<div class="editItem">
+											<label>Vietnamese: </label>
+											<input id="comAddressVi" placeholder="N.S.O" value="N.S.O"/>
+											<div class="clearfix"></div>
+										</div>
+										<div class="editItem">
+											<select id="district">
+												<option value="1">Thuan An</option>
+											</select>
+										</div>
+										<div class="editItem">
+											<select id="province">
+												<option value="1">Binh Duong</option>
+											</select>
+										</div>
+										<div class="editItem">
+											<select id="country">
+												<option value="1">Viet Nam</option>
+											</select>
+										</div>
+										<div class="editItem">
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2328.9275293142973!2d106.6749878267798!3d10.980452486635867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d12739bb468f%3A0xe2bf4f397d0aa76!2sThu+Dau+Mot+University!5e0!3m2!1sen!2s!4v1540888255205" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+										</div>
+									</div>
+								</td>
 								<td>
 									<span class="editInfo" data-type="textbox">Edit</span>
 									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
@@ -176,25 +250,58 @@
 							</tr>
 							<tr>
 								<td>Website</td>
-								<td>nso.com.vn</td>
 								<td>
-									<span class="editInfo" data-type="textbox">Edit</span>
-									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
-									<span class="cancelInfo" data-type="textbox"><i class="fa fa-times"></i></span>
+									<div class="infoPanel">
+										<p class="en">nso.com.vn</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<input id="comWebsite" placeholder="nso.com.vn" value="nso.com.vn"/>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<span class="editInfo" data-type="uniquetext">Edit</span>
+									<span class="submitInfo" data-type="uniquetext"><i class="fa fa-check"></i></span>
+									<span class="cancelInfo" data-type="uniquetext"><i class="fa fa-times"></i></span>
 								</td>
 							</tr>
 							<tr>
 								<td>Phone</td>
-								<td>0123456789</td>
 								<td>
-									<span class="editInfo" data-type="textbox">Edit</span>
-									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
-									<span class="cancelInfo" data-type="textbox"><i class="fa fa-times"></i></span>
+									<div class="infoPanel">
+										<p class="en">0123456789</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<input id="comPhone" value="0123456789, thinhnguyen"/>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<span class="editInfo" data-type="phonefax">Edit</span>
+									<span class="submitInfo" data-type="phonefax"><i class="fa fa-check"></i></span>
+									<span class="cancelInfo" data-type="phonefax"><i class="fa fa-times"></i></span>
 								</td>
 							</tr>
 							<tr>
 								<td>Industrial Park</td>
-								<td>Viet Nam Singapore Industrial Park 1</td>
+								<td>
+									<div class="infoPanel">
+										<p class="en">Vietnam Singapore Industrial Park 1</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<select id="comPark">
+												<option selected="selected" value="VSIP1">Vietnam Singapore Industrial Park 1</option>
+												<option value="VSIP2">Vietnam Singapore Industrial Park 2</option>
+											</select>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</td>
 								<td>
 									<span class="editInfo" data-type="dropdown">Edit</span>
 									<span class="submitInfo" data-type="dropdown"><i class="fa fa-check"></i></span>
@@ -203,15 +310,66 @@
 							</tr>
 							<tr>
 								<td>Introduction</td>
-								<td>Behn Meyer Vietnam offers a broad range of products for the rubber industry.
+								<td>
+									<div class="infoPanel">
+										<label>English: </label>
+										<p class="en">
+												Behn Meyer Vietnam offers a broad range of products for the rubber industry.
 
-										Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio.
-										
-										Behn Meyer is actively involved in the sales of curing agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries.
-										
-										Release agents and processing aids such as lubricants, tackifiers, homogeniser, dispersing agents, peptizer and plasticiser are all produced by Performance Additives, Member of the Behn Meyer Group, and distributed by Behn Meyer’s sales team.
-										
-										A technically experienced team with excellent market knowledge is always at the customer’s disposal, with the aim to develop customer specific solutions and to strive for long-term cooperation.</td>
+												Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio.
+												
+												Behn Meyer is actively involved in the sales of curing agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries.
+												
+												Release agents and processing aids such as lubricants, tackifiers, homogeniser, dispersing agents, peptizer and plasticiser are all produced by Performance Additives, Member of the Behn Meyer Group, and distributed by Behn Meyer’s sales team.
+												
+												A technically experienced team with excellent market knowledge is always at the customer’s disposal, with the aim to develop customer specific solutions and to strive for long-term cooperation.
+										</p>
+										<label>Vietnamese: </label>
+										<p class="vi">
+												Behn Meyer Vietnam offers a broad range of products for the rubber industry.
+
+												Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio.
+												
+												Behn Meyer is actively involved in the sales of curing agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries.
+												
+												Release agents and processing aids such as lubricants, tackifiers, homogeniser, dispersing agents, peptizer and plasticiser are all produced by Performance Additives, Member of the Behn Meyer Group, and distributed by Behn Meyer’s sales team.
+												
+												A technically experienced team with excellent market knowledge is always at the customer’s disposal, with the aim to develop customer specific solutions and to strive for long-term cooperation.
+										</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<label>English: </label>
+											<textarea id="comDesEn">
+													Behn Meyer Vietnam offers a broad range of products for the rubber industry.
+
+													Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio.
+													
+													Behn Meyer is actively involved in the sales of curing agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries.
+													
+													Release agents and processing aids such as lubricants, tackifiers, homogeniser, dispersing agents, peptizer and plasticiser are all produced by Performance Additives, Member of the Behn Meyer Group, and distributed by Behn Meyer’s sales team.
+													
+													A technically experienced team with excellent market knowledge is always at the customer’s disposal, with the aim to develop customer specific solutions and to strive for long-term cooperation.
+											</textarea>
+											<div class="clearfix"></div>
+										</div>
+										<div class="editItem">
+											<label>Vietnamese: </label>
+											<textarea id="comDesVi">
+													Behn Meyer Vietnam offers a broad range of products for the rubber industry.
+
+													Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio.
+													
+													Behn Meyer is actively involved in the sales of curing agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries.
+													
+													Release agents and processing aids such as lubricants, tackifiers, homogeniser, dispersing agents, peptizer and plasticiser are all produced by Performance Additives, Member of the Behn Meyer Group, and distributed by Behn Meyer’s sales team.
+													
+													A technically experienced team with excellent market knowledge is always at the customer’s disposal, with the aim to develop customer specific solutions and to strive for long-term cooperation.
+											</textarea>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</td>
 								<td>
 									<span class="editInfo" data-type="textarea">Edit</span>
 									<span class="submitInfo" data-type="textarea"><i class="fa fa-check"></i></span>
@@ -223,10 +381,10 @@
 								<td>Logo</td>
 								<td>
 									<img src="public/assets/logo-01.png" width="30%">
-									<i class="fa fa-times-circle"></i>
+									<button id="uploadLogo">Change Logo</button>
+									<!--replace image src when user select new image - this process cannot be undo-->
 								</td>
 								<td>
-									<span class="editInfo" data-type="image">Edit</span>
 								</td>
 							</tr>
 							<!--in testing-->
@@ -238,51 +396,126 @@
 						</div>
 						<table>
 							<tr>
-								<td>Company Name</td>
-								<td data-end="comName">NSO - Connecting Service</td>
+								<td>Tax Number</td>
 								<td>
-									<span class="editInfo" data-type="textbox">Edit</span>
-									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
-									<span class="cancelInfo" data-type="textbox"><i class="fa fa-times"></i></span>
+									<div class="infoPanel">
+										<p class="en">9878456</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<input id="comTaxNumber" placeholder="9878456" value="9878456"/>
+											<div class="clearfix"></div>
+										</div>
+									</div>
 								</td>
-							</tr>
-							<tr>
-								<td>Address</td>
-								<td>372 – D33 Road, Viet-Sing Town, North VSIP I, Thuan An, Binh Duong</td>
 								<td>
-									<span class="editInfo" data-type="textarea">Edit</span>
-									<span class="submitInfo" data-type="textarea"><i class="fa fa-check"></i></span>
-									<span class="cancelInfo" data-type="textarea"><i class="fa fa-times"></i></span>
-								</td>
-							</tr>
-							<tr>
-								<td>Fax</td>
-								<td>0234561789</td>
-								<td>
-									<span class="editInfo" data-type="textbox">Edit</span>
-									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
-									<span class="cancelInfo" data-type="textbox"><i class="fa fa-times"></i></span>
-								</td>
-							</tr>
-							<tr>
-								<td>Website</td>
-								<td>nso.com.vn</td>
-								<td>
-									<span class="editInfo" data-type="textbox">Edit</span>
-									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
-									<span class="cancelInfo" data-type="textbox"><i class="fa fa-times"></i></span>
+									<span class="editInfo" data-type="uniquetext">Edit</span>
+									<span class="submitInfo" data-type="uniquetext"><i class="fa fa-check"></i></span>
+									<span class="cancelInfo" data-type="uniquetext"><i class="fa fa-times"></i></span>
 								</td>
 							</tr>
 							<tr>
 								<td>Phone</td>
-								<td>0123456789</td>
 								<td>
-									<span class="editInfo" data-type="textbox">Edit</span>
-									<span class="submitInfo" data-type="textbox"><i class="fa fa-check"></i></span>
-									<span class="cancelInfo" data-type="textbox"><i class="fa fa-times"></i></span>
+									<div class="infoPanel">
+										<p class="en">0123456789</p>
+									</div>
+									<div class="editPanel">
+										<div class="editItem">
+											<input id="comFax" value="0123456789, thinhnguyen"/>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</td>
+								<td>
+									<span class="editInfo" data-type="phonefax">Edit</span>
+									<span class="submitInfo" data-type="phonefax"><i class="fa fa-check"></i></span>
+									<span class="cancelInfo" data-type="phonefax"><i class="fa fa-times"></i></span>
 								</td>
 							</tr>
 						</table>
+					</div>
+				</div>
+				<div class="panelCont editNews">
+					<div class="blockA">
+						<div class="blockAControl">
+							<button>Add new News</button>
+							<select>
+								<option>Sort by.....</option>
+								<option>Name (A-Z)</option>
+								<option>Name (Z-A)</option>
+								<option>Upload Date (A-Z)</option>
+								<option>Upload Date (Z-A)</option>
+							</select>
+							<div class="clearfix"></div>
+						</div>
+						<div class="blockAList">
+							<table>
+								<thead>
+									<tr>
+										<td>Title of news</td>
+										<td>Upload date</td>
+										<td>Edit</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a href="#">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</a></td>
+										<td>20 October, 2018</td>
+										<td>
+											<span class="newsEdit"><i class="fa fa-edit"></i></span>
+											<span class="newsDelete"><i class="fa fa-trash-alt"></i></span>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</a></td>
+										<td>20 October, 2018</td>
+										<td>
+											<span class="newsEdit"><i class="fa fa-edit"></i></span>
+											<span class="newsDelete"><i class="fa fa-trash-alt"></i></span>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</a></td>
+										<td>20 October, 2018</td>
+										<td>
+											<span class="newsEdit"><i class="fa fa-edit"></i></span>
+											<span class="newsDelete"><i class="fa fa-trash-alt"></i></span>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</a></td>
+										<td>20 October, 2018</td>
+										<td>
+											<span class="newsEdit"><i class="fa fa-edit"></i></span>
+											<span class="newsDelete"><i class="fa fa-trash-alt"></i></span>
+										</td>
+									</tr>
+									<tr>
+										<td><a href="#">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</a></td>
+										<td>20 October, 2018</td>
+										<td>
+											<span class="newsEdit"><i class="fa fa-edit"></i></span>
+											<span class="newsDelete"><i class="fa fa-trash-alt"></i></span>
+										</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="3">
+											<div class="pageNav">
+												<a href="#" class="number act">1</a>
+												<a href="#" class="number">2</a>
+												<a href="#" class="number">3</a>
+												...
+												<a href="#" class="number">10</a>
+												<a href="#" class="number">11</a>
+											</div>
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -290,14 +523,27 @@
 	</div>
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
+
+	<script src="public/js/TweenMax.min.js"></script>
 	<script src="public/js/waypoints.min.js"></script>
 	<script src="public/js/jquery.counterup.min.js"></script>
 	<script src="public/js/jquery-3.3.1.js"></script>
 	<script src="public/js/fontawesome-all.js"></script>
+	<script src="public/js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="public/js/tag-it.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="public/froalaEditor/js/froala_editor.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="public/js/bootstrap.min.js"></script>
 	<script src="public/js/desktop.js"></script>
 
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#comPhone").tagit();
+			$("#comFax").tagit();
+			$("#comWebsite").tagit();
+			$('#comDesVi').froalaEditor({toolbarInline: false,theme: 'royal'})
+			$('#comDesEn').froalaEditor({toolbarInline: false,theme: 'royal'})
+		});
+	</script>
 </body>
 
 </html>

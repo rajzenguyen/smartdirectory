@@ -3649,6 +3649,12 @@ div.uploadNameCard button{
 	margin-top: 10px;
 	margin-bottom: 15px;
 }
+.panelCont{
+	display: none;
+}
+.panelCont.editCompany{
+	display: block;
+}
 .newsPanelContent p{
 	font-size: 14px;
 }
@@ -4488,11 +4494,12 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 .leftNavItem a{
 	color: #333333;
 }
-.leftNavItem.active a{
+.leftNavItem.active p{
 	color: #1046f1;
 }
-.leftNavItem a:hover{
+.leftNavItem p:hover{
 	color: #1046f1;
+	cursor: pointer;
 }
 .blockA{
 	margin-bottom: 50px;
@@ -4500,42 +4507,44 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 .blockATit{
 	border-bottom: 1px solid #999999;
 }
-.blockA table{
+.blockA > table{
 	width: 100%;
 	margin-top: 20px;
 }
-.blockA table tr td{
+.blockA > table tr td{
 	vertical-align: middle;
 	padding: 14px 10px;
 }
-.blockA table tr:hover{
+.blockA > table tr:hover{
 	background: #ececec;
 }
-.blockA table tr td:nth-child(1){
+.blockA > table tr td:nth-child(1){
 	width: 20%;
 }
-.blockA table tr td:nth-child(2){
-	width: 70%;
+.blockA > table tr td:nth-child(2){
+	width: 72%;
 	font-family: 'Montserrat-Light', sans-serif !important;
 }
-.blockA table tr td:nth-child(3){
-	width: 10%;
+.blockA > table tr td:nth-child(3){
+	width: 8%;
+	text-align: center;
+	padding: 14px 0px 14px 10px;
 }
-.blockA table tr td:nth-child(2) input{
+.blockA > table tr td:nth-child(2) input{
 	min-width: 100%;
 	max-width: 100%;
 }
-.blockA table tr td:nth-child(2) textarea{
+.blockA > table tr td:nth-child(2) textarea{
 	min-width: 100%;
 	max-width: 100%;
 	height: 200px;
 	resize: none;
 }
-.blockA table tr td:nth-child(2) svg{
+.blockA > table tr td:nth-child(2) svg{
 	position: relative;
 	left: -10px;
 }
-.blockA table tr td:nth-child(2) svg:hover{
+.blockA > table tr td:nth-child(2) svg:hover{
 	cursor: pointer;
 	color: #F26A22;
 }
@@ -4566,4 +4575,121 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 }
 .submitInfo:hover svg, .cancelInfo:hover svg{
 	color: #fff;
+}
+.editItem{
+	margin-bottom: 10px;
+}
+.editPanel{
+	display: none;
+}
+.blockAControl{
+	margin-bottom: 15px;
+}
+.blockAControl button{
+	padding: 5px 10px;
+	border-radius: 8px;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	font-size: 14px;
+	line-height: 1.5;
+	height: auto;
+	color: #009781;
+	border: 1px solid #009781;
+	transition: ease-in 0.2s;
+	float: left;
+	margin-right: 20px;
+}
+.blockAControl select{
+	float: left;
+	width: 200px;
+	padding: 5px 10px;
+	border-radius: 8px;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	-webkit-box-shadow: none;
+	font-size: 14px;
+	line-height: 1.5;
+	height: auto;
+	color: #555;
+	border: 1px solid #555;
+	transition: ease-in 0.2s;
+	background-position: calc(100% - 20px) calc(0.9em + 2px), calc(100% - 15px) calc(0.9em + 2px), calc(100% - 3em) 8em;
+}
+
+.blockAControl select:focus {
+	background-position:
+	  calc(100% - 15px) 0.9em,
+	  calc(100% - 20px) 0.9em,
+	  calc(100% - 2.5em) 0.5em;
+  }
+.blockAControl button:hover{
+	background: #009781;
+	color: #fff;
+}
+.blockAList table{
+	width: 100%;
+	margin-top: 20px;
+	font-family: 'Montserrat-Light', sans-serif !important;
+}
+.blockAList table tr td{
+	vertical-align: middle;
+	padding: 14px 10px;
+}
+.blockAList table thead tr{
+	background: #6F93F9;
+	color: #fff;
+	font-size: 16px;
+}
+.blockAList table thead tr:hover{
+	background: #6F93F9;
+	color: #fff;
+}
+.blockAList table tbody tr{
+	border-bottom: 1px solid rgb(197, 197, 197);
+}
+.blockAList table tfoot tr{
+	text-align: right;
+}
+.blockAList table tbody tr:hover{
+	background: #f1f1f2;
+}
+.blockAList table tr td:nth-child(1){
+	width: 72%;
+}
+.blockAList table tr td:nth-child(1) a{
+	color: #333;
+}
+.blockAList table tr td:nth-child(2){
+	width: 20%;
+	text-align: center;
+}
+.blockAList table tr td:nth-child(3){
+	width: 8%;
+	text-align: center;
+	padding: 14px 0px 14px 10px;
+}
+.newsEdit{
+	color: #009781;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 6px;
+}
+.newsDelete{
+	color: #dd3400;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 6px;
+}
+.newsEdit:hover{
+	color: #fff;
+	background: #009781;
+	cursor: pointer;
+}
+.newsDelete:hover{
+	color: #fff;
+	background: #dd3400;
+	cursor: pointer;
 }

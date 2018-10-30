@@ -756,36 +756,87 @@ $(document).ready(function(){
 	});
 });
 
-$(document).ready(function(){
-	$(".leftNavItem").click(function(){
-		var a = $(this).attr('data-target');
-		$(".panelCont").hide();
-		$("." + a).show();
-		$(".leftNavItem").removeClass("active");
-		$(this).addClass("active");
-	});
-});
+
 /* Demo code, can be delete or modified to get data from server */
 $(document).ready(function(){
 	$(".blockA table td span.editInfo").click(function(){
-		$(this).parent().prev().children("div.infoPanel").hide();
-		$(this).parent().prev().children("div.editPanel").show();
+		var target= $(this).attr("data-target");
+		var datatype=$(this).attr("data-type");
+		var valueEN = $(this).parent().prev().children("p.en").text();
+		var valueVI = $(this).parent().prev().children("p.vi").text();
+		if(datatype == "textbox")
+		{
+			var htmll = "<div class=\"editItem\"><label>English: </label><input placeholder=\"" + valueEN + "\" value=\"" + valueEN + "\"/><div class=\"clearfix\"></div></div>"
+			+ "<div class=\"editItem\"><label>Vietnamese: </label><input placeholder=\"" + valueVI + "\" value=\"" + valueVI + "\"/><div class=\"clearfix\"></div></div>";
+			$(this).parent().prev().html(htmll);
+		}
+		else if(datatype == "uniquetext")
+		{
+			var value2 = $(this).parent().prev().text();
+			var htmll = "<input placeholder=\"" + value2 + "\" value=\"" + value2 + "\"/>";
+			$(this).parent().prev().html(htmll);
+		}
+		else if(datatype == "phonefax")
+		{
+			var value2 = $(this).parent().prev().text();
+			var htmll = "<input id=\"myTags\" value=\"" + value2 + "\"/><script type=\"text/javascript\">$(document).ready(function() {$(\"#myTags\").tagit();});</script>";
+			$(this).parent().prev().html(htmll);
+		}
+		else if(datatype == "textarea")
+		{
+			var htmll = "<div class=\"editItem\"><label>English: </label><textarea type=\"text\" name=\"" + target + "\" placeholder=\"" + valueEN + "\">" + valueEN + "</textarea><div class=\"clearfix\"></div></div>"
+			+ "<div class=\"editItem\"><label>Vietnamese: </label><textarea type=\"text\" name=\"" + target + "\" placeholder=\"" + valueVI + "\">" + valueVI + "</textarea><div class=\"clearfix\"></div></div>";
+			$(this).parent().prev().html(htmll);
+		}
+		else if(datatype == "dropdown")
+		{
+			$(this).parent().prev().html("<select name=\"select-ip\"><option value=\"0\">Zone</option><option value=\"VSIP2\">Viet Nam Singapore Industrial Park 2</option><option value=\"VSIP1\">Viet Nam Singapore Industrial Park 1</option></select>");
+			$(this).parent().prev().children("select").val(value).change();
+		}
+		else if(datatype == "image")
+		{
+
+		}
 		$(this).parent().children(".submitInfo").show();
 		$(this).parent().children(".cancelInfo").show();
 		$(this).hide();
 	});
 	$(".blockA table td span.submitInfo").click(function(){
-		$(this).parent().prev().children("div.infoPanel").show();
-		$(this).parent().prev().children("div.editPanel").hide();
-		$(this).parent().children(".submitInfo").hide();
+		var datatype=$(this).attr("data-type");
+		var value;
+		if(datatype == "textbox"){
+			value = $(this).parent().prev().children("input").val();
+		}
+		else if(datatype == "textarea")
+		{
+			value = $(this).parent().prev().children("textarea").text();
+		}
+		else if(datatype == "dropdown")
+		{
+			value = $(this).parent().prev().children("select").find('option:selected').text();
+		}
+		$(this).parent().prev().text(value);
+		$(this).hide();
 		$(this).parent().children(".cancelInfo").hide();
 		$(this).parent().children(".editInfo").show();
 	});
 	$(".blockA table td span.cancelInfo").click(function(){
-		$(this).parent().prev().children("div.infoPanel").show();
-		$(this).parent().prev().children("div.editPanel").hide();
+		var datatype=$(this).attr("data-type");
+		var value;
+		if(datatype == "textbox"){
+			value = $(this).parent().prev().children("input").attr("placeholder");
+		}
+		else if(datatype == "textarea")
+		{
+			value = $(this).parent().prev().children("textarea").attr("placeholder");
+		}
+		else if(datatype == "dropdown")
+		{
+			value = $(this).parent().prev().children("select").find('option:selected').text();
+		}
+		$(this).parent().prev().text(value);
+		$(this).hide();
 		$(this).parent().children(".submitInfo").hide();
-		$(this).parent().children(".cancelInfo").hide();
 		$(this).parent().children(".editInfo").show();
 	});
 });
