@@ -4642,6 +4642,8 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	background: #6F93F9;
 	color: #fff;
 	font-size: 16px;
+	font-family: 'Montserrat-Bold', sans-serif !important;
+	text-align: center;
 }
 .blockAList table thead tr:hover{
 	background: #6F93F9;
@@ -4692,4 +4694,19 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	color: #fff;
 	background: #dd3400;
 	cursor: pointer;
+}
+.blockedit{
+	float: left;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+.blockedit textarea{
+	width: 100%;
+	resize: none;
+	padding: 10px 10px 10px 20px;
+	height: 100px;
+}
+.blockedit h6{
+	font-size: 16px;
 }
