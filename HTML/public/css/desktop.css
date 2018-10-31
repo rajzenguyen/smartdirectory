@@ -4659,7 +4659,7 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	background: #f1f1f2;
 }
 .blockAList table tr td:nth-child(1){
-	width: 72%;
+	width: 60%;
 }
 .blockAList table tr td:nth-child(1) a{
 	color: #333;
@@ -4669,6 +4669,11 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	text-align: center;
 }
 .blockAList table tr td:nth-child(3){
+	width: 12%;
+	text-align: center;
+	padding: 14px 0px 14px 10px;
+}
+.blockAList table tr td:nth-child(4){
 	width: 8%;
 	text-align: center;
 	padding: 14px 0px 14px 10px;
@@ -4678,12 +4683,14 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	cursor: pointer;
 	padding: 5px;
 	border-radius: 6px;
+	margin-bottom: 5px;
 }
 .newsDelete{
 	color: #dd3400;
 	cursor: pointer;
 	padding: 5px;
 	border-radius: 6px;
+	margin-bottom: 5px;
 }
 .newsEdit:hover{
 	color: #fff;
@@ -4707,6 +4714,23 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	padding: 10px 10px 10px 20px;
 	height: 100px;
 }
+.blockedit select {
+	margin-bottom: 5px;
+}
 .blockedit h6{
 	font-size: 16px;
+}
+.selectHour{
+	width: 25%;
+	float: left;
+	margin-right: 15px;
+}
+.split{
+	float: left;
+    line-height: 54px;
+    padding: 0 15px 0 0px;
+    margin: 0;
+}
+.blockedit input{
+	padding: 10px 50px 15px 16px;
 }
