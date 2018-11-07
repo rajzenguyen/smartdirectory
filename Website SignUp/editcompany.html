@@ -1,0 +1,1078 @@
+<!DOCTYPE html PUBLIC" -//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" name="description" content="Smart Directory" />
+        <meta charset="utf-8" name="keywords" content="Smart Directory" />
+
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/fontawesome-all.css" type="text/css" />
+        <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.tagit.css" type="text/css">
+        <link href="sumernote/summernote-bs4.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/general.css" type="text/css" />
+        <link rel="stylesheet" href="css/desktop.css" type="text/css" />
+
+    </head>
+
+    <body>
+
+        <div class="companyHolder">
+            <div class="wrapper">
+                <!-- Sidebar -->
+                <div id="sidebar">
+
+                    <div id="dismiss">
+                        <i class="fas fa-arrow-left"></i>
+                    </div>
+
+                    <div class="sidebar-header">
+                        <h3>Menu</h3>
+                    </div>
+
+                    <ul class="list-unstyled components navBar">
+                        <li class="active" data-target="companyInfo">
+                            <p>Company Infor</p>
+                        </li>
+                        <li data-target="newsInfo">
+                            <p>News & Promotion</p>
+                        </li>
+                        <li data-target="jobInfo">
+                            <p>Job Rescruitment</p>
+                        </li>
+                        <li>
+                            <p>Other Setting</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Page Content -->
+                <div class="editContent">
+                    <div class="navEdit">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="userInfo">
+                            <p>Signed in as <b>rajzeNguyen</b></p>
+                        </div>
+                    </div>
+                    <div class="contentPH">
+                        <div class="companyInfo panelForm active">
+                            <div class="blockTitle">
+                                <h4>Company Information</h4>
+                            </div>
+                            <div class="blockA">
+                                <div class="blockATitle">
+                                    <h6>General Information</h6>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#comName">
+                                    <p class="blockEName">Company Name</p>
+                                    <p class="blockEContent">NSO - Connecting Services</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#comAdd">
+                                    <p class="blockEName">Company Address</p>
+                                    <p class="blockEContent">372 D33 - VietSing Town - Thuan An - Binh Duong</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#comAlias">
+                                    <p class="blockEName">Alias Name</p>
+                                    <p class="blockEContent">NSO</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#comPhone">
+                                    <p class="blockEName">Phone Number</p>
+                                    <p class="blockEContent">0911223355, 0123456789</p>
+                                </div>
+                            </div>
+                            <div class="blockA">
+                                <div class="blockATitle">
+                                    <h6>Connection Information</h6>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#comDesc">
+                                    <p class="blockEName">Description</p>
+                                    <p class="blockEContent">Behn Meyer Vietnam offers a broad range of products for the rubber industry. Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio. Behn Meyer is actively involved in the sales of curing
+                                        agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries. Release agents and processing aids
+                                        such as lubricants, tackifiers, homogeniser, dispersing agents, </p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#comTaxNumber">
+                                    <p class="blockEName">Tax Number</p>
+                                    <p class="blockEContent">3355994488</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#comLogo">
+                                    <p class="blockEName">Logo</p>
+                                    <img class="blockEContent" src="http://be.vietnampropertyhub.com/public/upload/1523377821361_Artboard%201.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsInfo panelForm">
+                            <div class="blockTitle">
+                                <h4>News & Promotions Managerment</h4>
+                            </div>
+                            <div class="blockAControl">
+                                <button data-toggle="modal" data-target="#newnews">Add News</button>
+                                <select>
+                                    <option>Sort by.....</option>
+                                    <option>Name (A-Z)</option>
+                                    <option>Name (Z-A)</option>
+                                    <option>Upload Date (A-Z)</option>
+                                    <option>Upload Date (Z-A)</option>
+                                </select>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockATable">
+                                <div class="blockE" data-toggle="modal" data-target="#editnews01">
+                                    <p class="blockEName">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</p>
+                                    <p class="blockDate">20 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#editnews02">
+                                    <p class="blockEName">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</p>
+                                    <p class="blockDate">20 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#editnews03">
+                                    <p class="blockEName">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</p>
+                                    <p class="blockDate">20 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#editnews04">
+                                    <p class="blockEName">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</p>
+                                    <p class="blockDate">20 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#editnews05">
+                                    <p class="blockEName">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</p>
+                                    <p class="blockDate">20 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#editnews06">
+                                    <p class="blockEName">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</p>
+                                    <p class="blockDate">20 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#editnews07">
+                                    <p class="blockEName">Fluffy felines may have ruled the internet for years, but they have influenced the art world for centuries. Amsterdam’s KattenKabinet exclusively showcases the art inspired by cats.</p>
+                                    <p class="blockDate">20 October, 2018</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="jobInfo panelForm">
+                            <div class="blockTitle">
+                                <h4>Job Recruitment</h4>
+                            </div>
+                            <div class="blockAControl">
+                                <button data-toggle="modal" data-target="#newJob">Add Job</button>
+                                <select>
+                                    <option>Sort by.....</option>
+                                    <option>Name (A-Z)</option>
+                                    <option>Name (Z-A)</option>
+                                    <option>Upload Date (A-Z)</option>
+                                    <option>Upload Date (Z-A)</option>
+                                </select>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockATable">
+                                <div class="blockE" data-toggle="modal" data-target="#job01">
+                                    <p class="blockEName">Operation Recruitment</p>
+                                    <p class="blockDate">20 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#job02">
+                                    <p class="blockEName">Director Manager Finding</p>
+                                    <p class="blockDate">21 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#job03">
+                                    <p class="blockEName">Assistant Wanted</p>
+                                    <p class="blockDate">22 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#job04">
+                                    <p class="blockEName">Hiring 3,000 workers</p>
+                                    <p class="blockDate">23 October, 2018</p>
+                                </div>
+                                <div class="blockE" data-toggle="modal" data-target="#job05">
+                                    <p class="blockEName">03 NHÂN VIÊN TƯ VẤN - CHĂM SÓC KHÁCH HÀNG (Tuyển Gấp)</p>
+                                    <p class="blockDate">24 October, 2018</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dark Overlay element -->
+                <div class="overlay"></div>
+            </div>
+        </div>
+
+
+        <!-- Modal Edit - Each field will load it's own modal-->
+        <div class="modal fade" id="comDesc" tabindex="-1" role="dialog" aria-labelledby="formLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="formLabel">Description</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="enDesc" class="col-form-label">English</label>
+                            <textarea id="enDesc" class="htmlEditorArea">
+                                    Behn Meyer Vietnam offers a broad range of products for the rubber industry. Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio. Behn Meyer is actively involved in the sales of curing
+                                    agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries. Release agents and processing aids
+                                    such as lubricants, tackifiers, homogeniser, dispersing agents,
+                            </textarea>
+                            <div id="data"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="viDesc" class="col-form-label">Vietnamese</label>
+                            <textarea id="viDesc" class="htmlEditorArea">
+                                    Behn Meyer Vietnam offers a broad range of products for the rubber industry. Synthetic rubber such as SBR, NBR, and EPDM, as well as silicone rubber, are keys in the product portfolio. Behn Meyer is actively involved in the sales of curing
+                                    agents e.g. accelerators as well as Nano CC filler. Rubber chemicals such as antioxidants, silanes, blowing agents as well as flame retardant are all provided by Behn Meyer and find their application in various industries. Release agents and processing aids
+                                    such as lubricants, tackifiers, homogeniser, dispersing agents,
+                            </textarea>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="finishButton">Save</button>
+                        <button type="button" class="finishButton btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+
+        <!-- Modal Edit - Each field will load it''s own modal-->
+        <div class="modal fade" id="comName" tabindex="-1" role="dialog" aria-labelledby="formLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="formLabel">Company Name</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="enName" class="col-form-label">English</label>
+                            <input type="text" class="" id="enName" placeholder="Name in English" value="NSO - Connecting Services" />
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="viName" class="col-form-label">Vietnamese</label>
+                            <input type="text" class="" id="viName" placeholder="Name in Vietnamese" value="Công ty Một Cửa Quốc Gia" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="finishButton">Save</button>
+                        <button type="button" class="finishButton btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Modal Edit - Each field will load it''s own modal-->
+        <div class="modal fade" id="comPhone" tabindex="-1" role="dialog" aria-labelledby="formLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="formLabel">Phone Number</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="phonenumber" class="col-form-label">Change your number</label>
+                            <input type="text" class="" id="phonenumber" placeholder="Name in English" value="0123456789, 0988399395" />
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="finishButton">Save</button>
+                        <button type="button" class="finishButton btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Modal Edit - Each field will load it''s own modal-->
+        <div class="modal fade" id="comLogo" tabindex="-1" role="dialog" aria-labelledby="formLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="formLabel">Change your company logo</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <img src="http://be.vietnampropertyhub.com/public/upload/1523377821361_Artboard%201.png" />
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <button>Upload new Logo</button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="finishButton">Save</button>
+                        <button type="button" class="finishButton btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+
+        <!-- Modal Edit - Each field will load it''s own modal-->
+        <div class="modal fade" id="comAdd" tabindex="-1" role="dialog" aria-labelledby="formLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="formLabel">Location</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label class="col-form-label">Address in English</label>
+                            <input type="text" class="" placeholder="Name in English" value="372 D33 Road, Viet-Sing town" />
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Address in Vietnamese</label>
+                            <input type="text" class="" placeholder="Name in English" value="Số 372 đường D33, khu dân cư Việt - Sing" />
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">District</label>
+                            <select id="district">
+                                <option value="1">Thuan An</option>
+                            </select>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">City/Province</label>
+                            <select id="province">
+                                <option value="1">Binh Duong</option>
+                            </select>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Country</label>
+                            <select id="country">
+                                <option value="1">Viet Nam</option>
+                                <option value="1">Japan</option>
+                            </select>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Map Location</label>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2328.9275293142973!2d106.6749878267798!3d10.980452486635867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d12739bb468f%3A0xe2bf4f397d0aa76!2sThu+Dau+Mot+University!5e0!3m2!1sen!2s!4v1540888255205"
+                                width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="finishButton">Save</button>
+                        <button type="button" class="finishButton btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        	<!--Modal Add New News-->
+		<div class="newsPanel modal fade" id="newnews" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h6 class="modal-title fontsize16" id="formLabel">Location</h6>
+                            <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                        </div>
+                        <ul class="nav nav-tabs">
+                            <li class="active show"><a data-toggle="tab" href="#enAddNews">English</a></li>
+                            <li><a data-toggle="tab" href="#viAddNews">Vietnamese</a></li>
+                        </ul>
+                            
+                        <div class="tab-content">
+                            <div id="enAddNews" class="tab-pane fade in active">
+                                <div class="blockedit">
+                                    <h6 class="newsPanelTitle">Title</h6>
+                                    <textarea maxlength="120">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</textarea>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="blockedit">
+                                    <h6 class="newsPanelTitle">News Type</h6>
+                                    <select>
+                                        <option>News</option>
+                                        <option>Events</option>
+                                        <option>Promotion</option>
+                                    </select>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="blockedit">
+                                    <h6 class="newsPanelTitle">Short Description</h6>
+                                    <textarea maxlength="120">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</textarea>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="blockedit">
+                                    <h6 class="newsPanelTitle">News Content</h6>
+                                    <textarea class="newsPanelContent htmlEditorArea">
+                                        <p>By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+                    
+                                        <p>This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+                                        
+                                        <p><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+                                        
+                                        <p><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+                                        
+                                        <p><em>number of transactions reaching around 200 million per year</em></p>
+                                        
+                                        <p>In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+                                        <br>
+                                        The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+                                        <br>
+                                        To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+                                        
+                                        <p style="text-align: justify;">&nbsp;</p>
+                                    </textarea>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="blockedit">
+                                    <h6>Avatar</h6>
+                                    <img src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" width="100%">
+                                    <button>Upload Avatar</button>
+                                </div>
+                            </div>
+                            <div id="viAddNews" class="tab-pane fade in">
+                                <div class="blockedit">
+                                    <h6 class="newsPanelTitle">Tiêu đề tin</h6>
+                                    <textarea maxlength="120">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</textarea>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="blockedit">
+                                    <h6 class="newsPanelTitle">Loại tin</h6>
+                                    <select>
+                                        <option>News</option>
+                                        <option>Events</option>
+                                        <option>Promotion</option>
+                                    </select>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="blockedit">
+                                    <h6 class="newsPanelTitle">Mô tả ngắn</h6>
+                                    <textarea maxlength="120">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</textarea>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="blockedit">
+                                    <h6 class="newsPanelTitle">Nội dung chính</h6>
+                                    <textarea class="newsPanelContent htmlEditorArea">
+                                        <p>By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+                    
+                                        <p>This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+                                        
+                                        <p><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+                                        
+                                        <p><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+                                        
+                                        <p><em>number of transactions reaching around 200 million per year</em></p>
+                                        
+                                        <p>In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+                                        <br>
+                                        The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+                                        <br>
+                                        To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+                                        
+                                    </textarea>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="blockedit">
+                                    <h6>Avatar</h6>
+                                    <img src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" width="100%">
+                                    <button>Upload Avatar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blockedit">
+                            <button id="submit" class="btn-primary">Create News</button>
+                            <button id="cancel" class="btn-secondary" data-dismiss="modal">Cancel</button>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Modal Add New News-->
+
+
+            <!--Modal Edit News-->
+		<div class="newsPanel modal fade" id="editnews01" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title fontsize16" id="formLabel">Edit News</h6>
+                        <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="active show"><a data-toggle="tab" href="#enAddNews">English</a></li>
+                        <li><a data-toggle="tab" href="#viAddNews">Vietnamese</a></li>
+                    </ul>
+                        
+                    <div class="tab-content">
+                        <div id="enAddNews" class="tab-pane fade in active">
+                            <div class="blockedit">
+                                <h6 class="newsPanelTitle">Title</h6>
+                                <textarea maxlength="120">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockedit">
+                                <h6 class="newsPanelTitle">News Type</h6>
+                                <select>
+                                    <option>News</option>
+                                    <option>Events</option>
+                                    <option>Promotion</option>
+                                </select>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockedit">
+                                <h6 class="newsPanelTitle">Short Description</h6>
+                                <textarea maxlength="120">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockedit">
+                                <h6 class="newsPanelTitle">News Content</h6>
+                                <textarea class="newsPanelContent htmlEditorArea">
+                                    <p>By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+                
+                                    <p>This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+                                    
+                                    <p><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+                                    
+                                    <p><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+                                    
+                                    <p><em>number of transactions reaching around 200 million per year</em></p>
+                                    
+                                    <p>In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+                                    <br>
+                                    The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+                                    <br>
+                                    To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+                                    
+                                    <p style="text-align: justify;">&nbsp;</p>
+                                </textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockedit">
+                                <h6>Avatar</h6>
+                                <img src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" width="100%">
+                                <button>Upload Avatar</button>
+                            </div>
+                        </div>
+                        <div id="viAddNews" class="tab-pane fade in">
+                            <div class="blockedit">
+                                <h6 class="newsPanelTitle">Tiêu đề tin</h6>
+                                <textarea maxlength="120">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockedit">
+                                <h6 class="newsPanelTitle">Loại tin</h6>
+                                <select>
+                                    <option>News</option>
+                                    <option>Events</option>
+                                    <option>Promotion</option>
+                                </select>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockedit">
+                                <h6 class="newsPanelTitle">Mô tả ngắn</h6>
+                                <textarea maxlength="120">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockedit">
+                                <h6 class="newsPanelTitle">Nội dung chính</h6>
+                                <textarea class="newsPanelContent htmlEditorArea">
+                                    <p>By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+                
+                                    <p>This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+                                    
+                                    <p><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+                                    
+                                    <p><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+                                    
+                                    <p><em>number of transactions reaching around 200 million per year</em></p>
+                                    
+                                    <p>In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+                                    <br>
+                                    The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+                                    <br>
+                                    To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+                                    
+                                </textarea>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="blockedit">
+                                <h6>Avatar</h6>
+                                <img src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" width="100%">
+                                <button>Upload Avatar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blockedit">
+                        <button id="submit" class="btn-primary">Create News</button>
+                        <button id="cancel" class="btn-secondary" data-dismiss="modal">Cancel</button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!--Modal Edit News-->
+
+	    <!--Modal editing job-->
+		<div class="newsPanel modal fade" id="job01" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#enEditJob">English</a></li>
+						<li><a data-toggle="tab" href="#viEditJob">Vietnamese</a></li>
+					</ul>
+						
+					<div class="tab-content">
+						<div id="enEditJob" class="tab-pane fade in active">
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Job Title</h6>
+								<textarea maxlength="120">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</textarea>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Expire Date</h6>
+								<span><i class="fa fa-clock"></i> 12-Nov-2018</span>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Working Address</h6>
+								<textarea maxlength="200">03, Thuận An, Bình Dương</textarea>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Salary</h6>
+								<input type="number" maxlength="200" value="14000"/>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Work Type</h6>
+								<select class="selectHour">
+									<option selected="selected">Full Time</option>
+									<option>Part Time</option>
+								</select>
+								<select class="selectHour">
+									<option selected="selected">1 am</option>
+									<option>2 am</option>
+									<option>3 am</option>
+									<option>4 am</option>
+									<option>5 am</option>
+									<option>6 am</option>
+									<option>7 am</option>
+									<option>8 am</option>
+									<option>9 am</option>
+									<option>10 am</option>
+									<option>11 am</option>
+									<option>12 am</option>
+								</select>
+								<p class="split"> to </p>
+								<select class="selectHour">
+									<option selected="selected">1 pm</option>
+									<option>2 pm</option>
+									<option>3 pm</option>
+									<option>4 pm</option>
+									<option>5 pm</option>
+									<option>6 pm</option>
+									<option>7 pm</option>
+									<option>8 pm</option>
+									<option>9 pm</option>
+									<option>10 pm</option>
+									<option>11 pm</option>
+									<option>12 pm</option>
+								</select>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Short Description</h6>
+								<textarea maxlength="120">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</textarea>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6>Job Detail</h6>
+								<textarea class="newsPanelContent htmlEditorArea">
+									<p style="text-align: justify;">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+				
+									<p style="text-align: justify;">This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+									
+									<p style="text-align: center;"><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+									
+									<p style="text-align: center;"><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+									
+									<p style="text-align: center;"><em>number of transactions reaching around 200 million per year</em></p>
+									
+									<p style="text-align: justify;">In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+									<br>
+									The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+									<br>
+									To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+									
+									<p style="text-align: justify;">&nbsp;</p>
+								</textarea>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+						<div id="viEditJob" class="tab-pane fade in">
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Tiêu đề tuyển dụng</h6>
+								<textarea maxlength="120">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</textarea>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Ngày hết hạn</h6>
+								<span><i class="fa fa-clock"></i> 12-Nov-2018</span>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Địa chỉ làm việc</h6>
+								<textarea maxlength="200">03, Thuận An, Bình Dương</textarea>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Lương</h6>
+								<input type="number" maxlength="200" value="14000"/>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Hình thức làm việc</h6>
+								<select class="selectHour">
+									<option selected="selected">Full Time</option>
+									<option>Part Time</option>
+								</select>
+								<select class="selectHour">
+									<option selected="selected">1 am</option>
+									<option>2 am</option>
+									<option>3 am</option>
+									<option>4 am</option>
+									<option>5 am</option>
+									<option>6 am</option>
+									<option>7 am</option>
+									<option>8 am</option>
+									<option>9 am</option>
+									<option>10 am</option>
+									<option>11 am</option>
+									<option>12 am</option>
+								</select>
+								<p class="split"> to </p>
+								<select class="selectHour">
+									<option selected="selected">1 pm</option>
+									<option>2 pm</option>
+									<option>3 pm</option>
+									<option>4 pm</option>
+									<option>5 pm</option>
+									<option>6 pm</option>
+									<option>7 pm</option>
+									<option>8 pm</option>
+									<option>9 pm</option>
+									<option>10 pm</option>
+									<option>11 pm</option>
+									<option>12 pm</option>
+								</select>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6 class="newsPanelTitle">Mô tả ngắn</h6>
+								<textarea maxlength="120">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</textarea>
+								<div class="clearfix"></div>
+							</div>
+							<div class="blockedit">
+								<h6>Chi tiết công việc</h6>
+								<textarea class="newsPanelContent htmlEditorArea">
+									<p style="text-align: justify;">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+				
+									<p style="text-align: justify;">This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+									
+									<p style="text-align: center;"><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+									
+									<p style="text-align: center;"><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+									
+									<p style="text-align: center;"><em>number of transactions reaching around 200 million per year</em></p>
+									
+									<p style="text-align: justify;">In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+									<br>
+									The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+									<br>
+									To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+									
+									<p style="text-align: justify;">&nbsp;</p>
+								</textarea>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="blockedit">
+						<button id="submit" class="btn-primary">Save</button>
+						<button id="cancel" class="btn-secondary" data-dismiss="modal">Cancel</button>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+<!--Modal editing job-->
+
+<!--Modal add new job-->
+<div class="newsPanel modal fade" id="newJob" tabindex="-1" role="dialog" aria-labelledby="failLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#enAddJob">English</a></li>
+                <li><a data-toggle="tab" href="#viAddJob">Vietnamese</a></li>
+            </ul>
+                
+            <div class="tab-content">
+                <div id="enAddJob" class="tab-pane fade in active">
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Job Title</h6>
+                        <textarea maxlength="120">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Expire Date</h6>
+                        <input type="date" min="2018-10-31" max="2019-10-31">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Working Address</h6>
+                        <textarea maxlength="200">03, Thuận An, Bình Dương</textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Salary</h6>
+                        <input type="number" maxlength="200" value="14000" min="100" max="99999999"/>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Work Type</h6>
+                        <select class="selectHour">
+                            <option selected="selected">Full Time</option>
+                            <option>Part Time</option>
+                        </select>
+                        <select class="selectHour">
+                            <option selected="selected">1 am</option>
+                            <option>2 am</option>
+                            <option>3 am</option>
+                            <option>4 am</option>
+                            <option>5 am</option>
+                            <option>6 am</option>
+                            <option>7 am</option>
+                            <option>8 am</option>
+                            <option>9 am</option>
+                            <option>10 am</option>
+                            <option>11 am</option>
+                            <option>12 am</option>
+                        </select>
+                        <p class="split"> to </p>
+                        <select class="selectHour">
+                            <option selected="selected">1 pm</option>
+                            <option>2 pm</option>
+                            <option>3 pm</option>
+                            <option>4 pm</option>
+                            <option>5 pm</option>
+                            <option>6 pm</option>
+                            <option>7 pm</option>
+                            <option>8 pm</option>
+                            <option>9 pm</option>
+                            <option>10 pm</option>
+                            <option>11 pm</option>
+                            <option>12 pm</option>
+                        </select>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Short Description</h6>
+                        <textarea maxlength="120">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6>Job Detail</h6>
+                        <textarea class="newsPanelContent htmlEditorArea">
+                            <p style="text-align: justify;">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+        
+                            <p style="text-align: justify;">This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+                            
+                            <p style="text-align: center;"><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+                            
+                            <p style="text-align: center;"><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+                            
+                            <p style="text-align: center;"><em>number of transactions reaching around 200 million per year</em></p>
+                            
+                            <p style="text-align: justify;">In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+                            <br>
+                            The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+                            <br>
+                            To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+                            
+                            <p style="text-align: justify;">&nbsp;</p>
+                        </textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div id="viAddJob" class="tab-pane fade in">
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Tiêu đề tuyển dụng</h6>
+                        <textarea maxlength="120">Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự. Số lượng ký tự tối đa cho title là 137 ký tự.</textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Ngày hết hạn</h6>
+                        <input type="date" min="2018-10-31" max="2019-10-31">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Nơi làm việc</h6>
+                        <textarea maxlength="200">03, Thuận An, Bình Dương</textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Lương</h6>
+                        <input type="number" maxlength="200" value="14000" min="100" max="99999999"/>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Hình thức làm việc</h6>
+                        <select class="selectHour">
+                            <option selected="selected">Full Time</option>
+                            <option>Part Time</option>
+                        </select>
+                        <select class="selectHour">
+                            <option selected="selected">1 am</option>
+                            <option>2 am</option>
+                            <option>3 am</option>
+                            <option>4 am</option>
+                            <option>5 am</option>
+                            <option>6 am</option>
+                            <option>7 am</option>
+                            <option>8 am</option>
+                            <option>9 am</option>
+                            <option>10 am</option>
+                            <option>11 am</option>
+                            <option>12 am</option>
+                        </select>
+                        <p class="split"> to </p>
+                        <select class="selectHour">
+                            <option selected="selected">1 pm</option>
+                            <option>2 pm</option>
+                            <option>3 pm</option>
+                            <option>4 pm</option>
+                            <option>5 pm</option>
+                            <option>6 pm</option>
+                            <option>7 pm</option>
+                            <option>8 pm</option>
+                            <option>9 pm</option>
+                            <option>10 pm</option>
+                            <option>11 pm</option>
+                            <option>12 pm</option>
+                        </select>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6 class="newsPanelTitle">Mô tả ngắn</h6>
+                        <textarea maxlength="120">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="blockedit">
+                        <h6>Chi tiết công việc</h6>
+                        <textarea class="newsPanelContent htmlEditorArea">
+                            <p style="text-align: justify;">By 2020, at least 300,000 point-of-sale (POS) machines will be installed with the number of transactions reaching around 200 million per year.</p>
+        
+                            <p style="text-align: justify;">This is one of the targets set in a plan on development of payment via card readers which has been recently released by the central bank in furtherance of Prime Minister Decision 2545/QD-TTg dated December 30, 2016, on non-cash payment during 2016-20.</p>
+                            
+                            <p style="text-align: center;"><em><img alt="" src="http://legal.nso.com.vn/upload/images/point-of-sale-hacking-pos-machinejpg112946575.jpg" style="height:309px; width:500px"></em></p>
+                            
+                            <p style="text-align: center;"><em>At least 300,000 point-of-sale&nbsp;machines will be installed with the </em></p>
+                            
+                            <p style="text-align: center;"><em>number of transactions reaching around 200 million per year</em></p>
+                            
+                            <p style="text-align: justify;">In addition to requiring modern supermarkets, shopping malls and distribution centers all over the country to install POS machines, the state bank urges the furnishment of card readers to all state treasuries of provinces, centrally run cities, urban districts, and provincial cities and towns so as to serve the collection of state budget revenues.<br>
+                            <br>
+                            The plan also asks for the development and use of multi-purpose, multi-function and non-physical cards for payment of petrol bills, road and bridge tolls, parking fees, bus tickets, taxi fares, social insurance premiums, school fees, hospital fees, etc.<br>
+                            <br>
+                            To achieve these targets, the state bank puts forth the solution of improving infrastructure and applying modern payment technologies such as smartcard, NFC, MST and QR code payment technologies. Besides, new and advanced security and confidentiality measures such as 3DS, QR code, tokenization and biometric certification will be applied so as to protect mobile payment service users.</p>
+                            
+                            <p style="text-align: justify;">&nbsp;</p>
+                        </textarea>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="blockedit">
+                <button id="submit" class="btn-primary">Save</button>
+                <button id="cancel" class="btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--Modal add new job-->
+
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/fontawesome-all.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/tag-it.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/desktop.js"></script>        
+        <script src='tinymce/tinymce.min.js'></script>
+
+        <script>
+            tinymce.init({
+                selector: '.htmlEditorArea',
+                theme: 'modern',
+                menubar: false,
+                height: 300,
+                min_height: 300,
+                max_height: 300
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#dismiss, .overlay').on('click', function () {
+                    // hide sidebar
+                    $('#sidebar').removeClass('active');
+                    // hide overlay
+                    $('.overlay').removeClass('active');
+                });
+        
+                $('#sidebarCollapse').on('click', function () {
+                    // open sidebar
+                    $('#sidebar').addClass('active');
+                    // fade in the overlay
+                    $('.overlay').addClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+
+                $("#phonenumber").tagit();
+
+            });
+        </script>
+    </body>
+</html>

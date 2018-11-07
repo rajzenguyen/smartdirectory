@@ -24,8 +24,12 @@ src: local('Montserrat-Light'), local('Montserrat-Light'), url(../fonts/Montserr
     -moz-box-sizing: none;
     box-sizing: none;
 }
+*{
+	transition: all 0.3s;
+}
 html{
 	font-size: 10px;
+	transition: all 0.3s;
 }
 body{
 	font-family: 'Montserrat-Medium', sans-serif;
@@ -33,6 +37,7 @@ body{
 	font-stretch:normal;
 	font-style:normal;
 	line-height: 1.5 !important;
+	transition: all 0.3s;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-family: 'Montserrat-Light', sans-serif;
@@ -686,11 +691,11 @@ label{
 	margin-top:20px;
 }
 .modalLeft{
-	width:570px;
-	height:728px; 
+	width:100%;
+	height:auto; 
 	float:left;
 	background:#fff; 
-	padding:50px 70px; 
+	padding: 10px; 
 	border-bottom-left-radius:6px; 
 	border-top-left-radius:6px; 
 	text-align:left;
