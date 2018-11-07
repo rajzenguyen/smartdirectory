@@ -4203,6 +4203,8 @@ div.uploadNameCard button{
 	margin-top: -60px;
 	margin-left: 10px;
 	color: #fff;
+	height: 48px;
+	overflow: hidden;
 }
 .propertyListItemBot{
 	width: 100%;
