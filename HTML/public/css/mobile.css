@@ -6144,3 +6144,10 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	color: #00B89E !important;
 	padding-left: 15px !important;
 }
+
+.mobileAppDownload{
+	margin-top: 10px;
+	color: #333;
+	font-family: 'Montserrat-Bold', sans-serif;
+	font-size: 12px;
+}

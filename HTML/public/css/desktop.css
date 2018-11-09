@@ -4754,3 +4754,6 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	border: 1px solid #516fd1;
 	border-bottom-color: transparent;
 }
+.mobileAppDownload{
+	margin-top: 10px;
+}
