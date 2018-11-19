@@ -766,7 +766,7 @@ $(document).ready(function(){
 		$(this).addClass("active");
 	});
 });
-/* Demo code, can be delete or modified to get data from server */
+/* Demo code, can be delete or modified to get data from server 
 $(document).ready(function(){
 	$(".blockA table td span.editInfo").click(function(){
 		$(this).parent().prev().children("div.infoPanel").hide();
@@ -790,4 +790,4 @@ $(document).ready(function(){
 		$(this).parent().children(".editInfo").show();
 	});
 });
-/* Demo code, can be delete or modified to get data from server */
+ Demo code, can be delete or modified to get data from server */
