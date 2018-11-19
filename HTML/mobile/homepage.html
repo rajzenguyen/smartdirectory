@@ -1089,17 +1089,89 @@
 
 
 
+
     <!-- Notification -->
-    <div class="notification">
+    <div class="notification noti1">
+        <button type="button" class="close closeButton hideNoti" data-target="noti1" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
         <p class="font-light">
             This website using cookies for improve user experiences!
         </p>
-        <a class="hideNoti">GOT IT!</a>
+        <a class="hideNoti" data-target="noti1">GOT IT!</a>
         <a data-toggle="modal" data-target="#confirmOTP">Confirm OTP</a>
         <a data-toggle="modal" data-target="#reset">Reset password</a>
     </div>
 
     <!-- End Notification -->
+
+    
+    <!-- Notification 2 -->
+    <div class="notification notification2 noti2">
+        <button type="button" class="close closeButton hideNoti" data-target="noti2" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <p class="font-light">
+            Download mobile app for more function!
+        </p>
+        <a class="appLink" href="#"><img src="../public/images/app-store.png"></a>
+        <a class="appLink" href="#"><img src="../public/images/google-play.png"></a>
+        <a data-toggle="modal" data-target="#appDownload">test modal download app</a>
+        <a data-toggle="modal" data-target="#messengerApp">test modal messenger</a>
+    </div>
+
+    <!-- End Notification 2 -->
+
+    <!-- Modal download app -->
+    <div class="modal fade" id="appDownload" tabindex="-1" role="dialog" aria-labelledby="appDownloadLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modalLeft">
+                    <div class="modal-header" style="border:none;">
+                        <h6 class="modal-title" id="appDownloadLabel"></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="../public/assets/ios.png"/>
+                        <h2 class="color1046f1">Hello!</h2>
+                        <p class="color333">Chat feature in only on mobile app, scan the QR code to download on your phone</p>
+                        <p class="text-center font-bold color000">OR</p>
+                        <p class="color333">Click the button to download</p>
+                        <a class="appLink" href="#"><img src="../public/images/app-store.png"></a>
+                        <a class="appLink" href="#"><img src="../public/images/google-play.png"></a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End download app-->
+
+    <!-- Modal download app -->
+    <div class="modal fade" id="messengerApp" tabindex="-1" role="dialog" aria-labelledby="messengerLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modalLeft">
+                    <div class="modal-header" style="border:none;">
+                        <h6 class="modal-title" id="messengerLabel"></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="../public/assets/gp-4.png"/>
+                        <h2 class="color1046f1">Please!</h2>
+                        <p class="color333">Open your phone to perform this function</p>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End download app-->
+    
 
     <!-- Hint for search -->
     <div class="hintBox">

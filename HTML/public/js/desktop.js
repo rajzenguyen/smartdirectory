@@ -399,7 +399,8 @@ $(document).ready(function(){
 
 	
 	$('.hideNoti').click(function(){
-		$('.hideNoti').parent(this).toggle();
+		var a = $(this).attr("data-target");
+		$('.' + a).toggle();
 	});
 	
 	

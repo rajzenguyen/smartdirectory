@@ -148,7 +148,11 @@
             <div class="resultIngo text-center">
                 <p>43 Results</p>
             </div>
-
+            <!--default display=none, change to display: block when needed-->
+            <div class="loadingScreen">
+                <img src="public/assets/Loading_icon.gif">
+            </div>
+            <!--default display=none, change to display: block when needed-->
             <div class="resultListing demo">
                 <div class="resultItem">
                     <div class="resultItemProvince">
@@ -436,6 +440,10 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="endItem text-center">
+                <button type="button" name="btnCancel" class="">Reset</button>
+                <button type="button" name="btnSaveFilter" class="">Apply Filter</button>
             </div>
         </div>
 

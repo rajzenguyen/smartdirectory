@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 .container{
@@ -71,6 +71,7 @@
 }
 .navContent > ul > li > a{
 	color:#fff;	
+	cursor: pointer;
 }
 .navContent > ul > li > .dropdown-menu{
 	padding:0;
@@ -736,7 +737,8 @@ div.aboutSmart > h2{
 	margin-left: auto;
 }
 .reviewDiv{
-	max-width:700px;
+	width:700px !important;
+	max-width: 700px;
 	background:#fff;
 	box-shadow: 0px 0px 17px -7px rgba(0,0,0,0.2);
 	float:left;
@@ -889,7 +891,8 @@ div.aboutSmart > h2{
 }
 .linkWith a{
 	display: block;
-	width: 100%;
+	width: 50%;
+	float: left;
 	text-align: center;
 }
 .linkWith a img{
@@ -1862,8 +1865,12 @@ div.aboutSmart > h2{
 .resultItemCompanyShortDesc table td:nth-child(1){
 	width: 120px;
 }
-.resultItemCompanyShortDesc table p{
-	margin:0;
+.resultItem .resultItemCompanyShortDesc table p{
+	margin:0 !important;
+	max-height: none !important;
+	overflow: unset !important;
+	text-overflow: unset !important;
+	line-height: 1.5 !important;
 }
 .resultPanel.exp .resultItemAva{
 	width:160px;
@@ -1996,6 +2003,7 @@ div.aboutSmart > h2{
 	border-radius:10px;
 	overflow-y: hidden;
 }
+
 .sortPanel{
 	position:absolute;
 	display:none;
@@ -2102,35 +2110,34 @@ div.aboutSmart > h2{
 	transform: rotate(180deg);
 }
 .col01{
-	width:226px;
+	width:25%;
 	height:60px;
 	float:left;
-	margin:0 74px 0 0;
-	padding:0;
+	padding:0 30px 0 0;
 }
 .col02{
-	width:170px;
+	width:25%;
 	float:left;
-	margin:0 30px 0 0;
-	padding:0;
+	padding:0 30px 0 0;
 }
 .col02 a{
 	color: #666 !important;
+	width: 50%;
+	float: left;
+	padding-right: 15px;
 }
 .col03{
-	width:270px;
+	width:25%;
 	float:left;
-	margin:0 30px 0 0;
-	padding:0;
+	padding:0 30px 0 0;
 }
 .col03 button img{
 	transform:rotate(180deg); 
 }
 .col04{
-	width:235px;
+	width:25%;
 	float:left;
-	margin:0 0;
-	padding:0 0;
+	padding:0 30px 0 0;
 }
 .modal-footer > div.help a{
   object-fit: contain;
@@ -2621,7 +2628,7 @@ div.aboutSmart > h2{
 }
 .codeSelectItem div{
 	width: 100%;
-	height: 53px;
+	height: 78px;
 	padding: 12px 0 16px 18px;
 	background: #f8f9fb;
 	border: 1px solid #e8eaef;
@@ -2629,6 +2636,8 @@ div.aboutSmart > h2{
 	color: #333;
 	font-size: 16px;
 	line-height:1.5;
+	display: flex;
+	align-items: center;
 }
 .codeSelection .connectBody h6{
 	padding-top: 5px;
@@ -2894,7 +2903,7 @@ div.aboutSmart > h2{
 	color: #fff;
 	height: 54px;
 	position: relative;
-	margin-top: 276px;
+	margin-top: -40px;
 	margin-right: 0;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
@@ -2902,6 +2911,7 @@ div.aboutSmart > h2{
 #profileEdit .myCompany{
 	color: #1046f1;
 	background: #fff;
+	margin-top: 276px;
 }
 #profileBanner .myCompany h6, #profileEdit .myCompany h6{
 	margin: 0;
@@ -3064,6 +3074,13 @@ div.uploadNameCard button{
 	background: #000;
 	border-radius: 50%;
 }
+.modal-body .changeAva{
+	margin: 30px auto 0;
+	width: 320px;
+	height: 196px;
+	border-radius: 16px;
+	background: #000;
+}
 .changeAva img.avaPic{
 	position: relative;
 	width: 170px;
@@ -3071,12 +3088,33 @@ div.uploadNameCard button{
 	border-radius: 50%;
 	opacity: 0.4;
 }
+.changeAva img.cardPic{
+	position: relative;
+	width: 320px;
+	height: 196px;
+	border-radius: 16px;
+	opacity: 0.4;
+}
+.changeAva img.idenPic{
+	position: relative;
+	width: 320px;
+	height: 196px;
+	border-radius: 16px;
+	opacity: 0.4;
+}
+.changeAva img.agreePic{
+	position: relative;
+	width: 320px;
+	height: 196px;
+	border-radius: 16px;
+	opacity: 0.4;
+}
 .changeAva img.iconPic{    
 	position: relative;
     width: 48px;
     height: 48px;
     margin-left: 0;
-    margin-top: -110px;
+    margin-top: -225px;
     filter: brightness(0) invert(1);
 }
 #editProfileInfo {
@@ -3670,6 +3708,21 @@ div.uploadNameCard button{
 	max-height: 500px;
 }
 .hintBox > div{
+	overflow-y: auto;
+	background: #f8f9fc;
+	height: 100%;
+}
+.hintBoxDialog{
+	display: none;
+	z-index: 200;
+	overflow-y: auto;
+	background: #f8f9fb;
+	box-shadow: 0px 10px 20px 0px #cccccc;
+	padding: 20px 0px 20px 15px;
+	min-height: 200px;
+	max-height: 500px;
+}
+.hintBoxDialog > div{
 	overflow-y: auto;
 	background: #f8f9fc;
 	height: 100%;
@@ -4759,6 +4812,31 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	margin-bottom: 15px;
 }
 .col02 img{
-	height: 40px;
+	width: 100%;
 	margin-bottom: 10px;
+}
+.linkWith p{
+	text-align: left;
+}
+.select2-results{
+	max-height:400px !important;
+	height:400px;
+}
+.testul li::before{
+	content: '\f270'; /* FontAwesome Unicode */
+	font-family: 'FontAwesome';
+	display: inline-block;
+	margin-left: -1.3em; /* same as padding-left set on li */
+	width: 1.3em; /* same as padding-left set on li */
+}
+.marginLeft40px{
+	margin-left: 40px;
+}
+.loadingScreen{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.loadingScreen img{
+	width: 50%;
 }

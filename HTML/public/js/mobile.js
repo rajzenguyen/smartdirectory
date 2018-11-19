@@ -8,7 +8,7 @@ $(document).ready(function(){
 	});
 });
 
-/* Control app feature content */
+/* Control hintbox */
 $(document).ready(function(){
 	$('.appFeatureContent').height($('.appFeatureContent').width());
 });
@@ -289,14 +289,14 @@ $(document).ready(function(){
 	$(".resultContainer").width($(".resultPanel").width() + $(".map").width());
 	$(".resultListing").height($(document).height() - (56 + $('.resultTop').height() + $('.resultIngo').height()) - 23);
 	$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height());
-	$(".holderContent").height($(".filterPanel").height() - 55);
+	$(".holderContent").height($(".filterPanel").height() - 85);
 
 	$(window).resize(function(){
         $(".map").height($(document).height()-115);
 		$("#result").height($(document).height()-115);
 		$(".resultListing").height($(document).height() - (56 + $('.resultTop').height() + $('.resultIngo').height()) - 23);
 		$(".filterPanel").height($(".resultListing").height() + $('.resultIngo').height());
-		$(".holderContent").height($(".filterPanel").height() - 55);
+		$(".holderContent").height($(".filterPanel").height() - 85);
 		/*$(".map").width($(document).width()-435);*/
 		$('.expandBtn').css('top',$('.searchBar').offset().top + 42);
 		$('.expandBtn').css('right',0);
@@ -359,6 +359,8 @@ $(document).ready(function(){
 	 $('#sortBtn').click(function(event){
 		  event.stopPropagation();
 	 });
+	 
+	 
 	 $('#sortBtn').click(function(){
 		 $('.sortPanel').css('top',$('#sortBtn').offset().top + $('#sortBtn').height() + 5);
 		 $('.sortPanel').css('left',$('#sortBtn').offset().left);
@@ -416,7 +418,8 @@ $(document).ready(function(){
 	});
 	
 	$('.hideNoti').click(function(){
-		$('.hideNoti').parent(this).toggle();
+		var a = $(this).attr("data-target");
+		$('.' + a).toggle();
 	});
 	
 	
@@ -731,7 +734,6 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	/*$('.blockDGrid').eq(0).slideToggle(500);*/
 	$('.blockDTitle').click(function(){
 
 		$(this).parent().children('.blockDGrid').slideToggle(500);

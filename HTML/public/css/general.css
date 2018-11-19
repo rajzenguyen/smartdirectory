@@ -415,7 +415,7 @@ label{
 	border-radius:40px;
 }
 .notification{
-	width:200px;
+	width:250px;
 	padding:20px;
 	right:20px;
 	bottom:100px;
@@ -426,6 +426,9 @@ label{
 	text-align:center;
 	border-radius:14px;
 	box-shadow: 0px 7px 18px -8px rgba(0,0,0,0.75);
+}
+.notification2{
+	bottom:300px;
 }
 .notification > a{
 	color:#fff;
@@ -439,6 +442,7 @@ label{
 }
 .notification > p{
 	font-size: 14px;
+	padding-right: 15px;
 }
 .notification .closeButton{
 	top: 5px;
@@ -1136,4 +1140,26 @@ button.close:hover {
 .dropdownList li:hover{
 	background: #6f93f9;
 	color: #fff;
+}
+a.appLink{
+	width: 50%;
+	float: left;
+	background: none;
+	padding: 0px 2px;
+}
+a.appLink img{
+	width: 100%;
+}
+#appDownload a.appLink{
+	padding: 0 15px;
+}
+#appDownload .modal-body > img{
+	background: #fff;
+	padding: 15px;
+	margin-top:-120px;
+	width:140px;
+}
+#messengerApp .modal-body > img{
+	margin-top:-120px;
+	width:140px;
 }
