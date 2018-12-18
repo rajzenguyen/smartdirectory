@@ -82,16 +82,21 @@ $(document).ready(function(){
 
 /* Control hintbox */
 $(document).ready(function(){
-	
-	$('.searchInputForHint').keypress(function(){
-		var hei=$(window).height() - $(this).offset().top + $(this).height();
-		$(".hintBox").width($(this).width() + 52);
-		$(".hintBox").height(hei);
-		$(".hintBox").css('left',$(this).offset().left);
-		$(".hintBox").css('top',$(this).offset().top + $(this).height() + 32);
-		$('.hintBox').show();
+	/*
+	$('.controlS .searchInputForHint').keypress(function(){
+		var a = $(this).attr('data-target');
+		var w = $(this).width();
+		var h = $(this).height();
+		var hei=$(window).height() - $(this).offset().top + h;
+		$(a + ' .hintBlock ul').width(w);
+		$(a + ' .hintBlock').width(w);
+		$(a).width(w + 52);
+		$(a).height(hei);
+		$(a).css('left',$(this).offset().left);
+		$(a).css('top',$(this).offset().top + h + 32);
+		$(a).show();
 	});
-
+	*/
  });
 /* Control hintbox */
 

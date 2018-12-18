@@ -1849,11 +1849,11 @@ div.aboutSmart > h2{
 .customerNav > div{
 	height: 70px; 
 	position: relative; 
-	width: 100%; 
+	width: 43%; 
 	overflow: auto; 
 	overflow-y: hidden;
 	z-index: 1;
-	float: left;
+	margin: 0 auto;
 }
 .customerNav #slideNav1header{
 	padding-right: 15px;
@@ -2096,7 +2096,6 @@ div.aboutSmart > h2{
 }
 .linkWith a img{
 	filter: grayscale(0);
-	margin-bottom: 10px;
 	height: 40px;
 }
 .linkWith a:last-child img{
@@ -2205,8 +2204,8 @@ div.aboutSmart > h2{
 .companyName > h6{
 	margin:0;
 	font-size: 16px;
-	white-space: nowrap; 
-    width: 80%; 
+	white-space: inherit; 
+    width: 100%; 
     overflow: hidden;
     text-overflow: ellipsis; 
 }
@@ -3369,7 +3368,7 @@ div.aboutSmart > h2{
 	height:40px;
 }
 .col02{
-	width:60%;
+	width:50%;
 	float:left;
 	padding:0 0 0 20px;
 }
@@ -3386,7 +3385,7 @@ div.aboutSmart > h2{
 	transform:rotate(180deg); 
 }
 .col04{
-	width:40%;
+	width:50%;
 	float:left;
 	margin:0 0;
 	padding:0 0;
@@ -4277,7 +4276,8 @@ h6.modal-title{
 	padding: 5px 0 0px 10px;
 	display: table;
     vertical-align: middle;
-    margin: 0 auto;
+	margin: 0 auto;
+	width: calc(100% - 65px);
 }
 #profileBanner .myCompany, #profileEdit .myCompany{
 	float: right;
@@ -4286,7 +4286,7 @@ h6.modal-title{
 	color: #fff;
 	height: 28px;
 	position: relative;
-	margin-top: 11px;
+	margin-top: -3px;
 	margin-right: 20px;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
@@ -5370,7 +5370,7 @@ div.uploadNameCard button{
 }
 #app .appContent .appDownload img{
 	float: left;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 #contentapp{	
@@ -5439,7 +5439,7 @@ div.uploadNameCard button{
 }
 .featureIcon:first-child{
 	top: -30px;
-	left: 110px;
+	left: 125px;
 }
 .featureIcon:nth-child(2){
 	top: 50px;
@@ -5447,15 +5447,15 @@ div.uploadNameCard button{
 }
 .featureIcon:nth-child(3){
 	top: 50px;
-	left: 110px;
+	left: 150px;
 }
 .featureIcon:nth-child(4){
-	top: 200px;
+	top: 240px;
 	left: -160px;
 }
 .featureIcon:nth-child(5){
-	top: 140px;
-	left: 190px;
+	top: 240px;
+	left: 0px;
 }
 .featureIcon img{
 	width: 100%;
@@ -5697,6 +5697,7 @@ div.uploadNameCard button{
 	padding: 8px 0;
 	font-size: 12px;
 	color: #333;
+	line-height: 1.5;
 }
 .conBodyRight table tr td ul{
 	padding: 0;
@@ -5706,17 +5707,20 @@ div.uploadNameCard button{
 	padding: 0;
 }
 .conBodyRight table tr td:nth-child(1){
-	width: 29%;
+	width: 32%;
 	font-family: 'Montserrat-Medium', sans-serif;
+	line-height: 1.5;
 }
 .conBodyRight table tr td:nth-child(1) p{
 	font-size: 12px;
 	font-family: 'Montserrat-Light', sans-serif;
+	line-height: 1.5;
 }
 .conBodyRight table tr td:nth-child(2){
 	padding-left: 50px;
 	font-size: 12px;
 	font-family: 'Montserrat-Light', sans-serif;
+	line-height: 1.5;
 }
 .blockD{
 	margin-bottom: 20px;
@@ -6153,13 +6157,13 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 .linkWith{
 	width: 100%;
 	float: left;
-	padding: 15px 20px;
+	padding: 15px 20px 0 20px;
 }
 .linkWith a{
 	display: block;
 	width: 50%;
 	float: left;
-	text-align: center;
+	text-align: left;
 }
 a.appLink{
 	width: 100%;
@@ -6208,4 +6212,19 @@ a.appLink img{
 	width: 150px;
 	height: 92px;
 	border-radius: 12px;
+}
+.col04 a{
+	margin-right: 15px;
+}
+.downloadAgreement{
+	margin-bottom: 20px;
+}
+.downloadAgreement a p{
+	display: inherit;
+}
+.appFeatureContent{
+	display: none;
+}
+.appFeatureInfo{
+	width: 100%;
 }

@@ -893,7 +893,7 @@ div.aboutSmart > h2{
 	display: block;
 	width: 50%;
 	float: left;
-	text-align: center;
+	text-align: left;
 }
 .linkWith a img{
 	filter: grayscale(0);
@@ -2101,7 +2101,7 @@ div.aboutSmart > h2{
 	background:#f8f9fb;
 	position:absolute;
 	cursor:pointer;
-	z-index: 100;
+	z-index: 1;
 }
 .expandBtn img{
 	width:24px;
@@ -3114,7 +3114,7 @@ div.uploadNameCard button{
     width: 48px;
     height: 48px;
     margin-left: 0;
-    margin-top: -225px;
+    margin-top: -120px;
     filter: brightness(0) invert(1);
 }
 #editProfileInfo {
@@ -3700,18 +3700,18 @@ div.uploadNameCard button{
 	display: none;
 	position: absolute;
 	z-index: 200;
-	overflow-y: auto;
+	overflow-y: scroll;
 	background: #f8f9fb;
 	box-shadow: 0px 10px 20px 0px #cccccc;
 	padding: 20px 0px 20px 15px;
 	min-height: 200px;
 	max-height: 500px;
 }
-.hintBox > div{
+/*.hintBox > div{
 	overflow-y: auto;
 	background: #f8f9fc;
 	height: 100%;
-}
+}*/
 .hintBoxDialog{
 	display: none;
 	z-index: 200;
@@ -3729,6 +3729,7 @@ div.uploadNameCard button{
 }
 .hintBlock{
 	float: left;
+	width: inherit;
 }
 .hintBlockTitle{
 	font-family: 'Montserrat-Medium', sans-serif;
@@ -3994,6 +3995,9 @@ div.uploadNameCard button{
 	width: 50%;
 	float: left;
 }
+.conRight{
+	padding: 10px;
+}
 .conLeft h4{	
 	text-align: center;
 	font-size: 40px;
@@ -4121,7 +4125,7 @@ div.uploadNameCard button{
 	font-size: 16px;
 }
 .conBodyRight table tr td:nth-child(1){
-	width: 25%;
+	width: 28%;
 	font-family: 'Montserrat-Medium', sans-serif;
 }
 .conBodyRight table tr td:nth-child(1) p{
@@ -4836,7 +4840,24 @@ table.jobHeader, table.jobHeader tr, table.jobHeader tr td{
 	width: 100%;
 	float: left;
 	text-align: center;
+	display: none;
 }
 .loadingScreen img{
 	width: 50%;
+}
+.downloadAgreement{
+	margin-bottom: 30px;
+}
+.downloadAgreement a p{
+	display: inherit;
+}
+#contentapp p, #contentapp ul li{
+	text-align: justify;
+	margin-bottom: 10px;
+}
+.appFeatureContent{
+	display: none;
+}
+.appFeatureInfo{
+	width: 100%;
 }
