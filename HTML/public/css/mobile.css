@@ -6228,3 +6228,37 @@ a.appLink img{
 .appFeatureInfo{
 	width: 100%;
 }
+
+#cookieNoti{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+	padding: 7px 0;
+	z-index: 999;
+}
+#cookieNoti > div{
+	text-align: center;
+	width: calc(100% - 30px);
+	float: left;
+	font-family: 'Montserrat-Light', sans-serif;
+}
+#cookieNoti > div a{
+	margin-left: 8px;
+	cursor: pointer;
+}
+#cookieNoti div a:first-child{
+	color: #01a129;
+	font-family: 'Montserrat-Medium', sans-serif;
+}
+#cookieNoti div a:last-child{
+	color: #9c9c9c;
+}
+#cookieNoti > span{
+	float: left;
+	margin-left: 10px;
+	padding: 8px 10px 8px 0px;
+	cursor: pointer;
+	color: #777;
+}
